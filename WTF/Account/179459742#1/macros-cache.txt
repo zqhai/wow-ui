@@ -1,0 +1,55 @@
+VER 3 0000000000000003 "BF_Mount" "ability_mount_charger"
+/bfmount
+END
+VER 3 0000000000000004 "BF_Pet" "achievement_worldevent_brewmaster"
+/BFPET
+END
+VER 3 0000000000000002 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] 自然之愈;  [@mouseover,exists,mod:ctrl] 自然之愈; [@mouseover,exists,mod:shift] 自然之愈
+END
+VER 3 0000000000000017 "SX" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast 嗜血
+/cast 风暴之鞭图腾
+END
+VER 3 000000000000000C "YY" "ACHIEVEMENT_GUILDPERK_MOBILEBANKING"
+/团队 请上YY  91166758 
+END
+VER 3 0000000000000008 "保命" "INV_MISC_QUESTIONMARK"
+/cast 星界转移
+/cast 治疗石
+/cast 萨满之怒
+END
+VER 3 0000000000000009 "保命2" "INV_MISC_QUESTIONMARK"
+/cast 石壁图腾
+/cast 治疗石
+/cast 萨满之怒
+END
+VER 3 0000000000000011 "小爆发" "INV_MISC_QUESTIONMARK"
+/cast 升腾
+/cast 狂暴(种族特长)
+/cast 火元素图腾
+END
+VER 3 0000000000000018 "开场" "INV_MISC_QUESTIONMARK"
+/use 青龙药水
+/cast 火元素图腾
+END
+VER 3 000000000000000F "爆发" "INV_MISC_IDOL_02"
+/use 青龙药水
+/cast 升腾
+/cast 狂暴(种族特长)
+/cast 火元素图腾
+END
+VER 3 0000000000000015 "疯链子" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/startattack
+/cast 闪电链
+END
+VER 3 0000000000000013 "移动施法" "INV_MISC_QUESTIONMARK"
+/cast 土元素图腾
+/cast 灵魂行者的恩赐
+END
+VER 3 000000000000000D "视角50" "SPELL_FROST_ARCTICWINDS"
+/console SET cameraDistanceMaxFactor　50
+END

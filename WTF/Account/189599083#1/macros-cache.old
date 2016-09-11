@@ -1,0 +1,23 @@
+VER 3 0000000000000001 "BF_Mount" "ability_mount_charger"
+/bfmount
+END
+VER 3 0000000000000003 "BF_Pet" "achievement_worldevent_brewmaster"
+/BFPET
+END
+VER 3 0000000000000004 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] 净化腐蚀;  [@mouseover,exists,mod:ctrl] 旋风; [@mouseover,exists,mod:shift] 净化腐蚀
+END
+VER 3 0000000000000005 "研磨" "INV_MISC_NOTE_05"
+/cast 研磨
+/use 烁星花
+/use 寒霜草
+/use 纳格兰箭叶花
+/use 炎火草
+/use 戈尔隆德捕蝇草
+/use 塔拉多幽兰
+END
+VER 3 0000000000000002 "驱散纯净" "Spell_Shadow_Skull"
+#showtooltip
+/cast [mod:alt,@player][help]纯净术;[harm]驱散魔法
+END

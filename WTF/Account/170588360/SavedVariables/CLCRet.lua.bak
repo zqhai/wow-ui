@@ -1,0 +1,10 @@
+
+clcretDB = {
+	["profileKeys"] = {
+		["Haidi - 幽暗沼泽"] = "Haidi - 幽暗沼泽",
+	},
+	["profiles"] = {
+		["Haidi - 幽暗沼泽"] = {
+		},
+	},
+}

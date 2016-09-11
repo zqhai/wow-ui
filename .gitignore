@@ -1,0 +1,26 @@
+Cache/
+
+.agent.db
+.build.info
+.patch.result
+.product.db
+BlizzardError.exe
+Data/
+Errors/         
+Launcher.db
+Logs/
+Microsoft.VC80.CRT
+Scan-64.dll
+Scan-64.dll.new
+Scan.dll
+Scan.dll.new
+Screenshots/
+Utils/
+WoW.mfil
+World of Warcraft
+Wow-64.exe
+Wow.exe
+dbghelp.dll
+divxdecoder.dll
+Microsoft.VC80.CRT.manifest
+World of Warcraft Launcher.exe

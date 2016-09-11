@@ -1,0 +1,9 @@
+
+MEETINGSTONE_UI_DB = {
+	["profileKeys"] = {
+		["Haidi - 幽暗沼泽"] = "Haidi - 幽暗沼泽",
+	},
+	["global"] = {
+		["version"] = "60000.07",
+	},
+}

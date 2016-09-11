@@ -1,0 +1,220 @@
+2016-09-06  Tercio  <Tercio>
+
+[0bc17f743068] [tip]
+* WorldQuestTracker.lua:
+
+- added an option to disable our quest tracker.
+
+
+[eb5531cdf631]
+* WorldQuestTracker.lua:
+
+- double check if the tooltip scan text is valid.
+
+
+[7492a2a49acb]
+* WorldQuestTracker.lua:
+
+- added time priorities for sort order.
+
+
+[9fd1a56e71ca]
+* WorldQuestTracker.lua:
+
+- check if elvui has its saved variables loaded before check.
+- removed a debug print 'zi' when clicking on a quest.
+
+
+2016-09-05  Tercio  <Tercio>
+
+[c23ac7f1f03b]
+* WorldQuestTracker.lua:
+
+- possible fix for the quest sharer.
+
+
+[75172cd49fc3]
+* WorldQuestTracker.lua:
+
+- possible fix for the quest sharer.
+
+
+[8b3f2efb3d73]
+* WorldQuestTracker.lua, libs/AceSerializer-3.0/AceSerializer-3.0.lua, libs/AceSerializer-3.0/AceSerializer-3.0.xml, libs/libs.xml, media/icon_party_sharedT.blp:
+
+- fixed some lag involving startup.
+
+
+[7a314427b5b9]
+* WorldQuestTracker.lua:
+
+- fix for artifact power in some cases not being counted.
+
+
+[58b5715c3cc1]
+* WorldQuestTracker.lua:
+
+- added support to TomTom.
+- added 'refresh' option.
+
+
+[eb8810101cad]
+* WorldQuestTracker.lua:
+
+- check if move anything is loadded.
+
+
+2016-09-04  Tercio  <Tercio>
+
+[5a15d712976a]
+* WorldQuestTracker.lua:
+
+- fix for taxymap fps drop issue.
+
+
+[3829d6d8a4e7]
+* WorldQuestTracker.lua:
+
+- filtering quests on zone maps.
+The filter shall respect the option to show faction objectives.
+
+
+[a0919818d52b]
+* WorldQuestTracker.lua:
+
+- added option to set the arrow update speed.
+
+
+[4c92fca22d6d]
+* libs/DF/fw.lua:
+
+- framework revision up.
+
+
+2016-09-03  Tercio  <Tercio>
+
+[6db137adc05f]
+* WorldQuestTracker.lua:
+
+- trying a MoveAnything compatibility fix.
+
+
+2016-09-02  Tercio  <Tercio>
+
+[06669b9bb591]
+* WorldQuestTracker.lua:
+
+- fly map quests are show only being tracked by default.
+- fixed a lua error when opening the zone map.
+
+
+2016-08-29  Tercio  <Tercio>
+
+[c5daf93f3633]
+* WorldQuestTracker.lua, libs/DF/cooltip.lua, libs/DF/fw.lua:
+
+- updating the framework to v44.
+
+
+[e408570cc270]
+* WorldQuestTracker.lua:
+
+- reduce the oartifact power font size on artifact power resource available.
+
+
+[e11285e42b03]
+* WorldQuestTracker.lua:
+
+- Check if ElvUI and its savedvariables is loaded.
+
+
+2016-08-28  Tercio  <Tercio>
+
+[6ed4c673a15c]
+* WorldQuestTracker.lua, libs/DF/fw.lua, libs/DF/panel.lua, libs/LG/1-1.tga, libs/LG/1-128.tga, libs/LG/1-16.tga, libs/LG/1-2.tga, libs/LG/1-32.tga, libs/LG/1-4.tga, libs/LG/1-64.tga, libs/LG/1-8.tga, libs/LG/LibGraph-2.0.lua, libs/LG/balls.tga, libs/LG/line.tga, libs/LG/sline.tga, libs/LG/smallline.tga, libs/LG/thinline.tga, libs/LG/triangle.tga, libs/libs.xml:
+
+- added Lib-Graph-2.0
+- fixed an issue when adding all gold quests to the tracker.
+
+
+[d0653930c280]
+* WorldQuestTracker.lua, libs/DF/fw.lua:
+
+- some more fixes.
+
+
+2016-08-27  Tercio  <Tercio>
+
+[a986e044d0f4]
+* WorldQuestTracker.lua, libs/DF/fw.lua, libs/DF/textentry.lua, media/quest_added_to_tracker_mass1.mp3, media/quest_added_to_tracker_mass2.mp3:
+
+- framework upgrade to v41.
+- localization update.
+- fixed eye of azshara squares being shown when there is no quest on eye of azshara.
+
+
+2016-08-18  Tercio  <Tercio>
+
+[898dc9ceafae]
+* WorldQuestTracker.lua, media/quest_added_to_tracker_mass1.mp3, media/quest_added_to_tracker_mass2.mp3, media/resource_iconT.blp:
+
+- zones without quests won't show their lines and faction circle.
+- added option to untrack all quests.
+- clicking on the resources counter, track all quests of that type.
+- added few missing lines to localize.
+- 8th polish wave.
+
+
+2016-08-17  Tercio  <Tercio>
+
+[83d066d3637d]
+* WorldQuestTracker.lua, media/quest_added_to_tracker1.mp3, media/quest_added_to_tracker2.mp3, media/swap_panels1.mp3, media/swap_panels2.mp3:
+
+- more bug fixes.
+- added sound effects.
+- 7th wave of polish.
+
+
+2016-08-16  Tercio  <Tercio>
+
+[4ccad3c5bb06]
+* WorldQuestTracker.lua:
+
+- eye of azshara does exists.
+
+
+[a97d243528f4]
+* WorldQuestTracker.lua, libs/DF/colors.lua, libs/DF/fw.lua, libs/DF/panel.lua, media/icons_resourcesT.blp:
+
+- added east asia numeric system.
+- statusbar shouldn't appear on zone maps.
+
+
+2016-08-14  Tercio  <Tercio>
+
+[41fe9002ffd1]
+* WorldQuestTracker.lua:
+
+- taint fix.
+
+
+[38e06dac545a]
+* WorldQuestTracker.lua:
+
+- taint fix.
+
+
+[b78c00d94a73]
+* WorldQuestTracker.lua:
+
+- taint fix.
+
+
+[5d70c884b1cd]
+* WorldQuestTracker.lua, media/border_zone_browT.blp, media/border_zone_redT.blp:
+
+- update translations.
+- fix for profession quests icon.
+- faction quest indicator now blinks on every click on the faction bounty buttons.
+
+

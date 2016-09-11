@@ -1,0 +1,40 @@
+
+TellMeWhenDB = {
+	["profileKeys"] = {
+		["一幽 - 幽暗沼泽"] = "一幽 - 幽暗沼泽",
+	},
+	["global"] = {
+		["TextLayouts"] = {
+			["icon1"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+			},
+			["bar2"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+			},
+		},
+	},
+	["Version"] = 72304,
+	["profiles"] = {
+		["一幽 - 幽暗沼泽"] = {
+			["Version"] = 72304,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1Kcj3eZl19Ye",
+					["Point"] = {
+						["y"] = 35.0000610351563,
+						["point"] = "RIGHT",
+						["relativePoint"] = "RIGHT",
+						["x"] = -201.500061035156,
+					},
+				}, -- [1]
+			},
+			["Locked"] = true,
+		},
+	},
+}

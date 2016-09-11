@@ -1,0 +1,2 @@
+ThogarAssist: disabled
+IskarAssist: disabled

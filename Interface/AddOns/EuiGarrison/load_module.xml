@@ -1,0 +1,18 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Libs/Evie.lua"/>
+	<Script file="Locale.lua"/>
+	<Script file="Mark-23.lua"/>
+	<Script file="GarrisonAPI-Data.lua"/>
+	<Script file="GarrisonAPI.lua"/>
+	<Script file="MasterPlan.lua"/>
+	<Script file="MissionsUI.lua"/>
+	<Script file="GarrisonMissions.lua"/>
+	<Script file="GarrisonFollowers.lua"/>
+	<Script file="Misc.lua"/>
+
+	<Script file="GarrisonMissionManager.lua"/>
+
+	<Script file="bulkie.lua"/>
+
+	<Script file="SmartRecruiter.lua"/>
+</Ui>

@@ -1,0 +1,25 @@
+
+DBT_AllPersistentOptions = {
+	["Default"] = {
+		["DBM"] = {
+			["EndColorG"] = 0,
+			["HugeBarXOffset"] = 0,
+			["Scale"] = 0.899999976158142,
+			["EnlargeBarsPercent"] = 0.125,
+			["StartColorR"] = 1,
+			["HugeWidth"] = 200,
+			["BarYOffset"] = 0,
+			["StartColorG"] = 0.701960784313726,
+			["EndColorR"] = 1,
+			["Width"] = 183,
+			["HugeBarYOffset"] = 0,
+			["HugeScale"] = 1.04999995231628,
+			["StartColorB"] = 0,
+			["EnlargeBarsTime"] = 8,
+			["Height"] = 20,
+			["FontSize"] = 10,
+			["BarXOffset"] = 0,
+			["EndColorB"] = 0,
+		},
+	},
+}

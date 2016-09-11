@@ -1,0 +1,11 @@
+
+MEETINGSTONE_CHARACTER_DB = {
+	["profileKeys"] = {
+		["Haidi - 幽暗沼泽"] = "Haidi - 幽暗沼泽",
+	},
+	["profiles"] = {
+		["Haidi - 幽暗沼泽"] = {
+			["lastSearchValue"] = "3-14-38-0",
+		},
+	},
+}

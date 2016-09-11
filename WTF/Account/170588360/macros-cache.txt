@@ -1,0 +1,34 @@
+VER 3 000000000000004E " " "INV_Misc_QuestionMark"
+#showtooltip
+/stopcasting
+/use 13
+/stopcasting
+END
+VER 3 0000000000000059 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/use 14
+/stopcasting
+END
+VER 3 000000000000005B "MillHelper" "Ability_Miling"
+/click MillHelperButton
+END
+VER 3 000000000000005C "变身" "136172"
+/run local f,t=RnT or CreateFrame("Button","RnT",nil,"SecureActionButtonTemplate") f:SetAttribute("type","item") t=GetItemInfo(C_ToyBox.GetToyFromIndex(random(11))) f:SetAttribute("item",t) print("Casting toy:",t) 
+/click RnT
+END
+VER 3 000000000000005D "神器能量统计" "INV_MISC_NOTE_05"
+/run _,_,_,_,a,b=C_ArtifactUI.GetEquippedArtifactInfo() for i=0,b-1 do a=a+C_ArtifactUI.GetCostForPointAtRank(i)end print(a)
+END
+VER 3 0000000000000038 "背部" "INV_Misc_QuestionMark"
+#showtooltips
+/stopcasting
+/use 15
+/stopcasting
+END
+VER 3 0000000000000034 "腰带" "INV_Misc_QuestionMark"
+#showtooltips
+/stopcasting
+/use 6
+/stopcasting
+END

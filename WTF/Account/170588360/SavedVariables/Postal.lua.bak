@@ -1,0 +1,17 @@
+
+Postal3DB = {
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Haidi|幽暗沼泽|Horde|100|PALADIN", -- [1]
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Haidi - 幽暗沼泽"] = "Haidi - 幽暗沼泽",
+	},
+	["profiles"] = {
+		["Haidi - 幽暗沼泽"] = {
+		},
+	},
+}

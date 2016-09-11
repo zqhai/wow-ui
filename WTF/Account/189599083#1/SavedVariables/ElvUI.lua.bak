@@ -1,0 +1,359 @@
+
+ElvDB = {
+	["profileKeys"] = {
+		["一幽 - 幽暗沼泽"] = "一幽 - 幽暗沼泽",
+	},
+	["gold"] = {
+		["幽暗沼泽"] = {
+			["一幽"] = 79452680,
+		},
+	},
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["worldBoss"] = {
+		["一幽-幽暗沼泽"] = {
+			["rukhmarKilled"] = false,
+			["drovKilled"] = false,
+			["tarlnaKilled"] = true,
+			["class"] = "DRUID",
+			["realm"] = "幽暗沼泽",
+		},
+		["reset"] = true,
+	},
+	["profiles"] = {
+		["一幽 - 幽暗沼泽"] = {
+			["bagsOffsetFixed"] = true,
+			["movers"] = {
+				["ElvUF_PartyMover"] = "BOTTOMLEFTElvUIParentBOTTOMLEFT4225",
+				["ElvUF_RaidMover"] = "BOTTOMLEFTElvUIParentBOTTOMLEFT4195",
+			},
+			["AuraWatch"] = {
+				["loadDefault"] = true,
+				["DB"] = {
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "玩家减益",
+						["List"] = {
+							{
+								["AuraID"] = 118,
+								["UnitID"] = "player",
+							}, -- [1]
+						},
+						["Interval"] = 10,
+						["Mode"] = "ICON",
+						["IconSize"] = 48,
+						["Pos"] = {
+							"CENTER", -- [1]
+							"UIParent", -- [2]
+							"CENTER", -- [3]
+							-200, -- [4]
+							200, -- [5]
+						},
+					}, -- [1]
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "玩家重要增益",
+						["List"] = {
+							{
+								["AuraID"] = 93400,
+								["UnitID"] = "player",
+							}, -- [1]
+							{
+								["AuraID"] = 81192,
+								["UnitID"] = "player",
+							}, -- [2]
+							{
+								["AuraID"] = 16886,
+								["UnitID"] = "player",
+							}, -- [3]
+							{
+								["AuraID"] = 96206,
+								["UnitID"] = "player",
+							}, -- [4]
+							{
+								["AuraID"] = 16870,
+								["UnitID"] = "player",
+							}, -- [5]
+							{
+								["AuraID"] = 69369,
+								["UnitID"] = "player",
+							}, -- [6]
+							{
+								["AuraID"] = 126697,
+								["UnitID"] = "player",
+							}, -- [7]
+							{
+								["AuraID"] = 126646,
+								["UnitID"] = "player",
+							}, -- [8]
+							{
+								["AuraID"] = 126533,
+								["UnitID"] = "player",
+							}, -- [9]
+							{
+								["AuraID"] = 126597,
+								["UnitID"] = "player",
+							}, -- [10]
+							{
+								["AuraID"] = 126649,
+								["UnitID"] = "player",
+							}, -- [11]
+							{
+								["AuraID"] = 126599,
+								["UnitID"] = "player",
+							}, -- [12]
+							{
+								["AuraID"] = 126554,
+								["UnitID"] = "player",
+							}, -- [13]
+							{
+								["AuraID"] = 126690,
+								["UnitID"] = "player",
+							}, -- [14]
+							{
+								["AuraID"] = 126707,
+								["UnitID"] = "player",
+							}, -- [15]
+							{
+								["AuraID"] = 126605,
+								["UnitID"] = "player",
+							}, -- [16]
+							{
+								["AuraID"] = 126683,
+								["UnitID"] = "player",
+							}, -- [17]
+							{
+								["AuraID"] = 126705,
+								["UnitID"] = "player",
+							}, -- [18]
+							{
+								["AuraID"] = 126659,
+								["UnitID"] = "player",
+							}, -- [19]
+							{
+								["AuraID"] = 126577,
+								["UnitID"] = "player",
+							}, -- [20]
+							{
+								["AuraID"] = 126588,
+								["UnitID"] = "player",
+							}, -- [21]
+							{
+								["AuraID"] = 116660,
+								["UnitID"] = "player",
+							}, -- [22]
+							{
+								["AuraID"] = 125489,
+								["UnitID"] = "player",
+							}, -- [23]
+							{
+								["AuraID"] = 118334,
+								["UnitID"] = "player",
+							}, -- [24]
+							{
+								["AuraID"] = 104993,
+								["UnitID"] = "player",
+							}, -- [25]
+							{
+								["AuraID"] = 125487,
+								["UnitID"] = "player",
+							}, -- [26]
+						},
+						["Interval"] = 6,
+						["Mode"] = "ICON",
+						["IconSize"] = 42,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Player", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							55, -- [5]
+						},
+					}, -- [2]
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "玩家增益",
+						["List"] = {
+							{
+								["AuraID"] = 33763,
+								["UnitID"] = "player",
+							}, -- [1]
+							{
+								["AuraID"] = 774,
+								["UnitID"] = "player",
+							}, -- [2]
+							{
+								["AuraID"] = 8936,
+								["UnitID"] = "player",
+							}, -- [3]
+							{
+								["AuraID"] = 117679,
+								["UnitID"] = "player",
+							}, -- [4]
+							{
+								["AuraID"] = 102560,
+								["UnitID"] = "player",
+							}, -- [5]
+							{
+								["AuraID"] = 102543,
+								["UnitID"] = "player",
+							}, -- [6]
+							{
+								["AuraID"] = 102558,
+								["UnitID"] = "player",
+							}, -- [7]
+							{
+								["AuraID"] = 61336,
+								["UnitID"] = "player",
+							}, -- [8]
+							{
+								["AuraID"] = 106922,
+								["UnitID"] = "player",
+							}, -- [9]
+							{
+								["AuraID"] = 22812,
+								["UnitID"] = "player",
+							}, -- [10]
+							{
+								["AuraID"] = 102342,
+								["UnitID"] = "player",
+							}, -- [11]
+							{
+								["AuraID"] = 62606,
+								["UnitID"] = "player",
+							}, -- [12]
+							{
+								["AuraID"] = 124769,
+								["UnitID"] = "player",
+							}, -- [13]
+							{
+								["AuraID"] = 52610,
+								["UnitID"] = "player",
+							}, -- [14]
+							{
+								["AuraID"] = 50334,
+								["UnitID"] = "player",
+							}, -- [15]
+							{
+								["AuraID"] = 5217,
+								["UnitID"] = "player",
+							}, -- [16]
+							{
+								["AuraID"] = 112071,
+								["UnitID"] = "player",
+							}, -- [17]
+							{
+								["AuraID"] = 48505,
+								["UnitID"] = "player",
+							}, -- [18]
+							{
+								["AuraID"] = 16689,
+								["UnitID"] = "player",
+							}, -- [19]
+							{
+								["AuraID"] = 48391,
+								["UnitID"] = "player",
+							}, -- [20]
+							{
+								["AuraID"] = 1850,
+								["UnitID"] = "player",
+							}, -- [21]
+							{
+								["AuraID"] = 5229,
+								["UnitID"] = "player",
+							}, -- [22]
+						},
+						["Interval"] = 6,
+						["Mode"] = "ICON",
+						["IconSize"] = 42,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Player", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							12, -- [5]
+						},
+					}, -- [3]
+					{
+						["Direction"] = "RIGHT",
+						["Name"] = "目标减益",
+						["List"] = {
+							{
+								["AuraID"] = 8921,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [1]
+							{
+								["AuraID"] = 93402,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [2]
+							{
+								["AuraID"] = 1822,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [3]
+							{
+								["AuraID"] = 1079,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [4]
+							{
+								["AuraID"] = 9007,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [5]
+							{
+								["AuraID"] = 33745,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [6]
+							{
+								["AuraID"] = 77758,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [7]
+							{
+								["AuraID"] = 82365,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [8]
+							{
+								["AuraID"] = 45334,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [9]
+							{
+								["AuraID"] = 58180,
+								["UnitID"] = "target",
+								["Caster"] = "player",
+							}, -- [10]
+						},
+						["Interval"] = 4,
+						["Mode"] = "ICON",
+						["IconSize"] = 48,
+						["Pos"] = {
+							"BOTTOMLEFT", -- [1]
+							"ElvUF_Target", -- [2]
+							"TOPLEFT", -- [3]
+							0, -- [4]
+							68, -- [5]
+						},
+					}, -- [4]
+				},
+			},
+		},
+	},
+}
+ElvPrivateDB = {
+	["profileKeys"] = {
+		["一幽 - 幽暗沼泽"] = "一幽 - 幽暗沼泽",
+	},
+	["profiles"] = {
+		["一幽 - 幽暗沼泽"] = {
+			["install_complete"] = "7.72",
+		},
+	},
+}

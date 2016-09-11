@@ -1,0 +1,17 @@
+
+COLLECTOR_DB = {
+	["global"] = {
+		["firstLogin"] = false,
+		["realmFeed"] = {
+			["麦迪文"] = {
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Ododo - 麦迪文"] = "Ododo - 麦迪文",
+	},
+	["profiles"] = {
+		["Ododo - 麦迪文"] = {
+		},
+	},
+}

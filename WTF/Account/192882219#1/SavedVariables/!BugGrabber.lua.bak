@@ -1,0 +1,15 @@
+
+BugGrabberDB = {
+	["lastSanitation"] = 3,
+	["session"] = 1,
+	["errors"] = {
+		{
+			["message"] = "Interface\\AddOns\\ElvUI\\core\\install.lua:62: attempt to index global 'InstallSetpComplete' (a nil value)",
+			["time"] = "2016/03/01 19:41:48",
+			["locals"] = "SetupAuras = <function> defined @Interface\\AddOns\\ElvUI\\core\\install.lua:798\nSetupAuraWatch = <function> defined @Interface\\AddOns\\ElvUI\\core\\install.lua:47\n",
+			["stack"] = "Interface\\AddOns\\ElvUI\\core\\install.lua:62: in function <Interface\\AddOns\\ElvUI\\core\\install.lua:47>\nInterface\\AddOns\\ElvUI\\core\\install.lua:1016: in function <Interface\\AddOns\\ElvUI\\core\\install.lua:1016>",
+			["session"] = 1,
+			["counter"] = 1,
+		}, -- [1]
+	},
+}

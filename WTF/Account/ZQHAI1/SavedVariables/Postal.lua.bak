@@ -1,0 +1,17 @@
+
+Postal3DB = {
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Baobaodsa|幽暗沼泽|Horde|1|WARRIOR", -- [1]
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Baobaodsa - 幽暗沼泽"] = "Baobaodsa - 幽暗沼泽",
+	},
+	["profiles"] = {
+		["Baobaodsa - 幽暗沼泽"] = {
+		},
+	},
+}

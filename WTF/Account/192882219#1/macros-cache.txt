@@ -1,0 +1,155 @@
+VER 3 000000000000000A "1" "SPELL_MISC_PETHEAL"
+/鞠躬
+END
+VER 3 0000000000000019 "11" "INV_MISC_QUESTIONMARK"
+/invite 缘来是伱-瓦里玛萨斯
+/click RaidFrameConvertToRaidButton
+/click RaidFrameAllAssistCheckButton
+END
+VER 3 0000000000000002 "2" "INV_CHEST_CLOTH_50"
+#showtooltip 准备就绪
+/施放 准备就绪
+/施放 疯乱
+/use 10
+/castsequence reset=5 杀戮命令,飞刃,山猫冲锋,凶暴野兽
+END
+VER 3 000000000000000B "2" "ABILITY_SHOOTWAND"
+/cast [target=focus] 穿刺之矛
+END
+VER 3 000000000000001A "Aoe" "236185"
+#showtooltip 多重射击
+/startattack
+/cast [target=mouseover,harm,nodead][]多重射击 
+END
+VER 3 000000000000001D "Back" "236226"
+#showtooltip 急奔
+/petfollow
+/petpassive
+/cast 急奔
+/cast 治疗宠物
+/script UIErrorsFrame:Clear() 
+END
+VER 3 0000000000000024 "BB误导" "ABILITY_HUNTER_MISDIRECTION"
+/cast [target=pet]误导
+END
+VER 3 0000000000000004 "BF_Mount" "ability_mount_charger"
+/bfmount
+END
+VER 3 0000000000000003 "BF_Pet" "achievement_worldevent_brewmaster"
+/BFPET
+END
+VER 3 000000000000001E "Come" "236202"
+#showtooltip 主人的召唤
+/cast [target=player] 主人的召唤 
+END
+VER 3 000000000000000D "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] 宁神射击;  [@mouseover,exists,mod:ctrl] 宁神射击; [@mouseover,exists,mod:shift] 宁神射击
+END
+VER 3 000000000000001F "Esc" "236211"
+/cancelaura 威慑
+/cancelaura 保护祝福 
+END
+VER 3 000000000000001B "Go" "236207"
+#showtooltip 急速射击
+/use 13
+/use 14
+/cast 奥术洪流
+/cast 急速射击 
+END
+VER 3 0000000000000013 "G团" "ACHIEVEMENT_GUILDPERK_MOBILEBANKING"
+/5 {猥琐}马叔叔{猥琐} 决战奥格瑞玛 预计今晚8点开打，1-14 G团（具体情况视晚上组人情况而定），来打手{鼓掌}【治疗】/{握手}【输出】，打手带经验、装等{兴奋}、带名片{开心}咨询~{鬼脸}
+END
+VER 3 0000000000000001 "hug" "INV_STAFF_12"
+/hug
+END
+VER 3 0000000000000021 "Run" "136171"
+#showtooltip 6
+/use 6 
+END
+VER 3 0000000000000020 "Tab" "236217"
+#showtooltip 夺命射击
+/cast [target=mouseover,harm,nodead][]夺命射击
+END
+VER 3 000000000000001C "Tar" "236219"
+#showtooltip 夺命黑鸦
+/cast 奥术洪流
+/cast [target=mouseover,harm,nodead][]夺命黑鸦 
+END
+VER 3 0000000000000010 "TT" "Ability_Racial_TwoForms"
+/Y  回蓝图腾已插，啧啧啧，奶水爆出来拉~~{猥琐}
+/cast 法力之潮图腾
+END
+VER 3 0000000000000007 "不会" "INV_ENCHANT_SHARDBRILLIANTSMALL"
+/5 号外{喊}，霜服出现特困玩家：{战士：飘渺传说}，受困金价下跌，无奈副本{全需}，辛苦卖金，苟且于魔兽，望霜服WOWER伸出援助之手，奉献1G爱心，挽救这个困苦之下，泯灭良知副本全需之人。
+END
+VER 3 000000000000000F "双盾" "SPELL_HOLY_HOLYPROTECTION"
+/CAST 正义盾击
+/CAST 圣洁护盾
+END
+VER 3 0000000000000027 "喷涌" "SPELL_MAGE_THERMALVOID"
+#showtooltip [nopet] [target=pet,dead] 召唤水元素; [pet] 水流喷射
+/cast [nopet]召唤水元素
+/cast [target=pet,dead]召唤水元素
+/stopmacro [target=pet,dead]
+/cast 水流喷射
+/petattack
+END
+VER 3 0000000000000008 "坐骑" "Ability_Mount_Charger"
+/RandomMount
+END
+VER 3 0000000000000022 "奥射" "SPELL_ARCANE_STUDENTOFMAGIC"
+#showtooltip 奥术射击
+/cast [harm] 奥术射击;[target=targettarget] 奥术射击;
+END
+VER 3 0000000000000017 "威慑" "ABILITY_WHIRLWIND"
+/cast 威慑
+/in 1 /RA 4？
+/in 2 /RA 3？快给我，给我，我要～～
+/in 3 /RA 2？快没了，保护9我啊。。
+/in 4 /RA 没了？死了。。
+END
+VER 3 0000000000000026 "恶魔" "SPELL_ARCANE_PORTALDARNASSUS"
+/tar 暮光恶魔
+/cast 奥术弹幕
+END
+VER 3 0000000000000015 "成就" "PANDARENRACIAL_INNERPEACE"
+/PITY
+END
+VER 3 0000000000000016 "烧火宏" "SPELL_MAGIC_MANAGAIN"
+/click ExtraActionButton1
+END
+VER 3 000000000000000C "焦点打断" "SPELL_NATURE_CYCLONE"
+#showtooltip 反制射击
+/stopcasting
+/stopcasting
+/cast [target=focus,harm,exists] 反制射击;[harm] 反制射击; [target=targettarget, harm] 反制射击
+END
+VER 3 0000000000000012 "爆发" "Ability_Druid_Starfall"
+/cast 升腾
+/use 13
+END
+VER 3 0000000000000009 "狂野" "ability_deathwing_fierygrip"
+/RW 绿色三角集合，跟着蓝色方块慢慢移动~
+END
+VER 3 0000000000000011 "狗" "SPELL_SHAMAN_ANCESTRALAWAKENING"
+/RA 蓝色那边有舞星兽~~
+END
+VER 3 000000000000000E "老2" "Ability_Druid_GaleWinds"
+/target 寒冰之球
+END
+VER 3 0000000000000023 "误导" "ABILITY_HUNTER_MISDIRECTION"
+#showtooltip 误导
+/cast [harm] 误导;[target=targettarget] 误导;
+END
+VER 3 0000000000000025 "贯日" "ABILITY_MONK_JAB"
+/cast 贯日击
+END
+VER 3 0000000000000018 "还魂" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
+#showtooltip 还魂术
+/w 永恒的贸易 还魂术已用！！
+/cast 还魂术
+END
+VER 3 0000000000000005 "进门" "INV_Sigil_Thorim"
+/RA 准备跑大山
+END

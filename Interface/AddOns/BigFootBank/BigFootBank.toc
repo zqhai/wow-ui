@@ -1,0 +1,14 @@
+﻿## Interface: 60000
+## Title: |cffC495DDEUI|r BigFootBank
+## Title-zhCN: |cffC495DDEUI|r黒市助手
+## Title-zhTW: |cffC495DDEUI|r黒市助手
+## Notes: |cffbc8f8fAllow user to collect data in game and upload to server to share with other players.|r
+## Notes-zhCN: |cffC495DDEUI|r|n|cffbc8f8f提供黑市物品刷新提示以及离线黑市功能。|r
+## Notes-zhTW: |cffC495DDEUI|r|n|cffbc8f8f提供黑市物品刷新提示以及離線黑市功能。|r
+## Version: 5.02
+## SavedVariables: BigFootBankSaveData
+## Dependencies: ElvUI
+## X-Revision: ElvUI
+## LoadOnDemand: 1
+
+BigFootBank.xml

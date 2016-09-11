@@ -1,0 +1,34 @@
+
+TellMeWhenDB = {
+	["profileKeys"] = {
+		["Ododo - 麦迪文"] = "Ododo - 麦迪文",
+	},
+	["global"] = {
+		["TextLayouts"] = {
+			["icon1"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+			},
+			["bar2"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+			},
+		},
+	},
+	["Version"] = 72415,
+	["profiles"] = {
+		["Ododo - 麦迪文"] = {
+			["Version"] = 72415,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1MrN_DYVOacN",
+				}, -- [1]
+			},
+			["Locked"] = true,
+		},
+	},
+}

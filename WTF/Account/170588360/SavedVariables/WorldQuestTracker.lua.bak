@@ -1,0 +1,51 @@
+
+WQTrackerDB = {
+	["profileKeys"] = {
+		["Haidi - 幽暗沼泽"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["GotTutorial"] = true,
+			["quests_tracked"] = {
+				["Player-1676-020AE482"] = {
+				},
+			},
+			["filters"] = {
+				["pet_battles"] = false,
+			},
+			["quests_all_characters"] = {
+				["Player-1676-020AE482"] = {
+					[43598] = {
+						["expireAt"] = 1473364860,
+						["rewardAmount"] = 310,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[42028] = {
+						["expireAt"] = 1473418860,
+						["rewardAmount"] = "835",
+						["rewardTexture"] = 132840,
+					},
+					[41622] = {
+						["expireAt"] = 1473440460,
+						["rewardAmount"] = 260,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+					[41819] = {
+						["expireAt"] = 1473440460,
+						["rewardAmount"] = 225,
+						["rewardTexture"] = "Interface\\AddOns\\WorldQuestTracker\\media\\icon_artifactpower_red_roundT",
+					},
+				},
+			},
+			["AlertTutorialStep"] = 5,
+			["enable_doubletap"] = true,
+			["player_names"] = {
+				["Player-1676-020AE482"] = {
+					["class"] = "PALADIN",
+					["name"] = "Haidi",
+					["realm"] = "幽暗沼泽",
+				},
+			},
+		},
+	},
+}

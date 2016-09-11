@@ -1,0 +1,10 @@
+
+MasterPlanPC = {
+	["version"] = "0.16",
+	["batchMissions"] = true,
+	["availableMissionSort"] = "threats",
+}
+SVPC_GarrisonMissionManager = {
+	["ingored_followers"] = {
+	},
+}
