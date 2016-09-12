@@ -7,8 +7,7 @@ MEETINGSTONE_CHARACTER_DB = {
 		["Haidi - 幽暗沼泽"] = {
 			["settings"] = {
 				["storage"] = {
-					["y"] = -22.9998779296875,
-					["x"] = 1.99978625774384,
+					["y"] = -23.9998779296875,
 					["point"] = "TOPLEFT",
 					["scale"] = 1,
 				},

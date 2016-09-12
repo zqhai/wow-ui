@@ -48,6 +48,7 @@ AUCTIONATOR_TOONS = {
 	["Haidi"] = {
 		["firstSeen"] = 1419250433,
 		["firstVersion"] = "3.2.1",
+		["guid"] = "Player-1676-020AE482",
 	},
 	["Testt"] = {
 		["firstSeen"] = 1473184743,

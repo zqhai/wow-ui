@@ -285,6 +285,14 @@ TellMeWhenDB = {
 					["Rows"] = 8,
 					["Columns"] = 13,
 					["Icons"] = {
+						[57] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NrRuib1leF5", -- [1]
+								"TMW:icon:1NrRuiaf66YW", -- [2]
+							},
+							["Enabled"] = true,
+						},
 						[68] = {
 							["Type"] = "meta",
 							["Icons"] = {
@@ -350,6 +358,28 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Enabled"] = true,
 						},
+						[85] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "奉献",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+							},
+						},
 						[87] = {
 							["Type"] = "meta",
 							["Icons"] = {
@@ -377,8 +407,8 @@ TellMeWhenDB = {
 					},
 					["Name"] = "显示栏",
 					["Point"] = {
-						["y"] = -80,
-						["x"] = 8.719308035714290e-006,
+						["y"] = -90,
+						["x"] = 6.975446428571430e-005,
 					},
 				}, -- [1]
 				{
@@ -443,7 +473,7 @@ TellMeWhenDB = {
 							["ShowTimer"] = true,
 							["Type"] = "cooldown",
 							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "保护祝福",
+							["Name"] = "破咒祝福",
 							["ClockGCD"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No21iXjvget",
@@ -509,7 +539,7 @@ TellMeWhenDB = {
 							["ShowTimer"] = true,
 							["Type"] = "cooldown",
 							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "圣佑术",
+							["Name"] = "炽热防御者",
 							["ClockGCD"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22ACNG4ft",
@@ -613,7 +643,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
 							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "保护祝福",
+							["Name"] = "破咒祝福",
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BL1ELij",
 							["Events"] = {
@@ -680,7 +710,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
 							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "圣佑术",
+							["Name"] = "炽热防御者",
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BLV5Xnl",
 							["Events"] = {
@@ -692,6 +722,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["FakeHidden"] = true,
 						}, -- [19]
 						{
 							["ShowTimer"] = true,
@@ -710,6 +741,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["FakeHidden"] = true,
 						}, -- [20]
 						{
 							["ShowTimer"] = true,
@@ -817,6 +849,27 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["FakeHidden"] = true,
+						},
+						[67] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "铁木树皮",
+							["GUID"] = "TMW:icon:1NrRuiaf66YW",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
+						},
+						[78] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "牺牲祝福",
+							["GUID"] = "TMW:icon:1NrRuib1leF5",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
 						},
 					},
 					["Name"] = "功能栏",
@@ -824,10 +877,11 @@ TellMeWhenDB = {
 				{
 					["GUID"] = "TMW:group:1No4VchLKe_k",
 					["Point"] = {
-						["y"] = -40,
-						["x"] = -53.5093717620152,
+						["y"] = -44,
+						["point"] = "LEFT",
+						["x"] = -67.3490251813616,
 					},
-					["Scale"] = 2.75257682800293,
+					["Scale"] = 2.8,
 					["Columns"] = 1,
 					["Icons"] = {
 						{
@@ -851,9 +905,40 @@ TellMeWhenDB = {
 					},
 					["Name"] = "盾击BUFF",
 				}, -- [3]
+				{
+					["Point"] = {
+						["y"] = -44,
+						["x"] = 52.5,
+					},
+					["Scale"] = 2.8,
+					["EnabledSpecs"] = {
+						[65] = false,
+						[70] = false,
+					},
+					["OnlyInCombat"] = true,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["States"] = {
+								nil, -- [1]
+								{
+									["Alpha"] = 0.12,
+								}, -- [2]
+							},
+							["Name"] = "守护之光",
+							["Enabled"] = true,
+						}, -- [1]
+					},
+					["Name"] = "守护之光",
+					["GUID"] = "TMW:group:1NrR=WTMOPB4",
+				}, -- [4]
 			},
 			["Version"] = 81305,
-			["NumGroups"] = 3,
+			["NumGroups"] = 4,
 			["TextureName"] = "Armory",
 			["ForceNoBlizzCC"] = true,
 			["Locked"] = true,
