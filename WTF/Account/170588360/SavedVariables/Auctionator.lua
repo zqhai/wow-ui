@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 0,
 	["_2000"] = 0,
-	["_200000"] = 0,
-	["STARTING_DISCOUNT"] = 0,
-	["_1000000"] = 0,
 	["_5000000"] = 0,
 	["LOG_DE_DATA_X"] = true,
-	["_500"] = 0,
+	["_1000000"] = 0,
 	["_10000"] = 0,
+	["_500"] = 0,
+	["STARTING_DISCOUNT"] = 0,
+	["_200000"] = 0,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 }
@@ -48,7 +48,6 @@ AUCTIONATOR_TOONS = {
 	["Haidi"] = {
 		["firstSeen"] = 1419250433,
 		["firstVersion"] = "3.2.1",
-		["guid"] = "Player-1676-020AE482",
 	},
 	["Testt"] = {
 		["firstSeen"] = 1473184743,

@@ -12,9 +12,9 @@ ElvDB = {
 			["Haidii"] = 30039451,
 		},
 		["幽暗沼泽"] = {
+			["Haidi"] = 445585701,
 			["每天壹碗面"] = 186051800,
 			["Testt"] = 100000,
-			["Haidi"] = 445585701,
 			["开山怪"] = 10000,
 		},
 	},
@@ -89,26 +89,8 @@ ElvDB = {
 					[111264] = {
 					},
 				},
-				["PRIEST"] = {
-					[47788] = {
-					},
-					[17] = {
-					},
-					[41635] = {
-					},
-					[33206] = {
-					},
-					[10060] = {
-					},
-					[6788] = {
-					},
-					[123258] = {
-					},
-					[139] = {
-					},
-				},
 				["ALL"] = {
-					[15286] = {
+					[31821] = {
 					},
 					[98007] = {
 					},
@@ -120,9 +102,27 @@ ElvDB = {
 					},
 					[97463] = {
 					},
-					[31821] = {
-					},
 					[145629] = {
+					},
+					[15286] = {
+					},
+				},
+				["PRIEST"] = {
+					[47788] = {
+					},
+					[17] = {
+					},
+					[41635] = {
+					},
+					[33206] = {
+					},
+					[6788] = {
+					},
+					[139] = {
+					},
+					[10060] = {
+					},
+					[123258] = {
 					},
 				},
 				["ROGUE"] = {
@@ -140,13 +140,13 @@ ElvDB = {
 					},
 					[19263] = {
 					},
-					[114039] = {
+					[6940] = {
 					},
 					[31850] = {
 					},
 					[108271] = {
 					},
-					[6940] = {
+					[114039] = {
 					},
 					[120954] = {
 					},
@@ -200,9 +200,9 @@ ElvDB = {
 					},
 				},
 				["DRUID"] = {
-					[774] = {
-					},
 					[48438] = {
+					},
+					[188550] = {
 					},
 					[8936] = {
 					},
@@ -210,7 +210,7 @@ ElvDB = {
 					},
 					[155777] = {
 					},
-					[188550] = {
+					[774] = {
 					},
 				},
 				["MONK"] = {
@@ -320,6 +320,7 @@ ElvDB = {
 				["EuiComboPointAnchorMover"] = "BOTTOMElvUIParentBOTTOM-338308",
 				["PetAB"] = "RIGHTElvUIParentRIGHT-460",
 				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,1299,158",
+				["GMMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,452,-80",
 				["BagsMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-335,44",
 				["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,291,376",
 				["EuiVegeanceIconMover"] = "BOTTOMElvUIParentBOTTOM-3164",
@@ -328,23 +329,26 @@ ElvDB = {
 				["ElvUF_FocusMover"] = "BOTTOMRIGHTElvUIParentBOTTOMRIGHT-430246",
 				["AutoButtonAnchorMover"] = "BOTTOM,ElvUIParent,BOTTOM,230,0",
 				["ClassBarMover"] = "BOTTOMElvUIParentBOTTOM0129",
+				["VehicleSeatMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,174,-27",
 				["ExperienceBarMover"] = "BOTTOMRIGHTElvUIParentBOTTOMRIGHT403487",
 				["LeftChatPanelMover"] = "BOTTOMLEFTElvUIParentBOTTOMLEFT00",
 				["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,126",
 				["LossControlMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,199",
 				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["EUIRaidToolBox1Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-53",
 				["ElvAB_1"] = "BOTTOMElvUIParentBOTTOM00",
 				["ElvAB_2"] = "BOTTOMElvUIParentBOTTOM-2310",
 				["ElvAB_4"] = "TOPLEFTElvUIParentTOPLEFT561-366",
 				["ElvAB_3"] = "BOTTOMElvUIParentBOTTOM2310",
 				["ElvAB_5"] = "BOTTOMRIGHTElvUIParentBOTTOM-2124",
 				["ArtifactBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,220",
+				["EUIRaidToolBox2Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-215",
 				["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-53,-266",
 				["LootFrameMover"] = "BOTTOMElvUIParentBOTTOM185480",
 				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,621,126",
 				["ElvUF_TargetMover"] = "BOTTOMElvUIParentBOTTOM200160",
-				["TalkingHeadFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-190,-7",
 				["ElvAB_6"] = "BOTTOMLEFTElvUIParentBOTTOMLEFT0251",
+				["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-82,-355",
 				["ElvUF_PetMover"] = "TOPElvUIParentTOP336-346",
 				["ElvUF_TankMover"] = "TOPLEFTElvUIParentBOTTOMLEFT1592329",
 				["BossHeaderMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,225,269",
@@ -352,7 +356,7 @@ ElvDB = {
 				["ElvAB_7"] = "BOTTOMLEFTElvUIParentBOTTOMLEFT0387",
 				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,226",
 				["RaidCDAnchorMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-15,221",
-				["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-82,-355",
+				["TalkingHeadFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-190,-7",
 				["ReputationBarMover"] = "BOTTOMRIGHTElvUIParentBOTTOMRIGHT0272",
 			},
 			["gridSize"] = 100,
@@ -735,8 +739,8 @@ ElvDB = {
 			["single"] = {
 				["BigFootBank"] = true,
 				["ExtraCD"] = false,
-				["OffileDataCenter"] = false,
 				["Auctionator"] = false,
+				["OffileDataCenter"] = false,
 			},
 			["Sequences"] = {
 				["macroList"] = {
@@ -791,13 +795,11 @@ ElvDB = {
 						"/cast [nostealth]宿敌", -- [3]
 						" \n/castsequence reset=5/combat [nostealth]毁伤,毁伤,割裂,毁伤,毁伤,毒伤,毁伤,毁伤,毒伤\n   ", -- [4]
 					},
-					["射击"] = {
-						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [1]
-						"/cast [nochanneling:弹幕射击] 瞄准射击", -- [2]
-						"/cast [nochanneling:弹幕射击] 夺命黑鸦", -- [3]
-						"/cast [nochanneling:弹幕射击] 稳固射击", -- [4]
-						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [5]
-						"/cast [nochanneling:弹幕射击] 夺命射击", -- [6]
+					["刺杀基础输出"] = {
+						"/cast [nostealth]斩击", -- [1]
+						"/cast [stealth]伏击", -- [2]
+						"/cast [nostealth]斩击", -- [3]
+						"/cast [nostealth]毁伤", -- [4]
 					},
 					["生存"] = {
 						"/cast 爆炸射击", -- [1]
@@ -808,9 +810,6 @@ ElvDB = {
 						"/cast 奥术射击", -- [6]
 						"/cast 眼镜蛇射击", -- [7]
 					},
-					["冰法"] = {
-						" \n/castsequence reset=5/combat 献祭,烧尽,烧尽,烧尽,烧尽,烧尽,烧尽\n   ", -- [1]
-					},
 					["3圣印输出"] = {
 						"/cast 驱邪术", -- [1]
 						"/cast [mod:alt]正义之锤;十字军打击", -- [2]
@@ -818,6 +817,9 @@ ElvDB = {
 						"/cast 愤怒之锤", -- [4]
 						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [5]
 						"/castsequence [stance:1] reset=999 审判,正义圣印\n/castsequence [stance:2] reset=999 审判,公正圣印\n/castsequence [stance:3] reset=999 审判,真理圣印\n/施放 [stance:4]审判\n", -- [6]
+					},
+					["冰法"] = {
+						" \n/castsequence reset=5/combat 献祭,烧尽,烧尽,烧尽,烧尽,烧尽,烧尽\n   ", -- [1]
 					},
 					["GnomeExample2"] = {
 						"/run print(\"Executing macro 1!\")\n/cast SpellName1\n	", -- [1]
@@ -873,6 +875,12 @@ ElvDB = {
 						"/cast 乘胜追击", -- [4]
 						"/cast 斩杀", -- [5]
 					},
+					["豹子输出"] = {
+						" \n/castsequence [nostealth,combat] reset=3/combat 斜掠,撕碎,撕碎,撕碎,撕碎,撕碎\n/cast [stealth]斜掠\n   ", -- [1]
+						"/cast [nostealth,combat]猛虎之怒", -- [2]
+						"/cast [nostealth,nocombat]潜行", -- [3]
+						" \n/console autounshift 0\n/castsequence [@targettarget,exists,nostealth,combat][@player,nostealth,combat]治疗之触\n/console autounshift 1\n   ", -- [4]
+					},
 					["角斗士"] = {
 						"/cast 盾牌冲锋", -- [1]
 						"/cast 复仇", -- [2]
@@ -882,12 +890,6 @@ ElvDB = {
 						"/cast 盾牌猛击", -- [6]
 						"/cast 乘胜追击", -- [7]
 						"/cast 雷霆一击", -- [8]
-					},
-					["豹子输出"] = {
-						" \n/castsequence [nostealth,combat] reset=3/combat 斜掠,撕碎,撕碎,撕碎,撕碎,撕碎\n/cast [stealth]斜掠\n   ", -- [1]
-						"/cast [nostealth,combat]猛虎之怒", -- [2]
-						"/cast [nostealth,nocombat]潜行", -- [3]
-						" \n/console autounshift 0\n/castsequence [@targettarget,exists,nostealth,combat][@player,nostealth,combat]治疗之触\n/console autounshift 1\n   ", -- [4]
 					},
 					["增强输出"] = {
 						"/cast 风暴打击", -- [1]
@@ -924,11 +926,13 @@ ElvDB = {
 						"/cast 熔岩爆裂", -- [5]
 						"/cast 元素冲击", -- [6]
 					},
-					["刺杀基础输出"] = {
-						"/cast [nostealth]斩击", -- [1]
-						"/cast [stealth]伏击", -- [2]
-						"/cast [nostealth]斩击", -- [3]
-						"/cast [nostealth]毁伤", -- [4]
+					["射击"] = {
+						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [1]
+						"/cast [nochanneling:弹幕射击] 瞄准射击", -- [2]
+						"/cast [nochanneling:弹幕射击] 夺命黑鸦", -- [3]
+						"/cast [nochanneling:弹幕射击] 稳固射击", -- [4]
+						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [5]
+						"/cast [nochanneling:弹幕射击] 夺命射击", -- [6]
 					},
 					["dot输出"] = {
 						"/cast [nochanneling:暗言术：乱,stance:1]暗言术：灭", -- [1]
@@ -1056,6 +1060,9 @@ ElvDB = {
 						["debuffs"] = {
 							["enable"] = false,
 						},
+						["buffs"] = {
+							["enable"] = false,
+						},
 					},
 				},
 			},
@@ -1131,9 +1138,9 @@ ElvDB = {
 				["ElvAB_6"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,330",
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-50,50",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,50,995",
-				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-230,140",
 				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,463,50",
 				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,200",
+				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-230,140",
 				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,184,773",
 				["AlertFrameMover"] = "TOP,ElvUIParent,TOP,0,-50",
 				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,230,140",
@@ -1172,80 +1179,6 @@ ElvDB = {
 						},
 						["height"] = 50,
 						["width"] = 122,
-					},
-					["assist"] = {
-						["enable"] = false,
-					},
-					["arena"] = {
-						["spacing"] = 26,
-						["castbar"] = {
-							["width"] = 246,
-						},
-					},
-					["party"] = {
-						["horizontalSpacing"] = 3,
-						["debuffs"] = {
-							["numrows"] = 4,
-							["anchorPoint"] = "BOTTOM",
-							["perrow"] = 1,
-						},
-						["power"] = {
-							["text_format"] = "",
-							["height"] = 5,
-						},
-						["enable"] = false,
-						["rdebuffs"] = {
-							["font"] = "Expressway",
-						},
-						["growthDirection"] = "RIGHT_DOWN",
-						["infoPanel"] = {
-							["enable"] = true,
-						},
-						["width"] = 110,
-						["health"] = {
-							["attachTextTo"] = "InfoPanel",
-							["orientation"] = "VERTICAL",
-							["text_format"] = "[healthcolor][health:current]",
-							["position"] = "RIGHT",
-						},
-						["name"] = {
-							["attachTextTo"] = "InfoPanel",
-							["text_format"] = "[namecolor][name:short]",
-							["position"] = "LEFT",
-						},
-						["height"] = 59,
-						["verticalSpacing"] = 0,
-						["healPrediction"] = true,
-						["roleIcon"] = {
-							["position"] = "TOPRIGHT",
-						},
-					},
-					["raid40"] = {
-						["enable"] = false,
-						["rdebuffs"] = {
-							["font"] = "Expressway",
-						},
-					},
-					["focus"] = {
-						["infoPanel"] = {
-							["height"] = 17,
-							["enable"] = true,
-						},
-						["threatStyle"] = "NONE",
-						["castbar"] = {
-							["iconSize"] = 26,
-							["width"] = 122,
-						},
-						["height"] = 56,
-						["name"] = {
-							["attachTextTo"] = "InfoPanel",
-							["position"] = "LEFT",
-						},
-						["health"] = {
-							["attachTextTo"] = "InfoPanel",
-							["text_format"] = "[healthcolor][health:current]",
-						},
-						["width"] = 189,
 					},
 					["target"] = {
 						["debuffs"] = {
@@ -1334,6 +1267,80 @@ ElvDB = {
 							["iconSize"] = 54,
 							["height"] = 35,
 							["width"] = 478,
+						},
+					},
+					["raid40"] = {
+						["enable"] = false,
+						["rdebuffs"] = {
+							["font"] = "Expressway",
+						},
+					},
+					["focus"] = {
+						["infoPanel"] = {
+							["height"] = 17,
+							["enable"] = true,
+						},
+						["threatStyle"] = "NONE",
+						["castbar"] = {
+							["iconSize"] = 26,
+							["width"] = 122,
+						},
+						["height"] = 56,
+						["name"] = {
+							["attachTextTo"] = "InfoPanel",
+							["position"] = "LEFT",
+						},
+						["health"] = {
+							["attachTextTo"] = "InfoPanel",
+							["text_format"] = "[healthcolor][health:current]",
+						},
+						["width"] = 189,
+					},
+					["assist"] = {
+						["enable"] = false,
+					},
+					["arena"] = {
+						["spacing"] = 26,
+						["castbar"] = {
+							["width"] = 246,
+						},
+					},
+					["party"] = {
+						["horizontalSpacing"] = 3,
+						["debuffs"] = {
+							["numrows"] = 4,
+							["anchorPoint"] = "BOTTOM",
+							["perrow"] = 1,
+						},
+						["power"] = {
+							["text_format"] = "",
+							["height"] = 5,
+						},
+						["enable"] = false,
+						["rdebuffs"] = {
+							["font"] = "Expressway",
+						},
+						["growthDirection"] = "RIGHT_DOWN",
+						["infoPanel"] = {
+							["enable"] = true,
+						},
+						["width"] = 110,
+						["health"] = {
+							["attachTextTo"] = "InfoPanel",
+							["orientation"] = "VERTICAL",
+							["text_format"] = "[healthcolor][health:current]",
+							["position"] = "RIGHT",
+						},
+						["name"] = {
+							["attachTextTo"] = "InfoPanel",
+							["text_format"] = "[namecolor][name:short]",
+							["position"] = "LEFT",
+						},
+						["height"] = 59,
+						["verticalSpacing"] = 0,
+						["healPrediction"] = true,
+						["roleIcon"] = {
+							["position"] = "TOPRIGHT",
 						},
 					},
 					["pet"] = {
@@ -1691,12 +1698,12 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["party"] = {
+					["boss"] = {
 						["power"] = {
 							["height"] = 7,
 						},
 					},
-					["boss"] = {
+					["player"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -1716,17 +1723,17 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["arena"] = {
-						["power"] = {
-							["height"] = 7,
-						},
-					},
 					["raid"] = {
 						["power"] = {
 							["height"] = 7,
 						},
 					},
-					["player"] = {
+					["arena"] = {
+						["power"] = {
+							["height"] = 7,
+						},
+					},
+					["party"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -2017,7 +2024,6 @@ ElvDB = {
 				["ElvUF_RaidMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
 			},
-			["bossAuraFiltersConverted"] = true,
 			["AuraWatch"] = {
 				["loadDefault"] = true,
 				["myclass"] = "PALADIN",
@@ -2278,14 +2284,10 @@ ElvDB = {
 					}, -- [4]
 				},
 			},
+			["bossAuraFiltersConverted"] = true,
 			["unitframe"] = {
 				["units"] = {
 					["pet"] = {
-						["power"] = {
-							["height"] = 7,
-						},
-					},
-					["party"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -2295,7 +2297,12 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["raid"] = {
+					["boss"] = {
+						["power"] = {
+							["height"] = 7,
+						},
+					},
+					["arena"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -2310,7 +2317,7 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["arena"] = {
+					["raid"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -2320,7 +2327,7 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["boss"] = {
+					["party"] = {
 						["power"] = {
 							["height"] = 7,
 						},

@@ -3,11 +3,11 @@ SV_GarrisonMissionManager = nil
 MasterPlanAG = {
 	["幽暗沼泽"] = {
 		["Haidi"] = {
-			["class"] = "PALADIN",
+			["lastCacheTime"] = 1473676126,
 			["summary"] = {
 				["inProgress"] = {
-					[668] = 1473634516,
-					[676] = 1473659719,
+					[625] = 1473683369,
+					[697] = 1473683373,
 				},
 				["ti3"] = 128391,
 				["ti2"] = 122485,
@@ -16,10 +16,10 @@ MasterPlanAG = {
 				["tt3"] = true,
 				["tt2"] = 1473354229,
 			},
+			["curOil"] = 20,
+			["class"] = "PALADIN",
+			["curRes"] = 10000,
 			["faction"] = "Horde",
-			["lastCacheTime"] = 1473096739,
-			["curRes"] = 9620,
-			["curOil"] = 5,
 		},
 	},
 	["IgnoreRewards"] = {
