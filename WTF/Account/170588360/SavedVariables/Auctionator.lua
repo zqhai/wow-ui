@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 0,
 	["_2000"] = 0,
-	["_5000000"] = 0,
-	["LOG_DE_DATA_X"] = true,
-	["_1000000"] = 0,
 	["_10000"] = 0,
 	["_500"] = 0,
-	["STARTING_DISCOUNT"] = 0,
+	["_1000000"] = 0,
 	["_200000"] = 0,
+	["STARTING_DISCOUNT"] = 0,
+	["LOG_DE_DATA_X"] = true,
+	["_5000000"] = 0,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 }

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 65,
+	["session"] = 67,
 	["errors"] = {
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 'ActionButton11:Hide()'。",
@@ -371,36 +371,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [47]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'BigFootMark' 尝试调用保护功能 '<unnamed>:Hide()'。",
-			["time"] = "2016/09/01 19:28:18",
-			["locals"] = "",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:353>\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2320: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2347: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2378: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2052: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2846: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2812: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:219: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
-			["session"] = 62,
-			["counter"] = 18,
-		}, -- [48]
-		{
-			["message"] = "...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:49: Usage: GearStatsSummaryTooltip:SetHyperlink(link)",
-			["time"] = "2016/09/12 21:55:14",
-			["stack"] = "[C]: in function `SetHyperlink'\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:49: in function <...terface\\AddOns\\GearStatsSummary\\GearStatsSummary.lua:42>\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:552: in function `GearStatsSummary_Sum'\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:415: in function `GearStatsSummary_ShowFrame'\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:290: in function <...terface\\AddOns\\GearStatsSummary\\GearStatsSummary.lua:288>\n[string \"safecall Dispatcher[4]\"]:4: in function <[string \"safecall Dispatcher[4]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[4]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...ddOns\\Libs\\LibInspectLess-1.0\\LibInspectLess-1.0-99915.lua:179: in function `CheckInspectItems'\n...ddOns\\Libs\\LibInspectLess-1.0\\LibInspectLess-1.0-99915.lua:197: in function <...ddOns\\Libs\\LibInspectLess-1.0\\LibInspectLess-1.0.lua:192>\n(tail call): ?",
-			["session"] = 62,
-			["counter"] = 1,
-		}, -- [49]
-		{
-			["message"] = "C stack overflow",
-			["time"] = "2016/09/02 22:26:48",
-			["locals"] = "(*temporary) = ContainerFrame1PortraitButton {\n 0 = <userdata>\n dropdownmenu = true\n Highlight = <unnamed> {\n }\n}\n(*temporary) = true\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = ContainerFrame1PortraitButton {\n 0 = <userdata>\n dropdownmenu = true\n Highlight = <unnamed> {\n }\n}\n(*temporary) = true\n = <function> defined =[C]:-1\n = <function> defined @Interface\\AddOns\\OfflineDataCenter\\main.lua:448\n",
-			["stack"] = "[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n...\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?",
-			["session"] = 63,
-			["counter"] = 80,
-		}, -- [50]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 '<unnamed>:Hide()'。",
 			["time"] = "2016/08/08 23:28:11",
 			["locals"] = "",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:353>\n(tail call): ?\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2320: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2347: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2378: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2052: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2846: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2812: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:219: in function <Interface\\FrameXML\\WorldMapFrame.lua:210>\n[C]: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
 			["session"] = 65,
 			["counter"] = 2,
-		}, -- [51]
+		}, -- [48]
 		{
 			["message"] = "...e\\AddOns\\DBM-Party-Legion\\CourtofStars\\Melandrus.lua:47: attempt to call method 'start' (a nil value)",
 			["time"] = "2016/09/13 22:19:48",
@@ -408,6 +385,85 @@ BugGrabberDB = {
 			["stack"] = "...e\\AddOns\\DBM-Party-Legion\\CourtofStars\\Melandrus.lua:47: in function `OnCombatStart'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.4-4-g36bf35a.lua:5590: in function `StartCombat'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.4-4-g36bf35a.lua:5153: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.4-4-g36bf35a.lua:680: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:667>",
 			["session"] = 65,
 			["counter"] = 1,
+		}, -- [49]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 'ElvUIParent:SetPoint()'。",
+			["time"] = "2016/09/13 23:43:46",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetPoint'\nInterface\\AddOns\\ElvUI\\core\\core.lua:1490: in function <Interface\\AddOns\\ElvUI\\core\\core.lua:1482>\nInterface\\AddOns\\ElvUI\\core\\core.lua:1507: in function <Interface\\AddOns\\ElvUI\\core\\core.lua:1505>\n[C]: ?\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:391: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:553: in function `OrderHall_LoadUI'\nInterface\\FrameXML\\GarrisonBaseUtils.lua:195: in function `ShowGarrisonLandingPage'\nInterface\\FrameXML\\Minimap.lua:581: in function `GarrisonLandingPage_Toggle'\nInterface\\FrameXML\\Minimap.lua:574: in function <Interface\\FrameXML\\Minimap.lua:573>",
+			["session"] = 67,
+			["counter"] = 1,
+		}, -- [50]
+		{
+			["message"] = "Interface\\AddOns\\EuiGarrison\\GarrisonFollowers.lua:-1: script ran too long",
+			["time"] = "2016/09/13 23:43:46",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\EuiGarrison\\GarrisonFollowers.lua: in function `GarrisonFollowerList_SortFollowers'\n...rrisonTemplates\\Blizzard_GarrisonSharedTemplates.lua:384: in function `UpdateFollowers'\n...rrisonTemplates\\Blizzard_GarrisonSharedTemplates.lua:100: in function `Setup'\n...rrisonTemplates\\Blizzard_GarrisonSharedTemplates.lua:79: in function `Initialize'\nInterface\\FrameXML\\GarrisonBaseUtils.lua:198: in function `ShowGarrisonLandingPage'\nInterface\\FrameXML\\Minimap.lua:581: in function `GarrisonLandingPage_Toggle'\nInterface\\FrameXML\\Minimap.lua:574: in function <Interface\\FrameXML\\Minimap.lua:573>",
+			["session"] = 67,
+			["counter"] = 1,
+		}, -- [51]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'BigFootMark' 尝试调用保护功能 '<unnamed>:Hide()'。",
+			["time"] = "2016/09/01 19:28:18",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:353>\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2320: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2347: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2378: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2052: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2846: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2812: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:219: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
+			["session"] = 67,
+			["counter"] = 19,
 		}, -- [52]
+		{
+			["message"] = "[string \"print(\"鼠标左键设为钓鱼：\"..SetBindingSpell(\"BUTTON1\",...\"]:1: unexpected symbol near '?'",
+			["time"] = "2016/09/14 02:15:32",
+			["locals"] = "(*temporary) = \"print(\"鼠标左键设为钓鱼：\"..SetBindingSpell(\"BUTTON1\",\"钓鱼\"))?\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
+			["session"] = 67,
+			["counter"] = 5,
+		}, -- [53]
+		{
+			["message"] = "C stack overflow",
+			["time"] = "2016/09/02 22:26:48",
+			["locals"] = "(*temporary) = ContainerFrame1PortraitButton {\n 0 = <userdata>\n dropdownmenu = true\n Highlight = <unnamed> {\n }\n}\n(*temporary) = true\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = ContainerFrame1PortraitButton {\n 0 = <userdata>\n dropdownmenu = true\n Highlight = <unnamed> {\n }\n}\n(*temporary) = true\n = <function> defined =[C]:-1\n = <function> defined @Interface\\AddOns\\OfflineDataCenter\\main.lua:448\n",
+			["stack"] = "[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n...\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?",
+			["session"] = 67,
+			["counter"] = 89,
+		}, -- [54]
+		{
+			["message"] = "[string \"print(\"设置左键为默认：\"..SetBindin...\"]:1: attempt to concatenate a boolean value",
+			["time"] = "2016/09/14 02:18:38",
+			["locals"] = "",
+			["stack"] = "[string \"print(\"设置左键为默认：\"..SetBindin...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
+			["session"] = 67,
+			["counter"] = 28,
+		}, -- [55]
+		{
+			["message"] = "[string \"print(\"设置右键为默认：\"..SetBindin...\"]:1: attempt to concatenate a boolean value",
+			["time"] = "2016/09/14 02:18:38",
+			["locals"] = "",
+			["stack"] = "[string \"print(\"设置右键为默认：\"..SetBindin...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
+			["session"] = 67,
+			["counter"] = 28,
+		}, -- [56]
+		{
+			["message"] = "[string \"print(\"鼠标左键设为钓鱼：\"..SetBin...\"]:1: attempt to concatenate a boolean value",
+			["time"] = "2016/09/14 02:16:14",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"鼠标左键设为钓鱼：\"\n(*temporary) = true\n(*temporary) = \"BUTTON1\"\n(*temporary) = \"钓鱼\"\n(*temporary) = \"attempt to concatenate a boolean value\"\n",
+			["stack"] = "[string \"print(\"鼠标左键设为钓鱼：\"..SetBin...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
+			["session"] = 67,
+			["counter"] = 7,
+		}, -- [57]
+		{
+			["message"] = "...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:49: Usage: GearStatsSummaryTooltip:SetHyperlink(link)",
+			["time"] = "2016/09/12 21:55:14",
+			["stack"] = "[C]: in function `SetHyperlink'\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:49: in function <...terface\\AddOns\\GearStatsSummary\\GearStatsSummary.lua:42>\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:552: in function `GearStatsSummary_Sum'\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:415: in function `GearStatsSummary_ShowFrame'\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:290: in function <...terface\\AddOns\\GearStatsSummary\\GearStatsSummary.lua:288>\n[string \"safecall Dispatcher[4]\"]:4: in function <[string \"safecall Dispatcher[4]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[4]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...ddOns\\Libs\\LibInspectLess-1.0\\LibInspectLess-1.0-99915.lua:179: in function `CheckInspectItems'\n...ddOns\\Libs\\LibInspectLess-1.0\\LibInspectLess-1.0-99915.lua:197: in function <...ddOns\\Libs\\LibInspectLess-1.0\\LibInspectLess-1.0.lua:192>\n(tail call): ?",
+			["session"] = 67,
+			["counter"] = 33,
+		}, -- [58]
+		{
+			["message"] = "Interface\\AddOns\\EuiScript\\module\\SR.lua:18: table index is nil",
+			["time"] = "2016/09/14 02:07:11",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nnumFactions = 67\n(for index) = 65\n(for limit) = 67\n(for step) = 1\ni = 65\nname = nil\n_ = nil\nstandingID = 1\nbarMin = 0\nbarMax = 0\nbarValue = 0\natWarWith = nil\ncanToggleAtWar = nil\nisHeader = nil\nisCollapsed = nil\nhasRep = nil\nisWatched = nil\nisChild = nil\n(*temporary) = <table> {\n 农夫老方 = 2000\n 堕夜精灵 = 23275\n 灰舌死誓者 = 40849\n 海加尔复仇者 = 20860\n 夺日者先锋军 = 7410\n 战歌氏族 = 11154\n 部落先遣军 = 42999\n 加基森 = 8056\n 瓦拉加尔 = 17695\n 卡拉克西 = 0\n 法罗迪斯宫廷 = 18160\n 神谕者 = 22994\n 拉穆卡恒 = 9742\n 皇帝少昊 = 1958\n 奥格瑞拉 = 1952\n 纳特·帕格 = 600\n 金莲教 = 568\n 污染者 = 24673\n 占星者 = -42000\n 搏击竞技场（第1赛季） = 250\n 搏击竞技场 = 0\n 锈水财阀 = 8999\n 火金派熊猫人 = 4520\n 棘齿城 = 7179\n 星界财团 = 9040\n 木喉要塞 = -1691\n 影踪派 = 10806\n 影踪突袭营 = 17299\n 高岭部族 = 20940\n 辛德拉 = 660\n 龙喉氏族 = 29448\n 游学者 = 0\n 藏宝海湾 = 9980\n 迪娜·泥爪 = 3400\n 织梦者 = 15135\n 沙塔尔天空卫队 = 1386\n 阡陌客 = 14848\n 垂钓翁 = 9700\n 吉娜·泥爪 = 9000\n 孢子村 = -421\n 守望者 = 10100\n 海加尔守护者 = 36066\n 至尊天神 = 9720\n 瑟银兄弟会 = 0\n 狂心氏族 = -35531\n 统御先锋军 = 4080\n 永望镇 = 7540\n 沙塔尔 = 30608\n 玛格汉 = 4029\n 大地之环 = 18082\n 夺日者 = 0\n 血帆海盗 = -34665\n}\n(*temporary) = nil\n(*temporary) = 510\n(*temporary) = false\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"table index is nil\"\nGetNumFactions = <function> defined =[C]:-1\nGetFactionInfo = <function> defined =[C]:-1\nrep = <table> {\n 农夫老方 = 2000\n 堕夜精灵 = 23275\n 灰舌死誓者 = 40849\n 海加尔复仇者 = 20860\n 夺日者先锋军 = 7410\n 战歌氏族 = 11154\n 部落先遣军 = 42999\n 加基森 = 8056\n 瓦拉加尔 = 17695\n 卡拉克西 = 0\n 法罗迪斯宫廷 = 18160\n 神谕者 = 22994\n 拉穆卡恒 = 9742\n 皇帝少昊 = 1958\n 奥格瑞拉 = 1952\n 纳特·帕格 = 600\n 金莲教 = 568\n 污染者 = 24673\n 占星者 = -42000\n 搏击竞技场（第1赛季） = 250\n 搏击竞技场 = 0\n 锈水财阀 = 8999\n 火金派熊猫人 = 4520\n 棘齿城 = 7179\n 星界财团 = 9040\n 木喉要塞 = -1691\n 影踪派 = 10806\n 影踪突袭营 = 17299\n 高岭部族 = 20940\n 辛德拉 = 660\n 龙喉氏族 = 29448\n 游学者 = 0\n 藏宝海湾 = 9980\n 迪娜·泥爪 = 3400\n 织梦者 = 15135\n 沙塔尔天空卫队 = 1386\n 阡陌客 = 14848\n 垂钓翁 = 9700\n 吉娜·泥爪 = 9000\n 孢子村 = -421\n 守望者 = 10100\n 海加尔守护者 = 36066\n 至尊天神 = 9720\n 瑟银兄弟会 = 0\n 狂心氏族 = -35531\n 统御先锋军 = 4080\n 永望镇 = 7540\n 沙塔尔 = 30608\n 玛格汉 = 4029\n 大地之环 = 18082\n 夺日者 = 0\n 血帆海盗 = -34665\n}\nformat = <function> defined =[C]:-1\nSR_REP_MSG = \"%s: %+d (%d/%d)\"\ngetglobal = <function> defined @Interface\\FrameXML\\UIParent.lua:3582\n",
+			["stack"] = "Interface\\AddOns\\EuiScript\\module\\SR.lua:18: in function <Interface\\AddOns\\EuiScript\\module\\SR.lua:11>",
+			["session"] = 67,
+			["counter"] = 15,
+		}, -- [59]
 	},
 }

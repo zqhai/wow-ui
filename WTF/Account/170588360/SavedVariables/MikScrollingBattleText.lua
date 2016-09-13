@@ -6,19 +6,19 @@ MSBTProfiles_SavedVars = {
 			["enableBlizzardDamage"] = true,
 			["enableBlizzardHealing"] = false,
 			["scrollAreas"] = {
-				["Outgoing"] = {
-					["offsetX"] = 335,
-					["offsetY"] = -144,
-				},
 				["Static"] = {
 					["offsetY"] = -298,
-				},
-				["Notification"] = {
-					["offsetY"] = 123,
 				},
 				["Incoming"] = {
 					["offsetX"] = -377,
 					["offsetY"] = -146,
+				},
+				["Notification"] = {
+					["offsetY"] = 123,
+				},
+				["Outgoing"] = {
+					["offsetX"] = 335,
+					["offsetY"] = -144,
 				},
 			},
 			["throttleList"] = {

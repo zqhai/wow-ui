@@ -5,11 +5,12 @@ MasterPlanAG = {
 	},
 	["幽暗沼泽"] = {
 		["Haidi"] = {
-			["curOil"] = 20,
+			["faction"] = "Horde",
 			["summary"] = {
 				["inProgress"] = {
-					[697] = 1473683373,
 					[625] = 1473683369,
+					[697] = 1473683373,
+					[667] = 1473786016,
 				},
 				["ti3"] = 128391,
 				["ti2"] = 122485,
@@ -18,10 +19,10 @@ MasterPlanAG = {
 				["tt3"] = true,
 				["tt2"] = 1473354229,
 			},
-			["faction"] = "Horde",
-			["class"] = "PALADIN",
+			["curOil"] = 20,
+			["lastCacheTime"] = 1473782425,
 			["curRes"] = 10000,
-			["lastCacheTime"] = 1473676126,
+			["class"] = "PALADIN",
 		},
 	},
 }

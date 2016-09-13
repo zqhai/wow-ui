@@ -73,6 +73,8 @@ RematchSettings = {
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {
 	},
+	["LevelingSlots"] = {
+	},
 	["CornerPos"] = "BOTTOMLEFT",
 	["JournalUsed"] = true,
 	["LevelingQueue"] = {

@@ -278,10 +278,7 @@ TellMeWhenDB = {
 	["Version"] = 81305,
 	["profiles"] = {
 		["Haidi - 幽暗沼泽"] = {
-			["Version"] = 81305,
 			["ForceNoBlizzCC"] = true,
-			["NumGroups"] = 4,
-			["TextureName"] = "Armory",
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1No0t=kM8uOu",
@@ -941,6 +938,9 @@ TellMeWhenDB = {
 					["GUID"] = "TMW:group:1NrR=WTMOPB4",
 				}, -- [4]
 			},
+			["NumGroups"] = 4,
+			["TextureName"] = "Armory",
+			["Version"] = 81305,
 			["Locked"] = true,
 		},
 		["开山怪 - 幽暗沼泽"] = {

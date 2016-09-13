@@ -1,14 +1,34 @@
+VER 3 000000000000004E " " "INV_Misc_QuestionMark"
+#showtooltip
+/stopcasting
+/use 13
+/stopcasting
+END
+VER 3 000000000000005F " " "INV_MISC_QUESTIONMARK"
+#show 钓鱼?
+/script print("设置左键为默认："..SetBinding("BUTTON1","CAMERAORSELECTORMOVE"))?
+/script print("设置右键为默认："..SetBinding("BUTTON2","TURNORACTION"))?
+/equip 快刀之怨毒步枪
+/equip 反噬血仇兜帽
+http://bbs.nga.cn/read.php?&tid=8977825
+END
 VER 3 0000000000000059 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /stopcasting
 /use 14
 /stopcasting
 END
-VER 3 000000000000004E " " "INV_Misc_QuestionMark"
-#showtooltip
-/stopcasting
-/use 13
-/stopcasting
+VER 3 000000000000005E " 开始" "INV_MISC_QUESTIONMARK"
+#showtooltips 钓鱼
+/run print("鼠标左键设为钓鱼："..SetBindingSpell("BUTTON1","钓鱼"))
+/equip 幽光鱼竿
+/equip 饱经风霜的渔帽
+END
+VER 3 0000000000000060 " 结束" "851298"
+/run print("设置左键为默认："..SetBinding("BUTTON1","CAMERAORSELECTORMOVE"))
+/run print("设置右键为默认："..SetBinding("BUTTON2","TURNORACTION"))
+/equip 地底恐魔面甲
+/equip 真理守护者
 END
 VER 3 000000000000005B "MillHelper" "Ability_Miling"
 /click MillHelperButton
