@@ -13,11 +13,7 @@ MEETINGSTONE_CHARACTER_DB = {
 					["scale"] = 1,
 				},
 			},
-			["searchInputHistory"] = {
-				["6-0-0-0"] = {
-					" ", -- [1]
-				},
-			},
+			["lastSearchValue"] = "6-0-16-0",
 			["searchHistoryList"] = {
 				"6-0-16-0", -- [1]
 				"6-0-0-0", -- [2]
@@ -27,7 +23,11 @@ MEETINGSTONE_CHARACTER_DB = {
 				"10-0-361-0", -- [6]
 				"3-14-38-0", -- [7]
 			},
-			["lastSearchValue"] = "6-0-16-0",
+			["searchInputHistory"] = {
+				["6-0-0-0"] = {
+					" ", -- [1]
+				},
+			},
 			["createHistoryList"] = {
 				"6-0-16-0", -- [1]
 				"6-0-16-11", -- [2]

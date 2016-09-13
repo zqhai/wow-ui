@@ -2143,6 +2143,7 @@ end
 
 --singleFunc
 do
+	L["WorldQuestTracker"] = "世界任务追踪"
 	L['singleFunc'] = '单体插件管理';
 	L['singleFunc_desc'] = '集中管理、自动更新、按需加载、设置方便';
 	L['BigFootBank'] = '离线黑市';
@@ -2154,6 +2155,7 @@ do
 	L['ExtraCD'] = '内置CD监视';
 	L['Show ExtraCD Config'] = '显示内置CD监视设置';
 	L['HandyNotes_DraenorTreasures'] = '德拉诺宝箱显示';
+	L["HandyNotes_LegionRaresTreasures"] = "破碎群岛宝藏显示"
 	L['Show HandyNotes_DraenorTreasures Config'] = '显示德拉诺宝箱设置';
 	L['MikScrollingBattleText'] = 'MSBT战斗文字';
 	L['Show MikScrollingBattleText Config'] = '显示MSBT设置';
@@ -2163,9 +2165,9 @@ do
 	L['OffileDataCenter'] = '离线数据中心';
 	L['Show OfflineDataCenter Frame'] = '打开离线数据中心窗口';
 	L['Show OfflineDataCenter Config Frame'] = '打开离线数据中心设置';
-	L['RaidBuilder'] = '集合石';
-	L['Show RaidBuilder Config Frame'] = '显示集合石窗口';
-	L['Toggle RaidBuilder BrokerPanel'] = '开关集合石数据窗'
+	L['MeetingStone'] = '集合石';
+	L['Show MeetingStone Config Frame'] = '显示集合石窗口';
+	L['Toggle MeetingStone BrokerPanel'] = '开关集合石数据窗'
 	L['Skada'] = 'Skada战斗统计';
 	L['Show Skada Config Frame'] = '显示Skada设置窗口';
 	L['Toggle Skada Window'] = '开关Skada窗口';

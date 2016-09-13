@@ -9,6 +9,8 @@
 ## RequiredDeps: HandyNotes
 ## X-Embeds: Ace3
 ## SavedVariables: LegionTreasuresDB
+## Dependencies: ElvUI
+## X-Revision: ElvUI
 
 #@no-lib-strip@
 embeds.xml

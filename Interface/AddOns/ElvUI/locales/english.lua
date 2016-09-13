@@ -1967,6 +1967,7 @@ end
 
 --singleFunc
 do
+	L["WorldQuestTracker"] = true;
 	L['singleFunc'] = 'single addons manager';
 	L['singleFunc desc'] = 'can on/off addon';
 	L['BigFootBank'] = 'BigFootBank';
@@ -1976,17 +1977,18 @@ do
 	L["Hold CTRL while clicking the bodyguard, show DiagFrame"] = true;	
 	L['Show BigFootBank UI'] = true;
 	L['HandyNotes_DraenorTreasures'] = true;
+	L["HandyNotes_LegionRaresTreasures"] = true;
 	L['MikScrollingBattleText'] = true;
 	L['Show MikScrollingBattleText Config'] = true;
 	L['Disable Blz CombatText'] = true;
 	L['DBM-Core'] = true;
 	L['Show DBM Config'] = true;
-	L['OffileDataCenter'] = true;
+	L['OfflineDataCenter'] = true;
 	L['Show OfflineDataCenter Frame'] = true;
 	L['Show OfflineDataCenter Config Frame'] = true;
-	L['RaidBuilder'] = true;
-	L['Show RaidBuilder Config Frame'] = true;
-	L['Toggle RaidBuilder BrokerPanel'] = true;
+	L['MeetingStone'] = true;
+	L['Show MeetingStone Config Frame'] = true;
+	L['Toggle MeetingStone BrokerPanel'] = true;
 	L['Skada'] = true;
 	L['Show Skada Config Frame'] = true;
 	L['Toggle Skada Window'] = true;

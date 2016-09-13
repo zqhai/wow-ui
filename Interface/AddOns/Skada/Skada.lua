@@ -2009,7 +2009,7 @@ function Skada:UpdateDisplay(force)
 				local set = win:get_selected_set()
 
 				-- View available modes.
-				for i, mode in ipairs(modes) do
+				for i, mode in ipairs(self:GetModes()) do
 
 					local d = win.dataset[i] or {}
 					win.dataset[i] = d
@@ -2083,13 +2083,29 @@ function Skada:GetSets()
 end
 
 function Skada:GetModes()
+    if not self.modes_sorted then
+        table.sort(modes, function(a, b)
+            local a_score = 0
+            local b_score = 0
+            if a.category == L['Other'] then
+                a_score = 1000
+            end
+            if b.category == L['Other'] then
+                b_score = 1000
+            end
+            a_score = a_score + (string.byte(a.category, 1) * 10) + string.byte(a:GetName(), 1)
+            b_score = b_score + (string.byte(b.category, 1) * 10) + string.byte(b:GetName(), 1)
+            return a_score < b_score
+        end)
+    end
+    
 	return modes
 end
 
 -- Formats a number into human readable form.
 function Skada:FormatNumber(number)
-	if number and ElvUI then
-		return ElvUI[1]:ShortValue(number)
+	if number and EUI then
+		return EUI[1]:ShortValue(number)
 	end
 	if number then
 		if self.db.profile.numberformat == 1 then
@@ -2144,7 +2160,7 @@ function Skada:AddDisplaySystem(key, mod)
 end
 
 -- Register a mode.
-function Skada:AddMode(mode)
+function Skada:AddMode(mode, category)
 	-- Ask mode to verify our sets.
 	-- Needed in case we enable a mode and we have old data.
 	if self.total then
@@ -2157,6 +2173,10 @@ function Skada:AddMode(mode)
 		verify_set(mode, set)
 	end
 
+    -- Set mode category (used for menus)
+    mode.category = category or L['Other']
+    
+    -- Add to mode list
 	tinsert(modes, mode)
 
 	-- Set this mode as the active mode if it matches the saved one.
@@ -2696,11 +2716,11 @@ do
 
 	function Skada:OnInitialize()
 		-- Register some SharedMedia goodies.
-	--	media:Register("font", "Adventure",				[[Interface\Addons\Skada\media\fonts\Adventure.ttf]])
-	--	media:Register("font", "ABF",					[[Interface\Addons\Skada\media\fonts\ABF.ttf]])
-	--	media:Register("font", "Vera Serif",			[[Interface\Addons\Skada\media\fonts\VeraSe.ttf]])
-	--	media:Register("font", "Diablo",				[[Interface\Addons\Skada\media\fonts\Avqest.ttf]])
-	--	media:Register("font", "Accidental Presidency",	[[Interface\Addons\Skada\media\fonts\Accidental Presidency.ttf]])
+		media:Register("font", "Adventure",				[[Interface\Addons\Skada\media\fonts\Adventure.ttf]])
+		media:Register("font", "ABF",					[[Interface\Addons\Skada\media\fonts\ABF.ttf]])
+		media:Register("font", "Vera Serif",			[[Interface\Addons\Skada\media\fonts\VeraSe.ttf]])
+		media:Register("font", "Diablo",				[[Interface\Addons\Skada\media\fonts\Avqest.ttf]])
+		media:Register("font", "Accidental Presidency",	[[Interface\Addons\Skada\media\fonts\Accidental Presidency.ttf]])
 		media:Register("statusbar", "Aluminium",      [[Interface\Addons\Skada\media\statusbar\Aluminium]])
 		media:Register("statusbar", "Armory",         [[Interface\Addons\Skada\media\statusbar\Armory]])
 		media:Register("statusbar", "BantoBar",       [[Interface\Addons\Skada\media\statusbar\BantoBar]])
@@ -2717,9 +2737,9 @@ do
 		media:Register("statusbar", "Smooth",         [[Interface\Addons\Skada\media\statusbar\Smooth]])
 		media:Register("statusbar", "Round",          [[Interface\Addons\Skada\media\statusbar\Round]])
 		media:Register("statusbar", "TukTex",         [[Interface\Addons\Skada\media\statusbar\normTex]])
-	--	media:Register("border", "Glow",              [[Interface\Addons\Skada\media\border\glowTex]])
-	--	media:Register("border", "Roth",              [[Interface\Addons\Skada\media\border\roth]])
-	--	media:Register("background", "Copper",        [[Interface\Addons\Skada\media\background\copper]])
+		media:Register("border", "Glow",              [[Interface\Addons\Skada\media\border\glowTex]])
+		media:Register("border", "Roth",              [[Interface\Addons\Skada\media\border\roth]])
+		media:Register("background", "Copper",        [[Interface\Addons\Skada\media\background\copper]])
 
 		-- Some sounds (copied from Omen).
 		media:Register("sound", "Rubber Ducky",       [[Sound\Doodad\Goblin_Lottery_Open01.ogg]])

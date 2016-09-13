@@ -8,6 +8,7 @@ local join = string.join
 --WoW API / Variables
 local IsLoggedIn = IsLoggedIn
 local GetMoney = GetMoney
+local GetItemInfo = GetItemInfo
 local IsShiftKeyDown = IsShiftKeyDown
 local ToggleAllBags = ToggleAllBags
 local GetBackpackCurrencyInfo = GetBackpackCurrencyInfo
@@ -28,7 +29,7 @@ local resetInfoFormatter = join("", "|cffaaaaaa", L["Reset Data: Hold Shift + Ri
 local token_g1, token_g2
 local TOKEN_NAME = GetItemInfo(122284)
 
-local function OnEvent(self, event, ...)
+local function OnEvent(self)
 	if not IsLoggedIn() then return end
 	TOKEN_NAME = GetItemInfo(122284)
 	
@@ -107,7 +108,7 @@ local function OnEnter(self)
 	DT.tooltip:AddDoubleLine(L["Total: "], E:FormatMoney(totalGold, style, textOnly), 1, 1, 1, 1, 1, 1)
 
 	for i = 1, MAX_WATCHED_TOKENS do
-		local name, count, extraCurrencyType, icon, itemID = GetBackpackCurrencyInfo(i)
+		local name, count = GetBackpackCurrencyInfo(i)
 		if name and i == 1 then
 			DT.tooltip:AddLine(" ")
 			DT.tooltip:AddLine(CURRENCY)

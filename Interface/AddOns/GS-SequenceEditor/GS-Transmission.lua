@@ -80,7 +80,8 @@ local function sendVersionCheck()
 	  local t = {}
 	  t.Command = "GS-E_VERSIONCHK"
 	  t.Version = GSEVersion
-	  transmission = GSSE:Serialize(t)
+--	  transmission = GSSE:Serialize(t)
+	  transmission = GSEncodeSequence(t) --by eui.cc
 		if IsInRaid() then
 			SendAddonMessage(GSStaticPrefix, transmission, (not IsInRaid(LE_PARTY_CATEGORY_HOME) and IsInRaid(LE_PARTY_CATEGORY_INSTANCE)) and "INSTANCE_CHAT" or "RAID")
 		elseif IsInGroup() then

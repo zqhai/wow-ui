@@ -43,8 +43,8 @@ TellMeWhenDB = {
 			},
 			["TMW:textlayout:1No4k3ToZwev"] = {
 				{
-					["StringName"] = "数字",
 					["ConstrainWidth"] = false,
+					["StringName"] = "数字",
 					["Size"] = 24,
 				}, -- [1]
 				["GUID"] = "TMW:textlayout:1No4k3ToZwev",
@@ -56,13 +56,14 @@ TellMeWhenDB = {
 				{
 				}, -- [2]
 			},
-			["TMW:textlayout:1Neg1cxUQG_1"] = {
+			["TMW:textlayout:1No5MH6UsD7h"] = {
 				{
-					["DefaultText"] = "[Duration(gcd=false):TMWFormatDuration:Hide(0)]",
-					["StringName"] = "倒计时",
+					["ConstrainWidth"] = false,
+					["Size"] = 24,
 				}, -- [1]
-				["GUID"] = "TMW:textlayout:1Neg1cxUQG_1",
-				["Name"] = "倒计时 圣骑士",
+				["GUID"] = "TMW:textlayout:1No5MH6UsD7h",
+				["Name"] = "居中数字 3",
+				["n"] = 2,
 			},
 			["icon1"] = {
 				{
@@ -105,21 +106,17 @@ TellMeWhenDB = {
 				["Name"] = "默光显示字样 2",
 				["n"] = 3,
 			},
-			["TMW:textlayout:1No5MH6UsD7h"] = {
+			["TMW:textlayout:1Neg1cxUQG_1"] = {
 				{
-					["ConstrainWidth"] = false,
-					["Size"] = 24,
+					["DefaultText"] = "[Duration(gcd=false):TMWFormatDuration:Hide(0)]",
+					["StringName"] = "倒计时",
 				}, -- [1]
-				["GUID"] = "TMW:textlayout:1No5MH6UsD7h",
-				["Name"] = "居中数字 3",
-				["n"] = 2,
+				["GUID"] = "TMW:textlayout:1Neg1cxUQG_1",
+				["Name"] = "倒计时 圣骑士",
 			},
 			["TMW:textlayout:1No4hOLOpaLG"] = {
 				{
 					["Shadow"] = 0.5,
-					["SkinAs"] = "HotKey",
-					["StringName"] = "叠加数量",
-					["Height"] = 1,
 					["Anchors"] = {
 						{
 							["y"] = -3,
@@ -135,6 +132,9 @@ TellMeWhenDB = {
 						}, -- [2]
 						["n"] = 2,
 					},
+					["StringName"] = "叠加数量",
+					["Height"] = 1,
+					["SkinAs"] = "HotKey",
 					["Size"] = 10,
 				}, -- [1]
 				{
@@ -156,7 +156,7 @@ TellMeWhenDB = {
 		},
 		["Groups"] = {
 			{
-				["GUID"] = "TMW:group:1KOM=J4NcY75",
+				["View"] = "bar",
 				["Point"] = {
 					["y"] = 307.149688720703,
 					["x"] = -285.142266265931,
@@ -171,7 +171,7 @@ TellMeWhenDB = {
 					[70] = false,
 					[65] = false,
 				},
-				["View"] = "bar",
+				["GUID"] = "TMW:group:1KOM=J4NcY75",
 				["Columns"] = 3,
 				["Icons"] = {
 					{
@@ -259,8 +259,8 @@ TellMeWhenDB = {
 						["Icon"] = false,
 					},
 				},
-				["BackdropColor"] = "7fa2a2a2",
 				["TimerBar_EnableColors"] = true,
+				["BackdropColor"] = "7fa2a2a2",
 			}, -- [1]
 		},
 		["AllowCombatConfig"] = true,
@@ -268,10 +268,10 @@ TellMeWhenDB = {
 			["ICON_DURS_FIRSTSEE"] = true,
 			["SUG_FIRSTHELP"] = true,
 			["SCROLLBAR_DROPDOWN"] = true,
-			["ICON_EXPORT_DOCOPY"] = true,
+			["SIMPLEGSTAB"] = true,
 			["ICON_POCKETWATCH_FIRSTSEE"] = true,
 			["CNDT_ANDOR_FIRSTSEE"] = true,
-			["SIMPLEGSTAB"] = true,
+			["ICON_EXPORT_DOCOPY"] = true,
 		},
 		["NumGroups"] = 1,
 	},
@@ -365,9 +365,9 @@ TellMeWhenDB = {
 						[85] = {
 							["ShowTimer"] = true,
 							["Type"] = "buff",
-							["Name"] = "奉献",
-							["ShowTimerTextnoOCC"] = true,
 							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "奉献",
 							["Enabled"] = true,
 							["Events"] = {
 								{
@@ -597,9 +597,9 @@ TellMeWhenDB = {
 						{
 							["ShowTimer"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
 							["Name"] = "自由祝福",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BKrqo0B",
 							["Events"] = {
@@ -621,9 +621,9 @@ TellMeWhenDB = {
 						{
 							["ShowTimer"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
 							["Name"] = "牺牲祝福",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BKxgxxJ",
 							["Events"] = {
@@ -645,9 +645,9 @@ TellMeWhenDB = {
 						{
 							["ShowTimer"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
 							["Name"] = "破咒祝福",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BL1ELij",
 							["Events"] = {
@@ -670,9 +670,9 @@ TellMeWhenDB = {
 						{
 							["ShowTimer"] = true,
 							["Type"] = "totem",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
 							["Name"] = "奉献",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BLENs0C",
 							["SettingsPerView"] = {
@@ -693,9 +693,9 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
 							["Name"] = "提尔之眼",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BLPXpJm",
 							["Events"] = {
@@ -712,9 +712,9 @@ TellMeWhenDB = {
 						{
 							["ShowTimer"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
 							["Name"] = "炽热防御者",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BLV5Xnl",
 							["Events"] = {
@@ -731,9 +731,9 @@ TellMeWhenDB = {
 						{
 							["ShowTimer"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
 							["Name"] = "远古列王守卫",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BLakBoA",
 							["Events"] = {
@@ -750,9 +750,9 @@ TellMeWhenDB = {
 						{
 							["ShowTimer"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
 							["Name"] = "133598",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BLgLjO3",
 							["Events"] = {
@@ -824,7 +824,7 @@ TellMeWhenDB = {
 							["ShowTimer"] = true,
 							["BuffOrDebuff"] = "HARMFUL",
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "自律",
 							["ShowTimerTextnoOCC"] = true,
 							["GUID"] = "TMW:icon:1NrRRwsVieTB",
 							["States"] = {
@@ -833,15 +833,15 @@ TellMeWhenDB = {
 								}, -- [1]
 							},
 							["FakeHidden"] = true,
-							["Name"] = "自律",
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 						},
 						[42] = {
 							["ShowTimer"] = true,
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
 							["Name"] = "圣盾术",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1No22BNa3Jk2",
 							["Events"] = {

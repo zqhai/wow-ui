@@ -34,8 +34,8 @@ AUCTIONATOR_LAST_SCAN_TIME = nil
 AUCTIONATOR_TOONS = {
 	["每天壹碗面"] = {
 		["firstSeen"] = 1470320464,
-		["guid"] = "Player-1676-02422C28",
 		["firstVersion"] = "4.0.5CN",
+		["guid"] = "Player-1676-02422C28",
 	},
 	["开山怪"] = {
 		["firstSeen"] = 1419255719,

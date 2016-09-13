@@ -46,21 +46,21 @@ RematchSettings = {
 		},
 		["Rarity"] = {
 		},
-		["Favorite"] = {
+		["Tough"] = {
 		},
-		["Collected"] = {
+		["Level"] = {
 		},
 		["Sources"] = {
 		},
 		["Breed"] = {
 		},
-		["Script"] = {
-		},
 		["Similar"] = {
 		},
-		["Level"] = {
+		["Script"] = {
 		},
-		["Tough"] = {
+		["Collected"] = {
+		},
+		["Favorite"] = {
 		},
 		["Types"] = {
 		},
@@ -69,7 +69,6 @@ RematchSettings = {
 	},
 	["CollapsedOptHeaders"] = {
 	},
-	["QueuePaused"] = "combat",
 	["PreferredMode"] = 1,
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {

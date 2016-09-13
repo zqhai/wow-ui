@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 62,
 	["lastSanitation"] = 3,
+	["session"] = 65,
 	["errors"] = {
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 'ActionButton11:Hide()'。",
@@ -122,20 +122,12 @@ BugGrabberDB = {
 			["counter"] = 10,
 		}, -- [15]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 '<unnamed>:Hide()'。",
-			["time"] = "2016/08/08 23:28:11",
-			["locals"] = "",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:353>\n(tail call): ?\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2320: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2347: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2378: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2052: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2846: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2812: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:219: in function <Interface\\FrameXML\\WorldMapFrame.lua:210>\n[C]: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
-			["session"] = 15,
-			["counter"] = 1,
-		}, -- [16]
-		{
 			["message"] = "Interface\\AddOns\\Collector\\Module\\MountPanel.lua:853: attempt to get length of global 'RECOMMEND_LIST' (a nil value)",
 			["time"] = "2016/08/03 22:38:18",
 			["stack"] = "Interface\\AddOns\\Collector\\Module\\MountPanel.lua:853: in function <Interface\\AddOns\\Collector\\Module\\MountPanel.lua:850>\nInterface\\AddOns\\Collector\\Module\\MountPanel.lua:908: in function `GetRecommend'\nInterface\\AddOns\\Collector\\Module\\MountPanel.lua:66: in function <Interface\\AddOns\\Collector\\Module\\MountPanel.lua:55>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\Collector\\Libs\\LibClass-2.0-4\\Class-2.0.lua:148: in function `Fire'\n...ollector\\Libs\\NetEaseGUI-2.0-1\\Widget\\PanelBlocker.lua:25: in function <...ollector\\Libs\\NetEaseGUI-2.0\\Widget\\PanelBlocker.lua:18>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2823: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2814: in function `ToggleFrame'\nInterface\\AddOns\\Collector\\Module\\MountPanel.lua:222: in function `SetBlocker'\nInterface\\AddOns\\Collector\\Module\\MountPanel.lua:208: in function `CheckShowRecommend'\nInterface\\AddOns\\Collector\\Module\\MountPanel.lua:236: in function <Interface\\AddOns\\Collector\\Module\\MountPanel.lua:228>\n[C]: in function `SetShown'\n...AddOns\\Blizzard_Collections\\Blizzard_Collections-1.0.lua:50: in function <...AddOns\\Blizzard_Collections\\Blizzard_Collections.lua:42>\n[C]: in function `CollectionsJournal_UpdateSelectedTab'\n...AddOns\\Blizzard_Collections\\Blizzard_Collections-1.0.lua:7: in function `CollectionsJournal_SetTab'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 15,
 			["counter"] = 4,
-		}, -- [17]
+		}, -- [16]
 		{
 			["message"] = "Interface\\AddOns\\Collector\\API.lua:5: bad argument #1 to 'ipairs' (table expected, got nil)",
 			["time"] = "2016/08/03 22:38:18",
@@ -143,7 +135,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `ipairs'\nInterface\\AddOns\\Collector\\API.lua:5: in function `tIndexOf'\nInterface\\AddOns\\Collector\\Module\\MountPanel.lua:160: in function <Interface\\AddOns\\Collector\\Module\\MountPanel.lua:159>",
 			["session"] = 15,
 			["counter"] = 5,
-		}, -- [18]
+		}, -- [17]
 		{
 			["message"] = "Interface\\AddOns\\Collector\\Module\\PetPanel.lua:412: attempt to call global 'CooldownFrame_SetTimer' (a nil value)",
 			["time"] = "2016/08/03 22:38:17",
@@ -151,7 +143,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Collector\\Module\\PetPanel.lua:412: in function `UpdateList'\nInterface\\AddOns\\Collector\\Module\\PetPanel.lua:211: in function <Interface\\AddOns\\Collector\\Module\\PetPanel.lua:206>\n(tail call): ?\n[C]: in function `PetJournal_UpdatePetList'\n...dOns\\Blizzard_Collections\\Blizzard_PetCollection.lua:114: in function <...dOns\\Blizzard_Collections\\Blizzard_PetCollection.lua:113>\n[C]: ?\n[C]: in function `SetShown'\n...AddOns\\Blizzard_Collections\\Blizzard_Collections-1.0.lua:51: in function <...AddOns\\Blizzard_Collections\\Blizzard_Collections.lua:42>\n[C]: in function `CollectionsJournal_UpdateSelectedTab'\n...AddOns\\Blizzard_Collections\\Blizzard_Collections-1.0.lua:7: in function `CollectionsJournal_SetTab'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 15,
 			["counter"] = 9,
-		}, -- [19]
+		}, -- [18]
 		{
 			["message"] = "Interface\\AddOns\\ElvUI\\Modules\\chat\\StatReport.lua:350: Invalid stat index in UnitStat",
 			["time"] = "2016/08/09 00:42:10",
@@ -159,7 +151,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\nInterface\\AddOns\\ElvUI\\Modules\\chat\\StatReport.lua:350: in function <Interface\\AddOns\\ElvUI\\Modules\\chat\\StatReport.lua:333>\nInterface\\AddOns\\ElvUI\\Modules\\chat\\StatReport.lua:387: in function `SendReport'\nInterface\\AddOns\\ElvUI\\Modules\\chat\\chatbar.lua:253: in function <Interface\\AddOns\\ElvUI\\Modules\\chat\\chatbar.lua:253>",
 			["session"] = 15,
 			["counter"] = 5,
-		}, -- [20]
+		}, -- [19]
 		{
 			["message"] = "Interface\\AddOns\\Collector\\Widget\\PlanMap.lua:214: attempt to index field 'area' (a nil value)",
 			["time"] = "2016/08/03 22:38:18",
@@ -167,7 +159,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Collector\\Widget\\PlanMap.lua:214: in function `Update'\n...dOns\\Collector\\Libs\\NetEaseGUI-2.0-1\\Embed\\Refresh-刷新.lua:10: in function <...dOns\\Collector\\Libs\\NetEaseGUI-2.0\\Embed\\Refresh.lua:8>",
 			["session"] = 15,
 			["counter"] = 11,
-		}, -- [21]
+		}, -- [20]
 		{
 			["message"] = "Interface\\AddOns\\Collector\\Module\\MountPanel.lua:177: attempt to call global 'MountJournal_DirtyList' (a nil value)",
 			["time"] = "2016/08/03 22:38:18",
@@ -175,7 +167,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Collector\\Module\\MountPanel.lua:177: in function `Update'\n...dOns\\Collector\\Libs\\NetEaseGUI-2.0-1\\Embed\\Refresh-刷新.lua:10: in function <...dOns\\Collector\\Libs\\NetEaseGUI-2.0\\Embed\\Refresh.lua:8>",
 			["session"] = 15,
 			["counter"] = 13,
-		}, -- [22]
+		}, -- [21]
 		{
 			["message"] = "Interface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:382: attempt to call method 'GetModel' (a nil value)",
 			["time"] = "2016/08/04 00:28:46",
@@ -183,14 +175,14 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:382: in function <Interface\\AddOns\\_Cursor\\_Cursor.lua:380>\n[C]: in function `Show'\nInterface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:179: in function <Interface\\AddOns\\_Cursor\\_Cursor.lua:174>\nInterface\\AddOns\\_Cursor\\_Cursor-7.0.3.1.lua:340: in function <Interface\\AddOns\\_Cursor\\_Cursor.lua:339>\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\MovieFrame.lua:72: in function `MovieFrame_OnMovieFinished'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.1-1-g3e2d2dd.lua:6824: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:6820>\n[C]: ?",
 			["session"] = 15,
 			["counter"] = 18,
-		}, -- [23]
+		}, -- [22]
 		{
 			["message"] = "Interface\\AddOns\\Collector\\Main.lua:184: attempt to call field 'IsFlagFiltered' (a nil value)",
 			["time"] = "2016/08/03 22:38:17",
 			["stack"] = "Interface\\AddOns\\Collector\\Main.lua:184: in function `CacheCollectedPet'\nInterface\\AddOns\\Collector\\Main.lua:57: in function <Interface\\AddOns\\Collector\\Main.lua:56>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <Interface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 15,
 			["counter"] = 44,
-		}, -- [24]
+		}, -- [23]
 		{
 			["message"] = "...Blizzard_GarrisonUI\\Blizzard_GarrisonLandingPage.lua:275: Usage: GetBuildings(garrisonType)",
 			["time"] = "2016/08/09 00:12:32",
@@ -198,7 +190,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `GetBuildings'\n...Blizzard_GarrisonUI\\Blizzard_GarrisonLandingPage.lua:275: in function <...Blizzard_GarrisonUI\\Blizzard_GarrisonLandingPage.lua:269>\n[C]: ?\n[C]: in function `GarrisonLandingPageReport_GetShipments'\nInterface\\AddOns\\EuiGarrison\\GarrisonLanding.lua:74: in function <Interface\\AddOns\\EuiGarrison\\GarrisonLanding.lua:72>\n[C]: ?\nInterface\\AddOns\\EuiGarrison\\Libs/Evie.lua:37: in function <Interface\\AddOns\\EuiGarrison\\Libs/Evie.lua:32>",
 			["session"] = 15,
 			["counter"] = 2,
-		}, -- [25]
+		}, -- [24]
 		{
 			["message"] = "Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:467: TMW: Can't swap groups while in combat",
 			["time"] = "2016/09/01 20:17:50",
@@ -206,7 +198,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:467: in function `Group_Insert'\nInterface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:337: in function <Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:330>",
 			["session"] = 22,
 			["counter"] = 2,
-		}, -- [26]
+		}, -- [25]
 		{
 			["message"] = "Interface\\AddOns\\EuiGarrison\\GarrisonLanding.lua:48: attempt to get length of local 'ships' (a nil value)",
 			["time"] = "2016/09/01 19:40:42",
@@ -214,7 +206,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\EuiGarrison\\GarrisonLanding.lua:48: in function <Interface\\AddOns\\EuiGarrison\\GarrisonLanding.lua:43>\n[C]: ?\n[C]: in function `GarrisonLandingPageReport_GetShipments'\n...Blizzard_GarrisonUI\\Blizzard_GarrisonLandingPage.lua:209: in function <...Blizzard_GarrisonUI\\Blizzard_GarrisonLandingPage.lua:207>",
 			["session"] = 22,
 			["counter"] = 4,
-		}, -- [27]
+		}, -- [26]
 		{
 			["message"] = "Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:436: TMW: Can't add groups while in combat",
 			["time"] = "2016/09/01 20:17:40",
@@ -222,7 +214,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:436: in function `Group_Add'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 23,
 			["counter"] = 24,
-		}, -- [28]
+		}, -- [27]
 		{
 			["message"] = "...Blizzard_GarrisonUI\\Blizzard_GarrisonLandingPage.lua:685: attempt to get length of local 'items' (a nil value)",
 			["time"] = "2016/09/02 01:15:19",
@@ -230,7 +222,7 @@ BugGrabberDB = {
 			["stack"] = "...Blizzard_GarrisonUI\\Blizzard_GarrisonLandingPage.lua:685: in function `GarrisonLandingPageReportMission_FilterOutCombatAllyMissions'\n...Blizzard_GarrisonUI\\Blizzard_GarrisonLandingPage.lua:449: in function `GarrisonLandingPageReportList_UpdateItems'\n...Blizzard_GarrisonUI\\Blizzard_GarrisonLandingPage.lua:211: in function <...Blizzard_GarrisonUI\\Blizzard_GarrisonLandingPage.lua:207>",
 			["session"] = 24,
 			["counter"] = 10,
-		}, -- [29]
+		}, -- [28]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 'MultiBarBottomLeftButton9:Hide()'。",
 			["time"] = "2016/09/02 17:52:32",
@@ -238,7 +230,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\ActionButton.lua:320: in function `ActionButton_Update'\nInterface\\FrameXML\\ActionButton.lua:276: in function `ActionButton_UpdateAction'\nInterface\\FrameXML\\ActionBarController.lua:150: in function `ActionBarController_ResetToDefault'\nInterface\\FrameXML\\ActionBarController.lua:139: in function `ActionBarController_UpdateAll'\nInterface\\FrameXML\\ZoneAbility.lua:69: in function <Interface\\FrameXML\\ZoneAbility.lua:31>",
 			["session"] = 30,
 			["counter"] = 1,
-		}, -- [30]
+		}, -- [29]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'BigFootMark' 尝试调用保护功能 'WorldMapScrollFrame:SetHorizontalScroll()'。",
 			["time"] = "2016/09/02 18:38:40",
@@ -246,7 +238,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetHorizontalScroll'\nInterface\\FrameXML\\WorldMapFrame.lua:3191: in function `WorldMapScrollFrame_ResetZoom'\nInterface\\FrameXML\\WorldMapFrame.lua:2110: in function `func'\nInterface\\FrameXML\\UIDropDownMenu.lua:760: in function `UIDropDownMenuButton_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 31,
 			["counter"] = 1,
-		}, -- [31]
+		}, -- [30]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 'ExtraActionButton1:Show()'。",
 			["time"] = "2016/09/02 20:40:30",
@@ -254,7 +246,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Show'\nInterface\\FrameXML\\ActionButton.lua:307: in function `ActionButton_Update'\nInterface\\FrameXML\\ActionButton.lua:638: in function `ActionButton_OnEvent'\nInterface\\FrameXML\\ActionButton.lua:150: in function <Interface\\FrameXML\\ActionButton.lua:147>",
 			["session"] = 34,
 			["counter"] = 2,
-		}, -- [32]
+		}, -- [31]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core-7.0.3-1-gbb8a1ff.lua:10911: attempt to call field '?' (a nil value)",
 			["time"] = "2016/09/05 23:08:53",
@@ -262,7 +254,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\DBM-Core\\DBM-Core-7.0.3-1-gbb8a1ff.lua:10911: in function `SetIconByAlphaTable'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.3-1-gbb8a1ff.lua:10938: in function `SetAlphaIcon'\n...\\AddOns\\DBM-Party-Legion\\BlackRookHold\\Illysanna.lua:101: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.3-1-gbb8a1ff.lua:679: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:666>\n(tail call): ?\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.3-1-gbb8a1ff.lua:679: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:666>",
 			["session"] = 34,
 			["counter"] = 2,
-		}, -- [33]
+		}, -- [32]
 		{
 			["message"] = "...erface\\AddOns\\EuiGarrison\\GarrisonMissionManager.lua:415: attempt to index local 'missionInfo' (a nil value)",
 			["time"] = "2016/09/02 16:14:57",
@@ -270,7 +262,7 @@ BugGrabberDB = {
 			["stack"] = "...erface\\AddOns\\EuiGarrison\\GarrisonMissionManager.lua:415: in function <...erface\\AddOns\\EuiGarrison\\GarrisonMissionManager.lua:411>\nInterface\\AddOns\\EuiGarrison\\OrderHallUI.lua:22: in function <Interface\\AddOns\\EuiGarrison\\OrderHallUI.lua:21>\n[C]: in function `ShowMission'\n...s\\Blizzard_GarrisonUI\\Blizzard_GarrisonMissionUI.lua:203: in function <...s\\Blizzard_GarrisonUI\\Blizzard_GarrisonMissionUI.lua:192>\n(tail call): ?\n[string \"*:OnClick\"]:2: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 36,
 			["counter"] = 5,
-		}, -- [34]
+		}, -- [33]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'Mapster' 尝试调用保护功能 'WorldMapFrame:SetScale()'。",
 			["time"] = "2016/09/02 04:13:49",
@@ -278,7 +270,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetScale'\nInterface\\AddOns\\Mapster\\Scaling.lua:101: in function <Interface\\AddOns\\Mapster\\Scaling.lua:94>",
 			["session"] = 38,
 			["counter"] = 2,
-		}, -- [35]
+		}, -- [34]
 		{
 			["message"] = "[string \"<unnamed>:OnFinished\"]:11: attempt to concatenate field 'pos' (a nil value)",
 			["time"] = "2016/08/03 22:43:54",
@@ -286,7 +278,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnFinished\"]:11: in function <[string \"*:OnFinished\"]:1>",
 			["session"] = 40,
 			["counter"] = 15,
-		}, -- [36]
+		}, -- [35]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core-7.0.3-7-gae42884.lua:10912: attempt to call field '?' (a nil value)",
 			["time"] = "2016/09/07 20:19:09",
@@ -294,28 +286,28 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\DBM-Core\\DBM-Core-7.0.3-7-gae42884.lua:10912: in function `SetIconByAlphaTable'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.3-7-gae42884.lua:10939: in function `SetAlphaIcon'\n...\\AddOns\\DBM-Party-Legion\\BlackRookHold\\Illysanna.lua:107: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.3-7-gae42884.lua:680: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:667>\n(tail call): ?\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.3-7-gae42884.lua:680: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:667>",
 			["session"] = 44,
 			["counter"] = 4,
-		}, -- [37]
+		}, -- [36]
 		{
 			["message"] = "...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:490: bad argument #1 to 'insert' (table expected, got nil)",
 			["time"] = "2016/09/05 20:10:47",
 			["stack"] = "[C]: in function `insert'\n...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:490: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <Interface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 44,
 			["counter"] = 2,
-		}, -- [38]
+		}, -- [37]
 		{
 			["message"] = "...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:504: bad argument #1 to 'insert' (table expected, got nil)",
 			["time"] = "2016/08/04 21:41:18",
 			["stack"] = "[C]: in function `insert'\n...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:504: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <Interface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 44,
 			["counter"] = 16,
-		}, -- [39]
+		}, -- [38]
 		{
 			["message"] = "...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:508: bad argument #1 to 'insert' (table expected, got nil)",
 			["time"] = "2016/08/04 21:41:26",
 			["stack"] = "[C]: in function `insert'\n...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:508: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <Interface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 44,
 			["counter"] = 32,
-		}, -- [40]
+		}, -- [39]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'Auctionator' 尝试调用保护功能 'UIParent:SetAttribute()'。",
 			["time"] = "2016/09/08 21:55:03",
@@ -323,14 +315,14 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2444: in function `UpdateUIPanelPositions'\nInterface\\FrameXML\\UIParent.lua:2055: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:3074: in function <Interface\\FrameXML\\UIParent.lua:3072>\n[C]: in function `securecall'\nInterface\\FrameXML\\UIParent.lua:2332: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2154: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2048: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2830: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1466: in function <Interface\\FrameXML\\UIParent.lua:891>\n[C]: in function `SocketInventoryItem'\nInterface\\FrameXML\\PaperDollFrame.lua:1508: in function `PaperDollItemSlotButton_OnModifiedClick'\n[string \"*:OnClick\"]:2: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 46,
 			["counter"] = 1,
-		}, -- [41]
+		}, -- [40]
 		{
 			["message"] = "...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:298: bad argument #3 to 'gsub' (string/function/table expected)",
 			["time"] = "2016/08/04 20:48:15",
 			["stack"] = "[C]: in function `gsub'\n...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:298: in function <...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:225>\n...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:361: in function <...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:346>\n...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:399: in function <...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:391>\n...erface\\AddOns\\OfflineDataCenter\\Modules\\TradeLog.lua:486: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[3]\"]:4: in function <[string \"safecall Dispatcher[3]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[3]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <Interface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 46,
 			["counter"] = 237,
-		}, -- [42]
+		}, -- [41]
 		{
 			["message"] = "[string \"local f,t=RnT or CreateFrame(\"Button\",\"RnT\",nil,\"SecureActionBu...\"]:1: unexpected symbol near '/'",
 			["time"] = "2016/09/12 02:33:36",
@@ -338,7 +330,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4036: in function <Interface\\FrameXML\\ChatFrame.lua:4032>\n[C]: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 51,
 			["counter"] = 3,
-		}, -- [43]
+		}, -- [42]
 		{
 			["message"] = "[string \"F=F or CreateFrame(\"frame\")F:RegisterEvent(\"UNIT_SPELLCAST_SUCC...\"]:1: unexpected symbol near '..'",
 			["time"] = "2016/09/12 03:50:07",
@@ -346,7 +338,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
 			["session"] = 52,
 			["counter"] = 1,
-		}, -- [44]
+		}, -- [43]
 		{
 			["message"] = "...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3614: script ran too long",
 			["time"] = "2016/09/01 20:48:48",
@@ -354,7 +346,7 @@ BugGrabberDB = {
 			["stack"] = "...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3614: in function `RefreshTabs'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:768: in function `Load'\nInterface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:388: in function `LoadGroup'\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:39: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:24>\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:98: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:87>\n...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:42: in function <...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:39>\n[C]: ?\n[C]: ?",
 			["session"] = 56,
 			["counter"] = 3,
-		}, -- [45]
+		}, -- [44]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'MikScrollingBattleText' 尝试调用保护功能 'MultiBarBottomLeft:Show()'。",
 			["time"] = "2016/09/12 05:05:36",
@@ -362,14 +354,14 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Show'\nInterface\\FrameXML\\MultiActionBars.lua:37: in function `MultiActionBar_Update'\nInterface\\FrameXML\\InterfaceOptionsPanels.lua:1185: in function `setFunc'\nInterface\\FrameXML\\InterfaceOptionsPanels.lua:89: in function <Interface\\FrameXML\\InterfaceOptionsPanels.lua:85>\n[C]: in function `pcall'\nInterface\\FrameXML\\InterfaceOptionsFrame.lua:217: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:216>\n[C]: in function `securecall'\nInterface\\FrameXML\\InterfaceOptionsFrame.lua:252: in function `InterfaceOptionsFrameCancel_OnClick'\n...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:1759: in function <...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:1758>",
 			["session"] = 56,
 			["counter"] = 1,
-		}, -- [46]
+		}, -- [45]
 		{
 			["message"] = "Interface\\AddOns\\ElvUI_Config\\single.lua:123: HandyNotes isn't registed with AceConfigRegistry, unable to open config",
 			["time"] = "2016/09/01 19:19:44",
 			["stack"] = "[C]: ?\n....0-ElvUI\\AceConfigDialog-3.0\\AceConfigDialog-3.0-99.lua:1807: in function `Open'\nInterface\\AddOns\\ElvUI_Config\\single.lua:123: in function <Interface\\AddOns\\ElvUI_Config\\single.lua:122>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[3]\"]:9: in function <[string \"safecall Dispatcher[3]\"]:5>\n(tail call): ?\n....0-ElvUI\\AceConfigDialog-3.0\\AceConfigDialog-3.0-99.lua:805: in function <....0-ElvUI\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:620>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[4]\"]:9: in function <[string \"safecall Dispatcher[4]\"]:5>\n(tail call): ?\nInterface\\AddOns\\Libs\\AceGUI-3.0\\AceGUI-3.0-34.lua:314: in function `Fire'\n...dOns\\Libs\\AceGUI-3.0-34\\widgets\\AceGUIWidget-Button.lua:22: in function <...dOns\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Button.lua:19>",
 			["session"] = 57,
 			["counter"] = 4,
-		}, -- [47]
+		}, -- [46]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core-7.0.4-4-g36bf35a.lua:8453: attempt to index local 'self' (a nil value)",
 			["time"] = "2016/09/12 05:54:36",
@@ -377,7 +369,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\DBM-Core\\DBM-Core-7.0.4-4-g36bf35a.lua:8453: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:8446>\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.4-4-g36bf35a.lua:8492: in function `MoveWarning'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI-7.0.4-4-g36bf35a.lua:1596: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1596>",
 			["session"] = 59,
 			["counter"] = 1,
-		}, -- [48]
+		}, -- [47]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'BigFootMark' 尝试调用保护功能 '<unnamed>:Hide()'。",
 			["time"] = "2016/09/01 19:28:18",
@@ -385,21 +377,37 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:353>\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2320: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2347: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2378: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2052: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2846: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2812: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:219: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
 			["session"] = 62,
 			["counter"] = 18,
-		}, -- [49]
+		}, -- [48]
 		{
 			["message"] = "...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:49: Usage: GearStatsSummaryTooltip:SetHyperlink(link)",
 			["time"] = "2016/09/12 21:55:14",
 			["stack"] = "[C]: in function `SetHyperlink'\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:49: in function <...terface\\AddOns\\GearStatsSummary\\GearStatsSummary.lua:42>\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:552: in function `GearStatsSummary_Sum'\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:415: in function `GearStatsSummary_ShowFrame'\n...terface\\AddOns\\GearStatsSummary\\GearStatsSummary-GSS Realse 6.lua:290: in function <...terface\\AddOns\\GearStatsSummary\\GearStatsSummary.lua:288>\n[string \"safecall Dispatcher[4]\"]:4: in function <[string \"safecall Dispatcher[4]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[4]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...ddOns\\Libs\\LibInspectLess-1.0\\LibInspectLess-1.0-99915.lua:179: in function `CheckInspectItems'\n...ddOns\\Libs\\LibInspectLess-1.0\\LibInspectLess-1.0-99915.lua:197: in function <...ddOns\\Libs\\LibInspectLess-1.0\\LibInspectLess-1.0.lua:192>\n(tail call): ?",
 			["session"] = 62,
 			["counter"] = 1,
-		}, -- [50]
+		}, -- [49]
 		{
 			["message"] = "C stack overflow",
 			["time"] = "2016/09/02 22:26:48",
 			["locals"] = "(*temporary) = ContainerFrame1PortraitButton {\n 0 = <userdata>\n dropdownmenu = true\n Highlight = <unnamed> {\n }\n}\n(*temporary) = true\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = ContainerFrame1PortraitButton {\n 0 = <userdata>\n dropdownmenu = true\n Highlight = <unnamed> {\n }\n}\n(*temporary) = true\n = <function> defined =[C]:-1\n = <function> defined @Interface\\AddOns\\OfflineDataCenter\\main.lua:448\n",
 			["stack"] = "[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n...\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?",
-			["session"] = 62,
-			["counter"] = 54,
+			["session"] = 63,
+			["counter"] = 80,
+		}, -- [50]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 '<unnamed>:Hide()'。",
+			["time"] = "2016/08/08 23:28:11",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:353>\n(tail call): ?\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2320: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2347: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2378: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2052: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2846: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2812: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:219: in function <Interface\\FrameXML\\WorldMapFrame.lua:210>\n[C]: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
+			["session"] = 65,
+			["counter"] = 2,
 		}, -- [51]
+		{
+			["message"] = "...e\\AddOns\\DBM-Party-Legion\\CourtofStars\\Melandrus.lua:47: attempt to call method 'start' (a nil value)",
+			["time"] = "2016/09/13 22:19:48",
+			["locals"] = "",
+			["stack"] = "...e\\AddOns\\DBM-Party-Legion\\CourtofStars\\Melandrus.lua:47: in function `OnCombatStart'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.4-4-g36bf35a.lua:5590: in function `StartCombat'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.4-4-g36bf35a.lua:5153: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.0.4-4-g36bf35a.lua:680: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:667>",
+			["session"] = 65,
+			["counter"] = 1,
+		}, -- [52]
 	},
 }

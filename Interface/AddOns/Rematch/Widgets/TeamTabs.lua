@@ -63,7 +63,7 @@ rematch:InitModule(function()
 				end,
 				tooltipBody=L["Sort teams in this tab by their wins.\n\nFavorited teams will still list at the top."]
 				},
-		{ text=L["Set Preferences"], func=function(entry,index) rematch:ShowPreferencesDialog("tab",index) end, tooltipBody=L["Set leveling preferences for all teams within this tab.\n\nIf a team within this tab also has preferences, the tab's preferences will take priority over the team's preferences."] },
+		{ text=L["Leveling Preferences"], func=function(entry,index) rematch:ShowPreferencesDialog("tab",index) end, tooltipBody=L["Set leveling preferences for all teams within this tab.\n\nIf a team within this tab also has preferences, the tab's preferences will take priority over the team's preferences."] },
 		{ text=L["Export Tab"], func=function() Rematch.Dialog.Share:ExportTeamTab() end, tooltipBody=L["Export all teams in this tab to a string you can copy elsewhere, such as forums or emails.\n\nOther Rematch users can then paste these teams into their Rematch via Import Teams.\n\nYou can export a single team by right-clicking one and choosing its Share menu."] },
 		{ text=L["Import Teams"], func=rematch.ShowImportDialog, tooltipBody=L["Import a single team or many teams that was exported from Rematch."] },
 		{ text=L["Delete Tab"], hidden=isFirstTab, func=panel.ShowTabDeleteDialog, tooltipBody=L["Delete this tab and move all of its teams to the default tab."] },

@@ -38,25 +38,22 @@ local europeDisplayFormat = '';
 local ukDisplayFormat = '';
 local europeDisplayFormat_nocolor = join("", "%02d", ":|r%02d")
 local ukDisplayFormat_nocolor = join("", "", "%d", ":|r%02d", " %s|r")
-local timerLongFormat = "%d:%02d:%02d"
-local timerShortFormat = "%d:%02d"
 local lockoutInfoFormat = "%s%s |cffaaaaaa(%s, %s/%s)"
 local lockoutInfoFormatNoEnc = "%s%s |cffaaaaaa(%s)"
 local formatBattleGroundInfo = "%s: "
 local lockoutColorExtended, lockoutColorNormal = { r=0.3,g=1,b=0.3 }, { r=.8,g=.8,b=.8 }
-local lockoutFormatString = { "%dd %02dh %02dm", "%dd %dh %02dm", "%02dh %02dm", "%dh %02dm", "%dh %02dm", "%dm" }
 local curHr, curMin, curAmPm
 local enteredFrame = false;
 local resetInfoFormatter = join("", "|cffaaaaaa", L["Reset Data: Hold Shift + Right Click"], "|r")
 local Update, lastPanel; -- UpValue
-local localizedName, isActive, canQueue, startTime, canEnter
-local name, instanceID, reset, difficultyId, locked, extended, isRaid, maxPlayers, difficulty, numEncounters, encounterProgress
+local localizedName, isActive, startTime, canEnter
+local name, reset, difficultyId, locked, extended, isRaid, maxPlayers, difficulty, numEncounters, encounterProgress
 local rukhmar_name = EJ_GetEncounterInfo(1262)
 local tarlna_name = EJ_GetEncounterInfo(1211)
 local drov_name = EJ_GetEncounterInfo(1291)
 local bzkzk_name = EJ_GetEncounterInfo(1452)
 
-local function ValueColorUpdate(hex, r, g, b)
+local function ValueColorUpdate(hex)
 	europeDisplayFormat = join("", "%02d", hex, ":|r%02d")
 	ukDisplayFormat = join("", "", "%d", hex, ":|r%02d", hex, " %s|r")
 	
@@ -91,7 +88,7 @@ local function CalculateTimeValues(tooltip)
 	end
 end
 
-local function OnLeave(self)
+local function OnLeave()
 	DT.tooltip:Hide();
 	enteredFrame = false;
 end
@@ -232,7 +229,7 @@ local function OnEnter(self)
 	
 	DT.tooltip:AddLine(VOICE_CHAT_BATTLEGROUND);
 	for i = 1, GetNumWorldPVPAreas() do
-		_, localizedName, isActive, canQueue, startTime, canEnter = GetWorldPVPAreaInfo(i)
+		_, localizedName, isActive, _, startTime, canEnter = GetWorldPVPAreaInfo(i)
 		if canEnter then
 			if isActive then
 				startTime = WINTERGRASP_IN_PROGRESS
@@ -247,7 +244,7 @@ local function OnEnter(self)
 
 	local oneraid, lockoutColor
 	for i = 1, GetNumSavedInstances() do
-		name, _, reset, difficultyId, locked, extended, _, isRaid, maxPlayers, difficulty, numEncounters, encounterProgress  = GetSavedInstanceInfo(i)
+		name, _, reset, difficultyId, locked, extended, _, isRaid, maxPlayers, _, numEncounters, encounterProgress  = GetSavedInstanceInfo(i)
 		if isRaid and (locked or extended) and name then
 			if not oneraid then
 				DT.tooltip:AddLine(" ")
@@ -268,8 +265,7 @@ local function OnEnter(self)
 			end		
 		end
 	end
-	
-	local timeText
+
 	local Hr, Min, AmPm = CalculateTimeValues(true)
 	
 	DT.tooltip:AddLine(" ")

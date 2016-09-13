@@ -27,10 +27,14 @@ local function UpdateIcon(self)
   if not foundSpell then SetMacroItem(button, notSpell) end
 end
 
+local cvar_Sound_EnableSFX = GetCVar("Sound_EnableSFX")
+local cvar_Sound_EnableErrorSpeech = GetCVar("Sound_EnableErrorSpeech")
+
+
 local function preparePreMacro(premacro)
   if GSMasterOptions.hideSoundErrors then
     -- potentially change this to SetCVar("Sound_EnableSFX", 0)
-    premacro = "/console Sound_EnableErrorSpeech 0\n" .. premacro
+    premacro = "/run sfx=GetCVar(\"Sound_EnableSFX\");\n/run ers=GetCVar(\"Sound_EnableErrorSpeech\");\n/console Sound_EnableSFX 0\n/console Sound_EnableErrorSpeech 0\n" .. premacro
   end
   if GSMasterOptions.requireTarget then
     -- see #20 prevent target hopping
@@ -64,7 +68,7 @@ local function preparePostMacro(postmacro)
   end
   if GSMasterOptions.hideSoundErrors then
     -- potentially change this to SetCVar("Sound_EnableSFX", 1)
-    postmacro = postmacro .. "\n/console Sound_EnableErrorSpeech 1"
+    postmacro = postmacro .. "\n/run SetCVar(\"Sound_EnableSFX\",sfx);\n/run SetCVar(\"Sound_EnableErrorSpeech\",ers);"
   end
   if GSMasterOptions.hideUIErrors then
     postmacro = postmacro .. "\n/script UIErrorsFrame:Hide();"
@@ -208,7 +212,7 @@ local function CleanMacroLibrary(logout)
     GSPrintDebugMessage(L["Testing "] .. name )
     GSPrintDebugMessage(L["Active Version "] .. GSMasterOptions.ActiveSequenceVersions[name])
 
-    for version, sequence in ipairs(versiontable) do
+    for version, sequence in pairs(versiontable) do
       GSPrintDebugMessage(L["Cycle Version "] .. version )
       GSPrintDebugMessage(L["Source "] .. sequence.source)
       if sequence.source == GSStaticSourceLocal then
@@ -287,15 +291,13 @@ f:SetScript('OnEvent', function(self, event, addon)
     self:UnregisterEvent('PLAYER_REGEN_ENABLED')
     self:GetScript('OnEvent')(self, 'UPDATE_MACROS')
   elseif event == 'PLAYER_LOGOUT' then
-    -- Delete "LiveTest" macro from Macrolist as it is not persisted
-    GnomeOptions = GSMasterOptions
     if GSMasterOptions.saveAllMacrosLocal then
       CleanMacroLibrary(true)
     end
     if GSMasterOptions.deleteOrphansOnLogout then
       cleanOrphanSequences()
     end
-
+    GnomeOptions = GSMasterOptions
   elseif event == 'PLAYER_ENTERING_WORLD' then
     GSPrintAvailable = true
     GSPerformPrint()
@@ -428,21 +430,10 @@ local function ListSequences(txt)
   ShowMacroFrame()
 end
 
-local function checkCurrentClass(specID)
-  local _, specname, specdescription, specicon, _, specrole, specclass = GetSpecializationInfoByID(specID)
-  if specID > 15 then
-    GSPrintDebugMessage(L["Checking if specID "] .. specID .. " " .. specclass .. L[" equals "] .. currentenglishclass)
-  else
-    GSPrintDebugMessage(L["Checking if specID "] .. specID .. L[" equals currentclassid "] .. currentclassId)
-  end
-  return (specclass==currentenglishclass or specID==currentclassId)
-end
-
-
 function GSUpdateSequence(name,sequence)
     local button = _G[name]
     -- only translate a sequence if the option to use the translator is on, there is a translator available and the sequence matches the current class
-    if GSTranslatorAvailable and checkCurrentClass(sequence.specID) then
+    if GSTranslatorAvailable and GSisSpecIDForCUrrentClass(sequence.specID) then
       sequence = GSTranslateSequence(sequence, name)
     end
     if GSisEmpty(_G[name]) then

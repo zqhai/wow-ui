@@ -75,3 +75,4 @@ L["S_TUTORIAL_TIMELEFT"] = "indicates the time left (+4 hours, +90 minutes, +30 
 L["S_TUTORIAL_WORLDMAPBUTTON"] = "This button brings to you the Broken Isles map."
 L["S_UNKNOWNQUEST"] = "Unknown Quest"
 L["S_WORLDQUESTS"] = "World Quests"
+L["World Quest Tracker"] = "World Quest Tracker"
