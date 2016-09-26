@@ -1,16 +1,10 @@
-VER 3 010000000000004B " " "INV_MISC_QUESTIONMARK"
-#showtooltip 守护者之手
-/stopcasting
-/cast [modifier:alt,@player][@mouseover,help][help][@targettarget,help][]守护者之手
-/stopcasting
-END
 VER 3 0100000000000037 " " "INV_QIRAJIDOL_SUN"
 #showtooltip 
 /stopcasting
 /cast 圣盾术
 /cancelaura 圣盾术
-/cancelaura 保护之手
-/cancelaura 拯救之手
+/cancelaura 保护祝福
+/cancelaura 拯救祝福
 /stopcasting
 END
 VER 3 0100000000000033 " " "INV_Misc_QuestionMark"
@@ -29,13 +23,25 @@ VER 3 0100000000000022 " " "INV_Misc_QuestionMark"
 /cast [modifier:alt,@player][@mouseover,help][help][@targettarget,help][]清毒术
 /stopcasting
 END
+VER 3 010000000000004B " " "INV_MISC_QUESTIONMARK"
+#showtooltip 守护者之手
+/stopcasting
+/cast [modifier:alt,@player][@mouseover,help][help][@targettarget,help][]守护者之手
+/stopcasting
+END
 VER 3 010000000000000E " 制裁" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="制裁之锤"then SendChatMessage(GetSpellLink(b))end end)
 /cast 制裁之锤
 END
 VER 3 010000000000004F " 提尔之眼" "INV_MISC_QUESTIONMARK"
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="提尔之眼"then SendChatMessage(GetSpellLink(b))end end)
 /cast 提尔之眼
+END
+VER 3 0100000000000052 " 无敌" "INV_MISC_QUESTIONMARK"
+/cancelaura 地精滑翔器
+/run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="圣盾术"then SendChatMessage(GetSpellLink(b))end end)
+/cast 圣盾术
 END
 VER 3 0100000000000050 " 炽热防御者" "INV_MISC_QUESTIONMARK"
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="炽热防御者"then SendChatMessage(GetSpellLink(b))end end)
@@ -50,32 +56,30 @@ VER 3 0100000000000043 "圣疗" "INV_MISC_QUESTIONMARK"
 /cast 圣疗术
 END
 VER 3 010000000000004D "战争践踏" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="战争践踏"then SendChatMessage(GetSpellLink(b))end end)
 /cast 战争践踏
 END
 VER 3 0100000000000041 "爆发" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /cast 复仇之怒
-/cast 胜利之手
-/use 14
+/cast 炽天使
 END
 VER 3 0100000000000042 "牺牲" "INV_MISC_QUESTIONMARK"
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="牺牲祝福"then SendChatMessage(GetSpellLink(b))end end)
 /cast 牺牲祝福
 END
 VER 3 010000000000004E "盲目之光" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="盲目之光"then SendChatMessage(GetSpellLink(b))end end)
 /cast 盲目之光
-END
-VER 3 0100000000000044 "老" "INV_MISC_QUESTIONMARK"
-#showtooltip 自由祝福
-/cast [modifier:alt,@player][@mouseover,help][help][@targettarget,help][]自由祝福
-/s 自由祝福
 END
 VER 3 0100000000000046 "自由" "INV_MISC_QUESTIONMARK"
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="自由祝福"then SendChatMessage(GetSpellLink(b))end end)
 /cast 自由祝福
 END
 VER 3 010000000000004C "责难" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="责难"then SendChatMessage(GetSpellLink(b))end end)
 /cast 责难
 END

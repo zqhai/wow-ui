@@ -7,15 +7,45 @@ local EnableAddOn = EnableAddOn
 local IsAddOnLoaded = IsAddOnLoaded
 local SetCVar = SetCVar
 local InterfaceOptionsFrame_OpenToCategory = InterfaceOptionsFrame_OpenToCategory
+local ENABLE, DISABLE = ENABLE, DISABLE
 
-local tmpToggle, tmpToggle2, tmpToggle3, tmpToggle4, tmpToggle5
+local temToggle = {
+	["EuiGarrison"] = true,
+	["ExtraCD"] = true,
+	["HandyNotes_DraenorTreasures"] = true,
+	["HandyNotes_LegionRaresTreasures"] = true,
+	["MikScrollingBattleText"] = true,
+	["OfflineDataCenter"] = true,
+	["MeetingStone"] = true,
+	["Skada"] = true,
+	["Rematch"] = true,
+	["RareScanner"] = true,
+	["GearStatsSummary"] = true,
+	["Mapster"] = true,
+	["WorldQuestTracker"] = true,
+}
+for k, v in pairs(temToggle) do
+	temToggle[k] = IsAddOnLoaded(k)
+end
+
+local function ToggleAddOnMsg(info, value)
+	if value then
+		E:Print(ENABLE..L[info]);
+		EnableAddOn(info);
+	else
+		E:Print(DISABLE..L[info]);
+		DisableAddOn(info);
+	end
+	E:StaticPopup_Show("CONFIG_RL");
+end
+
 E.Options.args.singleFunc = {
 	type = "group",
 	name = '15.'..L['singleFunc'],
 	desc = L['singleFunc desc'],
 	childGroups = 'tree',
-	get = function(info) return E.db.single[ info[#info] ] end,
-	set = function(info, value) E.db.single[ info[#info] ] = value end,
+	get = function(info) return temToggle[ info[#info] ]; end,
+	set = function(info, value)	temToggle[ info[#info] ] = value; ToggleAddOnMsg(info[#info], value); end,
 	args = {
 		EuiGarrisonHeader = {
 			order = 0,
@@ -28,18 +58,6 @@ E.Options.args.singleFunc = {
 			name = L["EuiGarrison"],
 			desc = L["Enable/Disable"]..L["EuiGarrison"],
 			disabled = function() return not E:IsConfigurableAddOn('EuiGarrison'); end,
-			get = function() return not IsAddOnLoaded("EuiGarrison"); end,
-			set = function(info, value) 
-				if value then
-					E:Print(L['Disabled']..L["EuiGarrison"]);
-					DisableAddOn('EuiGarrison');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["EuiGarrison"]);
-					EnableAddOn('EuiGarrison');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 		BodyGuardAway = {
 			order = 3,
@@ -63,18 +81,6 @@ E.Options.args.singleFunc = {
 			name = L["ExtraCD"],
 			desc = L["Enable/Disable"]..L["ExtraCD"],
 			disabled = function() return not E:IsConfigurableAddOn('ExtraCD'); end,
-			get = function() return IsAddOnLoaded("ExtraCD"); end,
-			set = function(info, value) 
-				if value then
-					E:Print(L['Disabled']..L["ExtraCD"]);
-					DisableAddOn('ExtraCD');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["ExtraCD"]);
-					EnableAddOn('ExtraCD');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 		ShowExtraCDOpt = {
 			order = 8,
@@ -101,18 +107,6 @@ E.Options.args.singleFunc = {
 			name = L["HandyNotes_DraenorTreasures"],
 			desc = L["Enable/Disable"]..L["HandyNotes_DraenorTreasures"],
 			disabled = function() return not E:IsConfigurableAddOn('HandyNotes_DraenorTreasures'); end,
-			get = function() return IsAddOnLoaded("HandyNotes_DraenorTreasures"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["HandyNotes_DraenorTreasures"]);
-					DisableAddOn('HandyNotes_DraenorTreasures');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["HandyNotes_DraenorTreasures"]);
-					EnableAddOn('HandyNotes_DraenorTreasures');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 		HandyNotes_LegionRaresTreasures = {
 			order = 11,
@@ -120,18 +114,6 @@ E.Options.args.singleFunc = {
 			name = L["HandyNotes_LegionRaresTreasures"],
 			desc = L["Enable/Disable"]..L["HandyNotes_LegionRaresTreasures"],
 			disabled = function() return not E:IsConfigurableAddOn('HandyNotes_LegionRaresTreasures'); end,
-			get = function() return IsAddOnLoaded("HandyNotes_LegionRaresTreasures"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["HandyNotes_LegionRaresTreasures"]);
-					DisableAddOn('HandyNotes_LegionRaresTreasures');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["HandyNotes_LegionRaresTreasures"]);
-					EnableAddOn('HandyNotes_LegionRaresTreasures');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 		ShowHandyNotes_DraenorTreasuresCfg = {
 			order = 12,
@@ -154,18 +136,6 @@ E.Options.args.singleFunc = {
 			name = L["MikScrollingBattleText"],
 			desc = L["Enable/Disable"]..L["MikScrollingBattleText"],
 			disabled = function() return not E:IsConfigurableAddOn('MikScrollingBattleText'); end,
-			get = function() return IsAddOnLoaded("MikScrollingBattleText"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["MikScrollingBattleText"]);
-					DisableAddOn('MikScrollingBattleText');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["MikScrollingBattleText"]);
-					EnableAddOn('MikScrollingBattleText');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 		ShowMSBTOpt = {
 			order = 15,
@@ -265,18 +235,6 @@ E.Options.args.singleFunc = {
 			name = L["OfflineDataCenter"],
 			desc = L["Enable/Disable"]..L["OfflineDataCenter"],
 			disabled = function() return not E:IsConfigurableAddOn('OfflineDataCenter'); end,
-			get = function() return IsAddOnLoaded("OfflineDataCenter"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["OfflineDataCenter"]);
-					DisableAddOn('OfflineDataCenter');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["OfflineDataCenter"]);
-					EnableAddOn('OfflineDataCenter');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 		ShowODCFrame = {
 			order = 22,
@@ -309,18 +267,6 @@ E.Options.args.singleFunc = {
 			name = L["MeetingStone"],
 			desc = L["Enable/Disable"]..L["MeetingStone"],
 			disabled = function() return not E:IsConfigurableAddOn('MeetingStone'); end,
-			get = function() return IsAddOnLoaded("MeetingStone"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["MeetingStone"]);
-					DisableAddOn('MeetingStone');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["MeetingStone"]);
-					EnableAddOn('MeetingStone');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 		ShowMeetingStoneFrame = {
 			order = 26,
@@ -356,18 +302,6 @@ E.Options.args.singleFunc = {
 			name = L["Skada"],
 			desc = L["Enable/Disable"]..L["Skada"],
 			disabled = function() return not E:IsConfigurableAddOn('Skada'); end,
-			get = function() return IsAddOnLoaded("Skada"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["Skada"]);
-					DisableAddOn('Skada');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["Skada"]);
-					EnableAddOn('Skada');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},			
 		ShowSkadaConfig = {
 			order = 30,
@@ -401,29 +335,17 @@ E.Options.args.singleFunc = {
 				E:ToggleConfig();
 			end,
 		},
-		RematchAnyHeader = {
+		RematchHeader = {
 			order = 45,
 			type = "header",
 			name = L["Rematch"],
 		},
-		RematchToggle = {
+		Rematch = {
 			order = 46,
 			type = "toggle",
 			name = L["Rematch"],
 			desc = L["Enable/Disable"]..L["Rematch"],
 			disabled = function() return not E:IsConfigurableAddOn('Rematch'); end,
-			get = function() return IsAddOnLoaded("Rematch"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["Rematch"]);
-					DisableAddOn('Rematch');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["Rematch"]);
-					EnableAddOn('Rematch');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 		RematchFrame = {
 			order = 47,
@@ -448,18 +370,6 @@ E.Options.args.singleFunc = {
 			name = L["RareScanner"],
 			desc = L["Enable/Disable"]..L["RareScanner"],
 			disabled = function() return not E:IsConfigurableAddOn('RareScanner'); end,
-			get = function() return IsAddOnLoaded("RareScanner"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["RareScanner"]);
-					DisableAddOn('RareScanner');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["RareScanner"]);
-					EnableAddOn('RareScanner');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},	
 		RareScannerConfigFrame = {
 			order = 53,
@@ -485,18 +395,6 @@ E.Options.args.singleFunc = {
 			name = L["GearStatsSummary"],
 			desc = L["Enable/Disable"]..L["GearStatsSummary"],
 			disabled = function() return not E:IsConfigurableAddOn('GearStatsSummary'); end,
-			get = function() return IsAddOnLoaded("GearStatsSummary"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["GearStatsSummary"]);
-					DisableAddOn('GearStatsSummary');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["GearStatsSummary"]);
-					EnableAddOn('GearStatsSummary');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 		MapsterHeader = {
 			order = 67,
@@ -509,18 +407,6 @@ E.Options.args.singleFunc = {
 			name = L["Mapster"],
 			desc = L["Enable/Disable"]..L["Mapster"],
 			disabled = function() return not E:IsConfigurableAddOn('Mapster'); end,
-			get = function() return IsAddOnLoaded("Mapster"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["Mapster"]);
-					DisableAddOn('Mapster');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["Mapster"]);
-					EnableAddOn('Mapster');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 		ShowMapsterFrame = {
 			order = 69,
@@ -558,18 +444,6 @@ E.Options.args.singleFunc = {
 			name = L["WorldQuestTracker"],
 			desc = L["Enable/Disable"]..L["WorldQuestTracker"],
 			disabled = function() return not E:IsConfigurableAddOn('WorldQuestTracker'); end,
-			get = function() return IsAddOnLoaded("WorldQuestTracker"); end,
-			set = function(info, value)
-				if value then
-					E:Print(L['Disabled']..L["WorldQuestTracker"]);
-					DisableAddOn('WorldQuestTracker');
-					E:StaticPopup_Show("CONFIG_RL");
-				else
-					E:Print(L["Enabled"]..L["WorldQuestTracker"]);
-					EnableAddOn('WorldQuestTracker');
-					E:StaticPopup_Show("CONFIG_RL");
-				end
-			end,
 		},
 	},
 }

@@ -231,7 +231,7 @@ function mod:SetTargetFrame(frame)
 			self:ConfigureElement_Glow(frame)	
 			self:ConfigureElement_TargetArrow(frame.UnitFrame) -- by eui.cc
 			self:ConfigureElement_Elite(frame)
-
+			self:ConfigureElement_Detection(frame)
 			self:ConfigureElement_Level(frame)
 			self:ConfigureElement_Name(frame)
 			self:ConfigureElement_NPCTitle(frame)
@@ -369,6 +369,7 @@ function mod:NAME_PLATE_UNIT_ADDED(event, unit, frame)
 	self:ConfigureElement_Name(frame.UnitFrame)
 	self:ConfigureElement_NPCTitle(frame.UnitFrame)
 	self:ConfigureElement_Elite(frame.UnitFrame)
+	self:ConfigureElement_Detection(frame.UnitFrame)
 	self:RegisterEvents(frame.UnitFrame, unit)
 	self:UpdateElement_All(frame.UnitFrame, unit)
 
@@ -412,6 +413,7 @@ function mod:NAME_PLATE_UNIT_REMOVED(event, unit, frame, ...)
 	frame.UnitFrame.NPCTitle:SetText("")
 	frame.UnitFrame.Name:SetText("")
 	frame.UnitFrame.Elite:Hide()
+	frame.UnitFrame.DetectionModel:Hide()
 	frame.UnitFrame:Hide()
 	frame.UnitFrame.isTarget = nil
 	frame.UnitFrame.displayedUnit = nil
@@ -512,7 +514,8 @@ function mod:UpdateElement_All(frame, unit, noTargetFrame)
 	mod:UpdateElement_Level(frame)
 	mod:UpdateElement_NPCTitle(frame)
 	mod:UpdateElement_Elite(frame)
-	
+	mod:UpdateElement_Detection(frame)
+
 	if(not noTargetFrame) then --infinite loop lol
 		mod:SetTargetFrame(frame)
 	end
@@ -539,6 +542,7 @@ function mod:NAME_PLATE_CREATED(event, frame)
 	
 	frame.UnitFrame.arrowIndicator, frame.UnitFrame.doubleArrowIndicator = self.ConstructElement_TargetArrow(frame.UnitFrame) --by eui.cc
 	frame.UnitFrame.Elite = self:ConstructElement_Elite(frame.UnitFrame)
+	frame.UnitFrame.DetectionModel = self:ConstructElement_Detection(frame.UnitFrame)
 end
 
 function mod:OnEvent(event, unit, ...)

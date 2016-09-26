@@ -65,3 +65,5 @@ GS-Core: disabled
 GS-SequenceEditor: disabled
 HandyNotes_LegionRaresTreasures: enabled
 WorldQuestTracker: enabled
+DBM-TrialofValor: enabled
+NomiCakes: enabled

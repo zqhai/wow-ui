@@ -14,6 +14,7 @@ if not L then return end
 ]]
 --Static Popup
 do
+	L["Are you sure you want to apply this font to all ElvUI elements?"] = "你確認你想應用此字體到所有EUI模組?"
 	L["Find BigFoot or DuoWan is loaded! please delete its."] = "發現大腳或魔盒被載入！請刪除它們後再使用EUI!";
 	L["ElvUI needs to perform database optimizations please be patient."] = "你想體驗2014愚人節彩蛋麼？";
 	L["Do you enjoy the new ElvUI?"] = "你喜歡新的EUI配色麼?";
@@ -52,6 +53,11 @@ L["Lowest Allowed UI Scale"] = "最低允許的UI縮放比例";
 L["Disable Tutorial Buttons"] = "禁用教程按鈕"
 L["Talking Head Scale"] = "特寫框體縮放"
 L["Hide In Vehicle"] = "載具時隱藏"
+L["Current Level:"] = "當前等級:"
+L["Honor XP:"] = "榮譽值:"
+L["Honor Remaining:"] = "榮譽值剩餘:"
+L["Bars"] = "條"
+L["Honor Bar"] = "榮譽條"
 
 --Minimap
 L['Always Display'] = '總是顯示';
@@ -442,6 +448,8 @@ end
 
 --NamePlate Config
 do
+	L["Detection"] = "檢測";
+	L["Suramar Detection"] = " 蘇拉瑪檢測";
 	L["Clickable Height"] = "可點擊高度";
 	L["Clickable Width"] = "可點擊寬度";
 	L["Controls how big of an area on the screen will accept clicks to target unit."] = "控制螢幕上多大的區域可以點擊到目標單位";
@@ -681,6 +689,7 @@ end
 
 --ACTIONBARS
 do
+	L["Zone Ability"] = "區域技能";
 	L["Color of the actionbutton when not usable."] = "當按鈕不可使用時的顏色";
 	L["Color of the actionbutton when usable."] = "當按鈕可以使用時的顏色";
 	L["Not Usable"] = "不可用";
@@ -1419,6 +1428,8 @@ end
 
 --Datatext
 do
+	L["Saved Raid(s)"] = "已有進度的副本"
+	L["Saved Dungeon(s)"] = "已有進度的地下城";
 	L["Displayed Currency"] = "顯示貨幣";
 	L["Orderhall"] = "職業大廳資源";
 	L["Gold:"] = "金幣:";
@@ -1883,10 +1894,15 @@ do
 	L["Map Alpha While Moving"] = "地圖透明度";
 	L['Controls what the transparency of the worldmap will be set to when you are moving.'] = "控制地圖移動時的透明度";
 	L['Font'] = "字體"
+	L["Use Position Override"] = "位置重寫";
+	L["When enabled it will use the Anchor Point setting to determine growth direction, otherwise it will be determined by where the bar is positioned."] = "當啟用時,它將使用錨點位置來確定增長方向,否則將取決於其自身的位置";
 end
 
 --Bags
 do
+	L["Disable Bag Sort"] = "禁用背包排序";
+	L["Disable Bank Sort"] = "禁用銀行排序";
+	L["Clear Search On Close"] = "關閉時清空搜索"
 	L["Temporary Move"] = '移動背包';
 	L["Hold Control + Right Click:"] = '按住 Ctrl 並按滑鼠右鍵：'
 	L["Reset Position"] = "重設位置"
@@ -1964,6 +1980,9 @@ The following search keywords can also be used:
 	L['The display format of the currency icons that get displayed below the main bag. (You have to be watching a currency for this to display)'] = "背包底部的貨幣顯示格式. (你需要在貨幣頁中勾選顯示)";
 	L["Icons Only"] = "圖標";
 	L["Icons and Text"] = "圖標和文字";
+	L["Global"] = "全域";
+	L["Ignored Items and Search Syntax (Global)"] = "忽略物品和搜索語法(全域)";
+	L["Ignored Items and Search Syntax (Profile)"] = "忽略物品和搜索語法(配置)";	
 	L['Bag Width'] = '背包寬度';
 	L['Bank Width'] = '銀行寬度';
 	L['Already Running.. Bailing Out!'] = "已在運行";
@@ -2239,6 +2258,12 @@ end
 
 --euiscript
 do
+	L["DRTracker"] = "遞減追蹤"
+	L["ElvUF_Arena1"] = "EUI競技場框體1";
+	L["ElvUF_Arena2"] = "EUI競技場框體2";
+	L["ElvUF_Arena3"] = "EUI競技場框體3";
+	L["ElvUF_Arena4"] = "EUI競技場框體4";
+	L["ElvUF_Arena5"] = "EUI競技場框體5";
 	L["Character Stats Enhance"] = "角色面板屬性增強";
 	L["CharacterStats List"] = "屬性清單";
 	L["HEALTH"] = "生命";

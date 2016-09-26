@@ -6,13 +6,6 @@ X: 0
 Y: 0
 W: 365
 H: 240
-Frame: DBMMinimapButton
-FrameLevel: 5
-Anchor: TOPRIGHT
-X: -189
-Y: -105
-W: 32
-H: 32
 Frame: scanner_button
 FrameLevel: 1
 Anchor: BOTTOM
@@ -20,3 +13,10 @@ X: 0
 Y: 128
 W: 200
 H: 50
+Frame: DBMMinimapButton
+FrameLevel: 5
+Anchor: TOPRIGHT
+X: -189
+Y: -105
+W: 32
+H: 32

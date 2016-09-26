@@ -80,4 +80,5 @@
 	<Include file="TalentSetManager\components.xml"/>
 	
 	<Script file="DejaCharacterStats.lua"/>
+	<Script file="EUI_DrTracker.lua"/>
 </Ui>

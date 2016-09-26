@@ -7,6 +7,7 @@ SkadaDB = {
 	["hasUpgraded"] = true,
 	["profileKeys"] = {
 		["Haidi - 幽暗沼泽"] = "Default",
+		["冷血魔刀 - 幽暗沼泽"] = "Default",
 		["开山怪 - 幽暗沼泽"] = "Default",
 		["Haidii - 燃烧之刃"] = "Default",
 		["每天壹碗面 - 幽暗沼泽"] = "Default",
@@ -17,15 +18,15 @@ SkadaDB = {
 			["windows"] = {
 				{
 					["barslocked"] = true,
-					["background"] = {
-						["bordertexture"] = "None",
-						["height"] = 157.000015258789,
-					},
 					["y"] = 9.00006103515625,
 					["point"] = "TOPRIGHT",
 					["mode"] = "伤害",
 					["spark"] = false,
 					["barwidth"] = 315.999908447266,
+					["background"] = {
+						["bordertexture"] = "None",
+						["height"] = 157.000015258789,
+					},
 					["x"] = 1589.00021362305,
 				}, -- [1]
 			},
@@ -38,8 +39,8 @@ SkadaDB = {
 				["mode"] = "总计治疗",
 			},
 			["ffoptions"] = {
-				["ignoreability"] = false,
 				["ignoredefensive"] = true,
+				["ignoreability"] = false,
 			},
 		},
 	},

@@ -33,6 +33,7 @@ RematchSettings = {
 		["FavoritesFirst"] = true,
 	},
 	["JournalPanel"] = 1,
+	["BackupCount"] = 0,
 	["TeamGroups"] = {
 		{
 			"综合", -- [1]
@@ -46,21 +47,21 @@ RematchSettings = {
 		},
 		["Rarity"] = {
 		},
-		["Favorite"] = {
+		["Tough"] = {
 		},
-		["Collected"] = {
+		["Level"] = {
 		},
 		["Sources"] = {
 		},
 		["Breed"] = {
 		},
-		["Script"] = {
-		},
 		["Similar"] = {
 		},
-		["Level"] = {
+		["Script"] = {
 		},
-		["Tough"] = {
+		["Collected"] = {
+		},
+		["Favorite"] = {
 		},
 		["Types"] = {
 		},

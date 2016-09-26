@@ -85,6 +85,7 @@ B.ProfessionColors = {
 	[0x0080] = {232/255, 118/255, 46/255}, -- Engineering
 	[0x0200] = {8/255, 180/255, 207/255}, -- Gems
 	[0x0400] = {105/255, 79/255,  7/255}, -- Mining
+	[0x8000] = {107/255, 150/255, 255/255}, -- Fishing
 	[0x010000] = {222/255, 13/255,  65/255} -- Cooking
 }
 
@@ -283,6 +284,16 @@ function B:UpdateCountDisplay()
 		end
 		if bagFrame.UpdateAllSlots then
 			bagFrame:UpdateAllSlots()
+		end
+	end
+
+	--Reagent Bank
+	if self.BankFrame and self.BankFrame.reagentFrame then
+		for i = 1, 98 do
+			local slot = self.BankFrame.reagentFrame.slots[i]
+			slot.Count:FontTemplate(E.LSM:Fetch("font", E.db.bags.countFont), E.db.bags.countFontSize, E.db.bags.countFontOutline)
+			slot.Count:SetTextColor(color.r, color.g, color.b)
+			self:UpdateReagentSlot(i)
 		end
 	end
 end
@@ -1156,6 +1167,10 @@ function B:ContructContainerFrame(name, isBank)
 		f.sortButton:SetPushedTexture("Interface\\ICONS\\INV_Pet_Broom")
 		f.sortButton:GetPushedTexture():SetTexCoord(unpack(E.TexCoords))
 		f.sortButton:GetPushedTexture():SetInside()
+		f.sortButton:SetDisabledTexture("Interface\\ICONS\\INV_Pet_Broom")
+		f.sortButton:GetDisabledTexture():SetTexCoord(unpack(E.TexCoords))
+		f.sortButton:GetDisabledTexture():SetInside()
+		f.sortButton:GetDisabledTexture():SetDesaturated(1)
 		f.sortButton:StyleButton(nil, true)
 		f.sortButton:SetScript("OnEnter", BagItemAutoSortButton:GetScript("OnEnter"))
 		f.sortButton:SetScript('OnClick', function()
@@ -1165,6 +1180,9 @@ function B:ContructContainerFrame(name, isBank)
 				SortReagentBankBags()
 			end
 		end)
+		if E.db.bags.disableBankSort then
+			f.sortButton:Disable()
+		end
 
 		--Toggle Bags Button
 		f.depositButton = CreateFrame("Button", name..'DepositButton', f.reagentFrame);
@@ -1235,8 +1253,13 @@ function B:ContructContainerFrame(name, isBank)
 			end
 		end)
 
-		f:SetScript('OnHide', CloseBankFrame)
+		f:SetScript('OnHide', function()
+			CloseBankFrame()
 
+			if E.db.bags.clearSearchOnClose then
+				B.ResetAndClear(f.editBox);
+			end
+		end)
 
 		--Search
 		f.editBox = CreateFrame('EditBox', name..'EditBox', f);
@@ -1279,10 +1302,16 @@ function B:ContructContainerFrame(name, isBank)
 		f.sortButton:SetPushedTexture("Interface\\ICONS\\INV_Pet_Broom")
 		f.sortButton:GetPushedTexture():SetTexCoord(unpack(E.TexCoords))
 		f.sortButton:GetPushedTexture():SetInside()
+		f.sortButton:SetDisabledTexture("Interface\\ICONS\\INV_Pet_Broom")
+		f.sortButton:GetDisabledTexture():SetTexCoord(unpack(E.TexCoords))
+		f.sortButton:GetDisabledTexture():SetInside()
+		f.sortButton:GetDisabledTexture():SetDesaturated(1)
 		f.sortButton:StyleButton(nil, true)
 		f.sortButton:SetScript("OnEnter", BagItemAutoSortButton:GetScript("OnEnter"))
 		f.sortButton:SetScript('OnClick', function() B:CommandDecorator(B.SortBags, 'bags')(); end)
-
+		if E.db.bags.disableBagSort then
+			f.sortButton:Disable()
+		end
 
 		--Bags Button
 		f.bagsButton = CreateFrame("Button", name..'BagsButton', f);
@@ -1376,6 +1405,10 @@ function B:ContructContainerFrame(name, isBank)
 					bagButton:SetChecked(false)
 				end
 			end
+
+			if E.db.bags.clearSearchOnClose then
+				B.ResetAndClear(f.editBox);
+			end
 		end)
 	end
 
@@ -1403,6 +1436,23 @@ function B:ToggleBackpack()
 		self:OpenBags()
 	else
 		self:CloseBags()
+	end
+end
+
+function B:ToggleSortButtonState(isBank)
+	local button, disable;
+	if isBank and self.BankFrame then
+		button = self.BankFrame.sortButton
+		disable = E.db.bags.disableBankSort
+	elseif not isBank and self.BagFrame then
+		button = self.BagFrame.sortButton
+		disable = E.db.bags.disableBagSort
+	end
+
+	if button and disable then
+		button:Disable()
+	elseif button and not disable then
+		button:Enable()
 	end
 end
 

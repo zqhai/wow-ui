@@ -1503,8 +1503,16 @@ function E:Initialize()
 		local f = CreateFrame("Frame")
 		f:RegisterEvent("ADDON_LOADED")
 		f:SetScript("OnEvent", function(self, event, addon)
-			if addon == "Blizzard_OrderHallUI" then
+			if event == "ADDON_LOADED" and addon == "Blizzard_OrderHallUI" then
+				if InCombatLockdown() then
+					self:RegisterEvent("PLAYER_REGEN_ENABLED")
+				else
+					HandleCommandBar()
+				end
+				self:UnregisterEvent(event)
+			elseif event == "PLAYER_REGEN_ENABLED" then
 				HandleCommandBar()
+				self:UnregisterEvent(event)
 			end
 		end)
 	end

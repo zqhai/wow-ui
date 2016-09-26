@@ -627,12 +627,49 @@ function S:QuestLog()
 	end)
 end
 
+local function OpenGrassionReport()
+	if not GarrisonLandingPageMinimapButton then return; end
+
+	GarrisonLandingPageMinimapButton:SetScript("OnClick", function(self, button, down)
+		if button == "LeftButton" then
+			if (GarrisonLandingPage and GarrisonLandingPage:IsShown()) then
+				HideUIPanel(GarrisonLandingPage);
+			else
+				ShowGarrisonLandingPage(C_Garrison.GetLandingPageGarrisonType());
+			end
+		elseif button == "RightButton" then
+			if (GarrisonLandingPage and GarrisonLandingPage:IsShown()) then
+				HideUIPanel(GarrisonLandingPage);
+			else
+				ShowGarrisonLandingPage(LE_GARRISON_TYPE_6_0);
+			end
+		end
+	end);
+	GarrisonLandingPageMinimapButton:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+end
+
+local function ToggleTalkingFrame()
+	if(TalkingHeadFrame and TalkingHeadFrame:IsVisible() and E.db.euiscript.disable_talking) then
+		TalkingHeadFrame.MainFrame.CloseButton:GetScript("OnClick")();
+	end
+end
+S.ToggleTalkingFrame = ToggleTalkingFrame
+
+local TalkingHooked = false
+function S:ToggleTalkingHead()
+	if not TalkingHooked and TalkingHeadFrame then
+		TalkingHeadFrame:HookScript("OnShow", ToggleTalkingFrame)
+		TalkingHooked = true
+	end
+end
+
 function S:Initialize()
 	CreateAutoQuestButton()
 	self:CreateVehicleExit()
 	self:AutoCollect()
 	self:ToggleEuiScriptPoi()
 	S:QuestLog()
+	OpenGrassionReport()
 
 	if not S.WorldState then S.WorldState = CreateFrame("Frame", "EuiWorldState", UIParent) end
 	S.WorldState:Point("TOP", UIParent, "TOP", -30, -60);
@@ -674,6 +711,8 @@ function S:Initialize()
 		EJMicroButtonAlert:Hide()
 	end	
 	
+	self:RegisterEvent("TALKINGHEAD_REQUESTED", "ToggleTalkingHead")
+
 	self:SecureHook('MerchantItemButton_OnModifiedClick', 'ByMaxNumber')
 
 	self:SecureHook("WorldStateAlwaysUpFrame_Update", 'WorldStateAlwaysUpFrame_Update')

@@ -152,7 +152,7 @@ function mod:UpdateElement_Auras(frame)
 	end
 	
 	local TopLevel = frame.HealthBar
-	local TopOffset = self.db.units[frame.UnitType].showName and select(2, frame.Name:GetFont()) + 5 or 0
+	local TopOffset = ((self.db.units[frame.UnitType].showName and select(2, frame.Name:GetFont()) + 5) or 0)
 	if(hasDebuffs) then
 		TopOffset = TopOffset + 3
 		frame.Debuffs:SetPoint("BOTTOMLEFT", TopLevel, "TOPLEFT", 0, TopOffset)
@@ -171,10 +171,17 @@ function mod:UpdateElement_Auras(frame)
 		TopOffset = 3
 	end
 	
-	if(frame.TopLevelFrame ~= TopLevel and self.db.classbar.enable and self.db.classbar.position ~= "BELOW") then
+	if (frame.TopLevelFrame ~= TopLevel) then
 		frame.TopLevelFrame = TopLevel
 		frame.TopOffset = TopOffset
-		mod:ClassBar_Update(frame)
+
+		if (self.db.classbar.enable and self.db.classbar.position ~= "BELOW") then
+			mod:ClassBar_Update(frame)
+		end
+
+		if (self.db.units[frame.UnitType].detection and self.db.units[frame.UnitType].detection.enable) then
+			mod:ConfigureElement_Detection(frame)
+		end
 	end
 end
 
@@ -200,12 +207,13 @@ function mod:CreateAuraIcon(parent)
 	return aura
 end
 
-function mod:Auras_SizeChanged(width, height)
+function mod:Auras_SizeChanged(width)
 	local numAuras = #self.icons
 	for i=1, numAuras do
 		self.icons[i]:SetWidth((width - (mod.mult*numAuras)) / numAuras)
-		self.icons[i]:SetHeight((self.db.baseHeight or 18) * self:GetParent().HealthBar.currentScale or 1)
+		self.icons[i]:SetHeight((self.db.baseHeight or 18) * (self:GetParent().HealthBar.currentScale or 1))
 	end
+	self:SetHeight((self.db.baseHeight or 18) * (self:GetParent().HealthBar.currentScale or 1))
 end
 
 function mod:UpdateAuraIcons(auras)

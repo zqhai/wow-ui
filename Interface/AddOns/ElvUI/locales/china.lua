@@ -14,6 +14,7 @@ if not L then return end
 ]]
 --Static Popup
 do
+	L["Are you sure you want to apply this font to all ElvUI elements?"] = "你确认你想应用此字体到所有EUI模块?"
 	L["Find BigFoot or DuoWan is loaded! please delete its."] = "发现有大脚或魔盒插件被载入！请删除他们再使用EUI.";
 	L["ElvUI needs to perform database optimizations please be patient."] = "你想体验2014愚人节彩蛋么？";
 	L["Do you enjoy the new ElvUI?"] = "你喜欢新的EUI配色么?";
@@ -51,7 +52,11 @@ L["Disable Tutorial Buttons"] = "禁用教程按钮"
 L["Talking Head Scale"] = "特写框体缩放"
 L["Hide In Vehicle"] = "载具时隐藏"
 L["Enable + Adjust Movers"] = "启用+调整移动";
-
+L["Current Level:"] = "当前等级:"
+L["Honor XP:"] = "荣誉值:"
+L["Honor Remaining:"] = "荣誉值剩余:"
+L["Bars"] = "条"
+L["Honor Bar"] = "荣誉条"
 --Minimap
 L['Always Display'] = '总是显示';
 L['Location Text'] = '地区文字';
@@ -447,6 +452,8 @@ end
 
 --NamePlate Config
 do
+	L["Detection"] = "检测";
+	L["Suramar Detection"] = " 苏拉玛检测";
 	L["Clickable Height"] = "可点击高度";
 	L["Clickable Width"] = "可点击宽度";
 	L["Controls how big of an area on the screen will accept clicks to target unit."] = "控制屏幕上多大的区域可以点击到目标单位";
@@ -682,6 +689,7 @@ end
 	
 --ACTIONBARS
 do
+	L["Zone Ability"] = "区域技能";
 	L["Color of the actionbutton when not usable."] = "当按钮不可使用时的颜色";
 	L["Color of the actionbutton when usable."] = "当按钮可以使用时的颜色";
 	L["Not Usable"] = "不可用";
@@ -1407,6 +1415,8 @@ end
 
 --Datatext
 do
+	L["Saved Raid(s)"] = "已有进度的副本"
+	L["Saved Dungeon(s)"] = "已有进度的地下城";
 	L["Displayed Currency"] = "显示货币";
 	L["Orderhall"] = "职业大厅资源";
 	L["Gold:"] = "金币:";
@@ -1867,7 +1877,8 @@ do
 	L['Enable/Disable the loot roll frame.'] = "启用/禁用增强LOOT框体";
 	L['Loot'] = "拾取框";
 	L['Enable/Disable the loot frame.'] = "启用/禁用拾取框";
-
+	L["Use Position Override"] = "位置重写";
+	L["When enabled it will use the Anchor Point setting to determine growth direction, otherwise it will be determined by where the bar is positioned."] = "当启用时,它将使用锚点位置来确定增长方向,否则将取决于其自身的位置";
 	L['Exp/Rep Position'] = "经验/声望条位置";
 	L['Change the position of the experience/reputation bar.'] = "改变经验/声望条位置";
 	L['Top Screen'] = "屏幕顶端";
@@ -1879,6 +1890,9 @@ end
 
 --Bags
 do
+	L["Disable Bag Sort"] = "禁用背包排序";
+	L["Disable Bank Sort"] = "禁用银行排序";
+	L["Clear Search On Close"] = "关闭时清空搜索"
 	L["Temporary Move"] = '移动背包';
 	L["Hold Control + Right Click:"] = '按住 Ctrl 并按鼠标右键：'
 	L["Reset Position"] = "重设位置"
@@ -1959,6 +1973,9 @@ The following search keywords can also be used:
 	L['The display format of the currency icons that get displayed below the main bag. (You have to be watching a currency for this to display)'] = "背包底部的货币显示格式. (你需要在货币页中勾选显示)";
 	L["Icons Only"] = "图标";
 	L["Icons and Text"] = "图标和文字";
+	L["Global"] = "全局";
+	L["Ignored Items and Search Syntax (Global)"] = "忽略物品和搜索语法(全局)";
+	L["Ignored Items and Search Syntax (Profile)"] = "忽略物品和搜索语法(配置)";
 	L['Already Running.. Bailing Out!'] = "已在运行";
 	L['You must be at a bank.'] = "你必需在银行";
 	L['Confused.. Try Again!'] = "重试";
@@ -2228,6 +2245,12 @@ end
 
 --euiscript
 do
+	L["DRTracker"] = "递减追踪"
+	L["ElvUF_Arena1"] = "EUI竞技场框体1";
+	L["ElvUF_Arena2"] = "EUI竞技场框体2";
+	L["ElvUF_Arena3"] = "EUI竞技场框体3";
+	L["ElvUF_Arena4"] = "EUI竞技场框体4";
+	L["ElvUF_Arena5"] = "EUI竞技场框体5";
 	L["Character Stats Enhance"] = "角色面板属性增强";
 	L["CharacterStats List"] = "属性列表";
 	L["HEALTH"] = "生命";

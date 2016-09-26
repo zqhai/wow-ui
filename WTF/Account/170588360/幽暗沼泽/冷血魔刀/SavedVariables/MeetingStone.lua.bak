@@ -1,10 +1,11 @@
 
 MEETINGSTONE_CHARACTER_DB = {
 	["profileKeys"] = {
-		["冷血魔刀 - 幽暗沼泽"] = "冷血魔刀 - 幽暗沼泽",
+		["Haidi - 幽暗沼泽"] = "Haidi - 幽暗沼泽",
 	},
 	["profiles"] = {
-		["冷血魔刀 - 幽暗沼泽"] = {
+		["Haidi - 幽暗沼泽"] = {
+			["lastSearchValue"] = "3-14-38-0",
 		},
 	},
 }

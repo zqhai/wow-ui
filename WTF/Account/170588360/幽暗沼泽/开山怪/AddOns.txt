@@ -60,3 +60,9 @@ DBM-Nighthold: enabled
 DBM-BrokenIsles: enabled
 DBM-EmeraldNightmare: enabled
 DBM-Party-Legion: enabled
+GS-DraikMacros: disabled
+GS-SequenceTranslator: disabled
+GS-Core: disabled
+GS-SequenceEditor: disabled
+WorldQuestTracker: enabled
+HandyNotes_LegionRaresTreasures: enabled

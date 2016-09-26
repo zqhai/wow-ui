@@ -63,6 +63,11 @@ L["Shadow"] = true;
 L["Shadow Width"] = true;
 L["Shadow Alpha"] = true;
 L["Lowest Allowed UI Scale"] = true;
+L["Current Level:"] = true;
+L["Honor XP:"] = true;
+L["Honor Remaining:"] = true;
+L["Bars"] = true;
+L["Honor Bar"] = true;
 
 --Minimap
 L['Always Display'] = true;
@@ -83,6 +88,7 @@ L['Instance Difficulty'] = true;
 L["Open Ticket"] = true;
 
 --Distributor
+L["Are you sure you want to apply this font to all ElvUI elements?"] = true;
 L["Apply Font To All"] = true;
 L["Applies the font and font size settings throughout the entire user interface. Note: Some font size settings will be skipped due to them having a smaller font size by default."] = true;
 L["Apply Texture To All"] = true;
@@ -146,6 +152,7 @@ L["Separate Panel Sizes"] = true;
 L["Alerts"] = true;
 
 --ActionBars
+L["Zone Ability"] = true;
 L["Color of the actionbutton when not usable."] = true;
 L["Color of the actionbutton when usable."] = true;
 L["Not Usable"] = true;
@@ -254,12 +261,17 @@ L["Toggles the display of the actionbars backdrop."] = true;
 L["Visibility State"] = true;
 L['When enabled the main actionbar will use the maximum amount of pages available. This means if you have another actionbar disabled, the actionbar page will become available on the main actionbar. Having this disabled will limit the main actionbar to two pages.'] = true;
 L["Width Multiplier"] = true;
+L["Use Position Override"] = true;
+L["When enabled it will use the Anchor Point setting to determine growth direction, otherwise it will be determined by where the bar is positioned."] = true;
 L[ [=[This works like a macro, you can run different situations to get the actionbar to page differently.
  Example: '[combat] 2;'\n:actionbar to page:\nactionbar1:|cff00ff001|r;2:|cff00ff005|r;3:|cff00ff006|r;4:|cff00ff004|r;5:|cff00ff003|r;6:|cff00ff008|r;7:|cff00ff009|r:8:|cff00ff0010|r;9:|cff00ff007|r]=] ] = true;
 L[ [=[This works like a macro, you can run different situations to get the actionbar to show/hide differently.
  Example: '[combat] show;hide']=] ] = true;
 
 --Bags
+L["Disable Bag Sort"] = true;
+L["Disable Bank Sort"] = true;
+L["Clear Search On Close"] = true;
 L["Temporary Move"] = true;
 L["Hold Control + Right Click:"] = true;
 L["Reset Position"] = true;
@@ -356,6 +368,9 @@ L['Currency Format'] = true;
 L['The display format of the currency icons that get displayed below the main bag. (You have to be watching a currency for this to display)'] = true;
 L["Icons Only"] = true;
 L["Icons and Text"] = true;
+L["Global"] = true;
+L["Ignored Items and Search Syntax (Global)"] = true;
+L["Ignored Items and Search Syntax (Profile)"] = true;
 L['Panel Width (Bags)'] = true;
 L['Toggle Bags'] = true;
 L['Align To Chat'] = true;
@@ -618,6 +633,8 @@ L["ELVUI_CREDITS"] = "I would like to give out a special shout out to the follow
 L["Testing:"] = true;
 
 --DataTexts
+L["Saved Raid(s)"] = true
+L["Saved Dungeon(s)"] = true
 L["Displayed Currency"] = true;
 L["Orderhall"] = true;
 L["Gold:"] = true;
@@ -904,6 +921,8 @@ L["Experience Bar"] = true;
 L["Reputation Bar"] = true;
 
 --NamePlates
+L["Detection"] = true;
+L["Suramar Detection"] = true;
 L["Clickable Height"] = true;
 L["Clickable Width"] = true;
 L["Controls how big of an area on the screen will accept clicks to target unit."] = true;
@@ -2049,6 +2068,12 @@ end
 
 --euiscript
 do
+	L["DRTracker"] = true;
+	L["ElvUF_Arena1"] = true;
+	L["ElvUF_Arena2"] = true;
+	L["ElvUF_Arena3"] = true;
+	L["ElvUF_Arena4"] = true;
+	L["ElvUF_Arena5"] = true;
 	L["Character Stats Enhance"] = true;
 	L["CharacterStats List"] = true;
 	L["HEALTH"] = true;

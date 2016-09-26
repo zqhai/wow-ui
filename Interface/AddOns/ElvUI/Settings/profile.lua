@@ -16,7 +16,7 @@ P['general'] = {
 	['bottomPanel'] = true,
 	['hideErrorFrame'] = true,
 	['enhancedPvpMessages'] = true,
-	['objectiveFrameHeight'] = 680, --by eui.cc
+	['objectiveFrameHeight'] = 520, --by eui.cc
 	['bonusObjectivePosition'] = "LEFT",
 	["talkingHeadFrameScale"] = 0.9,
 
@@ -181,6 +181,9 @@ P['bags'] = {
 	["countFontOutline"] = "OUTLINE",
 	["countFontColor"] = {r = 1, g = 1, b = 1},
 	["reverseLoot"] = false,
+	["clearSearchOnClose"] = false,
+	["disableBagSort"] = false,
+	["disableBankSort"] = false,
 	['bagBar'] = {
 		['growthDirection'] = 'VERTICAL',
 		['sortDirection'] = 'ASCENDING',
@@ -194,9 +197,9 @@ P['bags'] = {
 --NamePlate
 P["nameplates"] = {
 	["statusbar"] = "ElvUI Norm",
-	['font'] = 'Homespun',
+	['font'] = 'EUI',
 	['fontSize'] = 8,
-	['fontOutline'] = 'MONOCHROMEOUTLINE',
+	['fontOutline'] = 'OUTLINE',
 	['useTargetScale'] = true,
 	['targetScale'] = 1.15,
 	['nonTargetTransparency'] = 0.35,
@@ -578,13 +581,16 @@ P["nameplates"] = {
 				['xOffset'] = 15,
 				['yOffset'] = 0,
 			},
+			["detection"] = {
+				["enable"] = true,
+			},
 		},
 	},
 };
 
 --Auras
 P['auras'] = {
-	['font'] = 'Homespun',
+	['font'] = 'EUI',
 	['fadeThreshold'] = 5,
 	['buffs'] = {
 		['growthDirection'] = 'LEFT_DOWN',
@@ -597,7 +603,7 @@ P['auras'] = {
 		['seperateOwn'] = 1,
 		['size'] = 32,
 		['fontSize'] = 10,
-		['fontOutline'] = 'MONOCHROMEOUTLINE',
+		['fontOutline'] = 'OUTLINE',
 		['countYOffset'] = 0,
 		['countXOffset'] = 0,
 		['timeYOffset'] = 0,
@@ -747,7 +753,7 @@ P['tooltip'] = {
 	['healthBar'] = {
 		['text'] = true,
 		['height'] = 7,
-		['font'] = 'Homespun',
+		['font'] = 'EUI',
 		['fontSize'] = 10,
 	},
 	["useCustomFactionColors"] = false,
@@ -766,9 +772,9 @@ P['tooltip'] = {
 P['unitframe'] = {
 	['smoothbars'] = false,
 	['statusbar'] = "ElvUI Norm",
-	['font'] = 'Homespun',
+	['font'] = 'EUI',
 	['fontSize'] = 10,
-	['fontOutline'] = 'MONOCHROMEOUTLINE',
+	['fontOutline'] = 'OUTLINE',
 	['OORAlpha'] = 0.35,
 	['debuffHighlighting'] = 'FILL',
 	["smartRaidFilter"] = true,
@@ -2193,8 +2199,8 @@ P['unitframe'] = {
 				['enable'] = false,
 				["showDispellableDebuff"] = true,
 				['fontSize'] = 10,
-				["font"] = "Homespun",
-				["fontOutline"] = "MONOCHROMEOUTLINE",
+				["font"] = "EUI",
+				["fontOutline"] = "OUTLINE",
 				['size'] = 26,
 				['xOffset'] = 0,
 				['yOffset'] = 0,
@@ -2385,8 +2391,8 @@ P['unitframe'] = {
 				['enable'] = true,
 				["showDispellableDebuff"] = true,
 				['fontSize'] = 10,
-				["font"] = "Homespun",
-				["fontOutline"] = "MONOCHROMEOUTLINE",
+				["font"] = "EUI",
+				["fontOutline"] = "OUTLINE",
 				['size'] = 26,
 				['xOffset'] = 0,
 				['yOffset'] = 0,
@@ -2543,8 +2549,8 @@ P['unitframe'] = {
 				['enable'] = false,
 				["showDispellableDebuff"] = true,
 				['fontSize'] = 10,
-				["font"] = "Homespun",
-				["fontOutline"] = "MONOCHROMEOUTLINE",
+				["font"] = "EUI",
+				["fontOutline"] = "OUTLINE",
 				['size'] = 22,
 				['xOffset'] = 0,
 				['yOffset'] = 0,
@@ -2698,8 +2704,8 @@ P['unitframe'] = {
 				['enable'] = true,
 				["showDispellableDebuff"] = true,
 				['fontSize'] = 10,
-				["font"] = "Homespun",
-				["fontOutline"] = "MONOCHROMEOUTLINE",
+				["font"] = "EUI",
+				["fontOutline"] = "OUTLINE",
 				['size'] = 26,
 				['xOffset'] = 0,
 				['yOffset'] = 2,
@@ -2788,8 +2794,8 @@ P['unitframe'] = {
 				['enable'] = true,
 				["showDispellableDebuff"] = true,
 				['fontSize'] = 10,
-				["font"] = "Homespun",
-				["fontOutline"] = "MONOCHROMEOUTLINE",
+				["font"] = "EUI",
+				["fontOutline"] = "OUTLINE",
 				['size'] = 26,
 				['xOffset'] = 0,
 				['yOffset'] = 0,
@@ -2879,8 +2885,8 @@ P['unitframe'] = {
 				['enable'] = true,
 				["showDispellableDebuff"] = true,
 				['fontSize'] = 10,
-				["font"] = "Homespun",
-				["fontOutline"] = "MONOCHROMEOUTLINE",
+				["font"] = "EUI",
+				["fontOutline"] = "OUTLINE",
 				['size'] = 26,
 				['xOffset'] = 0,
 				['yOffset'] = 0,
@@ -2922,9 +2928,9 @@ P["cooldown"] = {
 
 --Actionbar
 P["actionbar"] = {
-	['font'] = 'Homespun',
+	['font'] = 'EUI',
 	['fontSize'] = 10,
-	['fontOutline'] = 'MONOCHROMEOUTLINE',
+	['fontOutline'] = 'OUTLINE',
 	['fontColor'] = { r = 1, g = 1, b = 1 },
 
 	["macrotext"] = false,
@@ -3093,6 +3099,7 @@ P["actionbar"] = {
 		["backdropSpacing"] = 2,
 		['alpha'] = 1,
 		['inheritGlobalFade'] = false,
+		["usePositionOverride"] = true,
 	},
 	['extraActionButton'] = {
 		['alpha'] = 1,
