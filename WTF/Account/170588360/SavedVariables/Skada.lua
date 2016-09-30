@@ -18,15 +18,15 @@ SkadaDB = {
 			["windows"] = {
 				{
 					["barslocked"] = true,
+					["background"] = {
+						["bordertexture"] = "None",
+						["height"] = 157.000015258789,
+					},
 					["y"] = 9.00006103515625,
 					["point"] = "TOPRIGHT",
 					["mode"] = "伤害",
 					["spark"] = false,
 					["barwidth"] = 315.999908447266,
-					["background"] = {
-						["bordertexture"] = "None",
-						["height"] = 157.000015258789,
-					},
 					["x"] = 1589.00021362305,
 				}, -- [1]
 			},
@@ -34,9 +34,9 @@ SkadaDB = {
 				["Overhealing"] = false,
 			},
 			["report"] = {
-				["number"] = 3,
-				["channel"] = "party",
-				["mode"] = "总计治疗",
+				["number"] = 15,
+				["channel"] = "guild",
+				["mode"] = "敌对受到伤害",
 			},
 			["ffoptions"] = {
 				["ignoredefensive"] = true,

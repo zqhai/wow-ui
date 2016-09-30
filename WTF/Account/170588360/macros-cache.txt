@@ -42,6 +42,10 @@ VER 3 000000000000005C "变身" "136172"
 /run local f,t=RnT or CreateFrame("Button","RnT",nil,"SecureActionButtonTemplate") f:SetAttribute("type","item") t=GetItemInfo(C_ToyBox.GetToyFromIndex(random(13))) f:SetAttribute("item",t) print("Casting toy:",t) 
 /click RnT
 END
+VER 3 0000000000000062 "开怪" "132091"
+/Y 6 秒后开怪
+/DBM PULL 6
+END
 VER 3 000000000000005D "神器能量统计" "INV_MISC_NOTE_05"
 /run _,_,_,_,a,b=C_ArtifactUI.GetEquippedArtifactInfo() for i=0,b-1 do a=a+C_ArtifactUI.GetCostForPointAtRank(i)end print(a)
 END

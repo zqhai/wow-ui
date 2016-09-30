@@ -231,15 +231,15 @@ ElvDB = {
 					},
 					[17] = {
 					},
-					[6788] = {
+					[123258] = {
 					},
 					[33206] = {
 					},
-					[139] = {
-					},
-					[123258] = {
-					},
 					[10060] = {
+					},
+					[6788] = {
+					},
+					[139] = {
 					},
 					[41635] = {
 					},
@@ -322,19 +322,19 @@ ElvDB = {
 				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,1298,162",
 				["GMMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,452,-80",
 				["BagsMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-335,44",
-				["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,291,442",
+				["BossButton"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-547,359",
 				["EuiVegeanceIconMover"] = "BOTTOMElvUIParentBOTTOM-3164",
-				["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,291,376",
+				["ZoneAbility"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-550,426",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
 				["AutoButtonAnchor2Mover"] = "TOPElvUIParentTOP242-520",
-				["ElvUF_FocusMover"] = "BOTTOMRIGHTElvUIParentBOTTOMRIGHT-430246",
+				["ElvUF_FocusMover"] = "BOTTOM,ElvUIParent,BOTTOM,192,169",
 				["AutoButtonAnchorMover"] = "BOTTOM,ElvUIParent,BOTTOM,230,0",
-				["ClassBarMover"] = "BOTTOMElvUIParentBOTTOM0129",
+				["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-188,313",
 				["VehicleSeatMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,174,-27",
 				["ExperienceBarMover"] = "BOTTOMRIGHTElvUIParentBOTTOMRIGHT403487",
 				["LeftChatPanelMover"] = "BOTTOMLEFTElvUIParentBOTTOMLEFT00",
-				["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,126",
-				["LossControlMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,199",
+				["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,238",
+				["LossControlMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,290",
 				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
 				["EUIRaidToolBox1Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-53",
 				["ElvAB_1"] = "BOTTOMElvUIParentBOTTOM00",
@@ -350,14 +350,14 @@ ElvDB = {
 				["ArenaHeaderMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-82,-355",
 				["BossHeaderMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,225,269",
 				["ElvAB_6"] = "BOTTOMLEFTElvUIParentBOTTOMLEFT0251",
-				["ElvUF_PlayerMover"] = "BOTTOMElvUIParentBOTTOM-200160",
+				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-188,273",
 				["ElvUF_TankMover"] = "TOPLEFTElvUIParentBOTTOMLEFT1592329",
 				["EUIRaidToolBox2Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-215",
 				["ElvUF_PetMover"] = "TOPElvUIParentTOP336-346",
 				["ElvAB_7"] = "BOTTOMLEFTElvUIParentBOTTOMLEFT0387",
 				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,226",
 				["RaidCDAnchorMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-15,221",
-				["ElvUF_TargetMover"] = "BOTTOMElvUIParentBOTTOM200160",
+				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,192,278",
 				["LootFrameMover"] = "BOTTOMElvUIParentBOTTOM185480",
 			},
 			["gridSize"] = 100,
@@ -377,8 +377,51 @@ ElvDB = {
 					["boss"] = {
 						["growthDirection"] = "UP",
 					},
+					["focus"] = {
+						["debuffs"] = {
+							["anchorPoint"] = "BOTTOMRIGHT",
+							["perrow"] = 8,
+							["attachTo"] = "BUFFS",
+						},
+						["rangeCheck"] = false,
+						["range"] = {
+							["enable"] = false,
+						},
+						["aurabar"] = {
+							["maxBars"] = 6,
+							["maxDuration"] = 300,
+							["auraBarWidth"] = 270,
+						},
+						["orientation"] = "RIGHT",
+						["threatStyle"] = "HEALTHBORDER",
+						["power"] = {
+							["text_format"] = "[powercolor][power:current]",
+							["hideonnpc"] = true,
+						},
+						["width"] = 254,
+						["infoPanel"] = {
+							["height"] = 20,
+						},
+						["name"] = {
+							["text_format"] = "[namecolor][name:medium] [difficultycolor][smartlevel] [shortclassification]",
+						},
+						["castbar"] = {
+							["width"] = 254,
+							["iconSize"] = 42,
+						},
+						["height"] = 42,
+						["buffs"] = {
+							["enable"] = true,
+							["anchorPoint"] = "BOTTOMRIGHT",
+							["perrow"] = 8,
+						},
+						["health"] = {
+							["text_format"] = "[healthcolor][health:current-percent]",
+						},
+					},
 					["target"] = {
 						["debuffs"] = {
+							["anchorPoint"] = "BOTTOMRIGHT",
 							["useBlacklist"] = {
 								["friendly"] = false,
 								["enemy"] = false,
@@ -387,14 +430,22 @@ ElvDB = {
 						["portrait"] = {
 							["enable"] = false,
 						},
+						["range"] = {
+							["enable"] = false,
+						},
 						["aurabar"] = {
 							["enable"] = false,
 						},
+						["castbar"] = {
+							["width"] = 254,
+						},
+						["width"] = 254,
+						["height"] = 50,
+						["buffs"] = {
+							["anchorPoint"] = "BOTTOMRIGHT",
+						},
 						["power"] = {
 							["height"] = 7,
-						},
-						["range"] = {
-							["enable"] = false,
 						},
 					},
 					["raid"] = {
@@ -404,6 +455,9 @@ ElvDB = {
 						["verticalSpacing"] = 2,
 						["visibility"] = "[@player,exists,nogroup:party] show;",
 						["horizontalSpacing"] = 1,
+						["rdebuffs"] = {
+							["enable"] = false,
+						},
 						["colorOverride"] = "FORCE_OFF",
 						["growthDirection"] = "DOWN_RIGHT",
 						["roleIcon"] = {
@@ -422,33 +476,37 @@ ElvDB = {
 						},
 						["classbar"] = {
 							["detachFromFrame"] = true,
-							["enable"] = false,
 							["text"] = false,
-							["height"] = 12,
-							["detachedWidth"] = 120,
+							["height"] = 16,
+							["detachedWidth"] = 254,
 							["fill"] = "fill",
 						},
 						["aurabar"] = {
 							["enable"] = false,
 						},
-						["restIcon"] = false,
-						["power"] = {
-							["attachTextToPower"] = true,
-							["height"] = 7,
-						},
 						["tankshield"] = {
 							["enable"] = false,
 						},
-						["debuffs"] = {
-							["sizeOverride"] = 0,
-							["anchorPoint"] = "TOPRIGHT",
-							["useBlacklist"] = false,
-							["attachTo"] = "BUFFS",
+						["castbar"] = {
+							["width"] = 254,
 						},
+						["restIcon"] = false,
+						["width"] = 254,
+						["debuffs"] = {
+							["anchorPoint"] = "BOTTOMLEFT",
+							["useBlacklist"] = false,
+							["sizeOverride"] = 0,
+						},
+						["height"] = 40,
 						["buffs"] = {
 							["enable"] = true,
-							["yOffset"] = 16,
+							["anchorPoint"] = "LEFT",
 							["attachTo"] = "FRAME",
+						},
+						["power"] = {
+							["attachTextToPower"] = true,
+							["enable"] = false,
+							["height"] = 7,
 						},
 					},
 					["pet"] = {
@@ -729,6 +787,7 @@ ElvDB = {
 				["panelWidth"] = 436,
 				["panelHeight"] = 248,
 				["panelWidthRight"] = 330,
+				["autojoin"] = false,
 				["keywords"] = "%MYNAME%, ",
 			},
 			["bagSortIgnoreItemsReset"] = true,
@@ -2127,16 +2186,19 @@ ElvDB = {
 						"/cast [nostealth]宿敌", -- [3]
 						"/cast [nostealth]毁伤", -- [4]
 					},
-					["3圣印输出"] = {
-						"/cast 驱邪术", -- [1]
-						"/cast [mod:alt]正义之锤;十字军打击", -- [2]
-						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [3]
-						"/cast 愤怒之锤", -- [4]
-						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [5]
-						"/castsequence [stance:1] reset=999 审判,正义圣印\n/castsequence [stance:2] reset=999 审判,公正圣印\n/castsequence [stance:3] reset=999 审判,真理圣印\n/施放 [stance:4]审判\n", -- [6]
+					["刺杀基础输出"] = {
+						"/cast [nostealth]斩击", -- [1]
+						"/cast [stealth]伏击", -- [2]
+						"/cast [nostealth]斩击", -- [3]
+						"/cast [nostealth]毁伤", -- [4]
 					},
-					["冰法"] = {
-						" \n/castsequence reset=5/combat 献祭,烧尽,烧尽,烧尽,烧尽,烧尽,烧尽\n   ", -- [1]
+					["射击"] = {
+						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [1]
+						"/cast [nochanneling:弹幕射击] 瞄准射击", -- [2]
+						"/cast [nochanneling:弹幕射击] 夺命黑鸦", -- [3]
+						"/cast [nochanneling:弹幕射击] 稳固射击", -- [4]
+						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [5]
+						"/cast [nochanneling:弹幕射击] 夺命射击", -- [6]
 					},
 					["生存"] = {
 						"/cast 爆炸射击", -- [1]
@@ -2147,19 +2209,16 @@ ElvDB = {
 						"/cast 奥术射击", -- [6]
 						"/cast 眼镜蛇射击", -- [7]
 					},
-					["射击"] = {
-						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [1]
-						"/cast [nochanneling:弹幕射击] 瞄准射击", -- [2]
-						"/cast [nochanneling:弹幕射击] 夺命黑鸦", -- [3]
-						"/cast [nochanneling:弹幕射击] 稳固射击", -- [4]
-						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [5]
-						"/cast [nochanneling:弹幕射击] 夺命射击", -- [6]
+					["冰法"] = {
+						" \n/castsequence reset=5/combat 献祭,烧尽,烧尽,烧尽,烧尽,烧尽,烧尽\n   ", -- [1]
 					},
-					["刺杀基础输出"] = {
-						"/cast [nostealth]斩击", -- [1]
-						"/cast [stealth]伏击", -- [2]
-						"/cast [nostealth]斩击", -- [3]
-						"/cast [nostealth]毁伤", -- [4]
+					["3圣印输出"] = {
+						"/cast 驱邪术", -- [1]
+						"/cast [mod:alt]正义之锤;十字军打击", -- [2]
+						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [3]
+						"/cast 愤怒之锤", -- [4]
+						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [5]
+						"/castsequence [stance:1] reset=999 审判,正义圣印\n/castsequence [stance:2] reset=999 审判,公正圣印\n/castsequence [stance:3] reset=999 审判,真理圣印\n/施放 [stance:4]审判\n", -- [6]
 					},
 					["GnomeExample1"] = {
 						"/run print(\"Executing macro 1!\")\n/cast SpellName1\n	", -- [1]

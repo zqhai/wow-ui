@@ -3,8 +3,8 @@ VER 3 0100000000000037 " " "INV_QIRAJIDOL_SUN"
 /stopcasting
 /cast 圣盾术
 /cancelaura 圣盾术
-/cancelaura 保护之手
-/cancelaura 拯救之手
+/cancelaura 保护祝福
+/cancelaura 拯救祝福
 /stopcasting
 END
 VER 3 0100000000000033 " " "INV_Misc_QuestionMark"

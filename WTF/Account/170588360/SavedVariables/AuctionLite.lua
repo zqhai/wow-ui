@@ -3,7 +3,7 @@ AuctionLiteDB = {
 	["profiles"] = {
 		["Default"] = {
 			["duration"] = 2,
-			["lastTab"] = 7,
+			["lastTab"] = 6,
 		},
 	},
 	["profileKeys"] = {

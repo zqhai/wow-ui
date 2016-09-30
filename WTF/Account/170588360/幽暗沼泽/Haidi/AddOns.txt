@@ -67,3 +67,4 @@ HandyNotes_LegionRaresTreasures: enabled
 WorldQuestTracker: enabled
 DBM-TrialofValor: enabled
 NomiCakes: enabled
+GottaGoFast: enabled
