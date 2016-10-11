@@ -4,6 +4,7 @@ TellMeWhenDB = {
 		["Haidi - 幽暗沼泽"] = "Haidi - 幽暗沼泽",
 		["冷血魔刀 - 幽暗沼泽"] = "Maverin - Area 52",
 		["开山怪 - 幽暗沼泽"] = "开山怪 - 幽暗沼泽",
+		["橙界骑 - 幽暗沼泽"] = "Haidi - 幽暗沼泽 3",
 		["Haidii - 燃烧之刃"] = "Haidii - 燃烧之刃",
 		["每天壹碗面 - 幽暗沼泽"] = "每天壹碗面 - 幽暗沼泽",
 		["Testt - 幽暗沼泽"] = "Testt - 幽暗沼泽",
@@ -277,1086 +278,6 @@ TellMeWhenDB = {
 	},
 	["Version"] = 81305,
 	["profiles"] = {
-		["Haidi - 幽暗沼泽"] = {
-			["ForceNoBlizzCC"] = true,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1No0t=kM8uOu",
-					["Scale"] = 1.4,
-					["Rows"] = 8,
-					["Columns"] = 15,
-					["Icons"] = {
-						[34] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "暴龙的践踏",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Magnitude"] = 1,
-									["Animation"] = "ICONSHAKE",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["Enabled"] = true,
-						},
-						[35] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "夜之子的坚韧",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Magnitude"] = 1,
-									["Animation"] = "ICONSHAKE",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["Enabled"] = true,
-						},
-						[36] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "梦魇脓液",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Magnitude"] = 2,
-									["Animation"] = "ICONSHAKE",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["Enabled"] = true,
-						},
-						[66] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1NrRuib1leF5", -- [1]
-								"TMW:icon:1NrRuiaf66YW", -- [2]
-							},
-							["Enabled"] = true,
-						},
-						[76] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22BL1ELij", -- [1]
-								"TMW:icon:1No21iXjvget", -- [2]
-							},
-							["Enabled"] = true,
-						},
-						[77] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22BKrqo0B", -- [1]
-								"TMW:icon:1No21iXXEUCL", -- [2]
-							},
-							["Enabled"] = true,
-						},
-						[78] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22BKxgxxJ", -- [1]
-								"TMW:icon:1No21iXdCENG", -- [2]
-							},
-							["Enabled"] = true,
-						},
-						[80] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1NuyCoNhjkmn", -- [1]
-								"TMW:icon:1NuyCoMyN5b4", -- [2]
-							},
-							["Enabled"] = true,
-						},
-						[81] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1NtKknukWCKk", -- [1]
-								"TMW:icon:1NtKknsWIGRJ", -- [2]
-								"TMW:icon:1NxHdG7ilcLx", -- [3]
-							},
-							["Enabled"] = true,
-						},
-						[83] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22AC4pvN=", -- [1]
-								"TMW:icon:1No22BLENs0C", -- [2]
-								"TMW:icon:1NxHdUmtnIYw", -- [3]
-								"TMW:icon:1NxHdTq8CI7O", -- [4]
-							},
-							["Enabled"] = true,
-						},
-						[85] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22BLPXpJm", -- [1]
-								"TMW:icon:1No22ACHZ3I3", -- [2]
-								"TMW:icon:1NxHdUmc36yx", -- [3]
-								"TMW:icon:1NxHdG7zb2UM", -- [4]
-							},
-							["Enabled"] = true,
-						},
-						[86] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22BLV5Xnl", -- [1]
-								"TMW:icon:1No22ACNG4ft", -- [2]
-							},
-							["Enabled"] = true,
-						},
-						[87] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22BLakBoA", -- [1]
-								"TMW:icon:1No22ACSvyGc", -- [2]
-								"TMW:icon:1NxHdUmNgPGO", -- [3]
-								"TMW:icon:1NxHdG7XoVjC", -- [4]
-							},
-							["Enabled"] = true,
-						},
-						[88] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22BLgLjO3", -- [1]
-								"TMW:icon:1No22ACYd2oX", -- [2]
-								"TMW:icon:1NxHdUoJUjM_", -- [3]
-								"TMW:icon:1NxHdUnMETWI", -- [4]
-							},
-							["Enabled"] = true,
-						},
-						[89] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1NrRRwsVieTB", -- [1]
-								"TMW:icon:1No22BMVSe4b", -- [2]
-							},
-							["Enabled"] = true,
-						},
-						[90] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22BNa3Jk2", -- [1]
-								"TMW:icon:1NrRRwsVieTB", -- [2]
-								"TMW:icon:1No22BMb6=kQ", -- [3]
-							},
-							["Enabled"] = true,
-						},
-						[98] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1NxHdUnplLRU", -- [1]
-								"TMW:icon:1NxHH2MVHkuf", -- [2]
-							},
-							["Enabled"] = true,
-						},
-					},
-					["Name"] = "显示栏",
-					["Point"] = {
-						["y"] = -90,
-						["x"] = -1,
-					},
-				}, -- [1]
-				{
-					["GUID"] = "TMW:group:1No21iXTDmhI",
-					["Point"] = {
-						["y"] = -11.0820309732481,
-						["x"] = -121.899683414866,
-						["point"] = "RIGHT",
-						["relativePoint"] = "RIGHT",
-					},
-					["Scale"] = 1.14848804473877,
-					["Rows"] = 12,
-					["Columns"] = 11,
-					["Icons"] = {
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "自由祝福",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No21iXXEUCL",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "icon2",
-								},
-							},
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [1]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "牺牲祝福",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No21iXdCENG",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "icon2",
-								},
-							},
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [2]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "保护祝福",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No21iXjvget",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "icon2",
-								},
-							},
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [3]
-						nil, -- [4]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "奉献",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22AC4pvN=",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "icon2",
-								},
-							},
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [5]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "炽天使",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NtKknsWIGRJ",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [6]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "提尔之眼",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22ACHZ3I3",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [7]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "炽热防御者",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22ACNG4ft",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [8]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "远古列王守卫",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22ACSvyGc",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [9]
-						{
-							["ShowTimer"] = true,
-							["OnlyEquipped"] = true,
-							["Type"] = "item",
-							["OnlyInBags"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "137369",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22ACYd2oX",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [10]
-						nil, -- [11]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "自由祝福",
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BKrqo0B",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "icon2",
-								},
-							},
-							["FakeHidden"] = true,
-						}, -- [12]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "牺牲祝福",
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BKxgxxJ",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "icon2",
-								},
-							},
-							["FakeHidden"] = true,
-						}, -- [13]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "保护祝福",
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BL1ELij",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "icon2",
-								},
-							},
-							["FakeHidden"] = true,
-						}, -- [14]
-						nil, -- [15]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "totem",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "奉献",
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BLENs0C",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "icon2",
-								},
-							},
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-							},
-							["FakeHidden"] = true,
-						}, -- [16]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["Name"] = "炽天使",
-							["ShowTimerTextnoOCC"] = true,
-							["ShowTimerText"] = true,
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NtKknukWCKk",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["FakeHidden"] = true,
-						}, -- [17]
-						{
-							["ShowTimer"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "target",
-							["Type"] = "buff",
-							["Name"] = "提尔之眼",
-							["ShowTimerTextnoOCC"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BLPXpJm",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["FakeHidden"] = true,
-						}, -- [18]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["Name"] = "炽热防御者",
-							["ShowTimerTextnoOCC"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BLV5Xnl",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["FakeHidden"] = true,
-						}, -- [19]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["Name"] = "远古列王守卫",
-							["ShowTimerTextnoOCC"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BLakBoA",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["FakeHidden"] = true,
-						}, -- [20]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["Name"] = "214971",
-							["ShowTimerTextnoOCC"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BLgLjO3",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["FakeHidden"] = true,
-						}, -- [21]
-						[29] = {
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "守护之光",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BMPIbb5",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						},
-						[30] = {
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "圣疗术",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BMVSe4b",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						},
-						[31] = {
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "圣盾术",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BMb6=kQ",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						},
-						[34] = {
-							["ShowTimer"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Type"] = "buff",
-							["Name"] = "自律",
-							["ShowTimerTextnoOCC"] = true,
-							["GUID"] = "TMW:icon:1NrRRwsVieTB",
-							["States"] = {
-								{
-									["Alpha"] = 0.5,
-								}, -- [1]
-							},
-							["FakeHidden"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
-						},
-						[38] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "奉献",
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHH2MVHkuf",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-							},
-							["FakeHidden"] = true,
-						},
-						[42] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["Name"] = "圣盾术",
-							["ShowTimerTextnoOCC"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1No22BNa3Jk2",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["FakeHidden"] = true,
-						},
-						[67] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "铁木树皮",
-							["GUID"] = "TMW:icon:1NrRuiaf66YW",
-							["Enabled"] = true,
-							["FakeHidden"] = true,
-						},
-						[70] = {
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "圣光壁垒",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NuyCoMyN5b4",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						},
-						[78] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "牺牲祝福",
-							["GUID"] = "TMW:icon:1NrRuib1leF5",
-							["Enabled"] = true,
-							["FakeHidden"] = true,
-						},
-						[81] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["Name"] = "信仰之盾",
-							["ShowTimerTextnoOCC"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NuyCoNhjkmn",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnShow",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["FakeHidden"] = true,
-						},
-						[85] = {
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22BMPIbb5", -- [1]
-							},
-							["FakeHidden"] = true,
-							["Enabled"] = true,
-						},
-						[122] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["Name"] = "214142",
-							["ShowTimerTextnoOCC"] = true,
-							["ShowTimerText"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1Nthkki1TZMH",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnStart",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["Name"] = "功能栏",
-				}, -- [2]
-				{
-					["GUID"] = "TMW:group:1No4VchLKe_k",
-					["Point"] = {
-						["y"] = -44,
-						["point"] = "LEFT",
-						["x"] = -67.3490251813616,
-					},
-					["Scale"] = 2.8,
-					["Columns"] = 1,
-					["Icons"] = {
-						{
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTTText"] = 1,
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "正义盾击",
-							["Enabled"] = true,
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "TMW:textlayout:1Neg0psf5CQ1",
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks:Hide(0)]", -- [2]
-									},
-								},
-							},
-						}, -- [1]
-					},
-					["Name"] = "盾击BUFF",
-				}, -- [3]
-				{
-					["Point"] = {
-						["y"] = -44,
-						["x"] = 52.5,
-					},
-					["Scale"] = 2.8,
-					["EnabledSpecs"] = {
-						[65] = false,
-						[70] = false,
-					},
-					["OnlyInCombat"] = true,
-					["Columns"] = 1,
-					["Icons"] = {
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["States"] = {
-								nil, -- [1]
-								{
-									["Alpha"] = 0.12,
-								}, -- [2]
-							},
-							["Name"] = "守护之光",
-							["Enabled"] = true,
-						}, -- [1]
-					},
-					["Name"] = "守护之光",
-					["GUID"] = "TMW:group:1NrR=WTMOPB4",
-				}, -- [4]
-				{
-					["Point"] = {
-						["y"] = -67.6382748697325,
-						["x"] = 102.030792236328,
-						["point"] = "LEFT",
-						["relativePoint"] = "LEFT",
-					},
-					["Scale"] = 1.14848804473877,
-					["Rows"] = 4,
-					["Role"] = 1,
-					["EnabledSpecs"] = {
-						[65] = false,
-						[66] = false,
-					},
-					["Columns"] = 8,
-					["Icons"] = {
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "复仇之盾",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHdG7XoVjC",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [1]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "灰烬觉醒",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHdG7ilcLx",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [2]
-						{
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "征伐",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHdG7zb2UM",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						}, -- [3]
-						[5] = {
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "审判",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHdTq8CI7O",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						},
-						[9] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["Name"] = "复仇之盾",
-							["ShowTimerTextnoOCC"] = true,
-							["ShowTimerText"] = true,
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHdUmNgPGO",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnStart",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["FakeHidden"] = true,
-						},
-						[10] = {
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "愤怒之剑",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHdUnplLRU",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						},
-						[11] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "征伐",
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHdUmc36yx",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnStart",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "TMW:textlayout:1No4hOLOpaLG",
-									["Texts"] = {
-										[2] = "[Stacks:Hide(0)]",
-									},
-								},
-							},
-							["FakeHidden"] = true,
-						},
-						[13] = {
-							["ShowTimer"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "target",
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "197277",
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHdUmtnIYw",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnStart",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["FakeHidden"] = true,
-							["OnlyMine"] = true,
-						},
-						[17] = {
-							["ShowTimer"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "以眼还眼",
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHdUnMETWI",
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["FakeHidden"] = true,
-						},
-						[23] = {
-							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["Name"] = "神圣干涉",
-							["ClockGCD"] = true,
-							["States"] = {
-								{
-									["Alpha"] = 0.9,
-								}, -- [1]
-								{
-									["Alpha"] = 0.5,
-								}, -- [2]
-							},
-							["Enabled"] = true,
-						},
-						[25] = {
-							["ShowTimer"] = true,
-							["Type"] = "buff",
-							["Name"] = "以眼还眼",
-							["ShowTimerTextnoOCC"] = true,
-							["ShowTimerText"] = true,
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1NxHdUoJUjM_",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Animation"] = "ACTVTNGLOW",
-									["Event"] = "OnStart",
-									["Infinite"] = true,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["FakeHidden"] = true,
-						},
-					},
-					["Name"] = "惩戒",
-					["GUID"] = "TMW:group:1NxHdG8P_h3e",
-				}, -- [5]
-			},
-			["NumGroups"] = 5,
-			["TextureName"] = "Armory",
-			["Version"] = 81305,
-			["Locked"] = true,
-		},
 		["冷血魔刀 - 幽暗沼泽"] = {
 			["Version"] = 81305,
 			["Groups"] = {
@@ -1364,14 +285,6 @@ TellMeWhenDB = {
 					["GUID"] = "TMW:group:1NuLwo0guC7G",
 				}, -- [1]
 			},
-		},
-		["开山怪 - 幽暗沼泽"] = {
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1KVV9GPrkIhM",
-				}, -- [1]
-			},
-			["Version"] = 81305,
 		},
 		["Maverin - Area 52"] = {
 			["Locked"] = true,
@@ -2934,10 +1847,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [8]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [9]
 								["n"] = 9,
 							},
@@ -3003,10 +1916,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [10]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [11]
 								["n"] = 11,
 							},
@@ -3074,10 +1987,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [11]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [12]
 								["n"] = 12,
 							},
@@ -3166,10 +2079,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [11]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [12]
 								["n"] = 12,
 							},
@@ -3260,10 +2173,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [11]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [12]
 								["n"] = 12,
 							},
@@ -3778,10 +2691,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [4]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [5]
 								{
 									["Type"] = "ICON",
@@ -3871,10 +2784,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [4]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [5]
 								{
 									["Type"] = "TALENTLEARNED",
@@ -3984,18 +2897,18 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [12]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 3,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 3,
 								}, -- [13]
 								{
 									["Unit"] = "target",
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
-									["Level"] = 4.5,
-									["PrtsBefore"] = 1,
 									["AndOr"] = "OR",
+									["PrtsBefore"] = 1,
+									["Level"] = 4.5,
 									["Name"] = "703",
 									["Operator"] = "<",
 								}, -- [14]
@@ -4099,10 +3012,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [5]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 3,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 3,
 								}, -- [6]
 								{
 									["Type"] = "ICON",
@@ -4249,10 +3162,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [9]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [10]
 								{
 									["Type"] = "ICON",
@@ -4305,10 +3218,10 @@ TellMeWhenDB = {
 											["AndOr"] = "OR",
 										}, -- [3]
 										{
-											["Level"] = 1,
 											["Type"] = "TALENTLEARNED",
-											["PrtsAfter"] = 2,
+											["Level"] = 1,
 											["Name"] = "19239",
+											["PrtsAfter"] = 2,
 										}, -- [4]
 										{
 											["Type"] = "DEBUFFDUR",
@@ -4346,10 +3259,10 @@ TellMeWhenDB = {
 											["AndOr"] = "OR",
 										}, -- [3]
 										{
-											["Level"] = 1,
 											["Type"] = "TALENTLEARNED",
-											["PrtsAfter"] = 2,
+											["Level"] = 1,
 											["Name"] = "19239",
+											["PrtsAfter"] = 2,
 										}, -- [4]
 										{
 											["Unit"] = "target",
@@ -4422,10 +3335,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [9]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [10]
 								{
 									["Type"] = "ICON",
@@ -4844,10 +3757,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [3]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [4]
 								{
 									["Name"] = "22125",
@@ -4898,10 +3811,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [3]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [4]
 								{
 									["Type"] = "ICON",
@@ -4940,10 +3853,10 @@ TellMeWhenDB = {
 									["Level"] = 1,
 								}, -- [11]
 								{
-									["Icon"] = "TMW:icon:1NcOtikSMbqD",
-									["Type"] = "ICON",
 									["PrtsAfter"] = 1,
 									["Level"] = 1,
+									["Icon"] = "TMW:icon:1NcOtikSMbqD",
+									["Type"] = "ICON",
 								}, -- [12]
 								{
 									["Type"] = "ICON",
@@ -5010,10 +3923,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [3]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [4]
 								{
 									["Type"] = "ICON",
@@ -5087,10 +4000,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [3]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [4]
 								{
 									["Type"] = "ICON",
@@ -5163,10 +4076,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [6]
 								{
-									["Level"] = 1,
 									["Type"] = "MANAUSABLE",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "193315",
+									["PrtsAfter"] = 2,
 								}, -- [7]
 								{
 									["Type"] = "ICON",
@@ -5236,10 +4149,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [6]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [7]
 								{
 									["Type"] = "ICON",
@@ -5332,10 +4245,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [6]
 								{
-									["Level"] = 1,
 									["Type"] = "TALENTLEARNED",
-									["PrtsAfter"] = 2,
+									["Level"] = 1,
 									["Name"] = "19239",
+									["PrtsAfter"] = 2,
 								}, -- [7]
 								{
 									["Type"] = "ICON",
@@ -5507,8 +4420,8 @@ TellMeWhenDB = {
 							["OnlyMine"] = true,
 							["ShowTimerText"] = true,
 							["Enabled"] = true,
-							["DurationMinEnabled"] = true,
 							["DurationMin"] = 5,
+							["DurationMinEnabled"] = true,
 							["Name"] = "193359",
 							["Type"] = "buff",
 						}, -- [1]
@@ -5518,8 +4431,8 @@ TellMeWhenDB = {
 							["OnlyMine"] = true,
 							["ShowTimerText"] = true,
 							["Enabled"] = true,
-							["DurationMinEnabled"] = true,
 							["DurationMin"] = 5,
+							["DurationMinEnabled"] = true,
 							["Name"] = "193357",
 							["Type"] = "buff",
 						}, -- [2]
@@ -5529,8 +4442,8 @@ TellMeWhenDB = {
 							["OnlyMine"] = true,
 							["ShowTimerText"] = true,
 							["Enabled"] = true,
-							["DurationMinEnabled"] = true,
 							["DurationMin"] = 5,
+							["DurationMinEnabled"] = true,
 							["Name"] = "199603",
 							["Type"] = "buff",
 						}, -- [3]
@@ -5540,8 +4453,8 @@ TellMeWhenDB = {
 							["OnlyMine"] = true,
 							["ShowTimerText"] = true,
 							["Enabled"] = true,
-							["DurationMinEnabled"] = true,
 							["DurationMin"] = 5,
+							["DurationMinEnabled"] = true,
 							["Name"] = "193358",
 							["Type"] = "buff",
 						}, -- [4]
@@ -5551,8 +4464,8 @@ TellMeWhenDB = {
 							["OnlyMine"] = true,
 							["ShowTimerText"] = true,
 							["Enabled"] = true,
-							["DurationMinEnabled"] = true,
 							["DurationMin"] = 5,
+							["DurationMinEnabled"] = true,
 							["Name"] = "193356",
 							["Type"] = "buff",
 						}, -- [5]
@@ -5563,8 +4476,8 @@ TellMeWhenDB = {
 							["OnlyMine"] = true,
 							["ShowTimerText"] = true,
 							["DurationMax"] = 3,
-							["DurationMinEnabled"] = true,
 							["DurationMin"] = 5,
+							["DurationMinEnabled"] = true,
 							["Name"] = "199600",
 							["Type"] = "buff",
 						}, -- [6]
@@ -5706,6 +4619,5245 @@ TellMeWhenDB = {
 			["Version"] = 81305,
 			["NumGroups"] = 25,
 		},
+		["诗奕回眸 - 守护之剑"] = {
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1NxNVJKB3KDD",
+					["Point"] = {
+						["y"] = 77.5905284572853,
+						["x"] = -93.517314966515,
+					},
+					["Scale"] = 1.95417249202728,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["ClockGCD"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["Name"] = "审判",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 3,
+									["Operator"] = ">=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1NxNaW0BzAij",
+							["States"] = {
+								[3] = {
+									["Alpha"] = 0.49,
+								},
+							},
+						}, -- [1]
+						{
+							["GUID"] = "TMW:icon:1NxNaW0Ic0Qb",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["Type"] = "cooldown",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["Name"] = "圣殿骑士的裁决",
+							["ManaCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 5,
+								}, -- [1]
+								{
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Unit"] = "target",
+									["Level"] = 0.5,
+									["Name"] = "197277",
+									["Operator"] = ">=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ShowTimerText"] = true,
+							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
+								nil, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [2]
+						{
+							["GUID"] = "TMW:icon:1NxNWVn2X9bz",
+							["ShowTimer"] = true,
+							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
+							["Type"] = "cooldown",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 1,
+									["Operator"] = "<=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["Name"] = "灰烬觉醒",
+							["Enabled"] = true,
+						}, -- [3]
+						{
+							["GUID"] = "TMW:icon:1NxNWVm=rrY5",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "审判官复仇",
+							["Type"] = "cooldown",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Unit"] = "target",
+									["Level"] = 0.5,
+									["Name"] = "197277",
+									["Operator"] = ">=",
+								}, -- [1]
+								{
+									["Type"] = "BUFFDUR",
+									["Checked"] = true,
+									["Level"] = 0.1,
+									["Name"] = "223819",
+									["Operator"] = ">=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+						}, -- [4]
+						{
+							["StackMin"] = 2,
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["StackMax"] = 1,
+							["Type"] = "cooldown",
+							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
+							["Name"] = "十字军打击; 狂热",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 2,
+								}, -- [1]
+								{
+									["Type"] = "SPELLCD",
+									["Level"] = 1.1,
+									["Name"] = "审判",
+									["Operator"] = ">=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NybiAhlRXn=",
+							["States"] = {
+								[101] = {
+									["Alpha"] = 1,
+								},
+							},
+						}, -- [5]
+						{
+							["StackMin"] = 2,
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["StackMax"] = 1,
+							["Type"] = "cooldown",
+							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
+							["Name"] = "十字军打击",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCHARGES",
+									["Name"] = "十字军打击",
+									["Level"] = 2,
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 4,
+									["Operator"] = "<=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NxNWVml_dv3",
+							["States"] = {
+								[101] = {
+									["Alpha"] = 1,
+								},
+							},
+						}, -- [6]
+						{
+							["GUID"] = "TMW:icon:1NxOcLnS1i2H",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "狂热",
+							["Type"] = "cooldown",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 4,
+									["Operator"] = "<=",
+								}, -- [1]
+								{
+									["Type"] = "SPELLCHARGES",
+									["Level"] = 2,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+						}, -- [7]
+						{
+							["GUID"] = "TMW:icon:1NxNaW06z2Q8",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "愤怒之剑; 公正之剑",
+							["Type"] = "cooldown",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 3,
+									["Operator"] = "<=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+						}, -- [8]
+						{
+							["GUID"] = "TMW:icon:1NxNWVmpgt5R",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["Type"] = "cooldown",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["Name"] = "圣殿骑士的裁决",
+							["ManaCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Unit"] = "target",
+									["Level"] = 0.5,
+									["Name"] = "197277",
+									["Operator"] = ">=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ShowTimerText"] = true,
+							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
+								nil, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [9]
+						{
+							["StackMin"] = 2,
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["StackMax"] = 2,
+							["ClockGCD"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "十字军打击",
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 4,
+									["Operator"] = "<=",
+								}, -- [1]
+								{
+									["Type"] = "SPELLCHARGES",
+									["Level"] = 1,
+									["Name"] = "35395",
+									["Operator"] = "<=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NxNaW0FHZ7Y",
+							["ShowTimerText"] = true,
+						}, -- [10]
+						{
+							["GUID"] = "TMW:icon:1NxNWVmxGNhq",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "狂热",
+							["Type"] = "cooldown",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 4,
+									["Operator"] = ">=",
+								}, -- [1]
+								{
+									["Type"] = "SPELLCHARGES",
+									["Level"] = 1,
+									["Operator"] = ">=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+						}, -- [11]
+					},
+					["SortPriorities"] = {
+						{
+							["Method"] = "shown",
+							["Order"] = -1,
+						}, -- [1]
+						{
+							["Method"] = "duration",
+							["Order"] = -1,
+						}, -- [2]
+						{
+							["Method"] = "id",
+							["Order"] = -1,
+						}, -- [3]
+					},
+					["LayoutDirection"] = 2,
+					["Role"] = 1,
+					["Name"] = "普通循环条件",
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Columns"] = 11,
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1NxNbfNAHRWf",
+					["Role"] = 1,
+					["Columns"] = 1,
+					["Name"] = "整合普通输出循环组",
+					["Scale"] = 2.05331635475159,
+					["Icons"] = {
+						{
+							["GUID"] = "TMW:icon:1NybE4BqKTC8",
+							["Type"] = "meta",
+							["FakeHidden"] = true,
+							["Icons"] = {
+								"TMW:icon:1NxNaW0BzAij", -- [1]
+								"TMW:icon:1NxNaW0Ic0Qb", -- [2]
+								"TMW:icon:1NxNWVn2X9bz", -- [3]
+								"TMW:icon:1NxNWVm=rrY5", -- [4]
+								"TMW:icon:1NybiAhlRXn=", -- [5]
+								"TMW:icon:1NxNWVml_dv3", -- [6]
+								"TMW:icon:1NxOcLnS1i2H", -- [7]
+								"TMW:icon:1NxNaW06z2Q8", -- [8]
+								"TMW:icon:1NxNWVmpgt5R", -- [9]
+								"TMW:icon:1NxNaW0FHZ7Y", -- [10]
+								"TMW:icon:1NxNWVmxGNhq", -- [11]
+							},
+							["Enabled"] = true,
+						}, -- [1]
+					},
+					["EnabledSpecs"] = {
+						[65] = false,
+						[66] = false,
+					},
+					["Point"] = {
+						["y"] = 72.7606188047121,
+						["x"] = 174.060180664063,
+						["point"] = "LEFT",
+						["relativePoint"] = "LEFT",
+					},
+				}, -- [2]
+				{
+					["GUID"] = "TMW:group:1NybyQ4DMGc8",
+					["Role"] = 1,
+					["Columns"] = 11,
+					["Name"] = "征伐循环条件",
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "征伐",
+							["GUID"] = "TMW:icon:1NyrfpXcs_e4",
+							["Conditions"] = {
+								{
+									["Name"] = "征伐",
+									["Type"] = "SPELLCD",
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 5,
+								}, -- [2]
+								{
+									["Name"] = "灰烬觉醒",
+									["Type"] = "SPELLCD",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["FakeHidden"] = true,
+							["States"] = {
+								nil, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+								[102] = {
+									["Alpha"] = 0.5,
+								},
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "征伐",
+							["GUID"] = "TMW:icon:1NyrfpXeL4nH",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Event"] = "WCSP",
+									["Animation"] = "ICONCLEAR",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [2]
+						{
+							["GUID"] = "TMW:icon:1NybSTbKpOuu",
+							["ShowTimer"] = true,
+							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
+							["Type"] = "cooldown",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "BUFFPERC",
+									["Checked"] = true,
+									["Level"] = 1,
+									["Name"] = "征伐",
+									["Operator"] = ">=",
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 2,
+									["Operator"] = "<=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["Name"] = "灰烬觉醒",
+							["Enabled"] = true,
+						}, -- [3]
+						{
+							["GUID"] = "TMW:icon:1NybSTbOtEYR",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["Type"] = "cooldown",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["Name"] = "圣殿骑士的裁决",
+							["ManaCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 5,
+								}, -- [1]
+								{
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Unit"] = "target",
+									["Level"] = 0.5,
+									["Name"] = "197277",
+									["Operator"] = ">=",
+								}, -- [2]
+								{
+									["Type"] = "BUFFPERC",
+									["Checked"] = true,
+									["Level"] = 85,
+									["Name"] = "224668",
+									["Operator"] = ">=",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["ShowTimerText"] = true,
+							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0.51,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [4]
+						{
+							["StackMin"] = 2,
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["StackMax"] = 1,
+							["Type"] = "cooldown",
+							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
+							["Name"] = "十字军打击; 狂热",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = ">=",
+								}, -- [1]
+								{
+									["Type"] = "BUFFPERC",
+									["Checked"] = true,
+									["Level"] = 70,
+									["Name"] = "征伐",
+									["Operator"] = ">=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NybiAhdViYM",
+							["States"] = {
+								[3] = {
+									["Alpha"] = 0.49,
+								},
+								[101] = {
+									["Alpha"] = 1,
+								},
+							},
+						}, -- [5]
+						{
+							["GUID"] = "TMW:icon:1NybiAhhcpBJ",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["Type"] = "cooldown",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["Name"] = "圣殿骑士的裁决",
+							["ManaCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Unit"] = "target",
+									["Level"] = 0.5,
+									["Name"] = "197277",
+									["Operator"] = ">=",
+								}, -- [1]
+								{
+									["Type"] = "BUFFPERC",
+									["Checked"] = true,
+									["Level"] = 1,
+									["Name"] = "征伐",
+									["Operator"] = ">=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ShowTimerText"] = true,
+							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0.49,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [6]
+						{
+							["GUID"] = "TMW:icon:1NydF5hMQbGW",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "审判",
+							["Type"] = "cooldown",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "BUFFPERC",
+									["Level"] = 1,
+									["Name"] = "征伐",
+									["Operator"] = ">=",
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 3,
+									["Operator"] = ">=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+						}, -- [7]
+						{
+							["GUID"] = "TMW:icon:1NybiAhp9M9D",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "愤怒之剑; 公正之剑",
+							["Type"] = "cooldown",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 3,
+									["Operator"] = "<=",
+								}, -- [1]
+								{
+									["Type"] = "BUFFPERC",
+									["Level"] = 1,
+									["Name"] = "征伐",
+									["Operator"] = ">=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+						}, -- [8]
+						{
+							["StackMin"] = 2,
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["StackMax"] = 1,
+							["Type"] = "cooldown",
+							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
+							["Name"] = "十字军打击; 狂热",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCHARGES",
+									["Name"] = "十字军打击",
+									["Level"] = 2,
+								}, -- [1]
+								{
+									["Type"] = "BUFFPERC",
+									["Level"] = 1,
+									["Name"] = "征伐",
+									["Operator"] = ">=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NydDp6d3r07",
+							["States"] = {
+								[101] = {
+									["Alpha"] = 1,
+								},
+							},
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["ClockGCD"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["Name"] = "愤怒之剑; 公正之剑",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "COMBAT",
+									["Level"] = 1,
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 4,
+									["Operator"] = "<=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NybiAhtY=X5",
+							["States"] = {
+								[3] = {
+									["Alpha"] = 1,
+								},
+							},
+						}, -- [10]
+						{
+							["GUID"] = "TMW:icon:1NybSTbGyTMK",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["Type"] = "cooldown",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["Name"] = "审判官复仇",
+							["ManaCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "BUFFPERC",
+									["Level"] = 93,
+									["Name"] = "征伐",
+									["Operator"] = ">=",
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 5,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ShowTimerText"] = true,
+							["States"] = {
+								[3] = {
+									["Alpha"] = 0.51,
+								},
+							},
+						}, -- [11]
+					},
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Point"] = {
+						["y"] = 124.500244140625,
+						["x"] = -90.4999694824219,
+					},
+				}, -- [3]
+				{
+					["GUID"] = "TMW:group:1Nyc4yOLpy4j",
+					["Role"] = 1,
+					["Columns"] = 1,
+					["Name"] = "整合征伐循环组",
+					["Scale"] = 2.09999442100525,
+					["Icons"] = {
+						{
+							["FakeHidden"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NybSTbGyTMK", -- [1]
+								"TMW:icon:1NybSTbKpOuu", -- [2]
+								"TMW:icon:1NybSTbOtEYR", -- [3]
+								"TMW:icon:1NybiAhdViYM", -- [4]
+								"TMW:icon:1NybiAhhcpBJ", -- [5]
+								"TMW:icon:1NydF5hMQbGW", -- [6]
+								"TMW:icon:1NybiAhp9M9D", -- [7]
+								"TMW:icon:1NydDp6d3r07", -- [8]
+							},
+							["Enabled"] = true,
+						}, -- [1]
+					},
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Point"] = {
+						["y"] = 119.286146375806,
+						["x"] = 170.000534057617,
+						["point"] = "LEFT",
+						["relativePoint"] = "LEFT",
+					},
+				}, -- [4]
+				{
+					["GUID"] = "TMW:group:1NydAml41qNv",
+					["Role"] = 1,
+					["Columns"] = 1,
+					["Name"] = "惩戒骑输出循环2.0",
+					["Scale"] = 2.19561314582825,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NybiAhtY=X5", -- [1]
+								"TMW:group:1Nyc4yOLpy4j", -- [2]
+								"TMW:group:1NxNbfNAHRWf", -- [3]
+							},
+						}, -- [1]
+					},
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Point"] = {
+						["y"] = -66.5261432758529,
+						["x"] = 3.21842725854924,
+					},
+				}, -- [5]
+				{
+					["View"] = "bar",
+					["Point"] = {
+						["y"] = -120.271014750915,
+						["x"] = 0.540415177565363,
+					},
+					["Scale"] = 1.84998619556427,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["OnlyMine"] = true,
+							["Name"] = "征伐",
+							["CustomTex"] = "NONE",
+							["Type"] = "buff",
+						}, -- [1]
+					},
+					["Role"] = 1,
+					["Name"] = "征伐计时条",
+					["SettingsPerView"] = {
+						["bar"] = {
+							["SizeX"] = 168.650024414063,
+						},
+					},
+					["Columns"] = 1,
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["GUID"] = "TMW:group:1Nyqvo0fEW4j",
+				}, -- [6]
+				{
+					["GUID"] = "TMW:group:1Nyr5RgHhc1M",
+					["Role"] = 1,
+					["Columns"] = 3,
+					["Name"] = "征伐前提使用",
+					["Icons"] = {
+						{
+							["GUID"] = "TMW:icon:1Nyr5RgKxM5m",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "审判",
+							["Type"] = "cooldown",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 4,
+								}, -- [1]
+								{
+									["Name"] = "征伐",
+									["Type"] = "SPELLCD",
+								}, -- [2]
+								{
+									["Name"] = "灰烬觉醒",
+									["Type"] = "SPELLCD",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+						}, -- [1]
+						{
+							["GUID"] = "TMW:icon:1Nyr5RgPC1Cj",
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "愤怒之剑; 公正之剑",
+							["Type"] = "cooldown",
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 3,
+									["Operator"] = "<=",
+								}, -- [1]
+								{
+									["Name"] = "征伐",
+									["Type"] = "SPELLCD",
+								}, -- [2]
+								{
+									["Name"] = "灰烬觉醒",
+									["Type"] = "SPELLCD",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+						}, -- [2]
+						{
+							["StackMin"] = 2,
+							["ShowTimer"] = true,
+							["RangeCheck"] = true,
+							["StackMax"] = 1,
+							["Type"] = "cooldown",
+							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
+							["Name"] = "十字军打击; 狂热",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Name"] = "征伐",
+									["Type"] = "SPELLCD",
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 4,
+									["Operator"] = "<=",
+								}, -- [2]
+								{
+									["Name"] = "灰烬觉醒",
+									["Type"] = "SPELLCD",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["GUID"] = "TMW:icon:1Nyr5RgTM_qR",
+							["States"] = {
+								[101] = {
+									["Alpha"] = 1,
+								},
+							},
+						}, -- [3]
+					},
+					["Conditions"] = {
+						{
+							["Name"] = "征伐",
+							["Type"] = "TALENTLEARNED",
+						}, -- [1]
+						["n"] = 1,
+					},
+					["EnabledSpecs"] = {
+						[65] = false,
+						[66] = false,
+					},
+					["Point"] = {
+						["y"] = -86.4999694824219,
+						["x"] = -206.999816894531,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+				}, -- [7]
+				{
+					["GUID"] = "TMW:group:1Nyr9pTXVT0u",
+					["Role"] = 1,
+					["Columns"] = 1,
+					["Name"] = "征伐整合",
+					["Scale"] = 2.09999227523804,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Events"] = {
+								{
+									["OnlyShown"] = true,
+									["Type"] = "Animations",
+									["Event"] = "WCSP",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["Conditions"] = {
+								["n"] = 1,
+							},
+							["Icons"] = {
+								"TMW:icon:1Nyr5RgPC1Cj", -- [1]
+								"TMW:icon:1Nyr5RgTM_qR", -- [2]
+								"TMW:icon:1Nyr5RgKxM5m", -- [3]
+								"TMW:icon:1NyrfpXeL4nH", -- [4]
+								"TMW:icon:1NyrfpXcs_e4", -- [5]
+							},
+						}, -- [1]
+					},
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Point"] = {
+						["y"] = -102.619302363044,
+						["x"] = -72.6197036250381,
+					},
+				}, -- [8]
+			},
+			["Version"] = 81305,
+			["NumGroups"] = 8,
+		},
+		["Haidi - 幽暗沼泽 3"] = {
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1No0t=kM8uOu",
+					["Point"] = {
+						["y"] = -89.9999476841518,
+						["x"] = 2.57141985212054,
+					},
+					["Scale"] = 1.4,
+					["Rows"] = 8,
+					["Columns"] = 15,
+					["Icons"] = {
+						[34] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "下冲气流",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnStart",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1No4hOLOpaLG",
+									["Texts"] = {
+										[2] = "[Stacks:Hide(0)]",
+									},
+								},
+							},
+						},
+						[35] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "暴龙的践踏",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Magnitude"] = 1,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[36] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "梦魇脓液",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Magnitude"] = 2,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[49] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "净化的姐妹祝福",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Magnitude"] = 1,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[50] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "净化的精灵祝福",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Magnitude"] = 1,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[51] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "净化的远古祝福",
+							["Enabled"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Magnitude"] = 1,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[66] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NrRuib1leF5", -- [1]
+								"TMW:icon:1NrRuiaf66YW", -- [2]
+							},
+							["Enabled"] = true,
+						},
+						[76] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BL1ELij", -- [1]
+								"TMW:icon:1No21iXjvget", -- [2]
+							},
+							["Enabled"] = true,
+						},
+						[77] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BKrqo0B", -- [1]
+								"TMW:icon:1No21iXXEUCL", -- [2]
+							},
+							["Enabled"] = true,
+						},
+						[78] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BKxgxxJ", -- [1]
+								"TMW:icon:1No21iXdCENG", -- [2]
+							},
+							["Enabled"] = true,
+						},
+						[80] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NuyCoNhjkmn", -- [1]
+								"TMW:icon:1NuyCoMyN5b4", -- [2]
+								"TMW:icon:1NxHdUmc36yx", -- [3]
+								"TMW:icon:1NxHdG7zb2UM", -- [4]
+							},
+							["Enabled"] = true,
+						},
+						[81] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NtKknukWCKk", -- [1]
+								"TMW:icon:1NtKknsWIGRJ", -- [2]
+							},
+							["Enabled"] = true,
+						},
+						[82] = {
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "愤怒之剑",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["RangeCheck"] = true,
+						},
+						[83] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22AC4pvN=", -- [1]
+								"TMW:icon:1No22BLENs0C", -- [2]
+								"TMW:icon:1NxHdUmtnIYw", -- [3]
+								"TMW:icon:1NxHdTq8CI7O", -- [4]
+							},
+							["Enabled"] = true,
+						},
+						[84] = {
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "十字军打击",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "TREEROLE2",
+									["BitFlags"] = {
+										["DAMAGER"] = true,
+									},
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[85] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLPXpJm", -- [1]
+								"TMW:icon:1No22ACHZ3I3", -- [2]
+								"TMW:icon:1NxHdG7ilcLx", -- [3]
+							},
+							["Enabled"] = true,
+						},
+						[86] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLV5Xnl", -- [1]
+								"TMW:icon:1No22ACNG4ft", -- [2]
+							},
+							["Enabled"] = true,
+						},
+						[87] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLakBoA", -- [1]
+								"TMW:icon:1No22ACSvyGc", -- [2]
+								"TMW:icon:1NxHdUmNgPGO", -- [3]
+								"TMW:icon:1NxHdG7XoVjC", -- [4]
+							},
+							["Enabled"] = true,
+						},
+						[88] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLgLjO3", -- [1]
+								"TMW:icon:1No22ACYd2oX", -- [2]
+								"TMW:icon:1NxHdUoJUjM_", -- [3]
+								"TMW:icon:1NxHdUnMETWI", -- [4]
+							},
+							["Enabled"] = true,
+						},
+						[89] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NrRRwsVieTB", -- [1]
+								"TMW:icon:1No22BMVSe4b", -- [2]
+							},
+							["Enabled"] = true,
+						},
+						[90] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BNa3Jk2", -- [1]
+								"TMW:icon:1NrRRwsVieTB", -- [2]
+								"TMW:icon:1No22BMb6=kQ", -- [3]
+							},
+							["Enabled"] = true,
+						},
+						[98] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NxHH2MVHkuf", -- [1]
+							},
+							["Enabled"] = true,
+						},
+					},
+					["Name"] = "显示栏",
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1No21iXTDmhI",
+					["Scale"] = 1.14848804473877,
+					["Rows"] = 12,
+					["Columns"] = 11,
+					["Icons"] = {
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "自由祝福",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No21iXXEUCL",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [1]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "牺牲祝福",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No21iXdCENG",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [2]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "保护祝福",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No21iXjvget",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [3]
+						nil, -- [4]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "奉献",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22AC4pvN=",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [5]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "炽天使",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NtKknsWIGRJ",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [6]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "提尔之眼",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22ACHZ3I3",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [7]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "炽热防御者",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22ACNG4ft",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [8]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "远古列王守卫",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22ACSvyGc",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [9]
+						{
+							["ShowTimer"] = true,
+							["OnlyEquipped"] = true,
+							["Type"] = "item",
+							["OnlyInBags"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "137369",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22ACYd2oX",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [10]
+						nil, -- [11]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "自由祝福",
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BKrqo0B",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+						}, -- [12]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "牺牲祝福",
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BKxgxxJ",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+						}, -- [13]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "保护祝福",
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BL1ELij",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+						}, -- [14]
+						nil, -- [15]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "totem",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "奉献",
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BLENs0C",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+							},
+							["FakeHidden"] = true,
+						}, -- [16]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "炽天使",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NtKknukWCKk",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						}, -- [17]
+						{
+							["ShowTimer"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "提尔之眼",
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BLPXpJm",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						}, -- [18]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "炽热防御者",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BLV5Xnl",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						}, -- [19]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "远古列王守卫",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BLakBoA",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						}, -- [20]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "214971",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BLgLjO3",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						}, -- [21]
+						[29] = {
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "守护之光",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BMPIbb5",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						},
+						[30] = {
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "圣疗术",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BMVSe4b",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						},
+						[31] = {
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "圣盾术",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BMb6=kQ",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						},
+						[34] = {
+							["ShowTimer"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["Type"] = "buff",
+							["Name"] = "自律",
+							["ShowTimerTextnoOCC"] = true,
+							["GUID"] = "TMW:icon:1NrRRwsVieTB",
+							["States"] = {
+								{
+									["Alpha"] = 0.5,
+								}, -- [1]
+							},
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+						},
+						[38] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "奉献",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NxHH2MVHkuf",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+							},
+							["FakeHidden"] = true,
+						},
+						[42] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "圣盾术",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1No22BNa3Jk2",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						},
+						[67] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "铁木树皮",
+							["GUID"] = "TMW:icon:1NrRuiaf66YW",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
+						},
+						[70] = {
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "圣光壁垒",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NuyCoMyN5b4",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						},
+						[78] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "牺牲祝福",
+							["GUID"] = "TMW:icon:1NrRuib1leF5",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
+						},
+						[81] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "信仰之盾",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NuyCoNhjkmn",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						},
+						[122] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "214142",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1Nthkki1TZMH",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnStart",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[123] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "夜之子的坚韧",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Magnitude"] = 1,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[124] = {
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BMPIbb5", -- [1]
+							},
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+						},
+					},
+					["Name"] = "功能栏",
+					["Point"] = {
+						["y"] = -11.0820309732481,
+						["x"] = -121.899683414866,
+						["point"] = "RIGHT",
+						["relativePoint"] = "RIGHT",
+					},
+				}, -- [2]
+				{
+					["GUID"] = "TMW:group:1No4VchLKe_k",
+					["Point"] = {
+						["y"] = -44,
+						["point"] = "LEFT",
+						["x"] = -67.3490251813616,
+					},
+					["Scale"] = 2.8,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["ShowTTText"] = 1,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "正义盾击",
+							["Enabled"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1Neg0psf5CQ1",
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks:Hide(0)]", -- [2]
+									},
+								},
+							},
+						}, -- [1]
+					},
+					["Name"] = "盾击BUFF",
+				}, -- [3]
+				{
+					["Point"] = {
+						["y"] = -44,
+						["x"] = 52.5,
+					},
+					["Scale"] = 2.8,
+					["EnabledSpecs"] = {
+						[65] = false,
+						[70] = false,
+					},
+					["OnlyInCombat"] = true,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["States"] = {
+								nil, -- [1]
+								{
+									["Alpha"] = 0.12,
+								}, -- [2]
+							},
+							["Name"] = "守护之光",
+							["Enabled"] = true,
+						}, -- [1]
+					},
+					["Name"] = "守护之光",
+					["GUID"] = "TMW:group:1NrR=WTMOPB4",
+				}, -- [4]
+				{
+					["Point"] = {
+						["y"] = -67.6382748697325,
+						["x"] = 102.030792236328,
+						["point"] = "LEFT",
+						["relativePoint"] = "LEFT",
+					},
+					["Scale"] = 1.14848804473877,
+					["Rows"] = 4,
+					["Role"] = 1,
+					["EnabledSpecs"] = {
+						[65] = false,
+						[66] = false,
+					},
+					["Columns"] = 8,
+					["Icons"] = {
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "复仇之盾",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NxHdG7XoVjC",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [1]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "灰烬觉醒",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NxHdG7ilcLx",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+						}, -- [2]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "征伐",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NxHdG7zb2UM",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [3]
+						[5] = {
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1NxHdTq8CI7O",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "审判",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["ManaCheck"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+						},
+						[9] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "复仇之盾",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NxHdUmNgPGO",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnStart",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						},
+						[11] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "征伐",
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NxHdUmc36yx",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnStart",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1No4hOLOpaLG",
+									["Texts"] = {
+										[2] = "[Stacks:Hide(0)]",
+									},
+								},
+							},
+							["FakeHidden"] = true,
+						},
+						[13] = {
+							["ShowTimer"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["OnlyMine"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "197277",
+							["Enabled"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnStart",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxHdUmtnIYw",
+						},
+						[17] = {
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "以眼还眼",
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NxHdUnMETWI",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						},
+						[25] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "以眼还眼",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NxHdUoJUjM_",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "OnStart",
+									["Infinite"] = true,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						},
+					},
+					["Name"] = "惩戒",
+					["GUID"] = "TMW:group:1NxHdG8P_h3e",
+				}, -- [5]
+				{
+					["Point"] = {
+						["y"] = 77.5905284572853,
+						["x"] = -93.517314966515,
+					},
+					["Scale"] = 1.95417249202728,
+					["Role"] = 1,
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Columns"] = 11,
+					["Icons"] = {
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["States"] = {
+								[3] = {
+									["Alpha"] = 0.49,
+								},
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxNaW0BzAij",
+							["Name"] = "审判",
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = ">=",
+									["Level"] = 3,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["Enabled"] = true,
+						}, -- [1]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ManaCheck"] = true,
+							["Name"] = "圣殿骑士的裁决",
+							["ClockGCD"] = true,
+							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
+								nil, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxNaW0Ic0Qb",
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 5,
+								}, -- [1]
+								{
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Operator"] = ">=",
+									["Unit"] = "target",
+									["Name"] = "197277",
+									["Level"] = 0.5,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["Enabled"] = true,
+						}, -- [2]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxNWVn2X9bz",
+							["Name"] = "灰烬觉醒",
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = "<=",
+									["Level"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["Enabled"] = true,
+						}, -- [3]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Operator"] = ">=",
+									["Unit"] = "target",
+									["Name"] = "197277",
+									["Level"] = 0.5,
+								}, -- [1]
+								{
+									["Type"] = "BUFFDUR",
+									["Checked"] = true,
+									["Operator"] = ">=",
+									["Name"] = "223819",
+									["Level"] = 0.1,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NxNWVm=rrY5",
+							["Name"] = "审判官复仇",
+							["Enabled"] = true,
+						}, -- [4]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["StackMin"] = 2,
+							["Name"] = "十字军打击; 狂热",
+							["ClockGCD"] = true,
+							["StackMax"] = 1,
+							["States"] = {
+								[101] = {
+									["Alpha"] = 1,
+								},
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NybiAhlRXn=",
+							["ShowTimerText"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 2,
+								}, -- [1]
+								{
+									["Type"] = "SPELLCD",
+									["Operator"] = ">=",
+									["Name"] = "审判",
+									["Level"] = 1.1,
+								}, -- [2]
+								["n"] = 2,
+							},
+						}, -- [5]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["StackMin"] = 2,
+							["Name"] = "十字军打击",
+							["ClockGCD"] = true,
+							["StackMax"] = 1,
+							["States"] = {
+								[101] = {
+									["Alpha"] = 1,
+								},
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NxNWVml_dv3",
+							["ShowTimerText"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCHARGES",
+									["Name"] = "十字军打击",
+									["Level"] = 2,
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = "<=",
+									["Level"] = 4,
+								}, -- [2]
+								["n"] = 2,
+							},
+						}, -- [6]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = "<=",
+									["Level"] = 4,
+								}, -- [1]
+								{
+									["Type"] = "SPELLCHARGES",
+									["Level"] = 2,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NxOcLnS1i2H",
+							["Name"] = "狂热",
+							["Enabled"] = true,
+						}, -- [7]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = "<=",
+									["Level"] = 3,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1NxNaW06z2Q8",
+							["Name"] = "愤怒之剑; 公正之剑",
+							["Enabled"] = true,
+						}, -- [8]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ManaCheck"] = true,
+							["Name"] = "圣殿骑士的裁决",
+							["ClockGCD"] = true,
+							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
+								nil, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxNWVmpgt5R",
+							["Conditions"] = {
+								{
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Operator"] = ">=",
+									["Unit"] = "target",
+									["Name"] = "197277",
+									["Level"] = 0.5,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["Enabled"] = true,
+						}, -- [9]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["StackMin"] = 2,
+							["Name"] = "十字军打击",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["StackMax"] = 2,
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = "<=",
+									["Level"] = 4,
+								}, -- [1]
+								{
+									["Type"] = "SPELLCHARGES",
+									["Operator"] = "<=",
+									["Name"] = "35395",
+									["Level"] = 1,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NxNaW0FHZ7Y",
+						}, -- [10]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = ">=",
+									["Level"] = 4,
+								}, -- [1]
+								{
+									["Type"] = "SPELLCHARGES",
+									["Operator"] = ">=",
+									["Level"] = 1,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NxNWVmxGNhq",
+							["Name"] = "狂热",
+							["Enabled"] = true,
+						}, -- [11]
+					},
+					["SortPriorities"] = {
+						{
+							["Method"] = "shown",
+							["Order"] = -1,
+						}, -- [1]
+						{
+							["Method"] = "duration",
+							["Order"] = -1,
+						}, -- [2]
+						{
+							["Method"] = "id",
+							["Order"] = -1,
+						}, -- [3]
+					},
+					["LayoutDirection"] = 2,
+					["Name"] = "普通循环条件",
+					["GUID"] = "TMW:group:1NxNVJKB3KDD",
+				}, -- [6]
+				{
+					["Point"] = {
+						["y"] = 72.7606188047121,
+						["x"] = 174.060180664063,
+						["point"] = "LEFT",
+						["relativePoint"] = "LEFT",
+					},
+					["Scale"] = 2.05331635475159,
+					["Role"] = 1,
+					["EnabledSpecs"] = {
+						[65] = false,
+						[66] = false,
+					},
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NxNaW0BzAij", -- [1]
+								"TMW:icon:1NxNaW0Ic0Qb", -- [2]
+								"TMW:icon:1NxNWVn2X9bz", -- [3]
+								"TMW:icon:1NxNWVm=rrY5", -- [4]
+								"TMW:icon:1NybiAhlRXn=", -- [5]
+								"TMW:icon:1NxNWVml_dv3", -- [6]
+								"TMW:icon:1NxOcLnS1i2H", -- [7]
+								"TMW:icon:1NxNaW06z2Q8", -- [8]
+								"TMW:icon:1NxNWVmpgt5R", -- [9]
+								"TMW:icon:1NxNaW0FHZ7Y", -- [10]
+								"TMW:icon:1NxNWVmxGNhq", -- [11]
+							},
+							["GUID"] = "TMW:icon:1NybE4BqKTC8",
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+						}, -- [1]
+					},
+					["Name"] = "整合普通输出循环组",
+					["GUID"] = "TMW:group:1NxNbfNAHRWf",
+				}, -- [7]
+				{
+					["GUID"] = "TMW:group:1NybyQ4DMGc8",
+					["Point"] = {
+						["y"] = 124.500244140625,
+						["x"] = -90.4999694824219,
+					},
+					["Role"] = 1,
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Columns"] = 11,
+					["Icons"] = {
+						{
+							["Type"] = "cooldown",
+							["Name"] = "征伐",
+							["Enabled"] = true,
+							["States"] = {
+								nil, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+								[102] = {
+									["Alpha"] = 0.5,
+								},
+							},
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCD",
+									["Name"] = "征伐",
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 5,
+								}, -- [2]
+								{
+									["Type"] = "SPELLCD",
+									["Name"] = "灰烬觉醒",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["GUID"] = "TMW:icon:1NyrfpXcs_e4",
+						}, -- [1]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["Name"] = "征伐",
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NyrfpXeL4nH",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ICONCLEAR",
+									["Event"] = "WCSP",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["FakeHidden"] = true,
+						}, -- [2]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NybSTbKpOuu",
+							["Name"] = "灰烬觉醒",
+							["Conditions"] = {
+								{
+									["Type"] = "BUFFPERC",
+									["Checked"] = true,
+									["Operator"] = ">=",
+									["Name"] = "征伐",
+									["Level"] = 1,
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = "<=",
+									["Level"] = 2,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["Enabled"] = true,
+						}, -- [3]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ManaCheck"] = true,
+							["Name"] = "圣殿骑士的裁决",
+							["ClockGCD"] = true,
+							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0.51,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NybSTbOtEYR",
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 5,
+								}, -- [1]
+								{
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Operator"] = ">=",
+									["Unit"] = "target",
+									["Name"] = "197277",
+									["Level"] = 0.5,
+								}, -- [2]
+								{
+									["Type"] = "BUFFPERC",
+									["Checked"] = true,
+									["Operator"] = ">=",
+									["Name"] = "224668",
+									["Level"] = 85,
+								}, -- [3]
+								["n"] = 3,
+							},
+							["Enabled"] = true,
+						}, -- [4]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["StackMin"] = 2,
+							["Name"] = "十字军打击; 狂热",
+							["ClockGCD"] = true,
+							["StackMax"] = 1,
+							["States"] = {
+								[3] = {
+									["Alpha"] = 0.49,
+								},
+								[101] = {
+									["Alpha"] = 1,
+								},
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NybiAhdViYM",
+							["ShowTimerText"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = ">=",
+								}, -- [1]
+								{
+									["Type"] = "BUFFPERC",
+									["Checked"] = true,
+									["Operator"] = ">=",
+									["Name"] = "征伐",
+									["Level"] = 70,
+								}, -- [2]
+								["n"] = 2,
+							},
+						}, -- [5]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ManaCheck"] = true,
+							["Name"] = "圣殿骑士的裁决",
+							["ClockGCD"] = true,
+							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0.49,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NybiAhhcpBJ",
+							["Conditions"] = {
+								{
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Operator"] = ">=",
+									["Unit"] = "target",
+									["Name"] = "197277",
+									["Level"] = 0.5,
+								}, -- [1]
+								{
+									["Type"] = "BUFFPERC",
+									["Checked"] = true,
+									["Operator"] = ">=",
+									["Name"] = "征伐",
+									["Level"] = 1,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["Enabled"] = true,
+						}, -- [6]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "BUFFPERC",
+									["Operator"] = ">=",
+									["Name"] = "征伐",
+									["Level"] = 1,
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = ">=",
+									["Level"] = 3,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NydF5hMQbGW",
+							["Name"] = "审判",
+							["Enabled"] = true,
+						}, -- [7]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = "<=",
+									["Level"] = 3,
+								}, -- [1]
+								{
+									["Type"] = "BUFFPERC",
+									["Operator"] = ">=",
+									["Name"] = "征伐",
+									["Level"] = 1,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1NybiAhp9M9D",
+							["Name"] = "愤怒之剑; 公正之剑",
+							["Enabled"] = true,
+						}, -- [8]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["StackMin"] = 2,
+							["Name"] = "十字军打击; 狂热",
+							["ClockGCD"] = true,
+							["StackMax"] = 1,
+							["States"] = {
+								[101] = {
+									["Alpha"] = 1,
+								},
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1NydDp6d3r07",
+							["ShowTimerText"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCHARGES",
+									["Name"] = "十字军打击",
+									["Level"] = 2,
+								}, -- [1]
+								{
+									["Type"] = "BUFFPERC",
+									["Operator"] = ">=",
+									["Name"] = "征伐",
+									["Level"] = 1,
+								}, -- [2]
+								["n"] = 2,
+							},
+						}, -- [9]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["States"] = {
+								[3] = {
+									["Alpha"] = 1,
+								},
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NybiAhtY=X5",
+							["Name"] = "愤怒之剑; 公正之剑",
+							["Conditions"] = {
+								{
+									["Type"] = "COMBAT",
+									["Level"] = 1,
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = "<=",
+									["Level"] = 4,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["Enabled"] = true,
+						}, -- [10]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ManaCheck"] = true,
+							["Name"] = "审判官复仇",
+							["ClockGCD"] = true,
+							["States"] = {
+								[3] = {
+									["Alpha"] = 0.51,
+								},
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NybSTbGyTMK",
+							["Conditions"] = {
+								{
+									["Type"] = "BUFFPERC",
+									["Operator"] = ">=",
+									["Name"] = "征伐",
+									["Level"] = 93,
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 5,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["Enabled"] = true,
+						}, -- [11]
+					},
+					["Name"] = "征伐循环条件",
+				}, -- [8]
+				{
+					["Point"] = {
+						["y"] = 119.286146375806,
+						["x"] = 170.000534057617,
+						["point"] = "LEFT",
+						["relativePoint"] = "LEFT",
+					},
+					["Scale"] = 2.09999442100525,
+					["Role"] = 1,
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NybSTbGyTMK", -- [1]
+								"TMW:icon:1NybSTbKpOuu", -- [2]
+								"TMW:icon:1NybSTbOtEYR", -- [3]
+								"TMW:icon:1NybiAhdViYM", -- [4]
+								"TMW:icon:1NybiAhhcpBJ", -- [5]
+								"TMW:icon:1NydF5hMQbGW", -- [6]
+								"TMW:icon:1NybiAhp9M9D", -- [7]
+								"TMW:icon:1NydDp6d3r07", -- [8]
+							},
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+						}, -- [1]
+					},
+					["Name"] = "整合征伐循环组",
+					["GUID"] = "TMW:group:1Nyc4yOLpy4j",
+				}, -- [9]
+				{
+					["Point"] = {
+						["y"] = -95.6751606098373,
+						["x"] = 168.092572766362,
+					},
+					["Scale"] = 2.19561314582825,
+					["Role"] = 1,
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NybiAhtY=X5", -- [1]
+								"TMW:group:1Nyc4yOLpy4j", -- [2]
+								"TMW:group:1NxNbfNAHRWf", -- [3]
+							},
+						}, -- [1]
+					},
+					["Name"] = "惩戒骑输出循环2.0",
+					["GUID"] = "TMW:group:1NydAml41qNv",
+				}, -- [10]
+				{
+					["View"] = "bar",
+					["Point"] = {
+						["y"] = -132.433295370971,
+						["x"] = -137.838908414401,
+						["point"] = "TOPRIGHT",
+						["relativePoint"] = "TOPRIGHT",
+					},
+					["Scale"] = 1.84998619556427,
+					["Role"] = 1,
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["OnlyMine"] = true,
+							["Type"] = "buff",
+							["Name"] = "征伐",
+							["CustomTex"] = "NONE",
+						}, -- [1]
+					},
+					["Name"] = "征伐计时条",
+					["SettingsPerView"] = {
+						["bar"] = {
+							["SizeX"] = 168.650024414063,
+						},
+					},
+					["GUID"] = "TMW:group:1Nyqvo0fEW4j",
+				}, -- [11]
+				{
+					["Point"] = {
+						["y"] = -86.4999694824219,
+						["x"] = -206.999816894531,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+					["Role"] = 1,
+					["EnabledSpecs"] = {
+						[65] = false,
+						[66] = false,
+					},
+					["Columns"] = 3,
+					["Icons"] = {
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Level"] = 4,
+								}, -- [1]
+								{
+									["Type"] = "SPELLCD",
+									["Name"] = "征伐",
+								}, -- [2]
+								{
+									["Type"] = "SPELLCD",
+									["Name"] = "灰烬觉醒",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["GUID"] = "TMW:icon:1Nyr5RgKxM5m",
+							["Name"] = "审判",
+							["Enabled"] = true,
+						}, -- [1]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ClockGCD"] = true,
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = "<=",
+									["Level"] = 3,
+								}, -- [1]
+								{
+									["Type"] = "SPELLCD",
+									["Name"] = "征伐",
+								}, -- [2]
+								{
+									["Type"] = "SPELLCD",
+									["Name"] = "灰烬觉醒",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["GUID"] = "TMW:icon:1Nyr5RgPC1Cj",
+							["Name"] = "愤怒之剑; 公正之剑",
+							["Enabled"] = true,
+						}, -- [2]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["StackMin"] = 2,
+							["Name"] = "十字军打击; 狂热",
+							["ClockGCD"] = true,
+							["StackMax"] = 1,
+							["States"] = {
+								[101] = {
+									["Alpha"] = 1,
+								},
+							},
+							["RangeCheck"] = true,
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1Nyr5RgTM_qR",
+							["ShowTimerText"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCD",
+									["Name"] = "征伐",
+								}, -- [1]
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = "<=",
+									["Level"] = 4,
+								}, -- [2]
+								{
+									["Type"] = "SPELLCD",
+									["Name"] = "灰烬觉醒",
+								}, -- [3]
+								["n"] = 3,
+							},
+						}, -- [3]
+					},
+					["Name"] = "征伐前提使用",
+					["Conditions"] = {
+						{
+							["Type"] = "TALENTLEARNED",
+							["Name"] = "征伐",
+						}, -- [1]
+						["n"] = 1,
+					},
+					["GUID"] = "TMW:group:1Nyr5RgHhc1M",
+				}, -- [12]
+				{
+					["Point"] = {
+						["y"] = -108.571673573745,
+						["x"] = 188.809861804649,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+					["Scale"] = 2.09999227523804,
+					["Role"] = 1,
+					["EnabledSpecs"] = {
+						[66] = false,
+						[65] = false,
+					},
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1Nyr5RgPC1Cj", -- [1]
+								"TMW:icon:1Nyr5RgTM_qR", -- [2]
+								"TMW:icon:1Nyr5RgKxM5m", -- [3]
+								"TMW:icon:1NyrfpXeL4nH", -- [4]
+								"TMW:icon:1NyrfpXcs_e4", -- [5]
+							},
+							["Conditions"] = {
+								["n"] = 1,
+							},
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["OnlyShown"] = true,
+									["Animation"] = "ACTVTNGLOW",
+									["Event"] = "WCSP",
+								}, -- [1]
+								["n"] = 1,
+							},
+						}, -- [1]
+					},
+					["Name"] = "征伐整合",
+					["GUID"] = "TMW:group:1Nyr9pTXVT0u",
+				}, -- [13]
+			},
+			["Version"] = 81305,
+			["NumGroups"] = 13,
+			["TextureName"] = "Armory",
+			["ForceNoBlizzCC"] = true,
+			["Locked"] = true,
+		},
+		["Haidi - 幽暗沼泽"] = {
+			["ForceNoBlizzCC"] = true,
+			["Version"] = 81305,
+			["Locked"] = true,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1No0t=kM8uOu",
+					["Columns"] = 15,
+					["Point"] = {
+						["y"] = -90,
+						["x"] = -1,
+					},
+					["Scale"] = 1.4,
+					["Rows"] = 8,
+					["Icons"] = {
+						[88] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLgLjO3", -- [1]
+								"TMW:icon:1No22ACYd2oX", -- [2]
+								"TMW:icon:1NxHdUoJUjM_", -- [3]
+								"TMW:icon:1NxHdUnMETWI", -- [4]
+							},
+						},
+						[77] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BKrqo0B", -- [1]
+								"TMW:icon:1No21iXXEUCL", -- [2]
+							},
+						},
+						[35] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["Name"] = "暴龙的践踏",
+							["ShowTimerTextnoOCC"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Magnitude"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ShowTimerText"] = true,
+							["Type"] = "buff",
+						},
+						[85] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLPXpJm", -- [1]
+								"TMW:icon:1No22ACHZ3I3", -- [2]
+								"TMW:icon:1NxHdUmc36yx", -- [3]
+								"TMW:icon:1NxHdG7zb2UM", -- [4]
+							},
+						},
+						[89] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NrRRwsVieTB", -- [1]
+								"TMW:icon:1No22BMVSe4b", -- [2]
+							},
+						},
+						[78] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BKxgxxJ", -- [1]
+								"TMW:icon:1No21iXdCENG", -- [2]
+							},
+						},
+						[83] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22AC4pvN=", -- [1]
+								"TMW:icon:1No22BLENs0C", -- [2]
+								"TMW:icon:1NxHdUmtnIYw", -- [3]
+								"TMW:icon:1NxHdTq8CI7O", -- [4]
+							},
+						},
+						[86] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLV5Xnl", -- [1]
+								"TMW:icon:1No22ACNG4ft", -- [2]
+							},
+						},
+						[90] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BNa3Jk2", -- [1]
+								"TMW:icon:1NrRRwsVieTB", -- [2]
+								"TMW:icon:1No22BMb6=kQ", -- [3]
+							},
+						},
+						[36] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["Name"] = "梦魇脓液",
+							["ShowTimerTextnoOCC"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Magnitude"] = 2,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ShowTimerText"] = true,
+							["Type"] = "buff",
+						},
+						[98] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NxHdUnplLRU", -- [1]
+								"TMW:icon:1NxHH2MVHkuf", -- [2]
+							},
+						},
+						[87] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLakBoA", -- [1]
+								"TMW:icon:1No22ACSvyGc", -- [2]
+								"TMW:icon:1NxHdUmNgPGO", -- [3]
+								"TMW:icon:1NxHdG7XoVjC", -- [4]
+							},
+						},
+						[76] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BL1ELij", -- [1]
+								"TMW:icon:1No21iXjvget", -- [2]
+							},
+						},
+						[80] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NuyCoNhjkmn", -- [1]
+								"TMW:icon:1NuyCoMyN5b4", -- [2]
+							},
+						},
+						[81] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NtKknukWCKk", -- [1]
+								"TMW:icon:1NtKknsWIGRJ", -- [2]
+								"TMW:icon:1NxHdG7ilcLx", -- [3]
+							},
+						},
+						[66] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NrRuib1leF5", -- [1]
+								"TMW:icon:1NrRuiaf66YW", -- [2]
+							},
+						},
+					},
+					["Name"] = "显示栏",
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1No21iXTDmhI",
+					["Point"] = {
+						["y"] = -11.0820309732481,
+						["x"] = -121.899683414866,
+						["point"] = "RIGHT",
+						["relativePoint"] = "RIGHT",
+					},
+					["Name"] = "功能栏",
+					["Scale"] = 1.14848804473877,
+					["Rows"] = 12,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "自由祝福",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1No21iXXEUCL",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "牺牲祝福",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1No21iXdCENG",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "保护祝福",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1No21iXjvget",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [3]
+						nil, -- [4]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "奉献",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1No22AC4pvN=",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "炽天使",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1NtKknsWIGRJ",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "提尔之眼",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1No22ACHZ3I3",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "炽热防御者",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1No22ACNG4ft",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "远古列王守卫",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1No22ACSvyGc",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+							["Name"] = "137369",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No22ACYd2oX",
+							["Type"] = "item",
+							["OnlyEquipped"] = true,
+							["OnlyInBags"] = true,
+						}, -- [10]
+						[30] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "圣疗术",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1No22BMVSe4b",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[31] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "圣盾术",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1No22BMb6=kQ",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[16] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "奉献",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["Type"] = "totem",
+							["GUID"] = "TMW:icon:1No22BLENs0C",
+							["ShowTimerText"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+							},
+						},
+						[124] = {
+							["FakeHidden"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BMPIbb5", -- [1]
+							},
+							["Enabled"] = true,
+						},
+						[17] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
+							["FakeHidden"] = true,
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1NtKknukWCKk",
+							["Name"] = "炽天使",
+							["Type"] = "buff",
+						},
+						[34] = {
+							["GUID"] = "TMW:icon:1NrRRwsVieTB",
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Name"] = "自律",
+							["Type"] = "buff",
+							["States"] = {
+								{
+									["Alpha"] = 0.5,
+								}, -- [1]
+							},
+						},
+						[18] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1No22BLPXpJm",
+							["Name"] = "提尔之眼",
+							["Type"] = "buff",
+						},
+						[70] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "圣光壁垒",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1NuyCoMyN5b4",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[19] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1No22BLV5Xnl",
+							["Name"] = "炽热防御者",
+							["Type"] = "buff",
+						},
+						[38] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "奉献",
+							["Type"] = "buff",
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1NxHH2MVHkuf",
+							["ShowTimerText"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+							},
+						},
+						[20] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1No22BLakBoA",
+							["Name"] = "远古列王守卫",
+							["Type"] = "buff",
+						},
+						[78] = {
+							["GUID"] = "TMW:icon:1NrRuib1leF5",
+							["ShowTimer"] = true,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+							["Name"] = "牺牲祝福",
+							["Type"] = "buff",
+						},
+						[21] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1No22BLgLjO3",
+							["Name"] = "214971",
+							["Type"] = "buff",
+						},
+						[42] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1No22BNa3Jk2",
+							["Name"] = "圣盾术",
+							["Type"] = "buff",
+						},
+						[12] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "自由祝福",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1No22BKrqo0B",
+							["ShowTimerText"] = true,
+							["Type"] = "buff",
+						},
+						[123] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["Name"] = "夜之子的坚韧",
+							["ShowTimerTextnoOCC"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Magnitude"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ShowTimerText"] = true,
+							["Type"] = "buff",
+						},
+						[13] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "牺牲祝福",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1No22BKxgxxJ",
+							["ShowTimerText"] = true,
+							["Type"] = "buff",
+						},
+						[14] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "保护祝福",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1No22BL1ELij",
+							["ShowTimerText"] = true,
+							["Type"] = "buff",
+						},
+						[122] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnStart",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1Nthkki1TZMH",
+							["Name"] = "214142",
+							["Type"] = "buff",
+						},
+						[81] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnShow",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1NuyCoNhjkmn",
+							["Name"] = "信仰之盾",
+							["Type"] = "buff",
+						},
+						[29] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "守护之光",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1No22BMPIbb5",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[67] = {
+							["GUID"] = "TMW:icon:1NrRuiaf66YW",
+							["ShowTimer"] = true,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Enabled"] = true,
+							["Name"] = "铁木树皮",
+							["Type"] = "buff",
+						},
+					},
+					["Columns"] = 11,
+				}, -- [2]
+				{
+					["GUID"] = "TMW:group:1No4VchLKe_k",
+					["Point"] = {
+						["y"] = -44,
+						["x"] = -67.3490251813616,
+						["point"] = "LEFT",
+					},
+					["Scale"] = 2.8,
+					["Name"] = "盾击BUFF",
+					["Icons"] = {
+						{
+							["ShowTTText"] = 1,
+							["ShowTimer"] = true,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1Neg0psf5CQ1",
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks:Hide(0)]", -- [2]
+									},
+								},
+							},
+							["Enabled"] = true,
+							["Name"] = "正义盾击",
+							["Type"] = "buff",
+						}, -- [1]
+					},
+					["Columns"] = 1,
+				}, -- [3]
+				{
+					["GUID"] = "TMW:group:1NrR=WTMOPB4",
+					["Name"] = "守护之光",
+					["Point"] = {
+						["y"] = -44,
+						["x"] = 52.5,
+					},
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "守护之光",
+							["Type"] = "cooldown",
+							["States"] = {
+								nil, -- [1]
+								{
+									["Alpha"] = 0.12,
+								}, -- [2]
+							},
+						}, -- [1]
+					},
+					["Scale"] = 2.8,
+					["Columns"] = 1,
+					["EnabledSpecs"] = {
+						[65] = false,
+						[70] = false,
+					},
+					["OnlyInCombat"] = true,
+				}, -- [4]
+				{
+					["GUID"] = "TMW:group:1NxHdG8P_h3e",
+					["Columns"] = 8,
+					["Scale"] = 1.14848804473877,
+					["Rows"] = 4,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "复仇之盾",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1NxHdG7XoVjC",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "灰烬觉醒",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1NxHdG7ilcLx",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "征伐",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1NxHdG7zb2UM",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [3]
+						[11] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "征伐",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1No4hOLOpaLG",
+									["Texts"] = {
+										[2] = "[Stacks:Hide(0)]",
+									},
+								},
+							},
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnStart",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1NxHdUmc36yx",
+							["ShowTimerText"] = true,
+							["Type"] = "buff",
+						},
+						[13] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["FakeHidden"] = true,
+							["OnlyMine"] = true,
+							["Name"] = "197277",
+							["GUID"] = "TMW:icon:1NxHdUmtnIYw",
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnStart",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ShowTimerText"] = true,
+							["Type"] = "buff",
+						},
+						[10] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "愤怒之剑",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1NxHdUnplLRU",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[25] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
+							["FakeHidden"] = true,
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnStart",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1NxHdUoJUjM_",
+							["Name"] = "以眼还眼",
+							["Type"] = "buff",
+						},
+						[5] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "审判",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1NxHdTq8CI7O",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[9] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
+							["FakeHidden"] = true,
+							["Events"] = {
+								{
+									["Infinite"] = true,
+									["Type"] = "Animations",
+									["Event"] = "OnStart",
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1NxHdUmNgPGO",
+							["Name"] = "复仇之盾",
+							["Type"] = "buff",
+						},
+						[17] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "以眼还眼",
+							["FakeHidden"] = true,
+							["Type"] = "cooldown",
+							["GUID"] = "TMW:icon:1NxHdUnMETWI",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+					},
+					["Role"] = 1,
+					["Name"] = "惩戒",
+					["EnabledSpecs"] = {
+						[65] = false,
+						[66] = false,
+					},
+					["Point"] = {
+						["y"] = -67.6382748697325,
+						["x"] = 102.030792236328,
+						["point"] = "LEFT",
+						["relativePoint"] = "LEFT",
+					},
+				}, -- [5]
+			},
+			["NumGroups"] = 5,
+			["TextureName"] = "Armory",
+		},
+		["Haidi - 幽暗沼泽 2"] = {
+			["Version"] = 81305,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1No0t=kM8uOu",
+					["Point"] = {
+						["y"] = -90,
+						["x"] = -1,
+					},
+					["Columns"] = 15,
+					["Scale"] = 1.4,
+					["Rows"] = 8,
+					["Icons"] = {
+						[88] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLgLjO3", -- [1]
+								"TMW:icon:1No22ACYd2oX", -- [2]
+								"TMW:icon:1NxHdUoJUjM_", -- [3]
+								"TMW:icon:1NxHdUnMETWI", -- [4]
+							},
+						},
+						[77] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BKrqo0B", -- [1]
+								"TMW:icon:1No21iXXEUCL", -- [2]
+							},
+						},
+						[35] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["Name"] = "暴龙的践踏",
+							["ShowTimerTextnoOCC"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Magnitude"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[85] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLPXpJm", -- [1]
+								"TMW:icon:1No22ACHZ3I3", -- [2]
+								"TMW:icon:1NxHdUmc36yx", -- [3]
+								"TMW:icon:1NxHdG7zb2UM", -- [4]
+							},
+						},
+						[89] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NrRRwsVieTB", -- [1]
+								"TMW:icon:1No22BMVSe4b", -- [2]
+							},
+						},
+						[78] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BKxgxxJ", -- [1]
+								"TMW:icon:1No21iXdCENG", -- [2]
+							},
+						},
+						[66] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NrRuib1leF5", -- [1]
+								"TMW:icon:1NrRuiaf66YW", -- [2]
+							},
+						},
+						[86] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLV5Xnl", -- [1]
+								"TMW:icon:1No22ACNG4ft", -- [2]
+							},
+						},
+						[90] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BNa3Jk2", -- [1]
+								"TMW:icon:1NrRRwsVieTB", -- [2]
+								"TMW:icon:1No22BMb6=kQ", -- [3]
+							},
+						},
+						[81] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NtKknukWCKk", -- [1]
+								"TMW:icon:1NtKknsWIGRJ", -- [2]
+								"TMW:icon:1NxHdG7ilcLx", -- [3]
+							},
+						},
+						[83] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22AC4pvN=", -- [1]
+								"TMW:icon:1No22BLENs0C", -- [2]
+								"TMW:icon:1NxHdUmtnIYw", -- [3]
+								"TMW:icon:1NxHdTq8CI7O", -- [4]
+							},
+						},
+						[87] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BLakBoA", -- [1]
+								"TMW:icon:1No22ACSvyGc", -- [2]
+								"TMW:icon:1NxHdUmNgPGO", -- [3]
+								"TMW:icon:1NxHdG7XoVjC", -- [4]
+							},
+						},
+						[76] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BL1ELij", -- [1]
+								"TMW:icon:1No21iXjvget", -- [2]
+							},
+						},
+						[80] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NuyCoNhjkmn", -- [1]
+								"TMW:icon:1NuyCoMyN5b4", -- [2]
+							},
+						},
+						[98] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NxHdUnplLRU", -- [1]
+								"TMW:icon:1NxHH2MVHkuf", -- [2]
+							},
+						},
+						[36] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["Name"] = "梦魇脓液",
+							["ShowTimerTextnoOCC"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Magnitude"] = 2,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["Name"] = "显示栏",
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1No21iXTDmhI",
+					["Columns"] = 11,
+					["Name"] = "功能栏",
+					["Scale"] = 1.14848804473877,
+					["Rows"] = 12,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "自由祝福",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No21iXXEUCL",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "牺牲祝福",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No21iXdCENG",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "保护祝福",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No21iXjvget",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [3]
+						nil, -- [4]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "奉献",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No22AC4pvN=",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "炽天使",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NtKknsWIGRJ",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "提尔之眼",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No22ACHZ3I3",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "炽热防御者",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No22ACNG4ft",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "远古列王守卫",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No22ACSvyGc",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["OnlyInBags"] = true,
+							["Name"] = "137369",
+							["FakeHidden"] = true,
+							["Type"] = "item",
+							["GUID"] = "TMW:icon:1No22ACYd2oX",
+							["OnlyEquipped"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [10]
+						[30] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "圣疗术",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No22BMVSe4b",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[31] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "圣盾术",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No22BMb6=kQ",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[16] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["Type"] = "totem",
+							["Name"] = "奉献",
+							["GUID"] = "TMW:icon:1No22BLENs0C",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+							},
+						},
+						[124] = {
+							["FakeHidden"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22BMPIbb5", -- [1]
+							},
+							["Enabled"] = true,
+						},
+						[17] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "炽天使",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1NtKknukWCKk",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						},
+						[34] = {
+							["GUID"] = "TMW:icon:1NrRRwsVieTB",
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["Type"] = "buff",
+							["Name"] = "自律",
+							["States"] = {
+								{
+									["Alpha"] = 0.5,
+								}, -- [1]
+							},
+						},
+						[18] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Type"] = "buff",
+							["Name"] = "提尔之眼",
+							["GUID"] = "TMW:icon:1No22BLPXpJm",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[70] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "圣光壁垒",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NuyCoMyN5b4",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[19] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "炽热防御者",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1No22BLV5Xnl",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[38] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["Type"] = "buff",
+							["Name"] = "奉献",
+							["GUID"] = "TMW:icon:1NxHH2MVHkuf",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+							},
+						},
+						[20] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "远古列王守卫",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1No22BLakBoA",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[78] = {
+							["GUID"] = "TMW:icon:1NrRuib1leF5",
+							["ShowTimer"] = true,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Type"] = "buff",
+							["Name"] = "牺牲祝福",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
+						},
+						[21] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "214971",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1No22BLgLjO3",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[42] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "圣盾术",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1No22BNa3Jk2",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[12] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["Type"] = "buff",
+							["Name"] = "自由祝福",
+							["GUID"] = "TMW:icon:1No22BKrqo0B",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[123] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["Name"] = "夜之子的坚韧",
+							["ShowTimerTextnoOCC"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Magnitude"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[13] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["Type"] = "buff",
+							["Name"] = "牺牲祝福",
+							["GUID"] = "TMW:icon:1No22BKxgxxJ",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[14] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon2",
+								},
+							},
+							["Type"] = "buff",
+							["Name"] = "保护祝福",
+							["GUID"] = "TMW:icon:1No22BL1ELij",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[67] = {
+							["GUID"] = "TMW:icon:1NrRuiaf66YW",
+							["ShowTimer"] = true,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Type"] = "buff",
+							["Name"] = "铁木树皮",
+							["Enabled"] = true,
+							["FakeHidden"] = true,
+						},
+						[29] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "守护之光",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1No22BMPIbb5",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[81] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["Name"] = "信仰之盾",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1NuyCoNhjkmn",
+							["Events"] = {
+								{
+									["Event"] = "OnShow",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[122] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Type"] = "buff",
+							["Name"] = "214142",
+							["GUID"] = "TMW:icon:1Nthkki1TZMH",
+							["Events"] = {
+								{
+									["Event"] = "OnStart",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["Point"] = {
+						["y"] = -11.0820309732481,
+						["x"] = -121.899683414866,
+						["point"] = "RIGHT",
+						["relativePoint"] = "RIGHT",
+					},
+				}, -- [2]
+				{
+					["GUID"] = "TMW:group:1No4VchLKe_k",
+					["Point"] = {
+						["y"] = -44,
+						["x"] = -67.3490251813616,
+						["point"] = "LEFT",
+					},
+					["Scale"] = 2.8,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["ShowTTText"] = 1,
+							["ShowTimer"] = true,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Type"] = "buff",
+							["Name"] = "正义盾击",
+							["Enabled"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1Neg0psf5CQ1",
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks:Hide(0)]", -- [2]
+									},
+								},
+							},
+						}, -- [1]
+					},
+					["Name"] = "盾击BUFF",
+				}, -- [3]
+				{
+					["GUID"] = "TMW:group:1NrR=WTMOPB4",
+					["Point"] = {
+						["y"] = -44,
+						["x"] = 52.5,
+					},
+					["Name"] = "守护之光",
+					["EnabledSpecs"] = {
+						[65] = false,
+						[70] = false,
+					},
+					["Scale"] = 2.8,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "守护之光",
+							["Type"] = "cooldown",
+							["States"] = {
+								nil, -- [1]
+								{
+									["Alpha"] = 0.12,
+								}, -- [2]
+							},
+						}, -- [1]
+					},
+					["OnlyInCombat"] = true,
+				}, -- [4]
+				{
+					["GUID"] = "TMW:group:1NxHdG8P_h3e",
+					["Columns"] = 8,
+					["Scale"] = 1.14848804473877,
+					["Rows"] = 4,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "复仇之盾",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxHdG7XoVjC",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "灰烬觉醒",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxHdG7ilcLx",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "征伐",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxHdG7zb2UM",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						}, -- [3]
+						[11] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1No4hOLOpaLG",
+									["Texts"] = {
+										[2] = "[Stacks:Hide(0)]",
+									},
+								},
+							},
+							["Type"] = "buff",
+							["Name"] = "征伐",
+							["GUID"] = "TMW:icon:1NxHdUmc36yx",
+							["Events"] = {
+								{
+									["Event"] = "OnStart",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+						[13] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["FakeHidden"] = true,
+							["OnlyMine"] = true,
+							["Name"] = "197277",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Event"] = "OnStart",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1NxHdUmtnIYw",
+						},
+						[10] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "愤怒之剑",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxHdUnplLRU",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[17] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "以眼还眼",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxHdUnMETWI",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[9] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "复仇之盾",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1NxHdUmNgPGO",
+							["Events"] = {
+								{
+									["Event"] = "OnStart",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						},
+						[5] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "审判",
+							["FakeHidden"] = true,
+							["GUID"] = "TMW:icon:1NxHdTq8CI7O",
+							["Type"] = "cooldown",
+							["States"] = {
+								{
+									["Alpha"] = 0.9,
+								}, -- [1]
+								{
+									["Alpha"] = 0.5,
+								}, -- [2]
+							},
+						},
+						[25] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["ClockGCD"] = true,
+							["Name"] = "以眼还眼",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1NxHdUoJUjM_",
+							["Events"] = {
+								{
+									["Event"] = "OnStart",
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ACTVTNGLOW",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["FakeHidden"] = true,
+						},
+					},
+					["Role"] = 1,
+					["Name"] = "惩戒",
+					["EnabledSpecs"] = {
+						[65] = false,
+						[66] = false,
+					},
+					["Point"] = {
+						["y"] = -67.6382748697325,
+						["x"] = 102.030792236328,
+						["point"] = "LEFT",
+						["relativePoint"] = "LEFT",
+					},
+				}, -- [5]
+			},
+			["ForceNoBlizzCC"] = true,
+			["NumGroups"] = 5,
+			["TextureName"] = "Armory",
+		},
+		["开山怪 - 幽暗沼泽"] = {
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1KVV9GPrkIhM",
+				}, -- [1]
+			},
+			["Version"] = 81305,
+		},
+		["每天壹碗面 - 幽暗沼泽"] = {
+			["Version"] = 81101,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1Neqzg9xTNo2",
+				}, -- [1]
+			},
+		},
 		["Haidii - 燃烧之刃"] = {
 			["Version"] = 81101,
 			["Groups"] = {
@@ -5714,11 +9866,11 @@ TellMeWhenDB = {
 				}, -- [1]
 			},
 		},
-		["每天壹碗面 - 幽暗沼泽"] = {
-			["Version"] = 81101,
+		["橙界骑 - 幽暗沼泽"] = {
+			["Version"] = 81305,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1Neqzg9xTNo2",
+					["GUID"] = "TMW:group:1NzxTEE54pT6",
 				}, -- [1]
 			},
 		},

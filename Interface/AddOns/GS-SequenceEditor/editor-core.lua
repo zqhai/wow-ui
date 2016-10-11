@@ -12,21 +12,6 @@ local otherversionlistboxvalue = ""
 local frame = AceGUI:Create("Frame")
 local editframe = AceGUI:Create("Frame")
 
-
-StaticPopupDialogs["GSSEConfirmReloadUI"] = {
-  text = L["You need to reload the User Interface for the change in StepFunction to take effect.  Would you like to do this now?"],
-  button1 = L["Yes"],
-  button2 = L["No"],
-  OnAccept = function()
-      ReloadUI();
-  end,
-  timeout = 0,
-  whileDead = true,
-  hideOnEscape = true,
-  preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
-}
-
-
 local sequenceboxtext = AceGUI:Create("MultiLineEditBox")
 local remotesequenceboxtext = AceGUI:Create("MultiLineEditBox")
 local boxes = {}
@@ -252,7 +237,7 @@ end
 -------------end viewer-------------
 -------------begin editor--------------------
 
-local stepvalue
+local stepvalue = 1
 
 local headerGroup = AceGUI:Create("SimpleGroup")
 headerGroup:SetFullWidth(true)
@@ -550,8 +535,10 @@ function GSSE:LoadEditor(SequenceName)
     nameeditbox:SetText(SequenceName)
     if GSisEmpty(GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].StepFunction) then
      stepdropdown:SetValue("1")
+     stepvalue = 1
     else
      stepdropdown:SetValue("2")
+     stepvalue = 2
     end
     if GSisEmpty(GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].PreMacro) then
       GSPrintDebugMessage(L["Moving on - LiveTest.PreMacro already exists."], GNOME)
@@ -596,7 +583,7 @@ function GSSE:UpdateSequenceDefinition(SequenceName)
     local sequence = {}
     GSSE:lines(sequence, spellbox:GetText())
     -- update sequence
-    if stepvalue == "2" then
+    if stepvalue == 2 then
       sequence.StepFunction = GSStaticPriority
     else
       sequence.StepFunction = nil
@@ -622,18 +609,12 @@ function GSSE:UpdateSequenceDefinition(SequenceName)
       GSUpdateSequenceList()
       GSSequenceListbox:SetValue(SequenceName)
       GSPrint(L["Sequence Saved as version "] .. nextVal, GNOME)
-    elseif not GSCompareSequence(sequence, GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)] ) then
+    else
       GSPrintDebugMessage(L["Updating due to new version."], GNOME)
-      local compStep = GSMasterOptions.SequenceLibrary[SequenceName][GSGetActiveSequenceVersion(SequenceName)].StepFunction
       GSAddSequenceToCollection(SequenceName, sequence, nextVal)
       GSSE:loadSequence(SequenceName)
       GSCheckMacroCreated(SequenceName)
-      if sequence.StepFunction == compStep then
-        GSUpdateSequence(SequenceName, GSMasterOptions.SequenceLibrary[SequenceName][nextVal])
-      else
-        GSPrepareLogout(false)
-        StaticPopup_Show ("GSSEConfirmReloadUI")
-      end
+      GSUpdateSequence(SequenceName, GSMasterOptions.SequenceLibrary[SequenceName][nextVal])
       GSPrint(L["Sequence Saved as version "] .. nextVal, GNOME)
     end
 

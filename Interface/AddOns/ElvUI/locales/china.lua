@@ -1890,6 +1890,8 @@ end
 
 --Bags
 do
+	L["Use Tooltip Scanning"] = "使用鼠标扫描"
+	L["This makes the item level display more reliable but uses more resources. If this is disabled then upgraded items will not show the correct item level."] = "使用鼠标扫描获得更加可靠的信息,关闭的话只能得到基本信息"
 	L["Disable Bag Sort"] = "禁用背包排序";
 	L["Disable Bank Sort"] = "禁用银行排序";
 	L["Clear Search On Close"] = "关闭时清空搜索"

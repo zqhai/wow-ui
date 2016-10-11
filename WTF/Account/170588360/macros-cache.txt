@@ -32,7 +32,7 @@ END
 VER 3 0000000000000060 " 结束" "851298"
 /run print("设置左键为默认："..SetBinding("BUTTON1","CAMERAORSELECTORMOVE"))
 /run print("设置右键为默认："..SetBinding("BUTTON2","TURNORACTION"))
-/equip 虔诚之忠头盔
+/equip 夜幕战盔
 /equip 真理守护者
 END
 VER 3 000000000000005B "MillHelper" "Ability_Miling"

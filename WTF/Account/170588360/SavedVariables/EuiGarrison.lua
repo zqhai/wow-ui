@@ -1,34 +1,18 @@
 
-SV_GarrisonMissionManager = nil
+SV_GarrisonMissionManager = {
+}
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
 	["幽暗沼泽"] = {
-		["Haidi"] = {
+		["橙界骑"] = {
 			["class"] = "PALADIN",
 			["summary"] = {
-				["inProgress"] = {
-					[161] = 1475091487,
-					[119] = 1475100464,
-					[127] = 1475100456,
-					[202] = 1475089457,
-					[676] = 1475093253,
-					[331] = 1475087870,
-					[129] = 1475114885,
-					[391] = 1475114879,
-					[311] = 1475107689,
-					[187] = 1475088783,
-				},
 				["ti3"] = 128391,
 				["ti2"] = 122485,
-				["tt1"] = 1474305895,
+				["tt1"] = true,
 				["ti1"] = 118531,
 				["tt3"] = true,
-				["tt2"] = 1474563341,
+				["tt2"] = true,
 			},
-			["curOil"] = 510,
-			["lastCacheTime"] = 1474987114,
-			["curRes"] = 9756,
 			["faction"] = "Horde",
 		},
 		["冷血魔刀"] = {
@@ -41,6 +25,21 @@ MasterPlanAG = {
 				["ti3"] = 128391,
 				["ti2"] = 122485,
 			},
+			["faction"] = "Horde",
+		},
+		["Haidi"] = {
+			["summary"] = {
+				["tt2"] = 1474563341,
+				["tt3"] = true,
+				["tt1"] = 1474305895,
+				["ti1"] = 118531,
+				["ti3"] = 128391,
+				["ti2"] = 122485,
+			},
+			["curOil"] = 585,
+			["lastCacheTime"] = 1474987114,
+			["class"] = "PALADIN",
+			["curRes"] = 10000,
 			["faction"] = "Horde",
 		},
 	},

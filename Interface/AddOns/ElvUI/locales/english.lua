@@ -269,6 +269,8 @@ L[ [=[This works like a macro, you can run different situations to get the actio
  Example: '[combat] show;hide']=] ] = true;
 
 --Bags
+L["Use Tooltip Scanning"] = true;
+L["This makes the item level display more reliable but uses more resources. If this is disabled then upgraded items will not show the correct item level."] = true;
 L["Disable Bag Sort"] = true;
 L["Disable Bank Sort"] = true;
 L["Clear Search On Close"] = true;

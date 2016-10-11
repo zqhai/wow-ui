@@ -31,12 +31,30 @@ function GottaGoFast.BuildCMTooltip()
           newTooltip = newTooltip .. affixName .. "\n" .. affixDesc .. "\n\n";
         end
       end
-      newTooltip = string.sub(newTooltip, 1, string.len(newTooltip) - 4);
+      newTooltip = GottaGoFast.Utility.ShortenStr(newTooltip, 2);
       GottaGoFast.tooltip = newTooltip;
     else
       GottaGoFast.tooltip = GottaGoFast.defaultTooltip;
     end
   end
+end
+
+function GottaGoFast.InitCM(currentZoneID)
+  GottaGoFast.Utility.DebugPrint("Player Entered Challenge Mode");
+  GottaGoFast.WipeCM();
+  GottaGoFast.Utility.DebugPrint("Wiping CM");
+  GottaGoFast.SetupCM(currentZoneID);
+  GottaGoFast.Utility.DebugPrint("Setting Up CM");
+  GottaGoFast.UpdateCMTimer();
+  GottaGoFast.Utility.DebugPrint("Setting Up Timer");
+  GottaGoFast.UpdateCMObjectives();
+  GottaGoFast.Utility.DebugPrint("Setting Up Objectives");
+  GottaGoFast.inCM = true;
+  GottaGoFast.inTW = false;
+  GottaGoFastFrame:SetScript("OnUpdate", GottaGoFast.UpdateCM);
+  GottaGoFast.Utility.DebugPrint("Setting Up Update Script");
+  GottaGoFast.ShowFrames();
+  GottaGoFast.Utility.DebugPrint("Showing Frames");
 end
 
 function GottaGoFast.SetupCM(currentZoneID)
@@ -45,6 +63,7 @@ function GottaGoFast.SetupCM(currentZoneID)
   GottaGoFast.CurrentCM = {};
   GottaGoFast.CurrentCM["StartTime"] = nil;
   GottaGoFast.CurrentCM["Time"] = nil;
+  GottaGoFast.CurrentCM["CurrentTime"] = nil;
   GottaGoFast.CurrentCM["String"] = nil;
   GottaGoFast.CurrentCM["Name"], GottaGoFast.CurrentCM["ZoneID"], GottaGoFast.CurrentCM["GoldTimer"] = C_ChallengeMode.GetMapInfo(currentZoneID);
   GottaGoFast.CurrentCM["Deaths"] = 0;
@@ -53,6 +72,8 @@ function GottaGoFast.SetupCM(currentZoneID)
   GottaGoFast.CurrentCM["Empowered"] = empowered;
   GottaGoFast.CurrentCM["Bonus"] = "?";
   GottaGoFast.CurrentCM["Completed"] = false;
+  GottaGoFast.CurrentCM["AskedTime"] = nil;
+  GottaGoFast.CurrentCM["AskedForTimer"] = false;
   GottaGoFast.CurrentCM["Affixes"] = {};
   GottaGoFast.CurrentCM["CurrentValues"] = {};
   GottaGoFast.CurrentCM["FinalValues"] = {};
@@ -97,6 +118,7 @@ function GottaGoFast.SetupFakeCM()
   GottaGoFast.CurrentCM = {};
   GottaGoFast.CurrentCM["StartTime"] = GetTime() - (60*5);
   GottaGoFast.CurrentCM["Time"] = nil;
+  GottaGoFast.CurrentCM["CurrentTime"] = nil;
   GottaGoFast.CurrentCM["String"] = nil;
   GottaGoFast.CurrentCM["Name"], GottaGoFast.CurrentCM["ZoneID"], GottaGoFast.CurrentCM["GoldTimer"] = C_ChallengeMode.GetMapInfo(1458);
   GottaGoFast.CurrentCM["Deaths"] = 0;
@@ -105,7 +127,8 @@ function GottaGoFast.SetupFakeCM()
   GottaGoFast.CurrentCM["Empowered"] = true;
   GottaGoFast.CurrentCM["Bonus"] = 100;
   GottaGoFast.CurrentCM["Completed"] = false;
-  -- File With Affix IDs Here
+  GottaGoFast.CurrentCM["AskedTime"] = nil;
+  GottaGoFast.CurrentCM["AskedForTimer"] = false;
   GottaGoFast.CurrentCM["Affixes"] = {};
   GottaGoFast.CurrentCM["CurrentValues"] = {1, 1, 0, 0, 40};
   GottaGoFast.CurrentCM["FinalValues"] = {1, 1, 1, 1, 100};
@@ -145,7 +168,7 @@ function GottaGoFast.UpdateCMInformation()
           GottaGoFast.CurrentCM["CurrentValues"][i] = curValue;
           if (curValue == finalValue or ((i == GottaGoFast.CurrentCM["Steps"]) and (curValue == GottaGoFast.CurrentCM["FinalValues"][i]))) then
             -- Add Objective Time
-            GottaGoFast.CurrentCM["ObjectiveTimes"][i] = GottaGoFast.ObjectiveCompleteString(GottaGoFast.CurrentCM["Time"]);
+            GottaGoFast.CurrentCM["ObjectiveTimes"][i] = GottaGoFast.ObjectiveCompleteString(GottaGoFast.Utility.ShortenStr(GottaGoFast.CurrentCM["Time"], 1));
           end
         elseif (GottaGoFast.CurrentCM["CurrentValues"][i] == GottaGoFast.CurrentCM["FinalValues"][i] and not GottaGoFast.CurrentCM["ObjectiveTimes"][i]) then
           -- Objective Already Complete But No Time Filled Out (Re-Log / Re-Zone)
@@ -161,7 +184,7 @@ function GottaGoFast.CMFinalParse()
     for i = 1, GottaGoFast.CurrentCM["Steps"] do
       GottaGoFast.CurrentCM["CurrentValues"][i] = GottaGoFast.CurrentCM["FinalValues"][i];
       if (not GottaGoFast.CurrentCM["ObjectiveTimes"][i]) then
-        GottaGoFast.CurrentCM["ObjectiveTimes"][i] = GottaGoFast.ObjectiveCompleteString(GottaGoFast.CurrentCM["Time"]);
+        GottaGoFast.CurrentCM["ObjectiveTimes"][i] = GottaGoFast.ObjectiveCompleteString(GottaGoFast.Utility.ShortenStr(GottaGoFast.CurrentCM["Time"], 1));
       end
     end
   end
@@ -192,28 +215,37 @@ function GottaGoFast.UpdateCMTimer()
     if (GottaGoFast.CurrentCM["Completed"] == false) then
       local time = "";
       local startMin, startSec, goldMin, goldSec;
-      if (GottaGoFast.CurrentCM["StartTime"] and GottaGoFast.db.profile.TrueTimer) then
+      if (GottaGoFast.CurrentCM["StartTime"] and GottaGoFast.GetTrueTimer()) then
         local currentTime = GetTime();
         local deaths = GottaGoFast.CurrentCM["Deaths"] * 5;
         local secs = currentTime - GottaGoFast.CurrentCM["StartTime"];
+        GottaGoFast.CurrentCM["CurrentTime"] = secs;
         secs = secs + deaths;
         if (secs < 0) then
           startMin = "-00";
-          startSec = GottaGoFast.FormatTimeMS(math.abs(secs));
+          if (GottaGoFast.GetTimerType(nil) == "TrueTimerMS") then
+            startSec = GottaGoFast.FormatTimeMS(math.abs(secs));
+          else
+            startSec = GottaGoFast.FormatTimeNoMS(math.abs(secs));
+          end
         else
           startMin, startSec = GottaGoFast.SecondsToTime(secs);
           startMin = GottaGoFast.FormatTimeNoMS(startMin);
-          startSec = GottaGoFast.FormatTimeMS(startSec);
+          if (GottaGoFast.GetTimerType(nil) == "TrueTimerMS") then
+            startSec = GottaGoFast.FormatTimeMS(startSec);
+          else
+            startSec = GottaGoFast.FormatTimeNoMS(startSec);
+          end
         end
       else
         _, timeCM = GetWorldElapsedTime(1);
+        GottaGoFast.AskForTimer(timeCM);
         startMin, startSec = GottaGoFast.SecondsToTime(timeCM);
         startMin = GottaGoFast.FormatTimeNoMS(startMin);
         startSec = GottaGoFast.FormatTimeNoMS(startSec);
       end
       time = startMin .. ":" .. startSec .. " ";
       GottaGoFast.CurrentCM["Time"] = time;
-
       goldMin, goldSec = GottaGoFast.SecondsToTime(GottaGoFast.CurrentCM["GoldTimer"]);
       goldMin = GottaGoFast.FormatTimeNoMS(goldMin);
       goldSec = GottaGoFast.FormatTimeNoMS(goldSec);
@@ -253,7 +285,7 @@ function GottaGoFast.UpdateCMObjectives()
           increaseString = increaseString .. "+" .. k .. " = " .. goldMin .. ":" .. goldSec .. " / ";
         end
       end
-      objectiveString = objectiveString .. GottaGoFast.IncreaseColorString(string.sub(increaseString, 1, string.len(increaseString) - 3) .. "\n");
+      objectiveString = objectiveString .. GottaGoFast.IncreaseColorString(GottaGoFast.Utility.ShortenStr(increaseString, 3) .. "\n");
     end
     if (GottaGoFast.db.profile.LevelInObjectives and GottaGoFast.CurrentCM["Level"]) then
       objectiveString = objectiveString .. GottaGoFast.ObjectiveExtraString("Level " .. GottaGoFast.CurrentCM["Level"] .. " - (+" .. GottaGoFast.CurrentCM["Bonus"] .. "%) - " .. empowered .. "\n");
@@ -262,7 +294,7 @@ function GottaGoFast.UpdateCMObjectives()
       for k, v in pairs(GottaGoFast.CurrentCM["Affixes"]) do
         affixString = affixString .. v["name"] .. " - ";
       end
-      objectiveString = objectiveString .. GottaGoFast.ObjectiveExtraString(string.sub(affixString, 1, string.len(affixString) - 3) .. "\n");
+      objectiveString = objectiveString .. GottaGoFast.ObjectiveExtraString(GottaGoFast.Utility.ShortenStr(affixString, 3) .. "\n");
     end
     for i = 1, GottaGoFast.CurrentCM["Steps"] do
       if (i == GottaGoFast.CurrentCM["Steps"]) then
@@ -279,5 +311,38 @@ function GottaGoFast.UpdateCMObjectives()
     end
     GottaGoFastObjectiveFrame.font:SetText(objectiveString);
     GottaGoFast.ResizeFrame();
+  end
+end
+
+function GottaGoFast.AskForTimer(timeCM)
+  if (GottaGoFast.CurrentCM["StartTime"] == nil and timeCM > 1 and GottaGoFast.CurrentCM["AskedForTimer"] == false) then
+    GottaGoFast.Utility.DebugPrint("Asking For Timer");
+    GottaGoFast.CurrentCM["AskedTime"] = GetTime();
+    GottaGoFast.CurrentCM["AskedForTimer"] = true;
+    GottaGoFast:SendCommMessage("GottaGoFastCM", "FixCM", "PARTY", nil, "ALERT");
+  end
+end
+
+function GottaGoFast.CheckCMTimer()
+  if (GottaGoFast.CurrentCM and next(GottaGoFast.CurrentCM) ~= nil and GottaGoFast.CurrentCM["StartTime"]) then
+    local CurrentCMString = GottaGoFast:Serialize(GottaGoFast.CurrentCM);
+    GottaGoFast.Utility.DebugPrint("CM Timer Sent");
+    GottaGoFast:SendCommMessage("GottaGoFastCM", CurrentCMString, "PARTY", nil, "ALERT");
+  end
+end
+
+function GottaGoFast.FixCMTimer(input)
+  if (GottaGoFast.inCM == true and GottaGoFast.CurrentCM and next(GottaGoFast.CurrentCM) ~= nil) then
+    if (GottaGoFast.CurrentCM["StartTime"] == nil and GottaGoFast.CurrentCM["AskedTime"] ~= nil) then
+      GottaGoFast.Utility.DebugPrint("Replacing CM Timer");
+      local status, newCM = GottaGoFast:Deserialize(input);
+      if (status) then
+        newCM["StartTime"] = GottaGoFast.CurrentCM["AskedTime"] - newCM["CurrentTime"];
+        GottaGoFast.CurrentCM = newCM;
+        -- Update Timer
+        GottaGoFast.UpdateCMTimer();
+        GottaGoFast.UpdateCMObjectives();
+      end
+    end
   end
 end

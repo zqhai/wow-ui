@@ -7,6 +7,21 @@ function GottaGoFast.UpdateTW()
   end
 end
 
+function GottaGoFast.InitTW(currentZoneID)
+  if (GottaGoFastInstanceInfo[currentZoneID]["TW"]) then
+    Utility.DebugPrint("Player Entered Timewalking Dungeon");
+    GottaGoFast.WipeTW();
+    GottaGoFast.SetupTW(currentZoneID);
+    GottaGoFast.UpdateTWTimer();
+    GottaGoFast.UpdateTWObjectives();
+    GottaGoFast.inCM = false;
+    GottaGoFast.inTW = true;
+    GottaGoFastFrame:SetScript("OnUpdate", GottaGoFast.UpdateTW);
+    -- Hiding Frames For Now
+    GottaGoFast.ShowFrames();
+  end
+end
+
 function GottaGoFast.SetupTW(currentZoneID)
   local _, _, steps = C_Scenario.GetStepInfo();
   GottaGoFast.CurrentTW = {};
@@ -41,7 +56,7 @@ function GottaGoFast.SetupTW(currentZoneID)
 
   if (GottaGoFast.CurrentTW["LateStart"] == true) then
     --GottaGoFast:Print("Asked To Fix Timer");
-    GottaGoFast:SendCommMessage("GottaGoFast", "FixMyTimer", "PARTY", nil, "ALERT");
+    GottaGoFast:SendCommMessage("GottaGoFastTW", "FixTW", "PARTY", nil, "ALERT");
   end
 
   GottaGoFast.HideObjectiveTracker();
@@ -68,7 +83,7 @@ function GottaGoFast.UpdateTWTimer()
       local secs = currentTime - GottaGoFast.CurrentTW["StartTime"];
       GottaGoFast.CurrentTW["CurrentTime"] = secs;
       startMin, startSec = GottaGoFast.SecondsToTime(secs);
-      if (GottaGoFast.CurrentTW["StartTime"] and GottaGoFast.db.profile.TrueTimer) then
+      if (GottaGoFast.CurrentTW["StartTime"] and GottaGoFast.GetTrueTimer()) then
         startMin = GottaGoFast.FormatTimeNoMS(startMin);
         startSec = GottaGoFast.FormatTimeMS(startSec);
       else
@@ -149,6 +164,34 @@ function GottaGoFast.CompleteTW()
   if (GottaGoFast.CurrentTW) then
     GottaGoFast.CurrentTW["Completed"] = true;
     GottaGoFast.TWFinalParse();
+  end
+end
+
+function GottaGoFast.CheckTWTimer()
+  -- Someone asked for a timer, send it to them!
+  if (GottaGoFast.CurrentTW["LateStart"] == false and GottaGoFast.CurrentTW["StartTime"] and GottaGoFast.CurrentTW["CurrentTime"]) then
+    local CurrentTWString = GottaGoFast:Serialize(GottaGoFast.CurrentTW);
+    GottaGoFast.Utility.DebugPrint("Timer Sent");
+    GottaGoFast:SendCommMessage("GottaGoFastTW", CurrentTWString, "PARTY", nil, "ALERT");
+  end
+end
+
+function GottaGoFast.FixTWTimer(input)
+  if (GottaGoFast.inTW == true and GottaGoFast.CurrentTW) then
+    if (GottaGoFast.CurrentTW["LateStart"] == true) then
+      GottaGoFast.Utility.DebugPrint("Replacing Timer");
+      -- Set Table
+      GottaGoFast:Deserialize(input);
+      local DIW, ETW = GottaGoFast:Deserialize(input);
+      if (DIW) then
+        local CurrentTime = GetTime();
+        ETW["StartTime"] = CurrentTime - ETW["CurrentTime"];
+        GottaGoFast.CurrentTW = ETW;
+        -- Update Timer
+        GottaGoFast.UpdateTWTimer();
+        GottaGoFast.UpdateTWObjectives();
+      end
+    end
   end
 end
 

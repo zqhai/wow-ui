@@ -154,21 +154,23 @@ function UF:PortraitUpdate(unit, event, shouldUpdate)
 		self:SetAlpha(1)
 	end
 
-	if shouldUpdate or event == "ElvUI_UpdateAllElements" then
+	if (shouldUpdate or (event == "ElvUI_UpdateAllElements" and self:GetObjectType() == "Model")) then
 		local rotation = portrait.rotation or 0
 		local camDistanceScale = portrait.camDistanceScale or 1
 		local xOffset, yOffset = (portrait.xOffset or 0), (portrait.yOffset or 0)
 
-		if self:GetFacing() ~= (rotation / 60) then
-			self:SetFacing(rotation / 60)
+		if self.GetFacing then
+			if self:GetFacing() ~= (rotation / 60) then
+				self:SetFacing(rotation / 60)
+			end
+
+			self:SetCamDistanceScale(camDistanceScale)
+			self:SetPosition(0, xOffset, yOffset)
+
+			--Refresh model to fix incorrect display issues
+			self:ClearModel()
+			self:SetUnit(unit)
 		end
-
-		self:SetCamDistanceScale(camDistanceScale)
-		self:SetPosition(0, xOffset, yOffset)
-
-		--Refresh model to fix incorrect display issues
-		self:ClearModel()
-		self:SetUnit(unit)
 	end
 end
 

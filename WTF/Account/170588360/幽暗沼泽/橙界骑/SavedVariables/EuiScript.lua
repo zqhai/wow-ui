@@ -1,0 +1,3 @@
+
+DejaCharacterStatsDBPC = nil
+TalentProfilesDB = nil

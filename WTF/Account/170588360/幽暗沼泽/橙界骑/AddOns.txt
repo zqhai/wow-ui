@@ -68,3 +68,4 @@ WorldQuestTracker: enabled
 DBM-TrialofValor: enabled
 NomiCakes: enabled
 GottaGoFast: enabled
+ElvUI_TankHealth: enabled

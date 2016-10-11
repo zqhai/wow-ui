@@ -1,4 +1,4 @@
-function GottaGoFast.GetUnlocked(info)
+﻿function GottaGoFast.GetUnlocked(info)
   return GottaGoFast.unlocked;
 end
 
@@ -18,13 +18,22 @@ function GottaGoFast.SetGoldTimer(info, value)
   GottaGoFast.UpdateCMObjectives();
 end
 
-function GottaGoFast.GetTrueTimer(info)
-  return GottaGoFast.db.profile.TrueTimer;
+function GottaGoFast.GetTimerType(info)
+  return GottaGoFast.db.profile.TimerType;
 end
 
-function GottaGoFast.SetTrueTimer(info, value)
-  GottaGoFast.db.profile.TrueTimer = value;
+function GottaGoFast.SetTimerType(info, value)
+  GottaGoFast.db.profile.TimerType = value;
   GottaGoFast.UpdateCMTimer();
+end
+
+function GottaGoFast.GetTrueTimer()
+  local timerType = GottaGoFast.GetTimerType(nil);
+  if (timerType == "TrueTimerMS" or timerType == "TrueTimerNoMS") then
+    return true;
+  else
+    return false;
+  end
 end
 
 function GottaGoFast.GetTimerX(info)
@@ -81,6 +90,7 @@ end
 function GottaGoFast.SetTimerAlign(info, value)
   GottaGoFast.db.profile.TimerAlign = value;
   GottaGoFastTimerFrame.font:SetJustifyH(GottaGoFast.db.profile.TimerAlign);
+  GottaGoFast.UpdateCMTimer();
 end
 
 function GottaGoFast.GetObjectiveX(info)
@@ -119,6 +129,7 @@ end
 function GottaGoFast.SetObjectiveAlign(info, value)
   GottaGoFast.db.profile.ObjectiveAlign = value;
   GottaGoFastObjectiveFrame.font:SetJustifyH(GottaGoFast.db.profile.ObjectiveAlign);
+  GottaGoFast.UpdateCMObjectives();
 end
 
 function GottaGoFast.GetObjectiveCollapsed(info)
@@ -232,18 +243,27 @@ function GottaGoFast.SetObjectiveFontFlag(info, value)
   GottaGoFastObjectiveFrame.font:SetFont(GottaGoFast.LSM:Fetch("font", GottaGoFast.db.profile.ObjectiveFont), GottaGoFast.db.profile.ObjectiveFontSize, GottaGoFast.db.profile.ObjectiveFontFlag);
 end
 
+function GottaGoFast.GetDebugMode(info)
+  return GottaGoFast.db.profile.DebugMode;
+end
+
+function GottaGoFast.SetDebugMode(info, value)
+  GottaGoFast.db.profile.DebugMode = value;
+  GottaGoFast:Print("Debug Mode = " .. tostring(value));
+end
+
 function GottaGoFast.InitOptions()
   GottaGoFast.LSM = LibStub:GetLibrary("LibSharedMedia-3.0");
 --  GottaGoFast.LSM:Register("font", "Myriad Condensed Web", "Interface\\Addons\\GottaGoFast\\MyriadCondensedWeb.ttf")
   local defaults = {
     profile = {
       GoldTimer = true,
-      TrueTimer = true,
+      TimerType = "TrueTimerMS",
       FrameAnchor = "RIGHT",
       FrameX = 0,
       FrameY = 0,
       TimerAlign = "CENTER",
-      TimerX = -35, --by eui.cc
+      TimerX = -35, --eui.cc
       TimerY = 0,
       TimerFont = "EUI",
       TimerFontSize = 29,
@@ -265,267 +285,12 @@ function GottaGoFast.InitOptions()
       IncreaseInObjectives = true,
       ObjectiveCompleteInObjectives = true,
       History = {},
+      DebugMode = false,
     },
   }
   local options
-  if GetLocale() == 'zhTW' then
-	  options = {
-		name = "GottaGoFast",
-		handler = GottaGoFast,
-		type = "group",
-		args = {
-		  cms = {
-			name = "挑戰模式",
-			type = "group",
-			args = {
-			  TrueTimer = {
-				order = 1,
-				type = "toggle",
-				name = "精確計時",
-				desc = "切換是否顯示毫秒",
-				get = GottaGoFast.GetTrueTimer,
-				set = GottaGoFast.SetTrueTimer,
-			  },
-			  GoldTimer = {
-				order = 2,
-				type = "toggle",
-				name = "金牌計時",
-				desc = "切換是否顯示金牌計時",
-				get = GottaGoFast.GetGoldTimer,
-				set = GottaGoFast.SetGoldTimer,
-			  },
-			  LevelInObjectives = {
-				order = 3,
-				type = "toggle",
-				name = "挑戰等級顯示(目標)",
-				desc = "在目標列表顯示目前挑戰等級",
-				get = GottaGoFast.GetLevelInObjectives,
-				set = GottaGoFast.SetLevelInObjectives,
-			  },
-			  AffixesInObjectives = {
-				order = 4,
-				type = "toggle",
-				name = "詞綴顯示(目標)",
-				desc = "在目標列表顯示目前詞綴",
-				get = GottaGoFast.GetAffixesInObjectives,
-				set = GottaGoFast.SetAffixesInObjectives,
-			  },
-			  LevelInTimer = {
-				order = 5,
-				type = "toggle",
-				name = "挑戰等級顯示(計時)",
-				desc = "在計時器開頭顯示目前挑戰等級",
-				get = GottaGoFast.GetLevelInTimer,
-				set = GottaGoFast.SetLevelInTimer,
-			  },
-			  IncreaseInObjectives = {
-				order = 6,
-				type = "toggle",
-				name = "鑰石升級顯示(目標)",
-				desc = "額外鑰石計時分離",
-				get = GottaGoFast.GetIncreaseInObjectives,
-				set = GottaGoFast.SetIncreaseInObjectives,
-			  },
-			  ObjectiveCompleteInObjectives = {
-				order = 7,
-				type = "toggle",
-				name = "挑戰目標完成顯示(目標)",
-				desc = "顯示我們已經完成的目標時間",
-				get = GottaGoFast.GetObjectiveCompleteInObjectives,
-				set = GottaGoFast.SetObjectiveCompleteInObjectives,
-			  }
-			}
-		  },
-		  display = {
-			name = "顯示",
-			type = "group",
-			args = {
-			  unlocked = {
-				order = 1,
-				type = "toggle",
-				name = "不鎖定",
-				desc = "切換計時器框架鎖定狀態",
-				get = GottaGoFast.GetUnlocked,
-				set = GottaGoFast.SetUnlocked,
-			  },
-			  ObjectiveCollapsed = {
-				order = 2,
-				type = "toggle",
-				 name = "目標追蹤器收起",
-				desc = "收起目標追蹤器當離開挑戰模式/時光漫遊",
-				get = GottaGoFast.GetObjectiveCollapsed,
-				set = GottaGoFast.SetObjectiveCollapsed,
-			  },
-			  TimerX = {
-				order = 3,
-				type = "range",
-				name = "計時器水平位置",
-				desc = "預設: 0",
-				min = -100,
-				max = 100,
-				step = 1,
-				get = GottaGoFast.GetTimerX,
-				set = GottaGoFast.SetTimerX,
-			  },
-			  TimerY = {
-				order = 4,
-				type = "range",
-				name = "計時器垂直位置",
-				desc = "預設: 0",
-				min = -100,
-				max = 100,
-				step = 1,
-				get = GottaGoFast.GetTimerY,
-				set = GottaGoFast.SetTimerY,
-			  },
-			  TimerFontSize = {
-				order = 7,
-				type = "range",
-				 name = "計時器文字大小",
-				desc = "預設: 29",
-				min = 8,
-				max = 32,
-				step = 1,
-				get = GottaGoFast.GetTimerFontSize,
-				set = GottaGoFast.SetTimerFontSize,
-			  },
-			  TimerFontFlag = {
-				order = 9,
-				type = "select",
-				name = "計時文字樣式",
-				desc = "預設: 描邊",
-				values = {["OUTLINE"] = "描邊", ["THICKOUTLINE"] = "粗描邊", ["MONOCHROME"] = "無消除鋸齒", ["NONE"] = "無"},
-				get = GottaGoFast.GetTimerFontFlag,
-				set = GottaGoFast.SetTimerFontFlag,
-			  },
-			  ObjectiveX = {
-				order = 5,
-				type = "range",
-				name = "目標水平位置",
-				desc = "預設: 0",
-				min = -100,
-				max = 100,
-				step = 1,
-				get = GottaGoFast.GetObjectiveX,
-				set = GottaGoFast.SetObjectiveX,
-			  },
-			  ObjectiveY = {
-				order = 6,
-				type = "range",
-				name = "目標垂直位置",
-				desc = "預設: -40",
-				min = -100,
-				max = 100,
-				step = 1,
-				get = GottaGoFast.GetObjectiveY,
-				set = GottaGoFast.SetObjectiveY,
-			  },
-			  ObjectiveFontSize = {
-				order = 8,
-				type = "range",
-				name = "目標文字大小",
-				desc = "預設: 21",
-				min = 8,
-				max = 32,
-				step = 1,
-				get = GottaGoFast.GetObjectiveFontSize,
-				set = GottaGoFast.SetObjectiveFontSize,
-			  },
-			  ObjectiveFontFlag = {
-				order = 10,
-				type = "select",
-				name = "目標文字樣式",
-				desc = "預設: 描邊",
-				values = {["OUTLINE"] = "描邊", ["THICKOUTLINE"] = "粗描邊", ["MONOCHROME"] = "無消除鋸齒", ["NONE"] = "無"},
-				get = GottaGoFast.GetObjectiveFontFlag,
-				set = GottaGoFast.SetObjectiveFontFlag,
-			  },
-			  TimerAlign = {
-				order = 11,
-				type = "select",
-				name = "計時對齊",
-				desc = "預設: 中央",
-				values = {["LEFT"] = "左", ["CENTER"] = "中央", ["RIGHT"] = "右"},
-				get = GottaGoFast.GetTimerAlign,
-				set = GottaGoFast.SetTimerAlign,
-			  },
-			  ObjectiveAlign = {
-				order = 12,
-				type = "select",
-				name = "目標對齊",
-				desc = "預設: LEFT",
-				values = {["LEFT"] = "左", ["CENTER"] = "中央", ["RIGHT"] = "右"},
-				get = GottaGoFast.GetObjectiveAlign,
-				set = GottaGoFast.SetObjectiveAlign,
-			  },
-			  TimerFont = {
-				order = 13,
-				type = "select",
-				dialogControl = "LSM30_Font",
-				name = "計時文字",
-				desc = "預設: Arial, Monospaced Fonts like MyriadCondensedWeb are recommended",
-				values = GottaGoFast.LSM:HashTable("font"),
-				get = GottaGoFast.GetTimerFont,
-				set = GottaGoFast.SetTimerFont,
-			  },
-			  ObjectiveFont = {
-				order = 14,
-				type = "select",
-				dialogControl = "LSM30_Font",
-				name = "目標文字",
-				desc = "預設: Arial, Monospaced Fonts like MyriadCondensedWeb are recommended",
-				values = GottaGoFast.LSM:HashTable("font"),
-				get = GottaGoFast.GetObjectiveFont,
-				set = GottaGoFast.SetObjectiveFont,
-			  },
-			  ObjectiveColor = {
-				order = 15,
-				type = "color",
-				 name = "目標顏色",
-				desc = "預設: 白",
-				get = GottaGoFast.GetObjectiveColor,
-				set = GottaGoFast.SetObjectiveColor,
-				hasAlpha = false,
-			  },
-			  ObjectiveCompleteColor = {
-				order = 16,
-				type = "color",
-				name = "目標完成顏色",
-				desc = "預設: 綠",
-				get = GottaGoFast.GetObjectiveCompleteColor,
-				set = GottaGoFast.SetObjectiveCompleteColor,
-				hasAlpha = false,
-			  },
-			  TimerColor = {
-				order = 17,
-				type = "color",
-				name = "計時顏色",
-				desc = "預設: 白",
-				get = GottaGoFast.GetTimerColor,
-				set = GottaGoFast.SetTimerColor,
-				hasAlpha = false,
-			  },
-			  IncreaseColor = {
-				order = 18,
-				type = "color",
-				name = "鑰石升級顏色",
-				desc = "預設: 白",
-				get = GottaGoFast.GetIncreaseColor,
-				set = GottaGoFast.SetIncreaseColor,
-				hasAlpha = false,
-			  },
-			  DemoMode = {
-				order = 19,
-				type = "execute",
-				name = "演示模式",
-				desc = "顯示GottaGoFast外部秘境來演示 / 設置目的",
-				func = GottaGoFast.ToggleDemoMode,
-			  },
-			},
-		  },
-		},
-	  };
-  elseif GetLocale() == 'zhCN' then
+  local GetLocale = GetLocale
+  if GetLocale() == 'zhCN' then
 	  options = {
 		name = "GottaGoFast",
 		handler = GottaGoFast,
@@ -535,50 +300,51 @@ function GottaGoFast.InitOptions()
 			name = "挑战模式",
 			type = "group",
 			args = {
-			  TrueTimer = {
+			  TimerType = {
 				order = 1,
-				type = "toggle",
-				name = "精确计时",
-				desc = "切换是否显示毫秒",
-				get = GottaGoFast.GetTrueTimer,
-				set = GottaGoFast.SetTrueTimer,
+				type = "select",
+				name = "时间样式",
+				desc = "TrueTimer is timed off the start of the dungeon using system time.\nI recommend you use this option.\nBlizzard's timer is known to bug up to 20 seconds.\nI will report details soon.",
+				values = {["TrueTimerMS"] = "真实时间 (毫秒)", ["TrueTimerNoMS"] = "真实时间 (无毫秒)", ["Blizzard"] = "暴雪的计时"},
+				get = GottaGoFast.GetTimerType,
+				set = GottaGoFast.SetTimerType,
 			  },
 			  GoldTimer = {
 				order = 2,
 				type = "toggle",
 				name = "金牌计时",
-				desc = "切换是否显示金牌计时",
+				desc = "开关是否显示金牌计时",
 				get = GottaGoFast.GetGoldTimer,
 				set = GottaGoFast.SetGoldTimer,
 			  },
 			  LevelInObjectives = {
 				order = 3,
 				type = "toggle",
-				name = "挑战等级显示(目标)",
-				desc = "在目标列表显示目前挑战等级",
+				name = "挑战等级显示 (任务框)",
+				desc = "显示当前挑战等级在任务列表",
 				get = GottaGoFast.GetLevelInObjectives,
 				set = GottaGoFast.SetLevelInObjectives,
 			  },
 			  AffixesInObjectives = {
 				order = 4,
 				type = "toggle",
-				name = "词缀显示(目标)",
-				desc = "在目标列表显示目前词缀",
+				name = "词缀显示(任务框)",
+				desc = "显示当前词缀在任务列表",
 				get = GottaGoFast.GetAffixesInObjectives,
 				set = GottaGoFast.SetAffixesInObjectives,
 			  },
 			  LevelInTimer = {
 				order = 5,
 				type = "toggle",
-				name = "挑战等级显示(计时)",
-				desc = "在定时器开头显示目前挑战等级",
+				name = "挑战等级显示 (时间)",
+				desc = "在计时器开头显示当前挑战等级",
 				get = GottaGoFast.GetLevelInTimer,
 				set = GottaGoFast.SetLevelInTimer,
 			  },
 			  IncreaseInObjectives = {
 				order = 6,
 				type = "toggle",
-				name = "钥石升级显示(目标)",
+				name = "钥石升级显示 (任务)",
 				desc = "额外钥石计时分离",
 				get = GottaGoFast.GetIncreaseInObjectives,
 				set = GottaGoFast.SetIncreaseInObjectives,
@@ -586,38 +352,38 @@ function GottaGoFast.InitOptions()
 			  ObjectiveCompleteInObjectives = {
 				order = 7,
 				type = "toggle",
-				name = "挑战目标完成显示(目标)",
-				desc = "显示我们已经完成的目标时间",
+				name = "挑战目标完成显示 (目标)",
+				desc = "显示我们已经完成的任务目标",
 				get = GottaGoFast.GetObjectiveCompleteInObjectives,
 				set = GottaGoFast.SetObjectiveCompleteInObjectives,
 			  }
 			}
 		  },
-		  display = {
-			name = "显示",
+		  displayFrame = {
+			name = "显示: 框体",
 			type = "group",
 			args = {
 			  unlocked = {
 				order = 1,
 				type = "toggle",
-				name = "不锁定",
-				desc = "切换定时器框架锁定状态",
+				name = "解锁",
+				desc = "开关时间框体的解锁状态",
 				get = GottaGoFast.GetUnlocked,
 				set = GottaGoFast.SetUnlocked,
 			  },
 			  ObjectiveCollapsed = {
 				order = 2,
 				type = "toggle",
-				 name = "目标追踪器收起",
-				desc = "收起目标追踪器当离开挑战模式/时光漫游",
+				name = "任务追踪框折叠",
+				desc = "当离开挑战或时光漫游戏本时折叠任务追踪框",
 				get = GottaGoFast.GetObjectiveCollapsed,
 				set = GottaGoFast.SetObjectiveCollapsed,
 			  },
 			  TimerX = {
 				order = 3,
 				type = "range",
-				name = "定时器水平位置",
-				desc = "预设: 0",
+				name = "计时器水平偏移",
+				desc = "默认: -35",
 				min = -100,
 				max = 100,
 				step = 1,
@@ -627,39 +393,19 @@ function GottaGoFast.InitOptions()
 			  TimerY = {
 				order = 4,
 				type = "range",
-				name = "定时器垂直位置",
-				desc = "预设: 0",
+				name = "计时器垂直偏移",
+				desc = "默认: 0",
 				min = -100,
 				max = 100,
 				step = 1,
 				get = GottaGoFast.GetTimerY,
 				set = GottaGoFast.SetTimerY,
 			  },
-			  TimerFontSize = {
-				order = 7,
-				type = "range",
-				 name = "定时器文字大小",
-				desc = "预设: 29",
-				min = 8,
-				max = 32,
-				step = 1,
-				get = GottaGoFast.GetTimerFontSize,
-				set = GottaGoFast.SetTimerFontSize,
-			  },
-			  TimerFontFlag = {
-				order = 9,
-				type = "select",
-				name = "计时文字样式",
-				desc = "预设: 描边",
-				values = {["OUTLINE"] = "描边", ["THICKOUTLINE"] = "粗描边", ["MONOCHROME"] = "无消除锯齿", ["NONE"] = "无"},
-				get = GottaGoFast.GetTimerFontFlag,
-				set = GottaGoFast.SetTimerFontFlag,
-			  },
 			  ObjectiveX = {
 				order = 5,
 				type = "range",
-				name = "目标水平位置",
-				desc = "预设: 0",
+				name = "任务追踪框水平偏移",
+				desc = "默认: -35",
 				min = -100,
 				max = 100,
 				step = 1,
@@ -669,49 +415,82 @@ function GottaGoFast.InitOptions()
 			  ObjectiveY = {
 				order = 6,
 				type = "range",
-				name = "目标垂直位置",
-				desc = "预设: -40",
+				name = "任务追踪框垂直偏移",
+				desc = "Default: -40",
 				min = -100,
 				max = 100,
 				step = 1,
 				get = GottaGoFast.GetObjectiveY,
 				set = GottaGoFast.SetObjectiveY,
 			  },
+			  DemoMode = {
+				order = 19,
+				type = "execute",
+				name = "演示模式",
+				desc = "显示秘境计时器演示模式或验证设置",
+				func = GottaGoFast.ToggleDemoMode,
+			  },
+			},
+		  },
+		  displayFont = {
+			name = "显示: 字体",
+			type = "group",
+			args = {
+			  TimerFontSize = {
+				order = 7,
+				type = "range",
+				name = "时间字体尺寸",
+				desc = "默认: 29",
+				min = 8,
+				max = 32,
+				step = 1,
+				get = GottaGoFast.GetTimerFontSize,
+				set = GottaGoFast.SetTimerFontSize,
+			  },
 			  ObjectiveFontSize = {
 				order = 8,
 				type = "range",
-				name = "目标文字大小",
-				desc = "预设: 21",
+				name = "任务追踪框字体",
+				desc = "默认: 21",
 				min = 8,
 				max = 32,
 				step = 1,
 				get = GottaGoFast.GetObjectiveFontSize,
 				set = GottaGoFast.SetObjectiveFontSize,
 			  },
+			  TimerFontFlag = {
+				order = 9,
+				type = "select",
+				name = "时间字体描边",
+				desc = "默认: OUTLINE",
+				values = {["OUTLINE"] = "OUTLINE", ["THICKOUTLINE"] = "THICKOUTLINE", ["MONOCHROME"] = "MONOCHROME", ["NONE"] = "NONE"},
+				get = GottaGoFast.GetTimerFontFlag,
+				set = GottaGoFast.SetTimerFontFlag,
+			  },
 			  ObjectiveFontFlag = {
 				order = 10,
 				type = "select",
-				name = "目标文字样式",
-				desc = "预设: 描边",
-				values = {["OUTLINE"] = "描边", ["THICKOUTLINE"] = "粗描边", ["MONOCHROME"] = "无消除锯齿", ["NONE"] = "无"},
+				name = "任务追踪框字体描边",
+				desc = "默认: OUTLINE",
+				values = {["OUTLINE"] = "OUTLINE", ["THICKOUTLINE"] = "THICKOUTLINE", ["MONOCHROME"] = "MONOCHROME", ["NONE"] = "NONE"},
 				get = GottaGoFast.GetObjectiveFontFlag,
 				set = GottaGoFast.SetObjectiveFontFlag,
 			  },
 			  TimerAlign = {
 				order = 11,
 				type = "select",
-				name = "计时对齐",
-				desc = "预设: 中央",
-				values = {["LEFT"] = "左", ["CENTER"] = "中央", ["RIGHT"] = "右"},
+				name = "时间对齐",
+				desc = "默认: CENTER",
+				values = {["LEFT"] = "LEFT", ["CENTER"] = "CENTER", ["RIGHT"] = "RIGHT"},
 				get = GottaGoFast.GetTimerAlign,
 				set = GottaGoFast.SetTimerAlign,
 			  },
 			  ObjectiveAlign = {
 				order = 12,
 				type = "select",
-				name = "目标对齐",
-				desc = "预设: LEFT",
-				values = {["LEFT"] = "左", ["CENTER"] = "中央", ["RIGHT"] = "右"},
+				name = "任务追踪对齐",
+				desc = "默认: LEFT",
+				values = {["LEFT"] = "LEFT", ["CENTER"] = "CENTER", ["RIGHT"] = "RIGHT"},
 				get = GottaGoFast.GetObjectiveAlign,
 				set = GottaGoFast.SetObjectiveAlign,
 			  },
@@ -719,8 +498,8 @@ function GottaGoFast.InitOptions()
 				order = 13,
 				type = "select",
 				dialogControl = "LSM30_Font",
-				name = "计时文字",
-				desc = "预设: Arial, Monospaced Fonts like MyriadCondensedWeb are recommended",
+				name = "时间字体",
+				desc = "Default: Arial, Monospaced Fonts like MyriadCondensedWeb are recommended",
 				values = GottaGoFast.LSM:HashTable("font"),
 				get = GottaGoFast.GetTimerFont,
 				set = GottaGoFast.SetTimerFont,
@@ -729,8 +508,8 @@ function GottaGoFast.InitOptions()
 				order = 14,
 				type = "select",
 				dialogControl = "LSM30_Font",
-				name = "目标文字",
-				desc = "预设: Arial, Monospaced Fonts like MyriadCondensedWeb are recommended",
+				name = "任务追踪框字体",
+				desc = "Default: Arial, Monospaced Fonts like MyriadCondensedWeb are recommended",
 				values = GottaGoFast.LSM:HashTable("font"),
 				get = GottaGoFast.GetObjectiveFont,
 				set = GottaGoFast.SetObjectiveFont,
@@ -738,8 +517,8 @@ function GottaGoFast.InitOptions()
 			  ObjectiveColor = {
 				order = 15,
 				type = "color",
-				 name = "目标颜色",
-				desc = "预设: 白",
+				name = "任务追踪颜色",
+				desc = "默认: White",
 				get = GottaGoFast.GetObjectiveColor,
 				set = GottaGoFast.SetObjectiveColor,
 				hasAlpha = false,
@@ -747,8 +526,8 @@ function GottaGoFast.InitOptions()
 			  ObjectiveCompleteColor = {
 				order = 16,
 				type = "color",
-				name = "目标完成颜色",
-				desc = "预设: 绿",
+				name = "任务完成颜色",
+				desc = "默认: Green",
 				get = GottaGoFast.GetObjectiveCompleteColor,
 				set = GottaGoFast.SetObjectiveCompleteColor,
 				hasAlpha = false,
@@ -756,8 +535,8 @@ function GottaGoFast.InitOptions()
 			  TimerColor = {
 				order = 17,
 				type = "color",
-				name = "计时颜色",
-				desc = "预设: 白",
+				name = "时间颜色",
+				desc = "默认: White",
 				get = GottaGoFast.GetTimerColor,
 				set = GottaGoFast.SetTimerColor,
 				hasAlpha = false,
@@ -765,18 +544,275 @@ function GottaGoFast.InitOptions()
 			  IncreaseColor = {
 				order = 18,
 				type = "color",
-				name = "钥石升级颜色",
-				desc = "预设: 白",
+				name = "钥石增加颜色",
+				desc = "默认: White",
 				get = GottaGoFast.GetIncreaseColor,
 				set = GottaGoFast.SetIncreaseColor,
 				hasAlpha = false,
+			  },
+			},
+		  },
+		},
+	  };
+  elseif GetLocale() == 'zhTW' then
+	  options = {
+		name = "GottaGoFast",
+		handler = GottaGoFast,
+		type = "group",
+		args = {
+		  cms = {
+			name = "挑戰模式",
+			type = "group",
+			args = {
+			  TimerType = {
+				order = 1,
+				type = "select",
+				name = "時間樣式",
+				desc = "TrueTimer is timed off the start of the dungeon using system time.\nI recommend you use this option.\nBlizzard's timer is known to bug up to 20 seconds.\nI will report details soon.",
+				values = {["TrueTimerMS"] = "真實時間 (毫秒)", ["TrueTimerNoMS"] = "真實時間 (無毫秒)", ["Blizzard"] = "暴雪的計時"},
+				get = GottaGoFast.GetTimerType,
+				set = GottaGoFast.SetTimerType,
+			  },
+			  GoldTimer = {
+				order = 2,
+				type = "toggle",
+				name = "金牌計時",
+				desc = "開關是否顯示金牌計時",
+				get = GottaGoFast.GetGoldTimer,
+				set = GottaGoFast.SetGoldTimer,
+			  },
+			  LevelInObjectives = {
+				order = 3,
+				type = "toggle",
+				name = "挑戰等級顯示 (任務框)",
+				desc = "顯示當前挑戰等級在任務清單",
+				get = GottaGoFast.GetLevelInObjectives,
+				set = GottaGoFast.SetLevelInObjectives,
+			  },
+			  AffixesInObjectives = {
+				order = 4,
+				type = "toggle",
+				name = "詞綴顯示(任務框)",
+				desc = "顯示當前詞綴在任務清單",
+				get = GottaGoFast.GetAffixesInObjectives,
+				set = GottaGoFast.SetAffixesInObjectives,
+			  },
+			  LevelInTimer = {
+				order = 5,
+				type = "toggle",
+				name = "挑戰等級顯示 (時間)",
+				desc = "在計時器開頭顯示當前挑戰等級",
+				get = GottaGoFast.GetLevelInTimer,
+				set = GottaGoFast.SetLevelInTimer,
+			  },
+			  IncreaseInObjectives = {
+				order = 6,
+				type = "toggle",
+				name = "鑰石升級顯示 (任務)",
+				desc = "額外鑰石計時分離",
+				get = GottaGoFast.GetIncreaseInObjectives,
+				set = GottaGoFast.SetIncreaseInObjectives,
+			  },
+			  ObjectiveCompleteInObjectives = {
+				order = 7,
+				type = "toggle",
+				name = "挑戰目標完成顯示 (目標)",
+				desc = "顯示我們已經完成的任務目標",
+				get = GottaGoFast.GetObjectiveCompleteInObjectives,
+				set = GottaGoFast.SetObjectiveCompleteInObjectives,
+			  }
+			}
+		  },
+		  displayFrame = {
+			name = "顯示: 框體",
+			type = "group",
+			args = {
+			  unlocked = {
+				order = 1,
+				type = "toggle",
+				name = "解鎖",
+				desc = "開關時間框體的解鎖狀態",
+				get = GottaGoFast.GetUnlocked,
+				set = GottaGoFast.SetUnlocked,
+			  },
+			  ObjectiveCollapsed = {
+				order = 2,
+				type = "toggle",
+				name = "任務追蹤框折疊",
+				desc = "當離開挑戰或時光漫遊戲本時折疊任務追蹤框",
+				get = GottaGoFast.GetObjectiveCollapsed,
+				set = GottaGoFast.SetObjectiveCollapsed,
+			  },
+			  TimerX = {
+				order = 3,
+				type = "range",
+				name = "計時器水準偏移",
+				desc = "默認: -35",
+				min = -100,
+				max = 100,
+				step = 1,
+				get = GottaGoFast.GetTimerX,
+				set = GottaGoFast.SetTimerX,
+			  },
+			  TimerY = {
+				order = 4,
+				type = "range",
+				name = "計時器垂直偏移",
+				desc = "默認: 0",
+				min = -100,
+				max = 100,
+				step = 1,
+				get = GottaGoFast.GetTimerY,
+				set = GottaGoFast.SetTimerY,
+			  },
+			  ObjectiveX = {
+				order = 5,
+				type = "range",
+				name = "任務追蹤框水準偏移",
+				desc = "默認: -35",
+				min = -100,
+				max = 100,
+				step = 1,
+				get = GottaGoFast.GetObjectiveX,
+				set = GottaGoFast.SetObjectiveX,
+			  },
+			  ObjectiveY = {
+				order = 6,
+				type = "range",
+				name = "任務追蹤框垂直偏移",
+				desc = "Default: -40",
+				min = -100,
+				max = 100,
+				step = 1,
+				get = GottaGoFast.GetObjectiveY,
+				set = GottaGoFast.SetObjectiveY,
 			  },
 			  DemoMode = {
 				order = 19,
 				type = "execute",
 				name = "演示模式",
-				desc = "显示GottaGoFast外部秘境来演示 / 设置目的",
+				desc = "顯示秘境計時器演示模式或驗證設置",
 				func = GottaGoFast.ToggleDemoMode,
+			  },
+			},
+		  },
+		  displayFont = {
+			name = "顯示: 字體",
+			type = "group",
+			args = {
+			  TimerFontSize = {
+				order = 7,
+				type = "range",
+				name = "時間字體尺寸",
+				desc = "默認: 29",
+				min = 8,
+				max = 32,
+				step = 1,
+				get = GottaGoFast.GetTimerFontSize,
+				set = GottaGoFast.SetTimerFontSize,
+			  },
+			  ObjectiveFontSize = {
+				order = 8,
+				type = "range",
+				name = "任務追蹤框字體",
+				desc = "默認: 21",
+				min = 8,
+				max = 32,
+				step = 1,
+				get = GottaGoFast.GetObjectiveFontSize,
+				set = GottaGoFast.SetObjectiveFontSize,
+			  },
+			  TimerFontFlag = {
+				order = 9,
+				type = "select",
+				name = "時間字體描邊",
+				desc = "默認: OUTLINE",
+				values = {["OUTLINE"] = "OUTLINE", ["THICKOUTLINE"] = "THICKOUTLINE", ["MONOCHROME"] = "MONOCHROME", ["NONE"] = "NONE"},
+				get = GottaGoFast.GetTimerFontFlag,
+				set = GottaGoFast.SetTimerFontFlag,
+			  },
+			  ObjectiveFontFlag = {
+				order = 10,
+				type = "select",
+				name = "任務追蹤框字體描邊",
+				desc = "默認: OUTLINE",
+				values = {["OUTLINE"] = "OUTLINE", ["THICKOUTLINE"] = "THICKOUTLINE", ["MONOCHROME"] = "MONOCHROME", ["NONE"] = "NONE"},
+				get = GottaGoFast.GetObjectiveFontFlag,
+				set = GottaGoFast.SetObjectiveFontFlag,
+			  },
+			  TimerAlign = {
+				order = 11,
+				type = "select",
+				name = "時間對齊",
+				desc = "默認: CENTER",
+				values = {["LEFT"] = "LEFT", ["CENTER"] = "CENTER", ["RIGHT"] = "RIGHT"},
+				get = GottaGoFast.GetTimerAlign,
+				set = GottaGoFast.SetTimerAlign,
+			  },
+			  ObjectiveAlign = {
+				order = 12,
+				type = "select",
+				name = "任務追蹤對齊",
+				desc = "默認: LEFT",
+				values = {["LEFT"] = "LEFT", ["CENTER"] = "CENTER", ["RIGHT"] = "RIGHT"},
+				get = GottaGoFast.GetObjectiveAlign,
+				set = GottaGoFast.SetObjectiveAlign,
+			  },
+			  TimerFont = {
+				order = 13,
+				type = "select",
+				dialogControl = "LSM30_Font",
+				name = "時間字體",
+				desc = "Default: Arial, Monospaced Fonts like MyriadCondensedWeb are recommended",
+				values = GottaGoFast.LSM:HashTable("font"),
+				get = GottaGoFast.GetTimerFont,
+				set = GottaGoFast.SetTimerFont,
+			  },
+			  ObjectiveFont = {
+				order = 14,
+				type = "select",
+				dialogControl = "LSM30_Font",
+				name = "任務追蹤框字體",
+				desc = "Default: Arial, Monospaced Fonts like MyriadCondensedWeb are recommended",
+				values = GottaGoFast.LSM:HashTable("font"),
+				get = GottaGoFast.GetObjectiveFont,
+				set = GottaGoFast.SetObjectiveFont,
+			  },
+			  ObjectiveColor = {
+				order = 15,
+				type = "color",
+				name = "任務追蹤顏色",
+				desc = "默認: White",
+				get = GottaGoFast.GetObjectiveColor,
+				set = GottaGoFast.SetObjectiveColor,
+				hasAlpha = false,
+			  },
+			  ObjectiveCompleteColor = {
+				order = 16,
+				type = "color",
+				name = "任務完成顏色",
+				desc = "默認: Green",
+				get = GottaGoFast.GetObjectiveCompleteColor,
+				set = GottaGoFast.SetObjectiveCompleteColor,
+				hasAlpha = false,
+			  },
+			  TimerColor = {
+				order = 17,
+				type = "color",
+				name = "時間顏色",
+				desc = "默認: White",
+				get = GottaGoFast.GetTimerColor,
+				set = GottaGoFast.SetTimerColor,
+				hasAlpha = false,
+			  },
+			  IncreaseColor = {
+				order = 18,
+				type = "color",
+				name = "鑰石增加顏色",
+				desc = "默認: White",
+				get = GottaGoFast.GetIncreaseColor,
+				set = GottaGoFast.SetIncreaseColor,
+				hasAlpha = false,
 			  },
 			},
 		  },
@@ -792,13 +828,14 @@ function GottaGoFast.InitOptions()
 			name = "Challenge Modes",
 			type = "group",
 			args = {
-			  TrueTimer = {
+			  TimerType = {
 				order = 1,
-				type = "toggle",
-				name = "True Timer",
-				desc = "Toggles MS Precision",
-				get = GottaGoFast.GetTrueTimer,
-				set = GottaGoFast.SetTrueTimer,
+				type = "select",
+				name = "Timer Type",
+				desc = "TrueTimer is timed off the start of the dungeon using system time.\nI recommend you use this option.\nBlizzard's timer is known to bug up to 20 seconds.\nI will report details soon.",
+				values = {["TrueTimerMS"] = "TrueTimer (Miliseconds)", ["TrueTimerNoMS"] = "TrueTimer (No Miliseconds)", ["Blizzard"] = "Blizzard's Timer"},
+				get = GottaGoFast.GetTimerType,
+				set = GottaGoFast.SetTimerType,
 			  },
 			  GoldTimer = {
 				order = 2,
@@ -850,8 +887,8 @@ function GottaGoFast.InitOptions()
 			  }
 			}
 		  },
-		  display = {
-			name = "Display",
+		  displayFrame = {
+			name = "Display: Frame",
 			type = "group",
 			args = {
 			  unlocked = {
@@ -892,26 +929,6 @@ function GottaGoFast.InitOptions()
 				get = GottaGoFast.GetTimerY,
 				set = GottaGoFast.SetTimerY,
 			  },
-			  TimerFontSize = {
-				order = 7,
-				type = "range",
-				name = "Timer Font Size",
-				desc = "Default: 29",
-				min = 8,
-				max = 32,
-				step = 1,
-				get = GottaGoFast.GetTimerFontSize,
-				set = GottaGoFast.SetTimerFontSize,
-			  },
-			  TimerFontFlag = {
-				order = 9,
-				type = "select",
-				name = "Timer Font Flag",
-				desc = "Default: OUTLINE",
-				values = {["OUTLINE"] = "OUTLINE", ["THICKOUTLINE"] = "THICKOUTLINE", ["MONOCHROME"] = "MONOCHROME", ["NONE"] = "NONE"},
-				get = GottaGoFast.GetTimerFontFlag,
-				set = GottaGoFast.SetTimerFontFlag,
-			  },
 			  ObjectiveX = {
 				order = 5,
 				type = "range",
@@ -934,6 +951,30 @@ function GottaGoFast.InitOptions()
 				get = GottaGoFast.GetObjectiveY,
 				set = GottaGoFast.SetObjectiveY,
 			  },
+			  DemoMode = {
+				order = 19,
+				type = "execute",
+				name = "Demo Mode",
+				desc = "Shows GottaGoFast Outside CM For Demo / Setup Purposes",
+				func = GottaGoFast.ToggleDemoMode,
+			  },
+			},
+		  },
+		  displayFont = {
+			name = "Display: Font",
+			type = "group",
+			args = {
+			  TimerFontSize = {
+				order = 7,
+				type = "range",
+				name = "Timer Font Size",
+				desc = "Default: 29",
+				min = 8,
+				max = 32,
+				step = 1,
+				get = GottaGoFast.GetTimerFontSize,
+				set = GottaGoFast.SetTimerFontSize,
+			  },
 			  ObjectiveFontSize = {
 				order = 8,
 				type = "range",
@@ -945,12 +986,21 @@ function GottaGoFast.InitOptions()
 				get = GottaGoFast.GetObjectiveFontSize,
 				set = GottaGoFast.SetObjectiveFontSize,
 			  },
+			  TimerFontFlag = {
+				order = 9,
+				type = "select",
+				name = "Timer Font Flag",
+				desc = "Default: OUTLINE",
+				values = {["OUTLINE"] = "OUTLINE", ["THICKOUTLINE"] = "THICKOUTLINE", ["MONOCHROME"] = "MONOCHROME", ["NONE"] = "NONE"},
+				get = GottaGoFast.GetTimerFontFlag,
+				set = GottaGoFast.SetTimerFontFlag,
+			  },
 			  ObjectiveFontFlag = {
 				order = 10,
 				type = "select",
 				name = "Objective Font Flag",
 				desc = "Default: OUTLINE",
-				values = {["OUTLINE"] = "OUTLINE", ["THICKOUTLINE"] = "THICKOUTLINE", ["MONOCHROME"] = "MONOCHROME", ["NONE"] = nil},
+				values = {["OUTLINE"] = "OUTLINE", ["THICKOUTLINE"] = "THICKOUTLINE", ["MONOCHROME"] = "MONOCHROME", ["NONE"] = "NONE"},
 				get = GottaGoFast.GetObjectiveFontFlag,
 				set = GottaGoFast.SetObjectiveFontFlag,
 			  },
@@ -1027,13 +1077,6 @@ function GottaGoFast.InitOptions()
 				get = GottaGoFast.GetIncreaseColor,
 				set = GottaGoFast.SetIncreaseColor,
 				hasAlpha = false,
-			  },
-			  DemoMode = {
-				order = 19,
-				type = "execute",
-				name = "Demo Mode",
-				desc = "Shows GottaGoFast Outside CM For Demo / Setup Purposes",
-				func = GottaGoFast.ToggleDemoMode,
 			  },
 			},
 		  },

@@ -1,5 +1,4 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local ItemUpgradeInfo = LibStub("LibItemUpgradeInfo-1.0")
 
 ----------------------------------------------------------------------------------------
 --	Item level on slot buttons in Character/InspectFrame(by Tukz)
@@ -9,6 +8,36 @@ local slots = {
 	"WristSlot", "MainHandSlot", "SecondaryHandSlot", "HandsSlot", "WaistSlot",
 	"LegsSlot", "FeetSlot", "Finger0Slot", "Finger1Slot", "Trinket0Slot", "Trinket1Slot"
 }
+local S_ITEM_LEVEL = ITEM_LEVEL:gsub( "%%d", "(%%d+)" )
+
+local function GetAvailableTooltip()
+	for i=1, #GameTooltip.shoppingTooltips do
+		if(not GameTooltip.shoppingTooltips[i]:IsShown()) then
+			return GameTooltip.shoppingTooltips[i]
+		end
+	end
+end
+
+local function ScanForItemLevel(itemLink)
+	local tooltip = GetAvailableTooltip();
+	tooltip:SetOwner(UIParent, "ANCHOR_NONE");
+	tooltip:SetHyperlink(itemLink);
+	tooltip:Show();
+
+	local itemLevel = 0;
+	for i = 2, tooltip:NumLines() do
+		local text = _G[ tooltip:GetName() .."TextLeft"..i]:GetText();
+		if(text and text ~= "") then
+			local value = tonumber(text:match(S_ITEM_LEVEL));
+			if(value) then
+				itemLevel = value;
+			end
+		end
+	end
+
+	tooltip:Hide();
+	return itemLevel
+end
 
 local function CreateButtonsText(frame)
 	for _, slot in pairs(slots) do
@@ -44,8 +73,8 @@ local function UpdateButtonsText(frame)
 	end
 	itemM = GetInventoryItemLink(unit, 16)
 	itemS = GetInventoryItemLink(unit, 17)
-	itemMlv = itemM and ItemUpgradeInfo:GetUpgradedItemLevel(itemM) or 0
-	itemSlv = itemS and ItemUpgradeInfo:GetUpgradedItemLevel(itemS) or 0
+	itemMlv = itemM and ScanForItemLevel(itemM) or 0
+	itemSlv = itemS and ScanForItemLevel(itemS) or 0
 	itemMMax = (itemMlv > itemSlv) and itemMlv or itemSlv
 
 	for _, slot in pairs(slots) do
@@ -69,7 +98,7 @@ local function UpdateButtonsText(frame)
 						if ilevel == 1 then
 							text:SetText("")
 						else
-							text:SetText("|cFFFFFF00".. ItemUpgradeInfo:GetUpgradedItemLevel(item))
+							text:SetText("|cFFFFFF00".. ScanForItemLevel(item))
 						end
 					end
 				end

@@ -1,7 +1,6 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local TT = E:NewModule('Tooltip', 'AceTimer-3.0', 'AceHook-3.0', 'AceEvent-3.0')
 local rc = LibStub("LibRangeCheck-2.0")
-local ItemUpgradeInfo = LibStub("LibItemUpgradeInfo-1.0")
 --Cache global variables
 --Lua functions
 local _G = _G
@@ -157,7 +156,7 @@ function TT:GameTooltip_ShowCompareItem(tt, shift)
 	if ( not tt ) then
 		tt = GameTooltip;
 	end
-	local item, link = tt:GetItem();
+	local _, link = tt:GetItem();
 	if ( not link ) then
 		return;
 	end
@@ -336,6 +335,35 @@ function TT:GameTooltip_SetDefaultAnchor(tt, parent)
 	end
 end
 
+function TT:GetAvailableTooltip()
+	for i=1, #GameTooltip.shoppingTooltips do
+		if(not GameTooltip.shoppingTooltips[i]:IsShown()) then
+			return GameTooltip.shoppingTooltips[i]
+		end
+	end
+end
+
+function TT:ScanForItemLevel(itemLink)
+	local tooltip = self:GetAvailableTooltip();
+	tooltip:SetOwner(UIParent, "ANCHOR_NONE");
+	tooltip:SetHyperlink(itemLink);
+	tooltip:Show();
+
+	local itemLevel = 0;
+	for i = 2, tooltip:NumLines() do
+		local text = _G[ tooltip:GetName() .."TextLeft"..i]:GetText();
+		if(text and text ~= "") then
+			local value = tonumber(text:match(S_ITEM_LEVEL));
+			if(value) then
+				itemLevel = value;
+			end
+		end
+	end
+
+	tooltip:Hide();
+	return itemLevel
+end
+
 function TT:GetItemLvL(unit)
 	local total, item, boa, pvp = 0, 15, 0, 0 --装备总数默认15件，双持职业就+1
 	local ulvl = UnitLevel(unit)
@@ -345,8 +373,8 @@ function TT:GetItemLvL(unit)
 	
 	itemM = GetInventoryItemLink(unit, 16)
 	itemS = GetInventoryItemLink(unit, 17)
-	itemMlv = itemM and ItemUpgradeInfo:GetUpgradedItemLevel(itemM) or 0
-	itemSlv = itemS and ItemUpgradeInfo:GetUpgradedItemLevel(itemS) or 0
+	itemMlv = itemM and TT:ScanForItemLevel(itemM) or 0
+	itemSlv = itemS and TT:ScanForItemLevel(itemS) or 0
 	itemMMax = (itemMlv > itemSlv) and itemMlv or itemSlv
 
 	for i = 1, #SlotName do
@@ -362,8 +390,9 @@ function TT:GetItemLvL(unit)
 				if quality == 6 and ilvl == 750 and (SlotName[i] == "SecondaryHand" or SlotName[i] == "MainHand") then --修正神器副手itemLink字串不含升级物品信息的问题
 					total = total + itemMMax
 				else
-					total = total + ItemUpgradeInfo:GetUpgradedItemLevel(slotLink)
+					total = total + TT:ScanForItemLevel(slotLink)
 				end
+				
 			end
 
 			if ((SlotName[i] == 'SecondaryHand') or (SlotName[i] == 'MainHand' and ItemEquipLoc ~= "INVTYPE_2HWEAPON" and ItemEquipLoc ~= "INVTYPE_RANGED" and ItemEquipLoc ~= "INVTYPE_RANGEDRIGHT")) and not not2hand then
@@ -424,7 +453,7 @@ function TT:GetTalentSpec(unit, isPlayer)
 	end
 end
 
-function TT:INSPECT_READY(event, GUID)
+function TT:INSPECT_READY(_, GUID)
 	if(self.lastGUID ~= GUID) then return end
 
 	local unit = "mouseover"
@@ -731,7 +760,7 @@ function TT:GameTooltipStatusBar_OnValueChanged(tt, value)
 		end
 	end
 
-	local min, max = tt:GetMinMaxValues()
+	local _, max = tt:GetMinMaxValues()
 	if(value > 0 and max == 1) then
 		tt.text:SetFormattedText("%d%%", floor(value * 100))
 		tt:SetStatusBarColor(TAPPED_COLOR.r, TAPPED_COLOR.g, TAPPED_COLOR.b) --most effeciant?
@@ -759,7 +788,7 @@ function TT:GameTooltip_OnTooltipSetItem(tt)
 	end
 
 	if not tt.itemCleared then
-		local item, link = tt:GetItem()
+		local _, link = tt:GetItem()
 		local num = GetItemCount(link)
 		local numall = GetItemCount(link,true)
 		local left = " "
@@ -791,7 +820,7 @@ function TT:GameTooltip_OnTooltipSetItem(tt)
 	end
 end
 
-function TT:GameTooltip_ShowStatusBar(tt, min, max, value, text)
+function TT:GameTooltip_ShowStatusBar(tt)
 	local statusBar = _G[tt:GetName().."StatusBar"..tt.shownStatusBars];
 	if statusBar and not statusBar.skinned then
 		statusBar:StripTextures()
@@ -809,7 +838,7 @@ function TT:SetStyle(tt)
 	tt:SetBackdropColor(r, g, b, self.db.colorAlpha)
 end
 
-function TT:MODIFIER_STATE_CHANGED(event, key)
+function TT:MODIFIER_STATE_CHANGED(_, key)
 	if((key == "LSHIFT" or key == "RSHIFT") and UnitExists("mouseover")) then
 		GameTooltip:SetUnit('mouseover')
 	end
@@ -877,7 +906,7 @@ function TT:GameTooltip_OnTooltipSetSpell(tt)
 	end
 end
 
-function TT:SetItemRef(link, text, button, chatFrame)
+function TT:SetItemRef(link)
 	if find(link,"^spell:") and self.db.spellID then
 		local id = sub(link,7)
 		ItemRefTooltip:AddLine(("|cFFCA3C3C%s|r %d"):format(ID, id))
@@ -885,7 +914,7 @@ function TT:SetItemRef(link, text, button, chatFrame)
 	end
 end
 
-function TT:RepositionBNET(frame, point, anchor, anchorPoint, xOffset, yOffset)
+function TT:RepositionBNET(frame, _, anchor)
 	if anchor ~= BNETMover then
 		BNToastFrame:ClearAllPoints()
 		BNToastFrame:SetPoint('TOPLEFT', BNETMover, 'TOPLEFT');

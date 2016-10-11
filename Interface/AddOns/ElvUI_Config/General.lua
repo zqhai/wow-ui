@@ -76,12 +76,12 @@ E.Options.args.general = {
 					desc = L["Automatically accept invites from guild/friends."],
 					type = 'toggle',
 				},
-				vendorGrays = {
-					order = 6,
-					name = L["Vendor Grays"],
-					desc = L["Automatically vendor gray items when visiting a vendor."],
-					type = 'toggle',
-				},
+			--	vendorGrays = {
+			--		order = 6,
+			--		name = L["Vendor Grays"],
+			--		desc = L["Automatically vendor gray items when visiting a vendor."],
+			--		type = 'toggle',
+			--	},
 				autoRoll = {
 					order = 7,
 					name = L["Auto Greed/DE"],
