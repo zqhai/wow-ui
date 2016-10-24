@@ -1,7 +1,6 @@
 ## Interface: 70000
 ## Title: NomiCakes
 ## Author: Semlar
-## Version: 7.0.3.6
+## Version: 7.0.3.14
 ## Notes: Shows what recipes can be learned from Nomi in Dalaran
-semlib\semlib.xml
 NomiCakes.lua

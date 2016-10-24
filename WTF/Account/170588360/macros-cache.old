@@ -35,6 +35,11 @@ VER 3 0000000000000060 " 结束" "851298"
 /equip 夜幕战盔
 /equip 真理守护者
 END
+VER 3 0000000000000063 " 设置" "INV_SWORD_04"
+/console ffxGlow 0
+/console cameraDistanceMaxFactor 2.6
+/console weatherDensity 0
+END
 VER 3 000000000000005B "MillHelper" "Ability_Miling"
 /click MillHelperButton
 END
@@ -45,6 +50,11 @@ END
 VER 3 0000000000000062 "开怪" "132091"
 /Y 6 秒后开怪
 /DBM PULL 6
+END
+VER 3 0000000000000064 "爆发" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast 复仇之怒
+/cast 炽天使
 END
 VER 3 000000000000005D "神器能量统计" "INV_MISC_NOTE_05"
 /run _,_,_,_,a,b=C_ArtifactUI.GetEquippedArtifactInfo() for i=0,b-1 do a=a+C_ArtifactUI.GetCostForPointAtRank(i)end print(a)

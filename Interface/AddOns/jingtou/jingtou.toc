@@ -1,0 +1,5 @@
+﻿## Interface: 70000
+## Title: |cff00FF55镜头39码|r
+## Notes: 提高镜头上限至39码
+
+jingtou.lua

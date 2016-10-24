@@ -548,12 +548,14 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		[213124] = Defaults(), -- Venomous Pool
 		[210850] = Defaults(), -- Twisting Shadows
 		[215489] = Defaults(), -- Venomous Pool
+		[218519] = Defaults(), -- Wind Burn (Mythic)
 
 	-- Il'gynoth, Heart of the Corruption
 		[208929] = Defaults(), -- Spew Corruption
 		[210984] = Defaults(), -- Eye of Fate
 		[209469] = Defaults(5), -- Touch of Corruption
 		[208697] = Defaults(), -- Mind Flay
+		[215143] = Defaults(),  -- Cursed Blood
 
 	-- Ursoc
 		[198108] = Defaults(), -- Unbalanced

@@ -83,15 +83,17 @@ end
 function Atr_SetupOptionsFrame()
 
   local expText = "<html><body>"
-          .."<p>"..ZT("The latest information on Auctionator can be found at").." http://mods.curse.com/addons/wow/auctionator .".."</p>"
+          .."<p>"..ZT("The latest information on Auctionator can be found at").." |cFF4499FF http://mods.curse.com/addons/wow/auctionator .".."</p>"
+          .."<p><br />"
+          .. ZT("Read the FAQ at") .. " |cFF4499FF https://github.com/Auctionator/Auctionator/wiki ." .. "</p>"
           .."<p><br/>"
           .."MoP disenchanting data courtesy of the Norganna's AddOns (the Auctioneer folks)"
           .."</p>"
           .."<p><br/>"
           .."|cffaaaaaa"..string.format (ZT("German translation courtesy of %s"),  "|rCkaotik").."<br/>"
-          .."|cffaaaaaa"..string.format (ZT("Russian translation courtesy of %s"), "|rStingerSoft").."<br/>"
+          .."|cffaaaaaa"..string.format (ZT("Russian translation courtesy of %s"), "|rStingerSoft, Wetxius").."<br/>"
           .."|cffaaaaaa"..string.format (ZT("Swedish translation courtesy of %s"), "|rHellManiac").."<br/>"
-          .."|cffaaaaaa"..string.format (ZT("French translation courtesy of %s"),  "|rKiskewl").."<br/>"
+          .."|cffaaaaaa"..string.format (ZT("French translation courtesy of %s"),  "|rKiskewl and Klep").."<br/>"
           .."|cffaaaaaa"..string.format (ZT("Spanish translation courtesy of %s"),  "|rElfindor").."<br/>"
           .."|cffaaaaaa"..string.format (ZT("Chinese/Taiwan translation courtesy of %s"),  "|rScars").."<br/>"
           .."</p>"
@@ -168,15 +170,17 @@ function Atr_SetupTooltipsOptionsFrame ()
   ATR_tipsVendorOpt_CB:SetChecked   (zc.NumToBool(AUCTIONATOR_V_TIPS));
   ATR_tipsAuctionOpt_CB:SetChecked  (zc.NumToBool(AUCTIONATOR_A_TIPS));
   ATR_tipsDisenchantOpt_CB:SetChecked (zc.NumToBool(AUCTIONATOR_D_TIPS));
+  ATR_tipsMailboxOpt_CB:SetChecked( zc.NumToBool( AUCTIONATOR_SHOW_MAILBOX_TIPS ))
 end
 
 
 -----------------------------------------
 
-function Atr_TooltipsOptionsFrame_Save(frame)
+function Atr_TooltipsOptionsFrame_Save( frame )
+  Auctionator.Debug.Message( 'Atr_TooltipsOptionsFrame_Save' )
 
-  if (not frame.atr_hasBeenShown) then
-    return;
+  if not frame.atr_hasBeenShown then
+    return
   end
 
   local origValues = zc.msg_str (AUCTIONATOR_V_TIPS, AUCTIONATOR_A_TIPS, AUCTIONATOR_D_TIPS, AUCTIONATOR_SHIFT_TIPS, AUCTIONATOR_DE_DETAILS_TIPS);
@@ -184,6 +188,7 @@ function Atr_TooltipsOptionsFrame_Save(frame)
   AUCTIONATOR_V_TIPS    = zc.BoolToNum(ATR_tipsVendorOpt_CB:GetChecked ());
   AUCTIONATOR_A_TIPS    = zc.BoolToNum(ATR_tipsAuctionOpt_CB:GetChecked ());
   AUCTIONATOR_D_TIPS    = zc.BoolToNum(ATR_tipsDisenchantOpt_CB:GetChecked ());
+  AUCTIONATOR_SHOW_MAILBOX_TIPS = zc.BoolToNum( ATR_tipsMailboxOpt_CB:GetChecked() )
 
   AUCTIONATOR_SHIFT_TIPS    = UIDropDownMenu_GetSelectedValue(Atr_tipsShiftDD);
   AUCTIONATOR_DE_DETAILS_TIPS = UIDropDownMenu_GetSelectedValue(Atr_deDetailsDD);
@@ -554,14 +559,17 @@ function Atr_Memorize_Show (isNew)
 
   Atr_MemorizeFrame:Show();
 
+  StaticPopup_Hide ("ATR_MEMORIZE_TEXT_BLANK");
+
 end
 
 -----------------------------------------
+local Atr_StackingList_Check
 
 function Atr_StackingList_Edit_OnClick()
 
   Atr_Memorize_Show(false);
-
+  Atr_StackingList_Check = false
 end
 
 -----------------------------------------
@@ -569,21 +577,42 @@ end
 function Atr_StackingList_New_OnClick()
 
   Atr_Memorize_Show(true);
+  Atr_StackingList_Check = true
 
 end
 
 -----------------------------------------
 
+StaticPopupDialogs[ "ATR_MEMORIZE_TEXT_BLANK" ] = {
+  text = "",
+  button1 = OKAY,
+  OnAccept = function( self )
+    Atr_StackingList_New_OnClick();
+    return
+  end,
+  OnShow = function( self )
+    local s = string.format (ZT("Item Name must not be blank"));
+    self.text:SetText("\n"..s.."\n");
+  end,
+  timeout = 0,
+  exclusive = 1,
+  whileDead = 1,
+  hideOnEscape = 1
+};
+
 function Atr_Memorize_Save()
+  Auctionator.Debug.Message( 'Atr_Memorize_Save' )
 
-  zz ("Saving stacking configuration");
+  local x   = gStackList_SelectedIndex
+  local plist = gStackList_plist
+  local key = Atr_Mem_EB_itemName:GetText()
 
-  local x   = gStackList_SelectedIndex;
-  local plist = gStackList_plist;
-
-  local key = Atr_Mem_EB_itemName:GetText();
-  if (key == nil or key == "") then
-    key = plist[x].sortkey;
+  if Atr_StackingList_Check then
+    if key == nil or key == "" then
+      StaticPopup_Show( "ATR_MEMORIZE_TEXT_BLANK" )
+    end
+  else
+    key = plist[ x ].sortkey
   end
 
   if (key and key ~= "") then

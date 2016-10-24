@@ -106,22 +106,24 @@ local function GetItemLevel(itemLink)
 	end
 
 	if not itemLevelCache[itemLink] then
-		tooltip:ClearLines()
-		tooltip:SetHyperlink(itemLink)
+		local _, itemLevel = EuiLibItem:GetItemInfoActually(itemLink)
+--		tooltip:ClearLines()
+--		tooltip:SetHyperlink(itemLink)
 
-		local text, itemLevel
-		for index = 1, #tooltipLines do
-			text = _G[tooltipLines[index]]:GetText()
+--		local text, itemLevel
+--		for index = 1, #tooltipLines do
+--			text = _G[tooltipLines[index]]:GetText()
 
-			if text then
-				itemLevel = tonumber(match(text, itemLevelPattern))
+--			if text then
+--				itemLevel = tonumber(match(text, itemLevelPattern))
 
 				if itemLevel then
-					itemLevelCache[itemLink] = itemLevel
+					itemLevelCache[itemLink] = tonumber(itemLevel)
 					return itemLevel
 				end
-			end
-		end
+--			end
+--		end
+
 		itemLevelCache[itemLink] = 0 --Cache items that don't have an item level so we don't loop over them again and again
 	end
 
@@ -330,9 +332,11 @@ function B:UpdateCountDisplay()
 	if self.BankFrame and self.BankFrame.reagentFrame then
 		for i = 1, 98 do
 			local slot = self.BankFrame.reagentFrame.slots[i]
-			slot.Count:FontTemplate(E.LSM:Fetch("font", E.db.bags.countFont), E.db.bags.countFontSize, E.db.bags.countFontOutline)
-			slot.Count:SetTextColor(color.r, color.g, color.b)
-			self:UpdateReagentSlot(i)
+			if slot then
+				slot.Count:FontTemplate(E.LSM:Fetch("font", E.db.bags.countFont), E.db.bags.countFontSize, E.db.bags.countFontOutline)
+				slot.Count:SetTextColor(color.r, color.g, color.b)
+				self:UpdateReagentSlot(i)
+			end
 		end
 	end
 end
@@ -1000,6 +1004,14 @@ function B:GetGraysValue()
 	return c
 end
 
+local GrayWihterList = {
+	[114002] = true,
+	[140661] = true,
+	[140662] = true,
+	[140663] = true,
+	[140664] = true,
+	[140665] = true,
+}
 function B:VendorGrays(delete, nomsg, getValue)
 	if (not MerchantFrame or not MerchantFrame:IsShown()) and not delete and not getValue then
 		E:Print(L["You must be at a vendor."])
@@ -1027,7 +1039,7 @@ function B:VendorGrays(delete, nomsg, getValue)
 					local pp = select(3, GetItemInfo(l));
 					local itemid = tonumber(l:match("item:(%d+)"))
 					
-					if ((select(3, GetItemInfo(l))==0) or E.db.euiscript.autosellList[itemid]) and (p>0) and (itemid ~= 114002) then
+					if ((select(3, GetItemInfo(l))==0) or E.db.euiscript.autosellList[itemid]) and (p>0) and (not GrayWihterList[itemid]) then
 						if not getValue then
 							UseContainerItem(b, s)
 							PickupMerchantItem()

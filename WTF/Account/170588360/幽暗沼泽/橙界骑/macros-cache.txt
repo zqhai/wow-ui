@@ -51,6 +51,13 @@ VER 3 010000000000003E "保护" "INV_MISC_QUESTIONMARK"
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="保护祝福"then SendChatMessage(GetSpellLink(b))end end)
 /cast 保护祝福
 END
+VER 3 0100000000000041 "喝药" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast 复仇之怒
+/cast 炽天使
+/use 德拉诺力量药水
+/use 13
+END
 VER 3 0100000000000043 "圣疗" "INV_MISC_QUESTIONMARK"
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="圣疗术"then SendChatMessage(GetSpellLink(b))end end)
 /cast 圣疗术
@@ -59,11 +66,6 @@ VER 3 010000000000004D "战争践踏" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="战争践踏"then SendChatMessage(GetSpellLink(b))end end)
 /cast 战争践踏
-END
-VER 3 0100000000000041 "爆发" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast 复仇之怒
-/cast 炽天使
 END
 VER 3 0100000000000042 "牺牲" "INV_MISC_QUESTIONMARK"
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="牺牲祝福"then SendChatMessage(GetSpellLink(b))end end)

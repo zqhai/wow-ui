@@ -54,7 +54,7 @@ Masque: enabled
 HandyNotes_Achievements: enabled
 Rematch: enabled
 AuctionLite: enabled
-TDDps: disabled
+TDDps: enabled
 DBM-Nighthold: enabled
 DBM-BrokenIsles: enabled
 DBM-EmeraldNightmare: enabled
@@ -69,3 +69,5 @@ DBM-TrialofValor: enabled
 NomiCakes: enabled
 GottaGoFast: enabled
 ElvUI_TankHealth: enabled
+AngryKeystones: enabled
+jingtou: enabled

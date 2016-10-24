@@ -775,6 +775,36 @@ function TT:GameTooltip_OnTooltipCleared(tt)
 	tt.itemCleared = nil
 end
 
+local function MythicLootItemLevel(mlvl) --by eui.cc
+	if (mlvl == "2" or mlvl == "3") then
+		return "845"
+	elseif (mlvl == "4" or mlvl == "5") then
+		return "850"
+	elseif (mlvl == "6" or mlvl == "7") then
+		return "855"
+	elseif (mlvl == "8" or mlvl == "9") then
+		return "860"
+	else
+		return "865"
+	end
+end
+
+local function MythicWeeklyLootItemLevel(mlvl) --by eui.cc
+	if (mlvl == "0") then
+		return "860+"
+	elseif (mlvl == "2" or mlvl == "3") then
+		return "860"
+	elseif (mlvl == "4" or mlvl == "5") then
+		return "865"
+	elseif (mlvl == "6" or mlvl == "7") then
+		return "870"
+	elseif (mlvl == "8" or mlvl == "9") then
+		return "875"
+	else
+		return "880"
+	end
+end
+
 function TT:GameTooltip_OnTooltipSetItem(tt)
 	local ownerName = tt:GetOwner() and tt:GetOwner().GetName and tt:GetOwner():GetName()
 	if (self.db.visibility.bags ~= 'NONE' and ownerName and (find(ownerName, "ElvUI_Container") or find(ownerName, "ElvUI_BankContainer"))) then
@@ -794,6 +824,7 @@ function TT:GameTooltip_OnTooltipSetItem(tt)
 		local left = " "
 		local right = " "
 		local bankCount = " "
+		local itemid = link:match("item:(%d+)") or ""
 
 		if link ~= nil and self.db.spellID then
 			left = (("|cFFCA3C3C%s|r %s"):format(ID, link)):match(":(%w+)")
@@ -815,6 +846,15 @@ function TT:GameTooltip_OnTooltipSetItem(tt)
 		if bankCount ~= " " then
 			tt:AddDoubleLine(" ", bankCount)
 		end
+		
+		local ilvl = MythicLootItemLevel(mlvl)
+		local wlvl = MythicWeeklyLootItemLevel(mlvl)
+		
+		if (itemid == "138019") then -- Mythic Keystone		
+			tt:AddLine(" ")
+			tt:AddDoubleLine(L["Loot Item Level: "], "|cffff00ff" .. ilvl .. "+" .. "|r")
+			tt:AddDoubleLine(L["Weekly Chest Item Level: "], "|cffff00ff".. wlvl .."|r")
+		end		
 
 		tt.itemCleared = true
 	end
