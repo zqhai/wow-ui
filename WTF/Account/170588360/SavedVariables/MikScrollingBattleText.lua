@@ -7,19 +7,19 @@ MSBTProfiles_SavedVars = {
 			["groupNumbers"] = true,
 			["enableBlizzardDamage"] = false,
 			["scrollAreas"] = {
-				["Static"] = {
-					["offsetY"] = -298,
-				},
 				["Incoming"] = {
 					["offsetX"] = -381,
 					["offsetY"] = -539,
 				},
-				["Notification"] = {
-					["offsetY"] = 123,
-				},
 				["Outgoing"] = {
 					["offsetX"] = 626,
 					["offsetY"] = -306,
+				},
+				["Notification"] = {
+					["offsetY"] = 123,
+				},
+				["Static"] = {
+					["offsetY"] = -298,
 				},
 			},
 			["enableBlizzardHealing"] = false,

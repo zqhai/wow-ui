@@ -94,12 +94,12 @@ MEETINGSTONE_CHARACTER_DB = {
 			},
 			["advShine"] = "70000.01",
 			["searchHistoryList"] = {
-				"3-122-414-0", -- [1]
-				"6-0-0-0", -- [2]
+				"6-0-0-0", -- [1]
+				"3-122-414-0", -- [2]
 				"6-0-16-0", -- [3]
 				"3-122-413-0", -- [4]
 			},
-			["lastSearchValue"] = "3-122-414-0",
+			["lastSearchValue"] = "6-0-0-0",
 			["worldQuestHelp"] = true,
 		},
 	},

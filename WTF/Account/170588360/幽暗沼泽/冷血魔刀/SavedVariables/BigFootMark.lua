@@ -12,9 +12,9 @@ BigFootMarkDB = {
 	["考古学训练师"] = true,
 	["旅店老板"] = true,
 	["version"] = 1,
-	["军需官"] = true,
-	["重铸"] = true,
-	["幻化"] = true,
-	["材料商"] = true,
 	["虚空银行"] = true,
+	["材料商"] = true,
+	["幻化"] = true,
+	["重铸"] = true,
+	["军需官"] = true,
 }

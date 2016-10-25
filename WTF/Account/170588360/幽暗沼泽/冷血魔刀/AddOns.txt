@@ -66,3 +66,7 @@ GS-SequenceEditor: disabled
 HandyNotes_LegionRaresTreasures: enabled
 WorldQuestTracker: enabled
 DBM-TrialofValor: enabled
+NomiCakes: enabled
+jingtou: enabled
+ElvUI_TankHealth: enabled
+AngryKeystones: enabled
