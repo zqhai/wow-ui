@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 0,
 	["_2000"] = 0,
-	["_10000"] = 0,
-	["_500"] = 0,
-	["_1000000"] = 0,
 	["_200000"] = 0,
 	["STARTING_DISCOUNT"] = 0,
-	["LOG_DE_DATA_X"] = true,
+	["_1000000"] = 0,
 	["_5000000"] = 0,
+	["LOG_DE_DATA_X"] = true,
+	["_500"] = 0,
+	["_10000"] = 0,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["夏多雷丝绸"] = {
@@ -211,12 +211,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "130242:0:0:0",
 			["cc"] = 4,
 		},
-		["邪能页岩"] = {
-			["mr"] = 430000,
-			["sc"] = 7,
-			["id"] = "123919:0:0:0",
-			["H2137"] = 430000,
-			["cc"] = 7,
+		["被污染的强化符文"] = {
+			["mr"] = 2010000,
+			["cc"] = 0,
+			["id"] = "140587:0:0:0:0",
+			["H2165"] = 2010000,
+			["sc"] = 8,
 		},
 		["曙光之邪钢护腰"] = {
 			["mr"] = 18006093,
@@ -253,12 +253,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 8,
 			["H2142"] = 25499,
 		},
-		["被污染的强化符文"] = {
-			["mr"] = 2010000,
-			["cc"] = 0,
-			["id"] = "140587:0:0:0:0",
-			["H2165"] = 2010000,
-			["sc"] = 8,
+		["邪能页岩"] = {
+			["mr"] = 430000,
+			["sc"] = 7,
+			["id"] = "123919:0:0:0",
+			["H2137"] = 430000,
+			["cc"] = 7,
 		},
 		["迅捷晨光石"] = {
 			["H2155"] = 23499999,
@@ -303,10 +303,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 }
 AUCTIONATOR_LAST_SCAN_TIME = nil
 AUCTIONATOR_TOONS = {
-	["冷血魔刀"] = {
-		["firstSeen"] = 1474383212,
-		["guid"] = "Player-1676-024262CE",
-		["firstVersion"] = "4.0.5CN",
+	["Haidi"] = {
+		["firstSeen"] = 1419250433,
+		["firstVersion"] = "3.2.1",
 	},
 	["每天壹碗面"] = {
 		["firstSeen"] = 1470320464,
@@ -317,20 +316,22 @@ AUCTIONATOR_TOONS = {
 		["firstSeen"] = 1419255719,
 		["firstVersion"] = "3.2.1",
 	},
-	["Haidii"] = {
-		["firstSeen"] = 1470582123,
+	["橙界骑"] = {
+		["firstSeen"] = 1475852099,
+		["guid"] = "Player-1676-020AE482",
 		["firstVersion"] = "4.0.5CN",
 	},
-	["Haidi"] = {
-		["firstSeen"] = 1419250433,
-		["firstVersion"] = "3.2.1",
+	["冷血魔刀"] = {
+		["firstSeen"] = 1474383212,
+		["guid"] = "Player-1676-024262CE",
+		["firstVersion"] = "4.0.5CN",
 	},
 	["Testt"] = {
 		["firstSeen"] = 1473184743,
 		["firstVersion"] = "4.0.5CN",
 	},
-	["橙界骑"] = {
-		["firstSeen"] = 1475852099,
+	["Haidii"] = {
+		["firstSeen"] = 1470582123,
 		["firstVersion"] = "4.0.5CN",
 	},
 }

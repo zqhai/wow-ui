@@ -38,9 +38,9 @@ MasterPlanAG = {
 			},
 			["curOil"] = 585,
 			["faction"] = "Horde",
-			["lastCacheTime"] = 1474987114,
-			["curRes"] = 10000,
 			["class"] = "PALADIN",
+			["curRes"] = 10000,
+			["lastCacheTime"] = 1474987114,
 		},
 	},
 }

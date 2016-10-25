@@ -289,6 +289,8 @@ TellMeWhenDB = {
 		},
 		["Maverin - Area 52"] = {
 			["Locked"] = true,
+			["Version"] = 81305,
+			["NumGroups"] = 25,
 			["Groups"] = {
 				{
 					["Enabled"] = false,
@@ -399,9 +401,9 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["TimerBar_EnableColors"] = true,
 							["TimerBar_CompleteColor"] = "ffffff00",
 							["CustomTex"] = "NONE",
+							["TimerBar_EnableColors"] = true,
 						}, -- [1]
 					},
 					["Name"] = "Energy",
@@ -427,11 +429,11 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1NcKno7xX9dw",
-					["Name"] = "Combo Points 5",
 					["Point"] = {
 						["y"] = 115.369319671625,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 					},
+					["Columns"] = 5,
 					["SettingsPerView"] = {
 						["icon"] = {
 							["SpacingX"] = 8,
@@ -821,7 +823,7 @@ TellMeWhenDB = {
 							},
 						}, -- [5]
 					},
-					["Columns"] = 5,
+					["Name"] = "Combo Points 5",
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1NcMHNdmEzfa",
@@ -1610,12 +1612,12 @@ TellMeWhenDB = {
 				}, -- [8]
 				{
 					["GUID"] = "TMW:group:1NcLTqrwrTLW",
-					["Name"] = "Artifact",
 					["Point"] = {
 						["y"] = 123,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 						["x"] = 60,
 					},
+					["Columns"] = 1,
 					["EnabledSpecs"] = {
 						[260] = false,
 						[259] = false,
@@ -1658,7 +1660,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Artifact",
 				}, -- [9]
 				{
 					["Enabled"] = false,
@@ -1848,10 +1850,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [8]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [9]
 								["n"] = 9,
 							},
@@ -1917,10 +1919,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [10]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [11]
 								["n"] = 11,
 							},
@@ -1988,10 +1990,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [11]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [12]
 								["n"] = 12,
 							},
@@ -2080,10 +2082,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [11]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [12]
 								["n"] = 12,
 							},
@@ -2174,10 +2176,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [11]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [12]
 								["n"] = 12,
 							},
@@ -2292,12 +2294,12 @@ TellMeWhenDB = {
 				}, -- [10]
 				{
 					["GUID"] = "TMW:group:1NcLToURvdlj",
-					["Name"] = "Shadow Dance CD",
 					["Point"] = {
 						["y"] = 123,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 						["x"] = -60,
 					},
+					["Columns"] = 1,
 					["EnabledSpecs"] = {
 						[260] = false,
 						[259] = false,
@@ -2330,16 +2332,16 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Shadow Dance CD",
 				}, -- [11]
 				{
 					["GUID"] = "TMW:group:1NcLKkMg4MnR",
-					["Name"] = "Sub CDs",
 					["Point"] = {
 						["y"] = 52.4199221274027,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 						["x"] = -1.1435489220147,
 					},
+					["Columns"] = 5,
 					["EnabledSpecs"] = {
 						[260] = false,
 						[259] = false,
@@ -2438,7 +2440,7 @@ TellMeWhenDB = {
 							},
 						}, -- [5]
 					},
-					["Columns"] = 5,
+					["Name"] = "Sub CDs",
 				}, -- [12]
 				{
 					["View"] = "bar",
@@ -2538,11 +2540,11 @@ TellMeWhenDB = {
 				}, -- [14]
 				{
 					["GUID"] = "TMW:group:1NhLM0O42ffL",
-					["Name"] = "Artifact CD",
 					["Point"] = {
 						["y"] = -88.7633762983879,
 						["x"] = 60.3049631232979,
 					},
+					["Columns"] = 1,
 					["EnabledSpecs"] = {
 						[260] = false,
 						[261] = false,
@@ -2585,7 +2587,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Artifact CD",
 				}, -- [15]
 				{
 					["GUID"] = "TMW:group:1NcMFHaTGMJJ",
@@ -2692,10 +2694,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [4]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [5]
 								{
 									["Type"] = "ICON",
@@ -2785,10 +2787,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [4]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [5]
 								{
 									["Type"] = "TALENTLEARNED",
@@ -2898,10 +2900,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [12]
 								{
-									["PrtsAfter"] = 3,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 3,
+									["Type"] = "TALENTLEARNED",
 								}, -- [13]
 								{
 									["Operator"] = "<",
@@ -2909,8 +2911,8 @@ TellMeWhenDB = {
 									["Checked"] = true,
 									["Name"] = "703",
 									["PrtsBefore"] = 1,
-									["AndOr"] = "OR",
 									["Level"] = 4.5,
+									["AndOr"] = "OR",
 									["Unit"] = "target",
 								}, -- [14]
 								{
@@ -3013,10 +3015,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [5]
 								{
-									["PrtsAfter"] = 3,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 3,
+									["Type"] = "TALENTLEARNED",
 								}, -- [6]
 								{
 									["Type"] = "ICON",
@@ -3163,10 +3165,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [9]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [10]
 								{
 									["Type"] = "ICON",
@@ -3219,10 +3221,10 @@ TellMeWhenDB = {
 											["Level"] = 4,
 										}, -- [3]
 										{
-											["PrtsAfter"] = 2,
-											["Type"] = "TALENTLEARNED",
 											["Name"] = "19239",
 											["Level"] = 1,
+											["PrtsAfter"] = 2,
+											["Type"] = "TALENTLEARNED",
 										}, -- [4]
 										{
 											["Type"] = "DEBUFFDUR",
@@ -3260,10 +3262,10 @@ TellMeWhenDB = {
 											["Level"] = 4,
 										}, -- [3]
 										{
-											["PrtsAfter"] = 2,
-											["Type"] = "TALENTLEARNED",
 											["Name"] = "19239",
 											["Level"] = 1,
+											["PrtsAfter"] = 2,
+											["Type"] = "TALENTLEARNED",
 										}, -- [4]
 										{
 											["Operator"] = ">",
@@ -3336,10 +3338,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [9]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [10]
 								{
 									["Type"] = "ICON",
@@ -3508,11 +3510,11 @@ TellMeWhenDB = {
 				}, -- [17]
 				{
 					["GUID"] = "TMW:group:1NcN_uvYoeo6",
-					["Name"] = "Assassination CDs",
 					["Point"] = {
 						["y"] = 52.1,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 					},
+					["Columns"] = 5,
 					["EnabledSpecs"] = {
 						[260] = false,
 						[261] = false,
@@ -3595,16 +3597,16 @@ TellMeWhenDB = {
 							},
 						}, -- [5]
 					},
-					["Columns"] = 5,
+					["Name"] = "Assassination CDs",
 				}, -- [18]
 				{
 					["GUID"] = "TMW:group:1NcO3b3vMivG",
-					["Name"] = "Exsanguinate CD",
 					["Point"] = {
 						["y"] = 122.98163185515,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 						["x"] = -60.3049562150622,
 					},
+					["Columns"] = 1,
 					["EnabledSpecs"] = {
 						[260] = false,
 						[261] = false,
@@ -3637,15 +3639,15 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Exsanguinate CD",
 				}, -- [19]
 				{
 					["GUID"] = "TMW:group:1NhLK_P8Adp=",
-					["Name"] = "Artifact CD",
 					["Point"] = {
 						["y"] = -89.4408360151848,
 						["x"] = 60.3048410529854,
 					},
+					["Columns"] = 1,
 					["EnabledSpecs"] = {
 						[261] = false,
 						[259] = false,
@@ -3688,7 +3690,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Artifact CD",
 				}, -- [20]
 				{
 					["GUID"] = "TMW:group:1NcO6lftHFD2",
@@ -3758,10 +3760,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [3]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [4]
 								{
 									["Name"] = "22125",
@@ -3812,10 +3814,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [3]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [4]
 								{
 									["Type"] = "ICON",
@@ -3854,10 +3856,10 @@ TellMeWhenDB = {
 									["Level"] = 1,
 								}, -- [11]
 								{
-									["Type"] = "ICON",
 									["Level"] = 1,
-									["PrtsAfter"] = 1,
+									["Type"] = "ICON",
 									["Icon"] = "TMW:icon:1NcOtikSMbqD",
+									["PrtsAfter"] = 1,
 								}, -- [12]
 								{
 									["Type"] = "ICON",
@@ -3924,10 +3926,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [3]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [4]
 								{
 									["Type"] = "ICON",
@@ -4001,10 +4003,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [3]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [4]
 								{
 									["Type"] = "ICON",
@@ -4077,10 +4079,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [6]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "MANAUSABLE",
 									["Name"] = "193315",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "MANAUSABLE",
 								}, -- [7]
 								{
 									["Type"] = "ICON",
@@ -4150,10 +4152,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [6]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [7]
 								{
 									["Type"] = "ICON",
@@ -4246,10 +4248,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [6]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "19239",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [7]
 								{
 									["Type"] = "ICON",
@@ -4308,12 +4310,12 @@ TellMeWhenDB = {
 				}, -- [21]
 				{
 					["GUID"] = "TMW:group:1NcOOaTWUUed",
-					["Name"] = "Outlaw CD",
 					["Point"] = {
 						["y"] = 52.2000047912585,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 						["x"] = -5.526967094810570e-005,
 					},
+					["Columns"] = 5,
 					["EnabledSpecs"] = {
 						[261] = false,
 						[259] = false,
@@ -4403,7 +4405,7 @@ TellMeWhenDB = {
 							},
 						}, -- [5]
 					},
-					["Columns"] = 5,
+					["Name"] = "Outlaw CD",
 				}, -- [22]
 				{
 					["GUID"] = "TMW:group:1NcOQtKMz4AA",
@@ -4422,8 +4424,8 @@ TellMeWhenDB = {
 							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Name"] = "193359",
-							["DurationMin"] = 5,
 							["DurationMinEnabled"] = true,
+							["DurationMin"] = 5,
 							["Enabled"] = true,
 						}, -- [1]
 						{
@@ -4433,8 +4435,8 @@ TellMeWhenDB = {
 							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Name"] = "193357",
-							["DurationMin"] = 5,
 							["DurationMinEnabled"] = true,
+							["DurationMin"] = 5,
 							["Enabled"] = true,
 						}, -- [2]
 						{
@@ -4444,8 +4446,8 @@ TellMeWhenDB = {
 							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Name"] = "199603",
-							["DurationMin"] = 5,
 							["DurationMinEnabled"] = true,
+							["DurationMin"] = 5,
 							["Enabled"] = true,
 						}, -- [3]
 						{
@@ -4455,8 +4457,8 @@ TellMeWhenDB = {
 							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Name"] = "193358",
-							["DurationMin"] = 5,
 							["DurationMinEnabled"] = true,
+							["DurationMin"] = 5,
 							["Enabled"] = true,
 						}, -- [4]
 						{
@@ -4466,8 +4468,8 @@ TellMeWhenDB = {
 							["ShowTimerText"] = true,
 							["Type"] = "buff",
 							["Name"] = "193356",
-							["DurationMin"] = 5,
 							["DurationMinEnabled"] = true,
+							["DurationMin"] = 5,
 							["Enabled"] = true,
 						}, -- [5]
 						{
@@ -4478,8 +4480,8 @@ TellMeWhenDB = {
 							["ShowTimerText"] = true,
 							["DurationMax"] = 3,
 							["Name"] = "199600",
-							["DurationMin"] = 5,
 							["DurationMinEnabled"] = true,
+							["DurationMin"] = 5,
 							["Enabled"] = true,
 						}, -- [6]
 					},
@@ -4502,12 +4504,12 @@ TellMeWhenDB = {
 				}, -- [23]
 				{
 					["GUID"] = "TMW:group:1NcOuM6f2PRT",
-					["Name"] = "Blade Flurry Buff",
 					["Point"] = {
 						["y"] = 122.982159359055,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 						["x"] = -59.6269318853723,
 					},
+					["Columns"] = 1,
 					["EnabledSpecs"] = {
 						[261] = false,
 						[259] = false,
@@ -4538,7 +4540,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Blade Flurry Buff",
 				}, -- [24]
 				{
 					["GUID"] = "TMW:group:1NcSC_t0FOgm",
@@ -4617,10 +4619,10 @@ TellMeWhenDB = {
 					["Columns"] = 1,
 				}, -- [25]
 			},
-			["Version"] = 81305,
-			["NumGroups"] = 25,
 		},
 		["诗奕回眸 - 守护之剑"] = {
+			["Version"] = 81305,
+			["NumGroups"] = 8,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1NxNVJKB3KDD",
@@ -4660,8 +4662,8 @@ TellMeWhenDB = {
 							["RangeCheck"] = true,
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "圣殿骑士的裁决",
+							["ShowTimerText"] = true,
 							["ManaCheck"] = true,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -4744,7 +4746,7 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
 							["GUID"] = "TMW:icon:1NybiAhlRXn=",
-							["ShowTimerText"] = true,
+							["Name"] = "十字军打击; 狂热",
 							["Enabled"] = true,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -4760,7 +4762,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Name"] = "十字军打击; 狂热",
+							["ShowTimerText"] = true,
 							["States"] = {
 								[101] = {
 									["Alpha"] = 1,
@@ -4775,7 +4777,7 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
 							["GUID"] = "TMW:icon:1NxNWVml_dv3",
-							["ShowTimerText"] = true,
+							["Name"] = "十字军打击",
 							["Enabled"] = true,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -4791,7 +4793,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Name"] = "十字军打击",
+							["ShowTimerText"] = true,
 							["States"] = {
 								[101] = {
 									["Alpha"] = 1,
@@ -4846,8 +4848,8 @@ TellMeWhenDB = {
 							["RangeCheck"] = true,
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "圣殿骑士的裁决",
+							["ShowTimerText"] = true,
 							["ManaCheck"] = true,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -4877,8 +4879,8 @@ TellMeWhenDB = {
 							["RangeCheck"] = true,
 							["StackMax"] = 2,
 							["ClockGCD"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "十字军打击",
+							["ShowTimerText"] = true,
 							["GUID"] = "TMW:icon:1NxNaW0FHZ7Y",
 							["Enabled"] = true,
 							["Conditions"] = {
@@ -5084,8 +5086,8 @@ TellMeWhenDB = {
 							["RangeCheck"] = true,
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "圣殿骑士的裁决",
+							["ShowTimerText"] = true,
 							["ManaCheck"] = true,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -5130,7 +5132,7 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
 							["GUID"] = "TMW:icon:1NybiAhdViYM",
-							["ShowTimerText"] = true,
+							["Name"] = "十字军打击; 狂热",
 							["Enabled"] = true,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -5147,7 +5149,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Name"] = "十字军打击; 狂热",
+							["ShowTimerText"] = true,
 							["States"] = {
 								[3] = {
 									["Alpha"] = 0.49,
@@ -5163,8 +5165,8 @@ TellMeWhenDB = {
 							["RangeCheck"] = true,
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "圣殿骑士的裁决",
+							["ShowTimerText"] = true,
 							["ManaCheck"] = true,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -5255,7 +5257,7 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
 							["GUID"] = "TMW:icon:1NydDp6d3r07",
-							["ShowTimerText"] = true,
+							["Name"] = "十字军打击; 狂热",
 							["Enabled"] = true,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -5272,7 +5274,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Name"] = "十字军打击; 狂热",
+							["ShowTimerText"] = true,
 							["States"] = {
 								[101] = {
 									["Alpha"] = 1,
@@ -5313,8 +5315,8 @@ TellMeWhenDB = {
 							["RangeCheck"] = true,
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "审判官复仇",
+							["ShowTimerText"] = true,
 							["ManaCheck"] = true,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -5513,7 +5515,7 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
 							["GUID"] = "TMW:icon:1Nyr5RgTM_qR",
-							["ShowTimerText"] = true,
+							["Name"] = "十字军打击; 狂热",
 							["Enabled"] = true,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -5532,7 +5534,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["Name"] = "十字军打击; 狂热",
+							["ShowTimerText"] = true,
 							["States"] = {
 								[101] = {
 									["Alpha"] = 1,
@@ -5583,11 +5585,8 @@ TellMeWhenDB = {
 					["Name"] = "征伐整合",
 				}, -- [8]
 			},
-			["Version"] = 81305,
-			["NumGroups"] = 8,
 		},
 		["Haidi - 幽暗沼泽 3"] = {
-			["ForceNoBlizzCC"] = true,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1No0t=kM8uOu",
@@ -5719,6 +5718,7 @@ TellMeWhenDB = {
 							["Icons"] = {
 								"TMW:icon:1NrRuib1leF5", -- [1]
 								"TMW:icon:1NrRuiaf66YW", -- [2]
+								"TMW:icon:1O3ZBJLCmgqZ", -- [3]
 							},
 							["Enabled"] = true,
 						},
@@ -6796,6 +6796,34 @@ TellMeWhenDB = {
 							},
 							["FakeHidden"] = true,
 						},
+						[27] = {
+							["ShowTimer"] = true,
+							["Type"] = "buff",
+							["Name"] = "报复",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1O3ZBJLCmgqZ",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnStart",
+									["Infinite"] = true,
+									["Magnitude"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1No4hOLOpaLG",
+									["Texts"] = {
+										[2] = "[Stacks:Hide(0)]",
+									},
+								},
+							},
+							["FakeHidden"] = true,
+						},
 					},
 					["Name"] = "惩戒",
 					["GUID"] = "TMW:group:1NxHdG8P_h3e",
@@ -6807,9 +6835,10 @@ TellMeWhenDB = {
 					},
 				}, -- [5]
 			},
+			["Version"] = 82003,
 			["NumGroups"] = 5,
 			["TextureName"] = "Armory",
-			["Version"] = 82003,
+			["ForceNoBlizzCC"] = true,
 			["Locked"] = true,
 		},
 		["Haidi - 幽暗沼泽"] = {
@@ -6920,22 +6949,12 @@ TellMeWhenDB = {
 								"TMW:icon:1NxHdG7ilcLx", -- [3]
 							},
 						},
-						[36] = {
+						[98] = {
 							["Enabled"] = true,
-							["ShowTimer"] = true,
-							["Name"] = "梦魇脓液",
-							["ShowTimerTextnoOCC"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Infinite"] = true,
-									["Animation"] = "ICONSHAKE",
-									["Event"] = "OnShow",
-									["Magnitude"] = 2,
-								}, -- [1]
-								["n"] = 1,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NxHdUnplLRU", -- [1]
+								"TMW:icon:1NxHH2MVHkuf", -- [2]
 							},
 						},
 						[87] = {
@@ -6964,6 +6983,24 @@ TellMeWhenDB = {
 								"TMW:icon:1NuyCoMyN5b4", -- [2]
 							},
 						},
+						[36] = {
+							["Enabled"] = true,
+							["ShowTimer"] = true,
+							["Name"] = "梦魇脓液",
+							["ShowTimerTextnoOCC"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Infinite"] = true,
+									["Animation"] = "ICONSHAKE",
+									["Event"] = "OnShow",
+									["Magnitude"] = 2,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
 						[83] = {
 							["Enabled"] = true,
 							["Type"] = "meta",
@@ -6972,14 +7009,6 @@ TellMeWhenDB = {
 								"TMW:icon:1No22BLENs0C", -- [2]
 								"TMW:icon:1NxHdUmtnIYw", -- [3]
 								"TMW:icon:1NxHdTq8CI7O", -- [4]
-							},
-						},
-						[98] = {
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1NxHdUnplLRU", -- [1]
-								"TMW:icon:1NxHH2MVHkuf", -- [2]
 							},
 						},
 					},
@@ -7950,12 +7979,14 @@ TellMeWhenDB = {
 								"TMW:icon:1No21iXdCENG", -- [2]
 							},
 						},
-						[98] = {
+						[83] = {
 							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
-								"TMW:icon:1NxHdUnplLRU", -- [1]
-								"TMW:icon:1NxHH2MVHkuf", -- [2]
+								"TMW:icon:1No22AC4pvN=", -- [1]
+								"TMW:icon:1No22BLENs0C", -- [2]
+								"TMW:icon:1NxHdUmtnIYw", -- [3]
+								"TMW:icon:1NxHdTq8CI7O", -- [4]
 							},
 						},
 						[86] = {
@@ -7975,16 +8006,6 @@ TellMeWhenDB = {
 								"TMW:icon:1No22BMb6=kQ", -- [3]
 							},
 						},
-						[83] = {
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1No22AC4pvN=", -- [1]
-								"TMW:icon:1No22BLENs0C", -- [2]
-								"TMW:icon:1NxHdUmtnIYw", -- [3]
-								"TMW:icon:1NxHdTq8CI7O", -- [4]
-							},
-						},
 						[36] = {
 							["Enabled"] = true,
 							["ShowTimer"] = true,
@@ -8002,6 +8023,14 @@ TellMeWhenDB = {
 							},
 							["ShowTimerText"] = true,
 							["Type"] = "buff",
+						},
+						[98] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1NxHdUnplLRU", -- [1]
+								"TMW:icon:1NxHH2MVHkuf", -- [2]
+							},
 						},
 						[87] = {
 							["Enabled"] = true,
@@ -8953,19 +8982,19 @@ TellMeWhenDB = {
 				}, -- [1]
 			},
 		},
-		["每天壹碗面 - 幽暗沼泽"] = {
-			["Version"] = 81101,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1Neqzg9xTNo2",
-				}, -- [1]
-			},
-		},
 		["Haidii - 燃烧之刃"] = {
 			["Version"] = 81101,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1NfqrqhJUPMc",
+				}, -- [1]
+			},
+		},
+		["每天壹碗面 - 幽暗沼泽"] = {
+			["Version"] = 81101,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1Neqzg9xTNo2",
 				}, -- [1]
 			},
 		},

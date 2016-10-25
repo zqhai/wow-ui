@@ -41,9 +41,9 @@ Postal3DB = {
 		["橙界骑 - 幽暗沼泽"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"一看就是上总|幽暗沼泽|Horde", -- [1]
-					"虞烬|幽暗沼泽|Horde", -- [2]
-					"Faceshoot|幽暗沼泽|Horde", -- [3]
+					"Faceshoot|幽暗沼泽|Horde", -- [1]
+					"一看就是上总|幽暗沼泽|Horde", -- [2]
+					"虞烬|幽暗沼泽|Horde", -- [3]
 				},
 			},
 		},

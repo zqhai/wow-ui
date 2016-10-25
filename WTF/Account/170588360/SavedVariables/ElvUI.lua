@@ -17,9 +17,9 @@ ElvDB = {
 			["每天壹碗面"] = 186051800,
 			["开山怪"] = 27912,
 			["橙界骑"] = 618116700,
-			["冷血魔刀"] = 37307641,
 			["Haidi"] = 445585701,
 			["Testt"] = 100000,
+			["冷血魔刀"] = 37307641,
 		},
 	},
 	["namespaces"] = {
@@ -90,8 +90,26 @@ ElvDB = {
 					[111264] = {
 					},
 				},
+				["PRIEST"] = {
+					[47788] = {
+					},
+					[17] = {
+					},
+					[41635] = {
+					},
+					[33206] = {
+					},
+					[139] = {
+					},
+					[123258] = {
+					},
+					[6788] = {
+					},
+					[10060] = {
+					},
+				},
 				["ALL"] = {
-					[145629] = {
+					[15286] = {
 					},
 					[98007] = {
 					},
@@ -103,27 +121,9 @@ ElvDB = {
 					},
 					[97463] = {
 					},
-					[15286] = {
-					},
 					[31821] = {
 					},
-				},
-				["PRIEST"] = {
-					[47788] = {
-					},
-					[17] = {
-					},
-					[41635] = {
-					},
-					[33206] = {
-					},
-					[6788] = {
-					},
-					[139] = {
-					},
-					[10060] = {
-					},
-					[123258] = {
+					[145629] = {
 					},
 				},
 				["ROGUE"] = {
@@ -141,13 +141,13 @@ ElvDB = {
 					},
 					[19263] = {
 					},
-					[6940] = {
+					[114039] = {
 					},
 					[31850] = {
 					},
 					[108271] = {
 					},
-					[114039] = {
+					[6940] = {
 					},
 					[120954] = {
 					},
@@ -201,9 +201,9 @@ ElvDB = {
 					},
 				},
 				["DRUID"] = {
-					[188550] = {
-					},
 					[774] = {
+					},
+					[48438] = {
 					},
 					[8936] = {
 					},
@@ -211,7 +211,7 @@ ElvDB = {
 					},
 					[155777] = {
 					},
-					[48438] = {
+					[188550] = {
 					},
 				},
 				["MONK"] = {
@@ -251,6 +251,7 @@ ElvDB = {
 		["InfoFilter"] = {
 			["blackName"] = {
 				["暗影果丶-幽暗沼泽"] = true,
+				["帕德梅艾米达-迅捷微风"] = true,
 			},
 		},
 	},
@@ -610,9 +611,9 @@ ElvDB = {
 				["ElvAB_6"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,330",
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-50,50",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,50,995",
-				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,200",
 				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-230,140",
 				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,463,50",
+				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,200",
 				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,184,773",
 				["AlertFrameMover"] = "TOP,ElvUIParent,TOP,0,-50",
 				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,230,140",
@@ -651,6 +652,80 @@ ElvDB = {
 						},
 						["height"] = 50,
 						["width"] = 122,
+					},
+					["assist"] = {
+						["enable"] = false,
+					},
+					["arena"] = {
+						["spacing"] = 26,
+						["castbar"] = {
+							["width"] = 246,
+						},
+					},
+					["party"] = {
+						["horizontalSpacing"] = 3,
+						["debuffs"] = {
+							["numrows"] = 4,
+							["anchorPoint"] = "BOTTOM",
+							["perrow"] = 1,
+						},
+						["power"] = {
+							["text_format"] = "",
+							["height"] = 5,
+						},
+						["enable"] = false,
+						["rdebuffs"] = {
+							["font"] = "Expressway",
+						},
+						["growthDirection"] = "RIGHT_DOWN",
+						["infoPanel"] = {
+							["enable"] = true,
+						},
+						["width"] = 110,
+						["health"] = {
+							["attachTextTo"] = "InfoPanel",
+							["orientation"] = "VERTICAL",
+							["text_format"] = "[healthcolor][health:current]",
+							["position"] = "RIGHT",
+						},
+						["name"] = {
+							["attachTextTo"] = "InfoPanel",
+							["text_format"] = "[namecolor][name:short]",
+							["position"] = "LEFT",
+						},
+						["height"] = 59,
+						["verticalSpacing"] = 0,
+						["healPrediction"] = true,
+						["roleIcon"] = {
+							["position"] = "TOPRIGHT",
+						},
+					},
+					["raid40"] = {
+						["enable"] = false,
+						["rdebuffs"] = {
+							["font"] = "Expressway",
+						},
+					},
+					["focus"] = {
+						["infoPanel"] = {
+							["height"] = 17,
+							["enable"] = true,
+						},
+						["threatStyle"] = "NONE",
+						["castbar"] = {
+							["iconSize"] = 26,
+							["width"] = 122,
+						},
+						["height"] = 56,
+						["name"] = {
+							["attachTextTo"] = "InfoPanel",
+							["position"] = "LEFT",
+						},
+						["health"] = {
+							["attachTextTo"] = "InfoPanel",
+							["text_format"] = "[healthcolor][health:current]",
+						},
+						["width"] = 189,
 					},
 					["target"] = {
 						["debuffs"] = {
@@ -739,80 +814,6 @@ ElvDB = {
 							["iconSize"] = 54,
 							["height"] = 35,
 							["width"] = 478,
-						},
-					},
-					["raid40"] = {
-						["enable"] = false,
-						["rdebuffs"] = {
-							["font"] = "Expressway",
-						},
-					},
-					["focus"] = {
-						["infoPanel"] = {
-							["height"] = 17,
-							["enable"] = true,
-						},
-						["threatStyle"] = "NONE",
-						["castbar"] = {
-							["iconSize"] = 26,
-							["width"] = 122,
-						},
-						["height"] = 56,
-						["name"] = {
-							["attachTextTo"] = "InfoPanel",
-							["position"] = "LEFT",
-						},
-						["health"] = {
-							["attachTextTo"] = "InfoPanel",
-							["text_format"] = "[healthcolor][health:current]",
-						},
-						["width"] = 189,
-					},
-					["assist"] = {
-						["enable"] = false,
-					},
-					["arena"] = {
-						["spacing"] = 26,
-						["castbar"] = {
-							["width"] = 246,
-						},
-					},
-					["party"] = {
-						["horizontalSpacing"] = 3,
-						["debuffs"] = {
-							["numrows"] = 4,
-							["anchorPoint"] = "BOTTOM",
-							["perrow"] = 1,
-						},
-						["power"] = {
-							["text_format"] = "",
-							["height"] = 5,
-						},
-						["enable"] = false,
-						["rdebuffs"] = {
-							["font"] = "Expressway",
-						},
-						["growthDirection"] = "RIGHT_DOWN",
-						["infoPanel"] = {
-							["enable"] = true,
-						},
-						["width"] = 110,
-						["health"] = {
-							["attachTextTo"] = "InfoPanel",
-							["orientation"] = "VERTICAL",
-							["text_format"] = "[healthcolor][health:current]",
-							["position"] = "RIGHT",
-						},
-						["name"] = {
-							["attachTextTo"] = "InfoPanel",
-							["text_format"] = "[namecolor][name:short]",
-							["position"] = "LEFT",
-						},
-						["height"] = 59,
-						["verticalSpacing"] = 0,
-						["healPrediction"] = true,
-						["roleIcon"] = {
-							["position"] = "TOPRIGHT",
 						},
 					},
 					["pet"] = {
@@ -1261,7 +1262,6 @@ ElvDB = {
 				["vbutton"] = {
 					["enable"] = false,
 				},
-				["idq"] = true,
 				["inviteRank"] = 5,
 				["raidcd"] = false,
 				["executebutton"] = {
@@ -1523,8 +1523,8 @@ ElvDB = {
 			["single"] = {
 				["BigFootBank"] = true,
 				["ExtraCD"] = false,
-				["Auctionator"] = false,
 				["OffileDataCenter"] = false,
+				["Auctionator"] = false,
 			},
 			["Sequences"] = {
 				["macroList"] = {
@@ -1579,11 +1579,13 @@ ElvDB = {
 						"/cast [nostealth]宿敌", -- [3]
 						" \n/castsequence reset=5/combat [nostealth]毁伤,毁伤,割裂,毁伤,毁伤,毒伤,毁伤,毁伤,毒伤\n   ", -- [4]
 					},
-					["刺杀基础输出"] = {
-						"/cast [nostealth]斩击", -- [1]
-						"/cast [stealth]伏击", -- [2]
-						"/cast [nostealth]斩击", -- [3]
-						"/cast [nostealth]毁伤", -- [4]
+					["射击"] = {
+						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [1]
+						"/cast [nochanneling:弹幕射击] 瞄准射击", -- [2]
+						"/cast [nochanneling:弹幕射击] 夺命黑鸦", -- [3]
+						"/cast [nochanneling:弹幕射击] 稳固射击", -- [4]
+						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [5]
+						"/cast [nochanneling:弹幕射击] 夺命射击", -- [6]
 					},
 					["生存"] = {
 						"/cast 爆炸射击", -- [1]
@@ -1594,6 +1596,9 @@ ElvDB = {
 						"/cast 奥术射击", -- [6]
 						"/cast 眼镜蛇射击", -- [7]
 					},
+					["冰法"] = {
+						" \n/castsequence reset=5/combat 献祭,烧尽,烧尽,烧尽,烧尽,烧尽,烧尽\n   ", -- [1]
+					},
 					["3圣印输出"] = {
 						"/cast 驱邪术", -- [1]
 						"/cast [mod:alt]正义之锤;十字军打击", -- [2]
@@ -1601,9 +1606,6 @@ ElvDB = {
 						"/cast 愤怒之锤", -- [4]
 						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [5]
 						"/castsequence [stance:1] reset=999 审判,正义圣印\n/castsequence [stance:2] reset=999 审判,公正圣印\n/castsequence [stance:3] reset=999 审判,真理圣印\n/施放 [stance:4]审判\n", -- [6]
-					},
-					["冰法"] = {
-						" \n/castsequence reset=5/combat 献祭,烧尽,烧尽,烧尽,烧尽,烧尽,烧尽\n   ", -- [1]
 					},
 					["GnomeExample2"] = {
 						"/run print(\"Executing macro 1!\")\n/cast SpellName1\n	", -- [1]
@@ -1659,12 +1661,6 @@ ElvDB = {
 						"/cast 乘胜追击", -- [4]
 						"/cast 斩杀", -- [5]
 					},
-					["豹子输出"] = {
-						" \n/castsequence [nostealth,combat] reset=3/combat 斜掠,撕碎,撕碎,撕碎,撕碎,撕碎\n/cast [stealth]斜掠\n   ", -- [1]
-						"/cast [nostealth,combat]猛虎之怒", -- [2]
-						"/cast [nostealth,nocombat]潜行", -- [3]
-						" \n/console autounshift 0\n/castsequence [@targettarget,exists,nostealth,combat][@player,nostealth,combat]治疗之触\n/console autounshift 1\n   ", -- [4]
-					},
 					["角斗士"] = {
 						"/cast 盾牌冲锋", -- [1]
 						"/cast 复仇", -- [2]
@@ -1674,6 +1670,12 @@ ElvDB = {
 						"/cast 盾牌猛击", -- [6]
 						"/cast 乘胜追击", -- [7]
 						"/cast 雷霆一击", -- [8]
+					},
+					["豹子输出"] = {
+						" \n/castsequence [nostealth,combat] reset=3/combat 斜掠,撕碎,撕碎,撕碎,撕碎,撕碎\n/cast [stealth]斜掠\n   ", -- [1]
+						"/cast [nostealth,combat]猛虎之怒", -- [2]
+						"/cast [nostealth,nocombat]潜行", -- [3]
+						" \n/console autounshift 0\n/castsequence [@targettarget,exists,nostealth,combat][@player,nostealth,combat]治疗之触\n/console autounshift 1\n   ", -- [4]
 					},
 					["增强输出"] = {
 						"/cast 风暴打击", -- [1]
@@ -1710,13 +1712,11 @@ ElvDB = {
 						"/cast 熔岩爆裂", -- [5]
 						"/cast 元素冲击", -- [6]
 					},
-					["射击"] = {
-						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [1]
-						"/cast [nochanneling:弹幕射击] 瞄准射击", -- [2]
-						"/cast [nochanneling:弹幕射击] 夺命黑鸦", -- [3]
-						"/cast [nochanneling:弹幕射击] 稳固射击", -- [4]
-						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [5]
-						"/cast [nochanneling:弹幕射击] 夺命射击", -- [6]
+					["刺杀基础输出"] = {
+						"/cast [nostealth]斩击", -- [1]
+						"/cast [stealth]伏击", -- [2]
+						"/cast [nostealth]斩击", -- [3]
+						"/cast [nostealth]毁伤", -- [4]
 					},
 					["dot输出"] = {
 						"/cast [nochanneling:暗言术：乱,stance:1]暗言术：灭", -- [1]
@@ -2429,6 +2429,7 @@ ElvDB = {
 				["ElvUF_RaidMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
 			},
+			["bossAuraFiltersConverted"] = true,
 			["AuraWatch"] = {
 				["loadDefault"] = true,
 				["myclass"] = "PALADIN",
@@ -2689,15 +2690,9 @@ ElvDB = {
 					}, -- [4]
 				},
 			},
-			["bossAuraFiltersConverted"] = true,
 			["unitframe"] = {
 				["units"] = {
 					["pet"] = {
-						["power"] = {
-							["height"] = 7,
-						},
-					},
-					["boss"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -2707,7 +2702,12 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["arena"] = {
+					["player"] = {
+						["power"] = {
+							["height"] = 7,
+						},
+					},
+					["raid"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -2722,7 +2722,7 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["raid"] = {
+					["arena"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -2732,7 +2732,7 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["player"] = {
+					["boss"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -2854,19 +2854,16 @@ ElvDB = {
 						"/cast [nostealth]宿敌", -- [3]
 						"/cast [nostealth]毁伤", -- [4]
 					},
-					["3圣印输出"] = {
-						"/cast 驱邪术", -- [1]
-						"/cast [mod:alt]正义之锤;十字军打击", -- [2]
-						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [3]
-						"/cast 愤怒之锤", -- [4]
-						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [5]
-						"/castsequence [stance:1] reset=999 审判,正义圣印\n/castsequence [stance:2] reset=999 审判,公正圣印\n/castsequence [stance:3] reset=999 审判,真理圣印\n/施放 [stance:4]审判\n", -- [6]
+					["射击"] = {
+						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [1]
+						"/cast [nochanneling:弹幕射击] 瞄准射击", -- [2]
+						"/cast [nochanneling:弹幕射击] 夺命黑鸦", -- [3]
+						"/cast [nochanneling:弹幕射击] 稳固射击", -- [4]
+						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [5]
+						"/cast [nochanneling:弹幕射击] 夺命射击", -- [6]
 					},
-					["刺杀基础输出"] = {
-						"/cast [nostealth]斩击", -- [1]
-						"/cast [stealth]伏击", -- [2]
-						"/cast [nostealth]斩击", -- [3]
-						"/cast [nostealth]毁伤", -- [4]
+					["冰法"] = {
+						" \n/castsequence reset=5/combat 献祭,烧尽,烧尽,烧尽,烧尽,烧尽,烧尽\n   ", -- [1]
 					},
 					["生存"] = {
 						"/cast 爆炸射击", -- [1]
@@ -2877,6 +2874,17 @@ ElvDB = {
 						"/cast 奥术射击", -- [6]
 						"/cast 眼镜蛇射击", -- [7]
 					},
+					["GnomeExample2"] = {
+						"/run print(\"Executing macro 1!\")\n/cast SpellName1\n	", -- [1]
+						"/run print(\"Executing macro 2!\")\n/cast SpellName2\n	", -- [2]
+						"/run print(\"Executing macro 3!\")\n/cast SpellName3\n	", -- [3]
+					},
+					["刺杀基础输出"] = {
+						"/cast [nostealth]斩击", -- [1]
+						"/cast [stealth]伏击", -- [2]
+						"/cast [nostealth]斩击", -- [3]
+						"/cast [nostealth]毁伤", -- [4]
+					},
 					["GnomeExample1"] = {
 						"/run print(\"Executing macro 1!\")\n/cast SpellName1\n	", -- [1]
 						"/run print(\"Executing macro 2!\")\n/cast SpellName2\n	", -- [2]
@@ -2884,19 +2892,6 @@ ElvDB = {
 						["PreMacro"] = "/run print(\"-- PreMacro Script --\")\n/startattack	\n	",
 						["PostMacro"] = "/run print(\"-- PostMacro Script --\")\n	",
 						["StepFunction"] = "		limit = limit or 1\n		if step == limit then\n			limit = limit % #macros + 1\n			step = 1\n		else\n			step = step % #macros + 1\n		end\n	",
-					},
-					["射击"] = {
-						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [1]
-						"/cast [nochanneling:弹幕射击] 瞄准射击", -- [2]
-						"/cast [nochanneling:弹幕射击] 夺命黑鸦", -- [3]
-						"/cast [nochanneling:弹幕射击] 稳固射击", -- [4]
-						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [5]
-						"/cast [nochanneling:弹幕射击] 夺命射击", -- [6]
-					},
-					["GnomeExample2"] = {
-						"/run print(\"Executing macro 1!\")\n/cast SpellName1\n	", -- [1]
-						"/run print(\"Executing macro 2!\")\n/cast SpellName2\n	", -- [2]
-						"/run print(\"Executing macro 3!\")\n/cast SpellName3\n	", -- [3]
 					},
 					["基础循环输出"] = {
 						"/cast 驱邪术", -- [1]
@@ -2951,11 +2946,15 @@ ElvDB = {
 						"/cast [nostealth,nocombat]潜行", -- [3]
 						" \n/console autounshift 0\n/cast [@targettarget,exists,nostealth,combat][@player,nostealth,combat]治疗之触\n/console autounshift 1\n   ", -- [4]
 					},
-					["豹子输出"] = {
-						" \n/castsequence [nostealth,combat] reset=3/combat 斜掠,撕碎,撕碎,撕碎,撕碎,撕碎\n/cast [stealth]斜掠\n   ", -- [1]
-						"/cast [nostealth,combat]猛虎之怒", -- [2]
-						"/cast [nostealth,nocombat]潜行", -- [3]
-						" \n/console autounshift 0\n/castsequence [@targettarget,exists,nostealth,combat][@player,nostealth,combat]治疗之触\n/console autounshift 1\n   ", -- [4]
+					["角斗士"] = {
+						"/cast 盾牌冲锋", -- [1]
+						"/cast 复仇", -- [2]
+						"/cast 盾牌猛击", -- [3]
+						"/cast 毁灭打击", -- [4]
+						"/cast 复仇", -- [5]
+						"/cast 盾牌猛击", -- [6]
+						"/cast 乘胜追击", -- [7]
+						"/cast 雷霆一击", -- [8]
 					},
 					["增强输出"] = {
 						"/cast 风暴打击", -- [1]
@@ -2970,15 +2969,11 @@ ElvDB = {
 						" \n/castsequence reset=3/combat 痛击,割伤,割伤,割伤,割伤,割伤,割伤,割伤,割伤,割伤\n   ", -- [5]
 						" \n/console autounshift 0\n/castsequence 治疗之触\n/console autounshift 1\n   ", -- [6]
 					},
-					["角斗士"] = {
-						"/cast 盾牌冲锋", -- [1]
-						"/cast 复仇", -- [2]
-						"/cast 盾牌猛击", -- [3]
-						"/cast 毁灭打击", -- [4]
-						"/cast 复仇", -- [5]
-						"/cast 盾牌猛击", -- [6]
-						"/cast 乘胜追击", -- [7]
-						"/cast 雷霆一击", -- [8]
+					["豹子输出"] = {
+						" \n/castsequence [nostealth,combat] reset=3/combat 斜掠,撕碎,撕碎,撕碎,撕碎,撕碎\n/cast [stealth]斜掠\n   ", -- [1]
+						"/cast [nostealth,combat]猛虎之怒", -- [2]
+						"/cast [nostealth,nocombat]潜行", -- [3]
+						" \n/console autounshift 0\n/castsequence [@targettarget,exists,nostealth,combat][@player,nostealth,combat]治疗之触\n/console autounshift 1\n   ", -- [4]
 					},
 					["兽王单体"] = {
 						"/cast [nochanneling:弹幕射击]夺命射击", -- [1]
@@ -2996,8 +2991,13 @@ ElvDB = {
 						"/cast 熔岩爆裂", -- [5]
 						"/cast 元素冲击", -- [6]
 					},
-					["冰法"] = {
-						" \n/castsequence reset=5/combat 献祭,烧尽,烧尽,烧尽,烧尽,烧尽,烧尽\n   ", -- [1]
+					["3圣印输出"] = {
+						"/cast 驱邪术", -- [1]
+						"/cast [mod:alt]正义之锤;十字军打击", -- [2]
+						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [3]
+						"/cast 愤怒之锤", -- [4]
+						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [5]
+						"/castsequence [stance:1] reset=999 审判,正义圣印\n/castsequence [stance:2] reset=999 审判,公正圣印\n/castsequence [stance:3] reset=999 审判,真理圣印\n/施放 [stance:4]审判\n", -- [6]
 					},
 					["dot输出"] = {
 						"/cast [nochanneling:暗言术：乱,stance:1]暗言术：灭", -- [1]
@@ -3067,10 +3067,10 @@ ElvDB = {
 					["slotSize"] = 33,
 					["questNum"] = 6,
 					["slotNum"] = 0,
+					["questSize"] = 33,
 					["whiteList"] = {
 						[118935] = true,
 					},
-					["questSize"] = 33,
 					["blankList"] = {
 						[118619] = true,
 					},
@@ -3137,8 +3137,8 @@ ElvDB = {
 			},
 			["single"] = {
 				["BigFootBank"] = true,
-				["OffileDataCenter"] = false,
 				["Auctionator"] = false,
+				["OffileDataCenter"] = false,
 				["ExtraCD"] = false,
 			},
 			["bossAuraFiltersConverted"] = true,
@@ -3254,49 +3254,6 @@ ElvDB = {
 				},
 				["goldFormat"] = "CONDENSED",
 			},
-			["clickset"] = {
-				["enable"] = false,
-			},
-			["nameplates"] = {
-				["units"] = {
-					["ENEMY_NPC"] = {
-						["debuffs"] = {
-							["enable"] = false,
-						},
-						["buffs"] = {
-							["enable"] = false,
-						},
-					},
-					["PLAYER"] = {
-						["debuffs"] = {
-							["enable"] = false,
-						},
-						["buffs"] = {
-							["enable"] = false,
-						},
-					},
-					["ENEMY_PLAYER"] = {
-						["debuffs"] = {
-							["enable"] = false,
-						},
-						["buffs"] = {
-							["enable"] = false,
-						},
-					},
-					["HEALER"] = {
-						["debuffs"] = {
-							["enable"] = false,
-						},
-						["buffs"] = {
-							["enable"] = false,
-						},
-					},
-				},
-			},
-			["infobar"] = {
-				["height"] = 15,
-				["width"] = 100,
-			},
 			["actionbar"] = {
 				["bar3"] = {
 					["showGrid"] = false,
@@ -3305,11 +3262,11 @@ ElvDB = {
 				},
 				["bar6"] = {
 					["enabled"] = true,
-					["backdrop"] = false,
+					["mouseover"] = true,
 					["showGrid"] = false,
 					["buttonsPerRow"] = 3,
-					["mouseover"] = true,
 					["backdropSpacing"] = 4,
+					["backdrop"] = false,
 				},
 				["bar2"] = {
 					["enabled"] = true,
@@ -3319,11 +3276,11 @@ ElvDB = {
 					["backdrop"] = true,
 				},
 				["bar1"] = {
-					["buttonspacing"] = 2,
 					["showGrid"] = false,
+					["buttonspacing"] = 2,
 					["buttonsPerRow"] = 6,
-					["alpha"] = 0.99,
 					["buttonsize"] = 40,
+					["alpha"] = 0.99,
 				},
 				["bar8"] = {
 					["showGrid"] = false,
@@ -3340,11 +3297,11 @@ ElvDB = {
 				["backdropSpacingConverted"] = true,
 				["bar7"] = {
 					["enabled"] = true,
-					["backdrop"] = false,
+					["mouseover"] = true,
 					["showGrid"] = false,
 					["buttonsPerRow"] = 3,
-					["mouseover"] = true,
 					["backdropSpacing"] = 4,
+					["backdrop"] = false,
 				},
 				["bar9"] = {
 					["showGrid"] = false,
@@ -3364,6 +3321,49 @@ ElvDB = {
 					["backdropSpacing"] = 4,
 					["showGrid"] = false,
 				},
+			},
+			["nameplates"] = {
+				["units"] = {
+					["ENEMY_NPC"] = {
+						["debuffs"] = {
+							["enable"] = false,
+						},
+						["buffs"] = {
+							["enable"] = false,
+						},
+					},
+					["PLAYER"] = {
+						["debuffs"] = {
+							["enable"] = false,
+						},
+						["buffs"] = {
+							["enable"] = false,
+						},
+					},
+					["HEALER"] = {
+						["debuffs"] = {
+							["enable"] = false,
+						},
+						["buffs"] = {
+							["enable"] = false,
+						},
+					},
+					["ENEMY_PLAYER"] = {
+						["debuffs"] = {
+							["enable"] = false,
+						},
+						["buffs"] = {
+							["enable"] = false,
+						},
+					},
+				},
+			},
+			["infobar"] = {
+				["height"] = 15,
+				["width"] = 100,
+			},
+			["clickset"] = {
+				["enable"] = false,
 			},
 			["AuraWatch"] = {
 				["loadDefault"] = true,
@@ -3634,12 +3634,12 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["player"] = {
+					["party"] = {
 						["power"] = {
 							["height"] = 7,
 						},
 					},
-					["party"] = {
+					["boss"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -3659,17 +3659,17 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["raid"] = {
-						["power"] = {
-							["height"] = 7,
-						},
-					},
 					["arena"] = {
 						["power"] = {
 							["height"] = 7,
 						},
 					},
-					["boss"] = {
+					["raid"] = {
+						["power"] = {
+							["height"] = 7,
+						},
+					},
+					["player"] = {
 						["power"] = {
 							["height"] = 7,
 						},
