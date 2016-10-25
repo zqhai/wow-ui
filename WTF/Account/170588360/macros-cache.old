@@ -1,11 +1,3 @@
-VER 3 000000000000005F " " "INV_MISC_QUESTIONMARK"
-#show 钓鱼?
-/script print("设置左键为默认："..SetBinding("BUTTON1","CAMERAORSELECTORMOVE"))?
-/script print("设置右键为默认："..SetBinding("BUTTON2","TURNORACTION"))?
-/equip 快刀之怨毒步枪
-/equip 反噬血仇兜帽
-http://bbs.nga.cn/read.php?&tid=8977825
-END
 VER 3 0000000000000059 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /stopcasting
@@ -23,6 +15,14 @@ VER 3 000000000000004E " " "INV_Misc_QuestionMark"
 /use 13
 /stopcasting
 END
+VER 3 000000000000005F " " "INV_MISC_QUESTIONMARK"
+#show 钓鱼?
+/script print("设置左键为默认："..SetBinding("BUTTON1","CAMERAORSELECTORMOVE"))?
+/script print("设置右键为默认："..SetBinding("BUTTON2","TURNORACTION"))?
+/equip 快刀之怨毒步枪
+/equip 反噬血仇兜帽
+http://bbs.nga.cn/read.php?&tid=8977825
+END
 VER 3 000000000000005E " 开始" "INV_MISC_QUESTIONMARK"
 #showtooltips 钓鱼
 /run print("鼠标左键设为钓鱼："..SetBindingSpell("BUTTON1","钓鱼"))
@@ -32,8 +32,8 @@ END
 VER 3 0000000000000060 " 结束" "851298"
 /run print("设置左键为默认："..SetBinding("BUTTON1","CAMERAORSELECTORMOVE"))
 /run print("设置右键为默认："..SetBinding("BUTTON2","TURNORACTION"))
-/equip 夜幕战盔
-/equip 真理守护者
+/equip 毒牙开面盔
+/equip 灰烬使者
 END
 VER 3 0000000000000063 " 设置" "INV_SWORD_04"
 /console ffxGlow 0
@@ -50,6 +50,10 @@ END
 VER 3 0000000000000062 "开怪" "132091"
 /Y 6 秒后开怪
 /DBM PULL 6
+END
+VER 3 0000000000000065 "快速进出试炼场" "ACHIEVEMENT_GUILDPERK_HASTYHEARTH"
+/click QueueStatusMinimapButton
+/Click DropDownList1Button2
 END
 VER 3 0000000000000064 "爆发" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -71,4 +75,8 @@ VER 3 0000000000000034 "腰带" "INV_Misc_QuestionMark"
 /stopcasting
 /use 6
 /stopcasting
+END
+VER 3 0000000000000066 "起手爆发" "INV_MISC_QUESTIONMARK"
+/use 德拉诺力量药水
+/cast 神圣马驹
 END

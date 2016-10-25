@@ -1,9 +1,3 @@
-VER 3 0000000000000059 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/stopcasting
-/use 14
-/stopcasting
-END
 VER 3 0000000000000061 " " "INV_MISC_QUESTIONMARK"
 /cast 正义盾击
 /cast 圣光壁垒
@@ -15,13 +9,11 @@ VER 3 000000000000004E " " "INV_Misc_QuestionMark"
 /use 13
 /stopcasting
 END
-VER 3 000000000000005F " " "INV_MISC_QUESTIONMARK"
-#show 钓鱼?
-/script print("设置左键为默认："..SetBinding("BUTTON1","CAMERAORSELECTORMOVE"))?
-/script print("设置右键为默认："..SetBinding("BUTTON2","TURNORACTION"))?
-/equip 快刀之怨毒步枪
-/equip 反噬血仇兜帽
-http://bbs.nga.cn/read.php?&tid=8977825
+VER 3 0000000000000059 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/use 14
+/stopcasting
 END
 VER 3 000000000000005E " 开始" "INV_MISC_QUESTIONMARK"
 #showtooltips 钓鱼
@@ -35,7 +27,7 @@ VER 3 0000000000000060 " 结束" "851298"
 /equip 毒牙开面盔
 /equip 灰烬使者
 END
-VER 3 0000000000000063 " 设置" "INV_SWORD_04"
+VER 3 0000000000000063 " 设置" "135769"
 /console ffxGlow 0
 /console cameraDistanceMaxFactor 2.6
 /console weatherDensity 0
@@ -51,7 +43,7 @@ VER 3 0000000000000062 "开怪" "132091"
 /Y 6 秒后开怪
 /DBM PULL 6
 END
-VER 3 0000000000000065 "快速进出试炼场" "ACHIEVEMENT_GUILDPERK_HASTYHEARTH"
+VER 3 0000000000000065 "快速进出试炼场" "237509"
 /click QueueStatusMinimapButton
 /Click DropDownList1Button2
 END
