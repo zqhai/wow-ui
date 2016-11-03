@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 172,
 	["lastSanitation"] = 3,
+	["session"] = 187,
 	["errors"] = {
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 'ActionButton11:Hide()'。",
@@ -661,21 +661,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [84]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'BigFootMark' 尝试调用保护功能 '<unnamed>:Hide()'。",
-			["time"] = "2016/09/01 19:28:18",
-			["locals"] = "",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:353>\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2320: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2347: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2378: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2052: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2846: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2812: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:219: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
-			["session"] = 144,
-			["counter"] = 41,
-		}, -- [85]
-		{
 			["message"] = "...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:23: attempt to index local 'tooltip' (a nil value)",
 			["time"] = "2016/10/08 19:04:08",
 			["locals"] = "itemLink = \"|cffe6cc80|Hitem:120978::137346:140415:141260::::110:70:256:9:1:737:867:3:3412:1502:1813:3:3428:1632:1813:3:3397:1527:3337|h[灰烬使者]|h|r\"\ntooltip = nil\n(*temporary) = 2\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = 2\n(*temporary) = true\n(*temporary) = ShoppingTooltip2 {\n 0 = <userdata>\n updateTooltip = 0.2\n needsReset = true\n oborder = <unnamed> {\n }\n iborder = <unnamed> {\n }\n ignoreUpdates = true\n template = \"Transparent\"\n}\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'tooltip' (a nil value)\"\nGetAvailableTooltip = <function> defined @Interface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:13\nS_ITEM_LEVEL = \"物品等级(%d+)\"\n",
 			["stack"] = "...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:23: in function <...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:21>\n...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:76: in function <...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:52>\n...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:124: in function <...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:117>",
 			["session"] = 144,
 			["counter"] = 10,
-		}, -- [86]
+		}, -- [85]
 		{
 			["message"] = "Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:1013: attempt to index field '?' (a nil value)",
 			["time"] = "2016/10/08 20:02:13",
@@ -683,35 +675,35 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:1013: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:980>\n[C]: in function `BonusObjectiveTracker_ShowRewardsTooltip'\n..._ObjectiveTracker\\Blizzard_BonusObjectiveTracker.lua:129: in function <..._ObjectiveTracker\\Blizzard_BonusObjectiveTracker.lua:127>",
 			["session"] = 146,
 			["counter"] = 4,
-		}, -- [87]
+		}, -- [86]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] 插件 'ElvUI' 尝试调用保护功能 'UseWorldMapActionButtonSpellOnQuest()'。",
 			["time"] = "2016/10/10 19:15:35",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `UseWorldMapActionButtonSpellOnQuest'\nInterface\\FrameXML\\WorldMapFrame.lua:1826: in function <Interface\\FrameXML\\WorldMapFrame.lua:1822>\n[C]: ?\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>",
 			["session"] = 146,
 			["counter"] = 2,
-		}, -- [88]
+		}, -- [87]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] 插件 'WorldQuestTracker' 尝试调用保护功能 'UseWorldMapActionButtonSpellOnQuest()'。",
 			["time"] = "2016/10/17 19:32:36",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `UseWorldMapActionButtonSpellOnQuest'\nInterface\\FrameXML\\WorldMapFrame.lua:1826: in function <Interface\\FrameXML\\WorldMapFrame.lua:1822>\n[C]: in function `TaskPOI_OnClick'\nInterface\\AddOns\\MeetingStone\\Module\\WorldQuest.lua:93: in function <Interface\\AddOns\\MeetingStone\\Module\\WorldQuest.lua:87>\n(tail call): ?\n...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:1004: in function <...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:992>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:757: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:744>",
 			["session"] = 146,
 			["counter"] = 1,
-		}, -- [89]
+		}, -- [88]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] 插件 'EuiScript' 尝试调用保护功能 'SpellStopCasting()'。",
 			["time"] = "2016/10/17 19:38:32",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SpellStopCasting'\nInterface\\FrameXML\\UIParent.lua:3656: in function `ToggleGameMenu'\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:511: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:511>",
 			["session"] = 146,
 			["counter"] = 1,
-		}, -- [90]
+		}, -- [89]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] 插件 'ElvUI' 尝试调用保护功能 'SpellStopTargeting()'。",
 			["time"] = "2016/10/17 20:20:03",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SpellStopTargeting'\nInterface\\FrameXML\\WorldMapActionButton.lua:61: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:26: in function `SetHasWorldQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:872: in function <Interface\\FrameXML\\WorldMapFrame.lua:822>\n[C]: ?\n[C]: in function `WorldMap_UpdateQuestBonusObjectives'\nInterface\\FrameXML\\WorldMapFrame.lua:1142: in function <Interface\\FrameXML\\WorldMapFrame.lua:1065>\n[C]: ?\n[C]: in function `WorldMapFrame_Update'\nInterface\\FrameXML\\WorldMapFrame.lua:2869: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:408: in function <Interface\\FrameXML\\WorldMapFrame.lua:394>\n[C]: ?\n[C]: in function `ZoomOut'\nInterface\\FrameXML\\WorldMapFrame.lua:2119: in function `WorldMapZoomOutButton_OnClick'\nInterface\\FrameXML\\WorldMapFrame.lua:2148: in function <Interface\\FrameXML\\WorldMapFrame.lua:2130>\n(tail call): ?\n(tail call): ?",
 			["session"] = 149,
 			["counter"] = 1,
-		}, -- [91]
+		}, -- [90]
 		{
 			["message"] = "...llMeWhen\\Lib\\LibDogTag-Unit-3.0\\Categories\\Auras-光环.lua:360: bad argument #1 to 'format' (string expected, got nil)",
 			["time"] = "2016/10/18 03:27:01",
@@ -719,7 +711,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `format'\n...llMeWhen\\Lib\\LibDogTag-Unit-3.0\\Categories\\Auras-光环.lua:360: in function `v'\n...AddOns\\TellMeWhen\\Lib\\LibDogTag-Unit-3.0\\Cleanup.lua:40: in main chunk",
 			["session"] = 152,
 			["counter"] = 2,
-		}, -- [92]
+		}, -- [91]
 		{
 			["message"] = "...\\Lib\\LibDogTag-Stats-3.0\\Categories\\Enhancements.lua:55: code must be a function, got nil",
 			["time"] = "2016/10/18 03:27:01",
@@ -727,7 +719,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\n...ddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\LibDogTag-3.0-90203.lua:244: in function `AddTag'\n...\\Lib\\LibDogTag-Stats-3.0\\Categories\\Enhancements.lua:55: in function `v'\n...ddOns\\TellMeWhen\\Lib\\LibDogTag-Stats-3.0\\Cleanup.lua:40: in main chunk",
 			["session"] = 152,
 			["counter"] = 2,
-		}, -- [93]
+		}, -- [92]
 		{
 			["message"] = "...ace\\AddOns\\TellMeWhen\\Localization\\StaticFormats.lua:24: bad argument #1 to 'format' (string expected, got no value)",
 			["time"] = "2016/10/18 03:27:01",
@@ -735,7 +727,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `format'\n...ace\\AddOns\\TellMeWhen\\Localization\\StaticFormats.lua:24: in main chunk",
 			["session"] = 152,
 			["counter"] = 2,
-		}, -- [94]
+		}, -- [93]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'EuiScript' 尝试调用保护功能 'CollectionsJournal:EnableMouse()'。",
 			["time"] = "2016/09/19 22:02:59",
@@ -743,7 +735,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `EnableMouse'\nInterface\\AddOns\\EuiScript\\module\\drag.lua:218: in function `HookFrame'\nInterface\\AddOns\\EuiScript\\module\\drag.lua:181: in function `HookFrames'\nInterface\\AddOns\\EuiScript\\module\\drag.lua:160: in function `?'\nInterface\\AddOns\\EuiScript\\module\\drag.lua:240: in function <Interface\\AddOns\\EuiScript\\module\\drag.lua:240>\n[C]: ?\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:391: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:529: in function `CollectionsJournal_LoadUI'\nInterface\\FrameXML\\UIParent.lua:1595: in function <Interface\\FrameXML\\UIParent.lua:891>\n[C]: in function `TurnOrActionStop'\n[string \"TURNORACTION\"]:4: in function <[string \"TURNORACTION\"]:1>",
 			["session"] = 158,
 			["counter"] = 2,
-		}, -- [95]
+		}, -- [94]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'Rematch' 尝试调用保护功能 'RematchWinRecordCard:Hide()'。",
 			["time"] = "2016/10/19 01:53:56",
@@ -751,7 +743,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\AddOns\\Rematch\\Cards\\WinRecord.lua:126: in function `?'\nInterface\\AddOns\\Rematch\\Utils.lua:166: in function `HideWidgets'\nInterface\\AddOns\\Rematch\\Frames\\Journal.lua:154: in function <Interface\\AddOns\\Rematch\\Frames\\Journal.lua:147>\n[C]: ?\n[C]: in function `SetShown'\n...AddOns\\Blizzard_Collections\\Blizzard_Collections-1.0.lua:51: in function `CollectionsJournal_UpdateSelectedTab'\n...AddOns\\Blizzard_Collections\\Blizzard_Collections-1.0.lua:7: in function `CollectionsJournal_SetTab'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 158,
 			["counter"] = 1,
-		}, -- [96]
+		}, -- [95]
 		{
 			["message"] = "Interface\\AddOns\\DBM-EmeraldNightmare\\Xavius.lua:156: attempt to index a nil value",
 			["time"] = "2016/10/20 21:56:05",
@@ -759,14 +751,14 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\DBM-EmeraldNightmare\\Xavius.lua:156: in function <Interface\\AddOns\\DBM-EmeraldNightmare\\Xavius.lua:150>\nInterface\\AddOns\\DBM-EmeraldNightmare\\Xavius.lua:371: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:677: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:664>\n(tail call): ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:677: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:664>",
 			["session"] = 162,
 			["counter"] = 4,
-		}, -- [97]
+		}, -- [96]
 		{
 			["message"] = "[string \"Condition_ROLE2\"]:3: attempt to perform arithmetic on a string value",
 			["time"] = "2016/10/09 18:52:28",
 			["stack"] = "[string \"Condition_ROLE2\"]:3: in function `CheckFunction'\n...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:265: in function <...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:259>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:234: in function `RegisterForUpdating'\n...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:316: in function `DeclareExternalUpdater'\nInterface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua:928: in function `Setup'\nInterface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:71: in function <Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:65>\n(tail call): ?\n[C]: ?\n...\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1103: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:963: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:951>\n(tail call): ?\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1017: in function `CScriptBubble'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1424: in function `OnSettingSaved'\n...Ons\\TellMeWhen\\Components\\Core\\Conditions\\Config.lua:749: in function `SelectType'\n...Ons\\TellMeWhen\\Components\\Core\\Conditions\\Config.lua:197: in function `func'\n...face\\AddOns\\TellMeWhen\\Options\\TMWUIDropDownMenu.lua:477: in function `Button_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 164,
 			["counter"] = 46,
-		}, -- [98]
+		}, -- [97]
 		{
 			["message"] = "Interface\\AddOns\\EuiGarrison\\GarrisonAPI.lua:4: attempt to call upvalue 'L' (a table value)",
 			["time"] = "2016/10/23 22:53:03",
@@ -774,7 +766,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\EuiGarrison\\GarrisonAPI.lua:4: in function <Interface\\AddOns\\EuiGarrison\\GarrisonAPI.lua:4>\nInterface\\AddOns\\EuiGarrison\\GarrisonAPI.lua:2822: in function `SetGroupTooltip'\nInterface\\AddOns\\EuiGarrison\\MissionsUI.lua:2289: in function `ShowTooltip'\nInterface\\AddOns\\EuiGarrison\\MissionsUI.lua:2617: in function <Interface\\AddOns\\EuiGarrison\\MissionsUI.lua:2613>",
 			["session"] = 165,
 			["counter"] = 1,
-		}, -- [99]
+		}, -- [98]
 		{
 			["message"] = "Interface\\AddOns\\EuiGarrison\\GarrisonAPI.lua:2822: attempt to call upvalue 'L' (a table value)",
 			["time"] = "2016/10/23 22:53:03",
@@ -782,7 +774,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\EuiGarrison\\GarrisonAPI.lua:2822: in function `SetGroupTooltip'\nInterface\\AddOns\\EuiGarrison\\MissionsUI.lua:2289: in function `ShowTooltip'\nInterface\\AddOns\\EuiGarrison\\MissionsUI.lua:2617: in function <Interface\\AddOns\\EuiGarrison\\MissionsUI.lua:2613>",
 			["session"] = 165,
 			["counter"] = 2,
-		}, -- [100]
+		}, -- [99]
 		{
 			["message"] = "Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:255: bad argument #2 to 'SetFormattedText' (string expected, got nil)",
 			["time"] = "2016/10/17 21:14:01",
@@ -790,14 +782,14 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetFormattedText'\nInterface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:255: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:191>\n[C]: in function `GarrisonFollowerTooltipTemplate_SetGarrisonFollower'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:47: in function `GarrisonFollowerTooltip_Show'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:59: in function `GarrisonFollowerTooltip_Show'\n...s\\Blizzard_GarrisonUI\\Blizzard_GarrisonMissionUI.lua:1408: in function <...s\\Blizzard_GarrisonUI\\Blizzard_GarrisonMissionUI.lua:1400>",
 			["session"] = 165,
 			["counter"] = 20,
-		}, -- [101]
+		}, -- [100]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] 插件 'EuiScript' 尝试调用保护功能 'JoinBattlefield()'。",
 			["time"] = "2016/10/24 01:12:12",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `JoinBattlefield'\nInterface\\AddOns\\Blizzard_PVPUI\\Blizzard_PVPUI-1.0.lua:543: in function `HonorFrame_Queue'\n[string \"*:OnClick\"]:2: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 165,
 			["counter"] = 1,
-		}, -- [102]
+		}, -- [101]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 '<unnamed>:Hide()'。",
 			["time"] = "2016/08/08 23:28:11",
@@ -805,15 +797,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:353>\n(tail call): ?\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2320: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2347: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2378: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2052: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2846: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2812: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:219: in function <Interface\\FrameXML\\WorldMapFrame.lua:210>\n[C]: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
 			["session"] = 170,
 			["counter"] = 14,
-		}, -- [103]
-		{
-			["message"] = "Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:174: bad argument #2 to 'SetFormattedText' (string expected, got nil)",
-			["time"] = "2016/10/17 20:20:30",
-			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"%s(%d/%d)\"\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = \"string expected, got nil\"\n",
-			["stack"] = "[C]: in function `SetFormattedText'\nInterface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:174: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:163>\nInterface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:267: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:191>\n[C]: in function `GarrisonFollowerTooltipTemplate_SetGarrisonFollower'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:47: in function `GarrisonFollowerTooltip_Show'\nInterface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:568: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:545>",
-			["session"] = 170,
-			["counter"] = 40,
-		}, -- [104]
+		}, -- [102]
 		{
 			["message"] = "Interface\\AddOns\\DBM-EmeraldNightmare\\Ursok.lua:237: attempt to index a nil value",
 			["time"] = "2016/10/25 22:08:31",
@@ -821,7 +805,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\DBM-EmeraldNightmare\\Ursok.lua:237: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:677: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:664>\n(tail call): ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:677: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:664>",
 			["session"] = 170,
 			["counter"] = 1,
-		}, -- [105]
+		}, -- [103]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'BigFootMark' 尝试调用保护功能 'CompactRaidFrame5:Show()'。",
 			["time"] = "2016/10/25 22:59:43",
@@ -829,7 +813,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Show'\nInterface\\FrameXML\\CompactUnitFrame.lua:330: in function `CompactUnitFrame_UpdateVisible'\nInterface\\FrameXML\\CompactUnitFrame.lua:280: in function `CompactUnitFrame_UpdateAll'\nInterface\\FrameXML\\CompactUnitFrame.lua:115: in function <Interface\\FrameXML\\CompactUnitFrame.lua:51>",
 			["session"] = 170,
 			["counter"] = 1,
-		}, -- [106]
+		}, -- [104]
 		{
 			["message"] = "Interface\\AddOns\\EuiScript\\module\\RaidCheck.lua:236: bad argument #2 to 'find' (string expected, got nil)",
 			["time"] = "2016/10/26 00:14:04",
@@ -837,15 +821,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\nInterface\\AddOns\\EuiScript\\module\\RaidCheck.lua:236: in function `CheckRaidBuff'\n...erface\\AddOns\\ElvUI\\Modules\\datatexts\\e_raidtool.lua:53: in function `func'\nInterface\\AddOns\\ElvUI\\core\\dropdown.lua:18: in function <Interface\\AddOns\\ElvUI\\core\\dropdown.lua:17>",
 			["session"] = 170,
 			["counter"] = 4,
-		}, -- [107]
-		{
-			["message"] = "C stack overflow",
-			["time"] = "2016/09/02 22:26:48",
-			["locals"] = "(*temporary) = ContainerFrame1PortraitButton {\n 0 = <userdata>\n dropdownmenu = true\n Highlight = <unnamed> {\n }\n}\n(*temporary) = true\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = ContainerFrame1PortraitButton {\n 0 = <userdata>\n dropdownmenu = true\n Highlight = <unnamed> {\n }\n}\n(*temporary) = true\n = <function> defined =[C]:-1\n = <function> defined @Interface\\AddOns\\OfflineDataCenter\\main.lua:448\n",
-			["stack"] = "[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n...\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?",
-			["session"] = 170,
-			["counter"] = 684,
-		}, -- [108]
+		}, -- [105]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 'ElvUIParent:SetHeight()'。",
 			["time"] = "2016/09/21 00:52:19",
@@ -853,7 +829,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetHeight'\nInterface\\AddOns\\ElvUI\\core\\core.lua:1496: in function <Interface\\AddOns\\ElvUI\\core\\core.lua:1495>\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2288: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2128: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2048: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2830: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2814: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:236: in function <Interface\\FrameXML\\WorldMapFrame.lua:210>\n[C]: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
 			["session"] = 172,
 			["counter"] = 3,
-		}, -- [109]
+		}, -- [106]
 		{
 			["message"] = "Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:271: attempt to get length of local 'abiSpec' (a nil value)",
 			["time"] = "2016/10/24 23:38:11",
@@ -861,30 +837,232 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:271: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:191>\n[C]: in function `GarrisonFollowerTooltipTemplate_SetGarrisonFollower'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:47: in function `GarrisonFollowerTooltip_Show'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:59: in function `GarrisonFollowerTooltip_Show'\n...s\\Blizzard_GarrisonUI\\Blizzard_GarrisonMissionUI.lua:1408: in function <...s\\Blizzard_GarrisonUI\\Blizzard_GarrisonMissionUI.lua:1400>",
 			["session"] = 172,
 			["counter"] = 21,
+		}, -- [107]
+		{
+			["message"] = "...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:574: attempt to index local 'str' (a nil value)",
+			["time"] = "2016/10/27 18:26:19",
+			["stack"] = "...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:574: in function `StringToRGBA'\n...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:584: in function <...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:579>\n...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:246: in function `StringToCachedRGBATable'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2899: in function `GetRGBA'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2849: in function `UpdateSwatchTexture'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2877: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:2873>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1103: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:978: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:970>\n...\n[string \"*:OnLoad\"]:28: in function <[string \"*:OnLoad\"]:11>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1106: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1428: in function `RequestReload'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3409: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3388>\n[C]: in function `Click'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3325: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3287>",
+			["session"] = 173,
+			["counter"] = 17,
+		}, -- [108]
+		{
+			["message"] = "...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2662: Bad argument value to \"SetValue(value)\". number expected, got nil (nil)",
+			["time"] = "2016/10/27 18:26:19",
+			["stack"] = "[C]: ?\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:565: in function `ValidateType'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2281: in function `SetValue'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2662: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:2654>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1103: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:978: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:970>\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1009: in function `CScriptTunnel'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1433: in function `RequestReloadChildren'\n...\n[string \"*:OnLoad\"]:28: in function <[string \"*:OnLoad\"]:11>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1106: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1428: in function `RequestReload'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3409: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3388>\n[C]: in function `Click'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3325: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3287>",
+			["session"] = 173,
+			["counter"] = 13,
+		}, -- [109]
+		{
+			["message"] = "[string \"<unnamed>:OnUpdate\"]:10: attempt to index field 'ScrollFrame' (a nil value)",
+			["time"] = "2016/10/27 18:39:05",
+			["locals"] = "",
+			["stack"] = "[string \"*:OnUpdate\"]:10: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 173,
+			["counter"] = 145,
 		}, -- [110]
+		{
+			["message"] = "Interface\\AddOns\\ElvUI\\Modules\\datatexts\\coordinates.lua:45: '=' expected near 'local'",
+			["time"] = "2016/10/27 18:25:10",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 174,
+			["counter"] = 2,
+		}, -- [111]
+		{
+			["message"] = "...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:63: attempt to concatenate local 'itemMMax' (a nil value)",
+			["time"] = "2016/10/27 18:26:23",
+			["locals"] = "frame = \"Character\"\nunit = \"player\"\nitemM = nil\nitemS = nil\nitemMlv = nil\nitemSlv = nil\nitemMMax = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"HeadSlot\"\n 2 = \"NeckSlot\"\n 3 = \"ShoulderSlot\"\n 4 = \"BackSlot\"\n 5 = \"ChestSlot\"\n 6 = \"ShirtSlot\"\n 7 = \"TabardSlot\"\n 8 = \"WristSlot\"\n 9 = \"MainHandSlot\"\n 10 = \"SecondaryHandSlot\"\n 11 = \"HandsSlot\"\n 12 = \"WaistSlot\"\n 13 = \"LegsSlot\"\n 14 = \"FeetSlot\"\n 15 = \"Finger0Slot\"\n 16 = \"Finger1Slot\"\n 17 = \"Trinket0Slot\"\n 18 = \"Trinket1Slot\"\n}\n(for control) = 9\n_ = 9\nslot = \"MainHandSlot\"\nid = 16\ntext = <unnamed> {\n 0 = <userdata>\n}\nitem = \"|cffe6cc80|Hitem:120978::139252:137492:141260::::110:70:256:9:1:737:867:3:1807:1492:3337:3:3415:1537:3337:3:3397:1527:3337|h[灰烬使者]|h|r\"\noldilevel = \"|cFFFFFF00900\"\n_ = \"灰烬使者\"\n_ = \"|cffe6cc80|Hitem:120978::139252:137492:141260::::110:70:256:9:1:737:867:3:1807:1492:3337:3:3415:1537:3337:3:3397:1527:3337|h[灰烬使者]|h|r\"\nq = 6\nilevel = 750\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"|cFFFFFF00\"\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate local 'itemMMax' (a nil value)\"\nisClose = false\nE = <table> {\n GetTimeInfo = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:333\n mylevel = 110\n privateVars = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:145\n FormatMoney = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:377\n ExitVehicleShowFrames = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1139\n StaticPopup_EscapePressed = <function> defined @Interface\\AddOns\\ElvUI\\core\\staticpopups.lua:457\n CopyTable = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:642\n MassGuildKick = <function> defined @Interface\\AddOns\\ElvUI\\core\\commands.lua:83\n SetMoversPositions = <function> defined @Interface\\AddOns\\ElvUI\\core\\movers.lua:553\n ScheduleTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:92\n PriestColors = <table> {\n }\n RegisterModule = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1215\n SetupTheme = <function> defined @Interface\\AddOns\\ElvUI\\core\\install.lua:495\n media = <table> {\n }\n SetUpAnimGroup = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:11\n data = <table> {\n }\n EnableBlizzardAddOns = <function> defined @Interface\\AddOns\\ElvUI\\core\\commands.lua:198\n UIScale = <function> defined @Interface\\AddOns\\ElvUI\\core\\pixelperfect.lua:18\n db = <table> {\n }\n FramesOverlap = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:107\n SetEnabledState = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n Hook = <function> defined @Interface\\AddOns\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n Options = <table> {\n }\n GetServerName = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1370\n Layout = <table> {\n }\n tDeleteItem = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:323\n LoadCommands = <function> defined @Interface\\AddOns\\ElvUI\\core\\commands.lua:208\n ValColor = \"|cff1784d1\"\n HiddenFrame = <unnamed> {\n }\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n diffGetRight = 0\n UIFrameFade = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:259\n MinimapWidth = 176\n StaticPopup_IsLastDisplayedFrame = <function> defined @Interface\\AddOns\\ElvUI\\core\\staticpopups.lua:518\n EuiAlertRun = <function> defined @Interface\\AddOns\\EuiScript\\module\\CombatNotification.lua:92\n ExecuteChatCommand = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1409\n UpdateBackdropColors = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:456\n IsConfigurableAddOn = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1401\n RemoveTableDuplicates = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:686\n name = \"ElvUI\"\n MinimapHeight = 176\n Disable = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:345\n DF = <table> {\n }\n SlideOut = <function> defined @Interface\\AddOns\\ElvU",
+			["stack"] = "...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:63: in function <...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:24>\n...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:90: in function <...terface\\AddOns\\ElvUI\\Modules\\misc\\character_ilvl.lua:90>\n[C]: ?\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2374: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2215: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2086: in function <Interface\\FrameXML\\UIParent.lua:2082>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2868: in function `ShowUIPanel'\nInterface\\FrameXML\\CharacterFrame.lua:21: in function `ToggleCharacter'\n[string \"TOGGLECHARACTER0\"]:1: in function <[string \"TOGGLECHARACTER0\"]:1>",
+			["session"] = 174,
+			["counter"] = 16,
+		}, -- [112]
+		{
+			["message"] = "Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:411: 'for' limit must be a number",
+			["time"] = "2016/10/27 18:27:42",
+			["locals"] = "id = 8\ntitle = \"2v2每周任务\"\nlevel = 110\nsuggestedGroup = 0\nisHeader = false\nisCollapsed = false\nisComplete = nil\nfrequency = 3\nquestID = 44891\nstartEvent = false\ndisplayQuestID = false\nisOnMap = false\nhasLocalPOI = false\nisTask = false\nisStory = false\ntagID = 140\ntagName = \"评级奖励\"\nworldQuestType = 3\nrarity = 1\nisElite = false\ntradeskillLineIndex = nil\nisInArea = nil\nisOnMap = nil\nnumObjectives = nil\nobjectives = <table> {\n}\n(for index) = 1\n(for limit) = nil\n(for step) = 1\n(*temporary) = nil\n(*temporary) = false\n(*temporary) = \"auto\"\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"'for' limit must be a number\"\ndebugging = false\naddWayPoints = <function> defined @Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:364\nawqwp = <table> {\n}\nwqwp = <table> {\n 44122 = <table> {\n }\n 43620 = <table> {\n }\n 44002 = <table> {\n }\n 44193 = <table> {\n }\n 43628 = <table> {\n }\n 43951 = <table> {\n }\n 43451 = <table> {\n }\n 42636 = <table> {\n }\n 42953 = <table> {\n }\n 42077 = <table> {\n }\n 41703 = <table> {\n }\n 43101 = <table> {\n }\n 43607 = <table> {\n }\n 43609 = <table> {\n }\n 43611 = <table> {\n }\n 43613 = <table> {\n }\n 43426 = <table> {\n }\n 43617 = <table> {\n }\n 43430 = <table> {\n }\n 43432 = <table> {\n }\n 44190 = <table> {\n }\n 41687 = <table> {\n }\n 42631 = <table> {\n }\n 41557 = <table> {\n }\n 41816 = <table> {\n }\n 41950 = <table> {\n }\n 44067 = <table> {\n }\n 43626 = <table> {\n }\n 41824 = <table> {\n }\n 41826 = <table> {\n }\n 43437 = <table> {\n }\n 42964 = <table> {\n }\n 44289 = <table> {\n }\n 43429 = <table> {\n }\n 43605 = <table> {\n }\n 43455 = <table> {\n }\n 43454 = <table> {\n }\n 43428 = <table> {\n }\n 43608 = <table> {\n }\n 44114 = <table> {\n }\n 43612 = <table> {\n }\n 42795 = <table> {\n }\n 42963 = <table> {\n }\n}\ntrackingNames = <table> {\n 1 = \"2v2每周任务\"\n}\ntracking = <table> {\n}\nenigmaticQuests = <table> {\n 43772 = true\n 43756 = true\n 43767 = true\n}\nenigmaticActive = false\n",
+			["stack"] = "Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:411: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:391>\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:679: in function `?'\nInterface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:2390: in function <Interface\\AddOns\\EuiScript\\module\\WorldQuestTips.lua:2389>",
+			["session"] = 174,
+			["counter"] = 28,
+		}, -- [113]
+		{
+			["message"] = "C stack overflow",
+			["time"] = "2016/09/02 22:26:48",
+			["locals"] = "(*temporary) = ContainerFrame1PortraitButton {\n 0 = <userdata>\n dropdownmenu = true\n Highlight = <unnamed> {\n }\n}\n(*temporary) = true\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = ContainerFrame1PortraitButton {\n 0 = <userdata>\n dropdownmenu = true\n Highlight = <unnamed> {\n }\n}\n(*temporary) = true\n = <function> defined =[C]:-1\n = <function> defined @Interface\\AddOns\\OfflineDataCenter\\main.lua:448\n",
+			["stack"] = "[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n...\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?",
+			["session"] = 174,
+			["counter"] = 708,
+		}, -- [114]
+		{
+			["message"] = "Interface\\AddOns\\EuiScript\\init.lua:627: bad argument #1 to 'strmatch' (string expected, got nil)",
+			["time"] = "2016/10/27 18:26:48",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"quest:%d+:(%d+)\"\n(*temporary) = \"string expected, got nil\"\n",
+			["stack"] = "[C]: in function `strmatch'\nInterface\\AddOns\\EuiScript\\init.lua:627: in function <Interface\\AddOns\\EuiScript\\init.lua:624>\n[C]: in function `QuestLogQuests_Update'\nInterface\\FrameXML\\QuestMapFrame.lua:201: in function `QuestMapFrame_UpdateAll'\nInterface\\FrameXML\\QuestMapFrame.lua:116: in function <Interface\\FrameXML\\QuestMapFrame.lua:26>\n[C]: in function `SetMapByID'\n...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:2401: in function <...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:2398>\n[C]: in function `WorldMap_UpdateQuestBonusObjectives'\nInterface\\FrameXML\\WorldMapFrame.lua:1232: in function <Interface\\FrameXML\\WorldMapFrame.lua:1155>\n[C]: ?\n[C]: in function `WorldMapFrame_Update'\nInterface\\FrameXML\\WorldMapFrame.lua:2809: in function `WorldMapFrame_UpdateMap'\n...\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2374: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2176: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2086: in function <Interface\\FrameXML\\UIParent.lua:2082>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2868: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2852: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:261: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
+			["session"] = 174,
+			["counter"] = 1826,
+		}, -- [115]
+		{
+			["message"] = "...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:944: attempt to call upvalue 'QuestMapFrame_IsQuestWorldQuest' (a nil value)",
+			["time"] = "2016/10/27 19:09:02",
+			["stack"] = "...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:944: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[4]\"]:4: in function <[string \"safecall Dispatcher[4]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[4]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <Interface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 175,
+			["counter"] = 24,
+		}, -- [116]
+		{
+			["message"] = "...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:780: attempt to call upvalue 'QuestMapFrame_IsQuestWorldQuest' (a nil value)",
+			["time"] = "2016/10/27 19:09:02",
+			["stack"] = "...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:780: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[4]\"]:4: in function <[string \"safecall Dispatcher[4]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[4]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <Interface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 175,
+			["counter"] = 38,
+		}, -- [117]
+		{
+			["message"] = "...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:6378: attempt to call upvalue 'QuestMapFrame_IsQuestWorldQuest' (a nil value)",
+			["time"] = "2016/10/27 18:26:49",
+			["locals"] = "noCache = false\nshowFade = true\nisQuestFlaggedRecheck = nil\nforceCriteriaAnimation = nil\nquestsAvailable = <table> {\n 1015 = <table> {\n }\n}\nneedAnotherUpdate = false\nfilters = <table> {\n pet_battles = false\n garrison_resource = true\n equipment = true\n trade_skill = true\n profession = true\n artifact_power = true\n dungeon = false\n gold = true\n pvp = true\n}\ntimePriority = false\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1015 = <table> {\n }\n 1024 = <table> {\n }\n 1096 = <table> {\n }\n 1033 = <table> {\n }\n 1018 = <table> {\n }\n 1017 = <table> {\n }\n}\n(for control) = 1015\nmapId = 1015\nconfigTable = <table> {\n worldMapLocationMaxElvUI = <table> {\n }\n squarePoints = <table> {\n }\n worldMapLocationMax = <table> {\n }\n widgets = <table> {\n }\n bipAnchor = <table> {\n }\n line = <unnamed> {\n }\n factionFrame = WorldQuestTrackerFactionFrame1015 {\n }\n worldMapLocation = <table> {\n }\n factionAnchor = <table> {\n }\n}\ntaskInfo = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n}\nshownQuests = 0\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n}\n(for control) = 1\ni = 1\ninfo = <table> {\n y = 0.57156085968018\n x = 0.36261993646622\n floor = 0\n numObjectives = 1\n questId = 44784\n inProgress = false\n}\nquestID = 44784\n(*temporary) = nil\n(*temporary) = 44784\n(*temporary) = \"attempt to call upvalue 'QuestMapFrame_IsQuestWorldQuest' (a nil value)\"\nWorldQuestTracker = <table> {\n LastUpdate = 142980.045\n ScheduledWorldUpdate = <table> {\n }\n QUEST_COMMENTS = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:145\n GetQuest_Info = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:1507\n UnregisterComm = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n Cache_ShownQuestOnWorldMap = <table> {\n }\n CheckTimeLeftOnQuestsFromTracker_Load = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:4518\n QueuedRefresh = 1\n IconPick = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\panel.lua:1094\n GetTemplate = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\fw.lua:1005\n mapTables = <table> {\n }\n DoubleTapFrame = WorldQuestTrackerDoubleTapFrame {\n }\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n SetBountyAmountCompleted = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:7064\n PlayLoadingAnimation = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:7046\n GetAllWorldQuests_Ids = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:1092\n MapOpenedAt = 142978.914\n ScheduleTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:92\n ShowPromptPanel = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\panel.lua:1783\n RegisterMessage = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n Msg = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\fw.lua:287\n CreateScrollBar = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\scrollbar.lua:7\n ShowPanicWarning = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\panel.lua:1436\n ShowTextPromptPanel = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\panel.lua:1843\n db = <table> {\n }\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n SetEnabledState = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n NoAutoSwitchToWorldMap = true\n WorldMap_APowerIndicator = <table> {\n }\n ShowTutorialAlertFrame = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\fw.lua:727\n QuestTrackList = <table> {\n }\n GROUP_JOINED = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:583\n RefreshStatusBar = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTra",
+			["stack"] = "...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:6378: in function `UpdateWorldQuestsOnWorldMap'\n...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:1050: in function `CanShowWorldMapWidgets'\n...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:1716: in function <...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:1712>",
+			["session"] = 177,
+			["counter"] = 153,
+		}, -- [118]
+		{
+			["message"] = "...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:2067: attempt to call upvalue 'QuestMapFrame_IsQuestWorldQuest' (a nil value)",
+			["time"] = "2016/10/27 18:26:50",
+			["locals"] = "mapID = 1018\ntaskInfo = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n}\nindex = 1\nfilters = <table> {\n pet_battles = false\n garrison_resource = true\n equipment = true\n trade_skill = true\n profession = true\n artifact_power = true\n dungeon = false\n gold = true\n pvp = true\n}\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n}\n(for control) = 1\ni = 1\ninfo = <table> {\n y = 0.080204129219055\n x = 0.5009149312973\n floor = 0\n numObjectives = 1\n questId = 44895\n inProgress = false\n}\nquestID = 44895\n(*temporary) = nil\n(*temporary) = 44895\n(*temporary) = \"attempt to call upvalue 'QuestMapFrame_IsQuestWorldQuest' (a nil value)\"\nMAPID_BROKENISLES = 1007\nWorldQuestTracker = <table> {\n LastUpdate = 142980.432\n ScheduledWorldUpdate = <table> {\n }\n QUEST_COMMENTS = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:145\n GetQuest_Info = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:1507\n UnregisterComm = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n Cache_ShownQuestOnWorldMap = <table> {\n }\n CheckTimeLeftOnQuestsFromTracker_Load = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:4518\n QueuedRefresh = 1\n IconPick = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\panel.lua:1094\n GetTemplate = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\fw.lua:1005\n mapTables = <table> {\n }\n DoubleTapFrame = WorldQuestTrackerDoubleTapFrame {\n }\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n SetBountyAmountCompleted = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:7064\n PlayLoadingAnimation = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:7046\n GetAllWorldQuests_Ids = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:1092\n MapOpenedAt = 142978.914\n ScheduleTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:92\n ShowPromptPanel = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\panel.lua:1783\n RegisterMessage = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n Msg = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\fw.lua:287\n CreateScrollBar = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\scrollbar.lua:7\n ShowPanicWarning = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\panel.lua:1436\n ShowTextPromptPanel = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\panel.lua:1843\n db = <table> {\n }\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n SetEnabledState = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n NoAutoSwitchToWorldMap = true\n WorldMap_APowerIndicator = <table> {\n }\n ShowTutorialAlertFrame = <function> defined @Interface\\AddOns\\WorldQuestTracker\\libs\\DF\\fw.lua:727\n QuestTrackList = <table> {\n }\n GROUP_JOINED = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:583\n RefreshStatusBar = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:1669\n IsPartyQuest = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:452\n WorldMap_ResourceIndicator = <table> {\n }\n WorldMap_GoldIndicator = <table> {\n }\n HideZoneWidgets = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:2025\n ShowHistoryTooltip = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:3474\n LastWorldMapClick = 0\n CreateLoadingIcon = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:6973\n OpenSharePanel = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:2606\n GROUP_LEFT = <function> defined @Interface\\AddOns\\WorldQuestTracker\\WorldQuestTracke",
+			["stack"] = "...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:2067: in function `UpdateZoneWidgets'\n...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker-r63.lua:1720: in function <...rface\\AddOns\\WorldQuestTracker\\WorldQuestTracker.lua:1712>",
+			["session"] = 177,
+			["counter"] = 546,
+		}, -- [119]
+		{
+			["message"] = "Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:174: bad argument #2 to 'SetFormattedText' (string expected, got nil)",
+			["time"] = "2016/10/17 20:20:30",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"%s(%d/%d)\"\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = \"string expected, got nil\"\n",
+			["stack"] = "[C]: in function `SetFormattedText'\nInterface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:174: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:163>\nInterface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:267: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:191>\n[C]: in function `GarrisonFollowerTooltipTemplate_SetGarrisonFollower'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:47: in function `GarrisonFollowerTooltip_Show'\nInterface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:568: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:545>",
+			["session"] = 181,
+			["counter"] = 71,
+		}, -- [120]
 		{
 			["message"] = "[string \"print(\"鼠标左键设为钓鱼：\"..SetBin...\"]:1: attempt to concatenate a boolean value",
 			["time"] = "2016/09/14 02:16:14",
 			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"鼠标左键设为钓鱼：\"\n(*temporary) = true\n(*temporary) = \"BUTTON1\"\n(*temporary) = \"钓鱼\"\n(*temporary) = \"attempt to concatenate a boolean value\"\n",
 			["stack"] = "[string \"print(\"鼠标左键设为钓鱼：\"..SetBin...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
-			["session"] = 172,
-			["counter"] = 127,
-		}, -- [111]
+			["session"] = 184,
+			["counter"] = 132,
+		}, -- [121]
 		{
 			["message"] = "[string \"print(\"设置左键为默认：\"..SetBindin...\"]:1: attempt to concatenate a boolean value",
 			["time"] = "2016/09/14 02:18:38",
 			["locals"] = "",
 			["stack"] = "[string \"print(\"设置左键为默认：\"..SetBindin...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
-			["session"] = 172,
-			["counter"] = 257,
-		}, -- [112]
+			["session"] = 184,
+			["counter"] = 265,
+		}, -- [122]
 		{
 			["message"] = "[string \"print(\"设置右键为默认：\"..SetBindin...\"]:1: attempt to concatenate a boolean value",
 			["time"] = "2016/09/14 02:18:38",
 			["locals"] = "",
 			["stack"] = "[string \"print(\"设置右键为默认：\"..SetBindin...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
-			["session"] = 172,
-			["counter"] = 257,
-		}, -- [113]
+			["session"] = 184,
+			["counter"] = 265,
+		}, -- [123]
+		{
+			["message"] = "Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:133: attempt to index field 'ScrollFrame' (a nil value)",
+			["time"] = "2016/10/31 21:15:34",
+			["stack"] = "Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:133: in function <Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:126>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1103: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:978: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:970>\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1009: in function `CScriptTunnel'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1433: in function `RequestReloadChildren'\nInterface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:83: in function `SetDraggingGroup'\nInterface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:71: in function <Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:70>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1106: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:978: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:970>\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1009: in function `CScriptTunnel'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1433: in function `RequestReloadChildren'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1429: in function `RequestReload'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3409: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3388>\n[C]: in function `Click'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3325: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3287>",
+			["session"] = 185,
+			["counter"] = 25,
+		}, -- [124]
+		{
+			["message"] = "Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:376: attempt to index field 'ScrollFrame' (a nil value)",
+			["time"] = "2016/10/27 18:25:45",
+			["locals"] = "self = TellMeWhen_IconEditor {\n 0 = <userdata>\n DistributeFrameAnchorsLaterally = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:690\n EnableModule = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:145\n IterateEmbeds = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:473\n StopMovingOrSizing = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:633\n RegisterDatabaseDefaults = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:341\n OnProfile = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:527\n GetCompareResultsPath = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3904\n PositionPanels = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:643\n desc = TellMeWhen_IconEditorDesc {\n }\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n LoadGroup = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:364\n DisableModule = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:381\n ShowChangelog = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\MainConfig.lua:154\n RegisterMessage = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterMessage = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n CurrentTab = <unnamed> {\n }\n ProcessChangelogData = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\MainConfig.lua:230\n db = <table> {\n }\n ImportExport_DropDown = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\ImportExport.lua:1275\n SetEnabledState = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n DisplayPage = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3618\n enabledState = true\n OkayButton = <unnamed> {\n }\n RegisterEvent = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n CurrentTabGroup = <unnamed> {\n }\n icontexture = TellMeWhen_IconEditorIconTexture {\n }\n HeaderBackground = <unnamed> {\n }\n IterateModules = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:468\n ExportBox = <unnamed> {\n }\n TabGroups = <table> {\n }\n background = <unnamed> {\n }\n SpellItemToIcon = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:410\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n historyState = 0\n history = <table> {\n }\n RefreshTabs = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3605\n baseName = \"TellMeWhen_Options\"\n Enable = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:325\n NewModule = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:266\n TooltipAddSpellBreakdown = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:358\n GetRealNames = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:289\n Equiv_GenerateTips = <function> defined @Interface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:277\n GetModule = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:241\n Disable = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:345\n IconType_DropDown = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:210\n LoadIcon = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:104\n defaultModuleLibraries = <table> {\n }\n OnUpdate = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:551\n TimeLeft = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:170\n Initialized = true\n performedEvent = \"TMW_IE_UPGRADE_PERFORMED\"\n ScheduleRepeatingTimer = <function> defined @Interface\\AddOns\\",
+			["stack"] = "Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:376: in function `LoadGroup'\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:39: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:24>\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:98: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:87>\n...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:42: in function <...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:39>\n[C]: ?\n[C]: ?",
+			["session"] = 185,
+			["counter"] = 17,
+		}, -- [125]
+		{
+			["message"] = "[string \"TMWDropDownsList1:OnShow\"]:17: attempt to index field 'ScrollFrame' (a nil value)",
+			["time"] = "2016/10/27 18:30:11",
+			["locals"] = "self = TMWDropDownsList1 {\n 1 = <unnamed> {\n }\n 2 = <unnamed> {\n }\n 3 = <unnamed> {\n }\n 4 = <unnamed> {\n }\n 5 = <unnamed> {\n }\n 6 = <unnamed> {\n }\n 7 = <unnamed> {\n }\n 8 = <unnamed> {\n }\n 9 = <unnamed> {\n }\n 10 = <unnamed> {\n }\n 11 = <unnamed> {\n }\n 12 = <unnamed> {\n }\n 13 = <unnamed> {\n }\n 14 = <unnamed> {\n }\n 15 = <unnamed> {\n }\n 16 = <unnamed> {\n }\n 17 = <unnamed> {\n }\n 18 = <unnamed> {\n }\n 19 = <unnamed> {\n }\n 20 = <unnamed> {\n }\n 21 = <unnamed> {\n }\n 22 = <unnamed> {\n }\n 23 = <unnamed> {\n }\n 24 = <unnamed> {\n }\n 25 = <unnamed> {\n }\n 26 = <unnamed> {\n }\n 27 = <unnamed> {\n }\n 28 = <unnamed> {\n }\n 0 = <userdata>\n shouldScroll = false\n Buttons = <unnamed> {\n }\n dropdown = <unnamed> {\n }\n numButtons = 28\n border = <unnamed> {\n }\n maxWidth = 159\n}\naddWidth = 15\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'ScrollFrame' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnShow\"]:17: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\n...face\\AddOns\\TellMeWhen\\Options\\TMWUIDropDownMenu.lua:623: in function `Toggle'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n[C]: ?\n[C]: in function `Click'\n[string \"*:OnMouseUp\"]:1: in function <[string \"*:OnMouseUp\"]:1>",
+			["session"] = 185,
+			["counter"] = 34,
+		}, -- [126]
+		{
+			["message"] = "[string \"TMWDropDownsList2:OnShow\"]:4: attempt to index field 'ScrollFrame' (a nil value)",
+			["time"] = "2016/10/27 18:36:27",
+			["locals"] = "",
+			["stack"] = "[string \"*:OnShow\"]:4: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\n...face\\AddOns\\TellMeWhen\\Options\\TMWUIDropDownMenu.lua:623: in function `Toggle'\n[string \"*:OnEnter\"]:5: in function <[string \"*:OnEnter\"]:1>",
+			["session"] = 185,
+			["counter"] = 6,
+		}, -- [127]
+		{
+			["message"] = "[string \"TMWDropDownsList2:OnShow\"]:17: attempt to index field 'ScrollFrame' (a nil value)",
+			["time"] = "2016/10/27 18:36:27",
+			["locals"] = "",
+			["stack"] = "[string \"*:OnShow\"]:17: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\n...face\\AddOns\\TellMeWhen\\Options\\TMWUIDropDownMenu.lua:623: in function `Toggle'\n[string \"*:OnEnter\"]:5: in function <[string \"*:OnEnter\"]:1>",
+			["session"] = 185,
+			["counter"] = 31,
+		}, -- [128]
+		{
+			["message"] = "Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:116: attempt to index field 'ScrollFrame' (a nil value)",
+			["time"] = "2016/10/27 18:25:44",
+			["locals"] = "self = TellMeWhen_IconEditor {\n 0 = <userdata>\n DistributeFrameAnchorsLaterally = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:690\n EnableModule = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:145\n IterateEmbeds = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:473\n StopMovingOrSizing = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:633\n RegisterDatabaseDefaults = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:341\n OnProfile = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:527\n GetCompareResultsPath = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3904\n PositionPanels = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:643\n desc = TellMeWhen_IconEditorDesc {\n }\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n LoadGroup = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:364\n DisableModule = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:381\n ShowChangelog = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\MainConfig.lua:154\n RegisterMessage = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterMessage = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n ProcessChangelogData = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\MainConfig.lua:230\n db = <table> {\n }\n ImportExport_DropDown = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\ImportExport.lua:1275\n SetEnabledState = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n DisplayPage = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3618\n enabledState = true\n OkayButton = <unnamed> {\n }\n RegisterEvent = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n icontexture = TellMeWhen_IconEditorIconTexture {\n }\n HeaderBackground = <unnamed> {\n }\n IterateModules = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:468\n ExportBox = <unnamed> {\n }\n TabGroups = <table> {\n }\n background = <unnamed> {\n }\n SpellItemToIcon = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:410\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n historyState = 0\n history = <table> {\n }\n RefreshTabs = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3605\n baseName = \"TellMeWhen_Options\"\n Enable = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:325\n NewModule = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:266\n TooltipAddSpellBreakdown = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:358\n GetRealNames = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:289\n Equiv_GenerateTips = <function> defined @Interface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:277\n GetModule = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:241\n Disable = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:345\n IconType_DropDown = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:210\n LoadIcon = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:104\n defaultModuleLibraries = <table> {\n }\n OnUpdate = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:551\n TimeLeft = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:170\n Initialized = true\n performedEvent = \"TMW_IE_UPGRADE_PERFORMED\"\n ScheduleRepeatingTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:127\n CancelAllTimers = <func",
+			["stack"] = "Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:116: in function `LoadIcon'\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:38: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:24>\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:98: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:87>\n...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:42: in function <...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:39>\n[C]: ?\n[C]: ?",
+			["session"] = 185,
+			["counter"] = 59,
+		}, -- [129]
+		{
+			["message"] = "[string \"TellMeWhen_IconEditor:OnShow\"]:2: attempt to call method 'GetTitleRegion' (a nil value)",
+			["time"] = "2016/10/27 18:25:45",
+			["locals"] = "self = TellMeWhen_IconEditor {\n 0 = <userdata>\n UndoButton = <unnamed> {\n }\n ResetButton = <unnamed> {\n }\n RedoButton = <unnamed> {\n }\n border = <unnamed> {\n }\n Help = TellMeWhen_HelpFrame {\n }\n background = <unnamed> {\n }\n Pages = TellMeWhen_IconEditorPages {\n }\n OkayButton = <unnamed> {\n }\n resizeButton = <unnamed> {\n }\n icontexture = TellMeWhen_IconEditorIconTexture {\n }\n HeaderBackground = <unnamed> {\n }\n CloseButton = <unnamed> {\n }\n Tabs = <unnamed> {\n }\n Suggest = TellMeWhen_IconEditorSuggest {\n }\n Header = <unnamed> {\n }\n desc = TellMeWhen_IconEditorDesc {\n }\n title = TellMeWhen_IconEditorTitle {\n }\n ExportBox = <unnamed> {\n }\n}\n(*temporary) = nil\n(*temporary) = TellMeWhen_IconEditor {\n 0 = <userdata>\n UndoButton = <unnamed> {\n }\n ResetButton = <unnamed> {\n }\n RedoButton = <unnamed> {\n }\n border = <unnamed> {\n }\n Help = TellMeWhen_HelpFrame {\n }\n background = <unnamed> {\n }\n Pages = TellMeWhen_IconEditorPages {\n }\n OkayButton = <unnamed> {\n }\n resizeButton = <unnamed> {\n }\n icontexture = TellMeWhen_IconEditorIconTexture {\n }\n HeaderBackground = <unnamed> {\n }\n CloseButton = <unnamed> {\n }\n Tabs = <unnamed> {\n }\n Suggest = TellMeWhen_IconEditorSuggest {\n }\n Header = <unnamed> {\n }\n desc = TellMeWhen_IconEditorDesc {\n }\n title = TellMeWhen_IconEditorTitle {\n }\n ExportBox = <unnamed> {\n }\n}\n(*temporary) = \"attempt to call method 'GetTitleRegion' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnShow\"]:2: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:760: in function `Load'\nInterface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:130: in function `LoadIcon'\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:38: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:24>\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:98: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:87>\n...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:42: in function <...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:39>\n[C]: ?\n[C]: ?",
+			["session"] = 185,
+			["counter"] = 34,
+		}, -- [130]
+		{
+			["message"] = "...terface\\FrameXML\\FloatingGarrisonFollowerTooltip.lua:64: attempt to index local 'tooltipFrame' (a number value)",
+			["time"] = "2016/10/27 21:35:14",
+			["locals"] = "tooltipFrame = 0\ndata = <table> {\n followerTypeID = 4\n iLevel = 850\n spec1 = 340\n trait2 = 757\n ability4 = 0\n hyperlink = false\n level = 110\n underBiased = false\n quality = 4\n portraitIconID = 1396649\n noAbilityDescriptions = true\n trait1 = 680\n isTroop = false\n trait3 = 0\n ability1 = 454\n xp = 0\n garrisonFollowerID = 755\n trait4 = 0\n isMaxLevel = true\n name = \"裁决者朱莉亚·塞雷斯蒂\"\n ability3 = 0\n ability2 = 563\n collected = true\n spec = 121\n levelxp = 0\n}\nxpWidth = nil\n(*temporary) = 755\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'tooltipFrame' (a number value)\"\n",
+			["stack"] = "...terface\\FrameXML\\FloatingGarrisonFollowerTooltip.lua:64: in function <...terface\\FrameXML\\FloatingGarrisonFollowerTooltip.lua:63>\n[C]: ?\n[C]: ?\n[C]: in function `GarrisonFollowerTooltipTemplate_SetGarrisonFollower'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:47: in function `GarrisonFollowerTooltip_Show'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:59: in function `GarrisonFollowerTooltip_Show'\n...s\\Blizzard_GarrisonUI\\Blizzard_GarrisonMissionUI.lua:1405: in function <...s\\Blizzard_GarrisonUI\\Blizzard_GarrisonMissionUI.lua:1397>",
+			["session"] = 185,
+			["counter"] = 5,
+		}, -- [131]
+		{
+			["message"] = "...nterface\\AddOns\\EuiScript\\module\\QuestLevelPatch.lua:104: attempt to concatenate a nil value",
+			["time"] = "2016/10/27 19:30:36",
+			["locals"] = "self = <table> {\n}\npoiTable = nil\nnumEntries = 18\nnumQuests = 7\nheaderCollapsed = false\ntitleIndex = 8\n(for index) = 14\n(for limit) = 18\n(for step) = 1\nquestLogIndex = 14\ntitle = \"伊利达雷的灵魂棱镜\"\nlevel = 110\nsuggestedGroup = 0\nisHeader = false\nisCollapsed = false\nisComplete = nil\nfrequency = 1\nquestID = 45175\nstartEvent = false\ndisplayQuestID = false\nisOnMap = true\nhasLocalPOI = false\nisTask = false\nisBounty = false\nisStory = false\nbutton = <unnamed> {\n 0 = <userdata>\n ButtonText = <unnamed> {\n }\n Check = <unnamed> {\n }\n Text = <unnamed> {\n }\n TaskIcon = <unnamed> {\n }\n TagTexture = <unnamed> {\n }\n}\noldBlockHeight = 16\noldHeight = 0\n(*temporary) = \"[\"\n(*temporary) = 110\n(*temporary) = \"] \"\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"attempt to concatenate a nil value\"\nE = <table> {\n GetTimeInfo = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:333\n mylevel = 110\n privateVars = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:145\n FormatMoney = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:377\n ExitVehicleShowFrames = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1139\n StaticPopup_EscapePressed = <function> defined @Interface\\AddOns\\ElvUI\\core\\staticpopups.lua:457\n CopyTable = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:642\n MassGuildKick = <function> defined @Interface\\AddOns\\ElvUI\\core\\commands.lua:83\n SetMoversPositions = <function> defined @Interface\\AddOns\\ElvUI\\core\\movers.lua:553\n ScheduleTimer = <function> defined @Interface\\AddOns\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:92\n PriestColors = <table> {\n }\n RegisterModule = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1215\n SetupTheme = <function> defined @Interface\\AddOns\\ElvUI\\core\\install.lua:495\n media = <table> {\n }\n SetUpAnimGroup = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:11\n pluginRecievedOutOfDateMessage = true\n data = <table> {\n }\n EnableBlizzardAddOns = <function> defined @Interface\\AddOns\\ElvUI\\core\\commands.lua:198\n UIScale = <function> defined @Interface\\AddOns\\ElvUI\\core\\pixelperfect.lua:18\n db = <table> {\n }\n FramesOverlap = <function> defined @Interface\\AddOns\\ElvUI\\core\\math.lua:107\n SetEnabledState = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n Hook = <function> defined @Interface\\AddOns\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n Options = <table> {\n }\n GetServerName = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1370\n Layout = <table> {\n }\n tDeleteItem = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:323\n LoadCommands = <function> defined @Interface\\AddOns\\ElvUI\\core\\commands.lua:208\n ValColor = \"|cff1784d1\"\n SendPluginVersionCheck = <function> defined @Interface\\AddOns\\libs\\LibElvUIPlugin-1.0\\LibElvUIPlugin-1.0.lua:143\n HiddenFrame = <unnamed> {\n }\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n diffGetRight = 0\n UIFrameFade = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:259\n MinimapWidth = 176\n StaticPopup_IsLastDisplayedFrame = <function> defined @Interface\\AddOns\\ElvUI\\core\\staticpopups.lua:518\n EuiAlertRun = <function> defined @Interface\\AddOns\\EuiScript\\module\\CombatNotification.lua:92\n ExecuteChatCommand = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1409\n UpdateBackdropColors = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:456\n IsConfigurableAddOn = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:1401\n RemoveTableDuplicates = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:686\n name = \"ElvUI\"\n MinimapHeight = 176\n Disable = <function> defined @Interface\\AddOns\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:345\n DF = <table> {\n }\n SlideOut = <function> defined @Interface\\AddOns\\ElvUI\\core\\animation.lua:204\n isMacClient = false\n Print = <function> defined @Interface\\AddOns\\ElvUI\\core\\core.lua:181\n Install = <function> defined @Interface\\AddOns\\ElvUI\\core\\install.lua:1276\n UnregisterObje",
+			["stack"] = "...nterface\\AddOns\\EuiScript\\module\\QuestLevelPatch.lua:104: in function <...nterface\\AddOns\\EuiScript\\module\\QuestLevelPatch.lua:90>\n[C]: ?\n[C]: in function `QuestLogQuests_Update'\nInterface\\FrameXML\\QuestMapFrame.lua:201: in function `QuestMapFrame_UpdateAll'\nInterface\\FrameXML\\QuestMapFrame.lua:116: in function <Interface\\FrameXML\\QuestMapFrame.lua:26>\n[C]: in function `SetMapZoom'\nInterface\\FrameXML\\WorldMapFrame.lua:3589: in function `myclick'\nInterface\\FrameXML\\NavigationBar.lua:173: in function <Interface\\FrameXML\\NavigationBar.lua:162>",
+			["session"] = 186,
+			["counter"] = 8,
+		}, -- [132]
+		{
+			["message"] = "Expected a ScrollFrame widget, got a Frame",
+			["time"] = "2016/10/27 18:25:27",
+			["locals"] = "(*temporary) = \"Expected a ScrollFrame widget, got a Frame\"\n",
+			["stack"] = "[C]: ?\n...erface\\AddOns\\TellMeWhen\\Lib\\LibOO-1.0\\LibOO-1.0-21.lua:503: in function <...erface\\AddOns\\TellMeWhen\\Lib\\LibOO-1.0\\LibOO-1.0.lua:488>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:121: in function `ConvertContainerToScrollFrame'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>\n[C]: ?\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:3100: in function `LoadOptions'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:2774: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2771>\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:665: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:664>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:799: in function `Fire'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:2642: in function `UpdateNormally'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:2785: in function `Update'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:1160: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <Interface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 187,
+			["counter"] = 144,
+		}, -- [133]
+		{
+			["message"] = "Interface\\AddOns\\Auctionator\\Auctionator-4.0.13.lua:5061: bad argument #1 to 'strlen' (string expected, got nil)",
+			["time"] = "2016/11/02 20:41:21",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
+			["stack"] = "[C]: in function `strlen'\nInterface\\AddOns\\Auctionator\\Auctionator-4.0.13.lua:5061: in function `Atr_Item_Autocomplete'\n[string \"*:OnCharComposition\"]:1: in function <[string \"*:OnCharComposition\"]:1>",
+			["session"] = 187,
+			["counter"] = 3,
+		}, -- [134]
+		{
+			["message"] = "Interface\\FrameXML\\LFGList.lua:2352: attempt to index local 'displayData' (a nil value)",
+			["time"] = "2016/11/02 23:13:30",
+			["stack"] = "Interface\\FrameXML\\LFGList.lua:2352: in function `LFGListGroupDataDisplayRoleCount_Update'\n...terface\\AddOns\\MeetingStone\\Widget\\MemberDisplay.lua:20: in function `LFGListGroupDataDisplay_Update'\n...terface\\AddOns\\MeetingStone\\Widget\\MemberDisplay.lua:45: in function `SetActivity'\nInterface\\AddOns\\MeetingStone\\Module\\BrowsePanel.lua:117: in function `formatHandler'\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\DataGridView.lua:100: in function <...ibs\\NetEaseLibs\\NetEaseGUI-2.0\\View\\DataGridView.lua:77>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[3]\"]:9: in function <[string \"safecall Dispatcher[3]\"]:5>\n(tail call): ?\n...e\\AddOns\\libs\\NetEaseLibs\\LibClass-2.0-7\\Class-2.0.lua:156: in function `Fire'\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\Widget\\ItemButton.lua:28: in function `FireHandler'\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\Widget\\ItemButton.lua:94: in function `FireFormat'\n...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\ListView.lua:120: in function `UpdateItems'\n...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\ListView.lua:32: in function <...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0\\View\\ListView.lua:29>\n(tail call): ?\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\DataGridView.lua:198: in function `Update'\n...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0-1\\Embed\\Refresh-刷新.lua:10: in function <...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0\\Embed\\Refresh.lua:8>",
+			["session"] = 187,
+			["counter"] = 2,
+		}, -- [135]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'BigFootMark' 尝试调用保护功能 '<unnamed>:Hide()'。",
+			["time"] = "2016/09/01 19:28:18",
+			["locals"] = "",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:353>\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2320: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2347: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2378: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2052: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2846: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2812: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:219: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
+			["session"] = 187,
+			["counter"] = 45,
+		}, -- [136]
 	},
 }

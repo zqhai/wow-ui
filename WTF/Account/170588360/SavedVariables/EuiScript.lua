@@ -2,13 +2,17 @@
 ACHIEVEMENTSEARCH_DB = {
 	["Achievement"] = {
 		["date"] = false,
-		["description"] = true,
 		["name"] = true,
+		["description"] = true,
 		["reward"] = true,
 	},
 }
 DejaCharacterStatsDB = nil
 TalentProfilesGlobalDB = {
+	["ROGUE"] = {
+		["specs"] = {
+		},
+	},
 	["PALADIN"] = {
 		["specs"] = {
 			{
@@ -25,16 +29,119 @@ TalentProfilesGlobalDB = {
 			}, -- [3]
 		},
 	},
-	["ROGUE"] = {
-		["specs"] = {
-		},
-	},
 }
 WorldQuestTipsData = {
+	["version"] = 1.17,
+	["橙界骑-幽暗沼泽"] = {
+		["reps"] = {
+			[1828] = "|cff808080崇拜|r",
+			[1948] = "|cff808080崇拜|r",
+			[1900] = "|cff808080崇拜|r",
+			[1883] = "|cff808080崇拜|r",
+			[1859] = "|cff808080崇拜|r",
+			[1894] = "|cff808080崇拜|r",
+		},
+		["info"] = {
+			["class"] = "PALADIN",
+			["name"] = "橙界骑",
+			["level"] = 110,
+		},
+		["worldQuestPartial"] = {
+			[44909] = {
+				["expires"] = 1478103607,
+				["objectivesInit"] = {
+				},
+				["progressed"] = false,
+				["start"] = 1478089915,
+				["duration"] = 0,
+				["active"] = true,
+				["objectives"] = {
+				},
+			},
+			[43943] = {
+				["expires"] = 1478300455,
+				["objectivesInit"] = {
+					"0/1 带400份远古魔力给塔莉萨", -- [1]
+				},
+				["progressed"] = false,
+				["start"] = 1478102699,
+				["duration"] = 0,
+				["active"] = false,
+				["objectives"] = {
+					"0/1 带400份远古魔力给塔莉萨", -- [1]
+				},
+			},
+			[44891] = {
+				["expires"] = 1478103607,
+				["objectivesInit"] = {
+				},
+				["progressed"] = false,
+				["start"] = 1478089915,
+				["duration"] = 0,
+				["active"] = true,
+				["objectives"] = {
+				},
+			},
+			[42713] = {
+				["expires"] = 1478214042,
+				["objectivesInit"] = {
+					"0/1 消灭甲喉", -- [1]
+					"0/1 消灭艾萨拉之怒", -- [2]
+				},
+				["progressed"] = false,
+				["start"] = 1478008542,
+				["duration"] = 0,
+				["active"] = false,
+				["objectives"] = {
+					"0/1 消灭甲喉", -- [1]
+					"0/1 消灭艾萨拉之怒", -- [2]
+				},
+			},
+			[44801] = {
+				["expires"] = 1478127624,
+				["objectivesInit"] = {
+					"0/12 消灭暮色卫队士兵", -- [1]
+					"0/1 消灭暮色骑士希莱林", -- [2]
+				},
+				["progressed"] = false,
+				["start"] = 1478102723,
+				["duration"] = 0,
+				["active"] = false,
+				["objectives"] = {
+					"0/12 消灭暮色卫队士兵", -- [1]
+					"0/1 消灭暮色骑士希莱林", -- [2]
+				},
+			},
+			[44908] = {
+				["expires"] = 1478103607,
+				["objectivesInit"] = {
+				},
+				["progressed"] = false,
+				["start"] = 1478089915,
+				["duration"] = 0,
+				["active"] = true,
+				["objectives"] = {
+				},
+			},
+			[44114] = {
+				["expires"] = 1478214097,
+				["objectivesInit"] = {
+					"0/1 消灭魔导师薇尔莎", -- [1]
+				},
+				["progressed"] = false,
+				["start"] = 1478090131,
+				["duration"] = 0,
+				["active"] = false,
+				["objectives"] = {
+					"0/1 消灭魔导师薇尔莎", -- [1]
+				},
+			},
+		},
+	},
 	["global"] = {
 		["pets"] = {
 			["ff"] = {
-				["杜里安·强果"] = {
+				["守夜人梅瑞尔"] = {
 					true, -- [1]
 					true, -- [2]
 					true, -- [3]
@@ -58,7 +165,7 @@ WorldQuestTipsData = {
 					true, -- [9]
 					true, -- [10]
 				},
-				["维雷尼"] = {
+				["博迪·日轨"] = {
 					true, -- [1]
 					true, -- [2]
 					true, -- [3]
@@ -82,7 +189,7 @@ WorldQuestTipsData = {
 					true, -- [9]
 					true, -- [10]
 				},
-				["罗伯特·克雷格"] = {
+				["驯宠大师弗鲁莫斯"] = {
 					true, -- [1]
 					true, -- [2]
 					true, -- [3]
@@ -142,7 +249,7 @@ WorldQuestTipsData = {
 					true, -- [9]
 					true, -- [10]
 				},
-				["守夜人梅瑞尔"] = {
+				["维雷尼"] = {
 					true, -- [1]
 					true, -- [2]
 					true, -- [3]
@@ -154,7 +261,7 @@ WorldQuestTipsData = {
 					true, -- [9]
 					true, -- [10]
 				},
-				["驯宠大师弗鲁莫斯"] = {
+				["罗伯特·克雷格"] = {
 					true, -- [1]
 					true, -- [2]
 					true, -- [3]
@@ -202,7 +309,7 @@ WorldQuestTipsData = {
 					true, -- [9]
 					true, -- [10]
 				},
-				["博迪·日轨"] = {
+				["杜里安·强果"] = {
 					true, -- [1]
 					true, -- [2]
 					true, -- [3]
@@ -217,16 +324,30 @@ WorldQuestTipsData = {
 			},
 		},
 		["options"] = {
-			["TomTomLR"] = true,
-			["showTimes"] = true,
-			["TomTomAQ"] = true,
-			["debugging"] = false,
-			["hideSmallGold"] = true,
-			["EditOnC"] = true,
-			["hideSmallGoldThreshold"] = 10,
-			["showExalted"] = true,
+			["enigmaticHUDSize"] = 32,
+			["useEnigmaticHUD"] = true,
+			["enigmaticRows"] = 3,
+			["enigmaticSize"] = 6,
+			["enigmaticPos"] = "CENTER",
 			["TomTomMP"] = true,
+			["useEnigmatic"] = true,
 			["PetFF"] = true,
+			["showTimes"] = true,
+			["EditOnC"] = true,
+			["TomTomLR"] = true,
+			["showAltRepOnItems"] = true,
+			["enigmaticHUDPathA"] = 0.1,
+			["showExalted"] = true,
+			["enigmaticHUDMove"] = true,
+			["enigmaticHUDPathDim"] = true,
+			["hideSmallGold"] = true,
+			["debugging"] = false,
+			["TomTomAQ"] = true,
+			["enigmaticHUDEdgeA"] = 0.3,
+			["hideSmallGoldThreshold"] = 10,
+			["enigmaticHUDPos"] = "CENTER",
+			["showRepOnItems"] = true,
+			["enigmaticMove"] = true,
 			["showCurrentRep"] = true,
 		},
 		["worldQuests"] = {
@@ -240,6 +361,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "剧毒湖水",
 				["timespent"] = 118,
 			},
 			[41980] = {
@@ -252,6 +374,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "神庙防卫",
 				["timespent"] = 233,
 			},
 			[41996] = {
@@ -264,6 +387,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "纠结的梦魇",
 				["timespent"] = 0,
 			},
 			[42028] = {
@@ -279,7 +403,7 @@ WorldQuestTipsData = {
 				["timespent"] = 0,
 			},
 			[42076] = {
-				["completed"] = 1,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.5201815366745,
@@ -288,7 +412,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 153,
+				["title"] = "影沼村",
+				["timespent"] = 354,
 			},
 			[42108] = {
 				["completed"] = 1,
@@ -300,6 +425,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "鼓舞守夜人",
 				["timespent"] = 133,
 			},
 			[41613] = {
@@ -318,12 +444,13 @@ WorldQuestTipsData = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.443602561950684,
-						["x"] = 0.574323952198029,
-						["m"] = 1017,
+						["y"] = 0.238805115222931,
+						["x"] = 0.47988623380661,
+						["m"] = 1015,
 						["f"] = 0,
 					},
 				},
+				["title"] = "魔能洞窟之劫",
 				["timespent"] = 0,
 			},
 			[43721] = {
@@ -349,6 +476,19 @@ WorldQuestTipsData = {
 					},
 				},
 				["timespent"] = 0,
+			},
+			[44823] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.50241607427597,
+						["x"] = 0.468187928199768,
+						["m"] = 1080,
+						["f"] = 0,
+					},
+				},
+				["title"] = "雷霆图腾大扫除",
+				["timespent"] = 383,
 			},
 			[42795] = {
 				["completed"] = 0,
@@ -422,6 +562,19 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[43434] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.839568316936493,
+						["x"] = 0.46816486120224,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：法斯尼尔",
+				["timespent"] = 20,
+			},
 			[43450] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -444,10 +597,11 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "德克加尔归来",
 				["timespent"] = 398,
 			},
 			[41965] = {
-				["completed"] = 2,
+				["completed"] = 4,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.836279153823853,
@@ -456,7 +610,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 419,
+				["title"] = "解放月翼",
+				["timespent"] = 717,
 			},
 			[41486] = {
 				["completed"] = 0,
@@ -507,7 +662,7 @@ WorldQuestTipsData = {
 				["timespent"] = 0,
 			},
 			[42636] = {
-				["completed"] = 0,
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.337581813335419,
@@ -516,6 +671,20 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "通缉：奥术师沙尔曼",
+				["timespent"] = 40,
+			},
+			[44185] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.813953518867493,
+						["x"] = 0.722676694393158,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：萨纳尔",
 				["timespent"] = 0,
 			},
 			[41646] = {
@@ -531,7 +700,7 @@ WorldQuestTipsData = {
 				["timespent"] = 0,
 			},
 			[42173] = {
-				["completed"] = 1,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.55730664730072,
@@ -540,10 +709,11 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 115,
+				["title"] = "电能点心",
+				["timespent"] = 198,
 			},
 			[41678] = {
-				["completed"] = 0,
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.513881742954254,
@@ -552,7 +722,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "产品订单：飞天火枪背包",
+				["timespent"] = 338,
 			},
 			[43738] = {
 				["completed"] = 1,
@@ -564,6 +735,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "幽暗海滩",
 				["timespent"] = 178,
 			},
 			[42764] = {
@@ -590,6 +762,19 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 1305,
 			},
+			[41311] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.414281666278839,
+						["x"] = 0.469111621379852,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "产品订单：魔石",
+				["timespent"] = 0,
+			},
 			[41838] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -612,6 +797,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "坚固的龟壳碎片",
 				["timespent"] = 0,
 			},
 			[41886] = {
@@ -639,16 +825,30 @@ WorldQuestTipsData = {
 				["timespent"] = 0,
 			},
 			[41950] = {
-				["completed"] = 1,
+				["completed"] = 4,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.603316307067871,
-						["x"] = 0.437486231327057,
+						["y"] = 0.595044910907745,
+						["x"] = 0.44679319858551,
 						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 94,
+				["title"] = "雷霆呼唤！",
+				["timespent"] = 364,
+			},
+			[41455] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.603413939476013,
+						["x"] = 0.621625065803528,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "荧光魔石矿苗",
+				["timespent"] = 0,
 			},
 			[42014] = {
 				["completed"] = 1,
@@ -662,6 +862,31 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 132,
 			},
+			[41519] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.491652309894562,
+						["x"] = 0.365270733833313,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "邪能球茎",
+				["timespent"] = 0,
+			},
+			[41551] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.117951631546021,
+						["x"] = 0.340120136737824,
+						["f"] = 0,
+					},
+				},
+				["title"] = "厚切培根",
+				["timespent"] = 33,
+			},
 			[43611] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -672,6 +897,19 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["timespent"] = 0,
+			},
+			[43627] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.497080445289612,
+						["x"] = 0.457306683063507,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：迷失者提普托格",
 				["timespent"] = 0,
 			},
 			[41615] = {
@@ -708,19 +946,34 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "艾露恩的勇士",
 				["timespent"] = 227,
 			},
 			[42190] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.485604107379913,
-						["x"] = 0.562071800231934,
+						["y"] = 0.833828747272492,
+						["x"] = 0.540294885635376,
 						["m"] = 1018,
 						["f"] = 0,
 					},
 				},
+				["title"] = "野生动物保护者",
 				["timespent"] = 0,
+			},
+			[44298] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.440136134624481,
+						["x"] = 0.60108882188797,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：德拉博格",
+				["timespent"] = 45,
 			},
 			[42781] = {
 				["completed"] = 0,
@@ -746,6 +999,19 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[43324] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.81613165140152,
+						["x"] = 0.59310394525528,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "枭兽的狂怒",
+				["timespent"] = 0,
+			},
 			[41296] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -758,6 +1024,19 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[41312] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.732546806335449,
+						["x"] = 0.547009408473969,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "产品订单：魔石",
+				["timespent"] = 0,
+			},
 			[41855] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -768,6 +1047,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "勇敢面对",
 				["timespent"] = 0,
 			},
 			[43963] = {
@@ -780,6 +1060,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "海盗吸血鬼！",
 				["timespent"] = 153,
 			},
 			[41935] = {
@@ -792,10 +1073,11 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "重量级野兽",
 				["timespent"] = 0,
 			},
 			[44011] = {
-				["completed"] = 1,
+				["completed"] = 3,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.643244504928589,
@@ -804,7 +1086,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 69,
+				["title"] = "失落之灵",
+				["timespent"] = 215,
 			},
 			[41488] = {
 				["completed"] = 0,
@@ -816,6 +1099,33 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "硫磺毁灭者",
+				["timespent"] = 0,
+			},
+			[42015] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.830568194389343,
+						["x"] = 0.335609376430512,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "命运丝线",
+				["timespent"] = 0,
+			},
+			[41025] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.42535811662674,
+						["x"] = 0.2539421916008,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "亡者复生",
 				["timespent"] = 0,
 			},
 			[41552] = {
@@ -834,23 +1144,25 @@ WorldQuestTipsData = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.211975455284119,
-						["x"] = 0.58208954334259,
+						["y"] = 0.231321930885315,
+						["x"] = 0.607494950294495,
 						["f"] = 0,
 					},
 				},
+				["title"] = "魔皮",
 				["timespent"] = 0,
 			},
 			[42111] = {
 				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.752503991127014,
-						["x"] = 0.330926418304443,
+						["y"] = 0.693888306617737,
+						["x"] = 0.312915146350861,
 						["m"] = 1033,
 						["f"] = 0,
 					},
 				},
+				["title"] = "火力侦察",
 				["timespent"] = 258,
 			},
 			[42159] = {
@@ -863,6 +1175,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "守夜人训练",
 				["timespent"] = 0,
 			},
 			[41680] = {
@@ -901,8 +1214,21 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 65,
 			},
+			[44299] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.518547892570496,
+						["x"] = 0.443387508392334,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：黑暗之影",
+				["timespent"] = 26,
+			},
 			[43804] = {
-				["completed"] = 0,
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.67942613363266,
@@ -911,7 +1237,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "被怨恨的积怨",
+				["timespent"] = 484,
 			},
 			[43325] = {
 				["completed"] = 1,
@@ -926,7 +1253,7 @@ WorldQuestTipsData = {
 				["timespent"] = 171,
 			},
 			[42830] = {
-				["completed"] = 2,
+				["completed"] = 3,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.551535904407501,
@@ -935,7 +1262,21 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 318,
+				["title"] = "害虫治理",
+				["timespent"] = 406,
+			},
+			[41345] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.513881742954254,
+						["x"] = 0.602599382400513,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "补给需求：风暴之鳞",
+				["timespent"] = 0,
 			},
 			[43932] = {
 				["completed"] = 1,
@@ -959,6 +1300,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "通缉：伊格罗夫领主",
 				["timespent"] = 78,
 			},
 			[43453] = {
@@ -983,6 +1325,19 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["timespent"] = 0,
+			},
+			[41984] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.449778378009796,
+						["x"] = 0.606046438217163,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "惊怖迷雾",
 				["timespent"] = 0,
 			},
 			[42511] = {
@@ -1054,6 +1409,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "枯法者回归",
 				["timespent"] = 323,
 			},
 			[41122] = {
@@ -1066,10 +1422,11 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "迷雾覆盖",
 				["timespent"] = 0,
 			},
 			[42160] = {
-				["completed"] = 1,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.271123766899109,
@@ -1078,7 +1435,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 153,
+				["title"] = "不速之客",
+				["timespent"] = 379,
 			},
 			[43709] = {
 				["completed"] = 2,
@@ -1090,6 +1448,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "海豹俱乐部",
 				["timespent"] = 526,
 			},
 			[41202] = {
@@ -1102,10 +1461,11 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "天然魔石矿层",
 				["timespent"] = 0,
 			},
 			[42240] = {
-				["completed"] = 1,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.694560289382935,
@@ -1114,7 +1474,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 2363,
+				["title"] = "英灵殿：笨重偷猎",
+				["timespent"] = 4304,
 			},
 			[41266] = {
 				["completed"] = 0,
@@ -1126,6 +1487,20 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "渔筏捕鱼",
+				["timespent"] = 0,
+			},
+			[41314] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.461586475372314,
+						["x"] = 0.372892677783966,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "产品订单：邪能页岩",
 				["timespent"] = 0,
 			},
 			[42927] = {
@@ -1138,6 +1513,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "危险：玛丽桑德拉",
 				["timespent"] = 0,
 			},
 			[43454] = {
@@ -1176,6 +1552,19 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 275,
 			},
+			[41538] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.468069314956665,
+						["x"] = 0.243031442165375,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "闪光的星光玫瑰",
+				["timespent"] = 0,
+			},
 			[43598] = {
 				["completed"] = 3,
 				["coords"] = {
@@ -1186,6 +1575,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "突袭守望高塔：黑鹰堡垒",
 				["timespent"] = 471,
 			},
 			[43614] = {
@@ -1210,10 +1600,11 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "舰队头目",
 				["timespent"] = 0,
 			},
 			[42145] = {
-				["completed"] = 3,
+				["completed"] = 4,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.318706691265106,
@@ -1222,7 +1613,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 177,
+				["title"] = "逃出险境",
+				["timespent"] = 275,
 			},
 			[41650] = {
 				["completed"] = 0,
@@ -1234,6 +1626,7 @@ WorldQuestTipsData = {
 						["f"] = 10,
 					},
 				},
+				["title"] = "产品订单：丝纹兜帽",
 				["timespent"] = 0,
 			},
 			[42177] = {
@@ -1246,6 +1639,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "夺回墨尔海姆",
 				["timespent"] = 0,
 			},
 			[42209] = {
@@ -1258,6 +1652,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "营救行动",
 				["timespent"] = 0,
 			},
 			[43758] = {
@@ -1270,6 +1665,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "不管我在何方朦胧",
 				["timespent"] = 0,
 			},
 			[41219] = {
@@ -1285,7 +1681,7 @@ WorldQuestTipsData = {
 				["timespent"] = 0,
 			},
 			[44301] = {
-				["completed"] = 0,
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.885014235973358,
@@ -1294,7 +1690,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "通缉：巴哈加",
+				["timespent"] = 41,
 			},
 			[41794] = {
 				["completed"] = 0,
@@ -1318,6 +1715,7 @@ WorldQuestTipsData = {
 						["f"] = 10,
 					},
 				},
+				["title"] = "决斗之夜：蒂梵妮·尼尔森",
 				["timespent"] = 0,
 			},
 			[41826] = {
@@ -1333,7 +1731,7 @@ WorldQuestTipsData = {
 				["timespent"] = 30,
 			},
 			[42880] = {
-				["completed"] = 0,
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.562340617179871,
@@ -1342,7 +1740,21 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "达到指标",
+				["timespent"] = 97,
+			},
+			[43455] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.409442961215973,
+						["x"] = 0.542875647544861,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：噬人黑暗",
+				["timespent"] = 52,
 			},
 			[41427] = {
 				["completed"] = 1,
@@ -1354,7 +1766,21 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "清理维克特",
 				["timespent"] = 128,
+			},
+			[41443] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.76073145866394,
+						["x"] = 0.477127194404602,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "古老的魔石矿脉",
+				["timespent"] = 0,
 			},
 			[44030] = {
 				["completed"] = 0,
@@ -1369,7 +1795,7 @@ WorldQuestTipsData = {
 				["timespent"] = 0,
 			},
 			[40980] = {
-				["completed"] = 1,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.426631271839142,
@@ -1378,7 +1804,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 38,
+				["title"] = "疖背瘟疫",
+				["timespent"] = 100,
 			},
 			[42018] = {
 				["completed"] = 1,
@@ -1392,6 +1819,19 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 114,
 			},
+			[41523] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.813280642032623,
+						["x"] = 0.326603710651398,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "邪能球茎",
+				["timespent"] = 0,
+			},
 			[43583] = {
 				["completed"] = 2,
 				["coords"] = {
@@ -1403,6 +1843,32 @@ WorldQuestTipsData = {
 					},
 				},
 				["timespent"] = 183,
+			},
+			[41555] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.600214540958405,
+						["x"] = 0.526075124740601,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "厚切培根",
+				["timespent"] = 0,
+			},
+			[41076] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.566047787666321,
+						["x"] = 0.576817870140076,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "弹药测试",
+				["timespent"] = 85,
 			},
 			[44158] = {
 				["completed"] = 1,
@@ -1450,7 +1916,21 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "减震器",
 				["timespent"] = 237,
+			},
+			[41699] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.12509286403656,
+						["x"] = 0.512186169624329,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "嘎嘣脆",
+				["timespent"] = 131,
 			},
 			[43759] = {
 				["completed"] = 0,
@@ -1485,10 +1965,24 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "烧焦的夏斯卡格草",
+				["timespent"] = 0,
+			},
+			[44893] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.765125691890717,
+						["x"] = 0.780121922492981,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "大群恐嘴龙！",
 				["timespent"] = 0,
 			},
 			[43951] = {
-				["completed"] = 0,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.689649105072022,
@@ -1497,7 +1991,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "过期债务",
+				["timespent"] = 225,
 			},
 			[43456] = {
 				["completed"] = 0,
@@ -1512,7 +2007,7 @@ WorldQuestTipsData = {
 				["timespent"] = 0,
 			},
 			[41428] = {
-				["completed"] = 1,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.272997319698334,
@@ -1521,7 +2016,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 45,
+				["title"] = "不稳定的传送门",
+				["timespent"] = 168,
 			},
 			[41955] = {
 				["completed"] = 1,
@@ -1534,6 +2030,19 @@ WorldQuestTipsData = {
 					},
 				},
 				["timespent"] = 140,
+			},
+			[41460] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.409713745117188,
+						["x"] = 0.745479226112366,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "原生魔石矿苗",
+				["timespent"] = 0,
 			},
 			[44031] = {
 				["completed"] = 0,
@@ -1557,6 +2066,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "达布尔竞技场",
 				["timespent"] = 291,
 			},
 			[43600] = {
@@ -1569,6 +2079,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "突袭守望高塔：风语堡垒",
 				["timespent"] = 704,
 			},
 			[41093] = {
@@ -1605,6 +2116,7 @@ WorldQuestTipsData = {
 						["f"] = 10,
 					},
 				},
+				["title"] = "凡图斯符文产品订单： 伊格诺斯，腐蚀之心",
 				["timespent"] = 0,
 			},
 			[42211] = {
@@ -1617,6 +2129,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "利奥达斯的族人",
 				["timespent"] = 0,
 			},
 			[42275] = {
@@ -1629,6 +2142,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "痴心妄想",
 				["timespent"] = 1155,
 			},
 			[40279] = {
@@ -1641,6 +2155,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "杜里安的训练",
 				["timespent"] = 0,
 			},
 			[41828] = {
@@ -1653,6 +2168,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "通缉：蓟槌",
 				["timespent"] = 75,
 			},
 			[41844] = {
@@ -1716,7 +2232,7 @@ WorldQuestTipsData = {
 				["timespent"] = 0,
 			},
 			[42004] = {
-				["completed"] = 1,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.420828461647034,
@@ -1725,7 +2241,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 57,
+				["title"] = "幽灵船",
+				["timespent"] = 104,
 			},
 			[41014] = {
 				["completed"] = 0,
@@ -1749,6 +2266,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "通缉：噬人黑暗",
 				["timespent"] = 0,
 			},
 			[41078] = {
@@ -1773,6 +2291,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "酒水坏了",
 				["timespent"] = 0,
 			},
 			[41653] = {
@@ -1835,6 +2354,19 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[44847] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.142076790332794,
+						["x"] = 0.571090757846832,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "直指源头",
+				["timespent"] = 0,
+			},
 			[40280] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -1842,6 +2374,32 @@ WorldQuestTipsData = {
 						["y"] = 0.688275873661041,
 						["x"] = 0.477395355701447,
 						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "布蕾达的训练",
+				["timespent"] = 0,
+			},
+			[44895] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.0802041292190552,
+						["x"] = 0.500914931297302,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "大群利爪龙！",
+				["timespent"] = 0,
+			},
+			[42063] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.410184919834137,
+						["x"] = 0.656073391437531,
+						["m"] = 1015,
 						["f"] = 0,
 					},
 				},
@@ -1859,6 +2417,45 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[44943] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.243510186672211,
+						["x"] = 0.559511423110962,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "克劳德舒斯的利爪",
+				["timespent"] = 0,
+			},
+			[41344] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.513881742954254,
+						["x"] = 0.602599382400513,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "产品订单：风暴之鳞",
+				["timespent"] = 0,
+			},
+			[41766] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.536127328872681,
+						["x"] = 0.557866811752319,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "野生动物保护力量",
+				["timespent"] = 0,
+			},
 			[41925] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -1871,6 +2468,32 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[41232] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.29464191198349,
+						["x"] = 0.448261618614197,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "厚铁角牛皮",
+				["timespent"] = 0,
+			},
+			[41446] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.288440585136414,
+						["x"] = 0.307151556015015,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "黑化邪能页岩矿脉",
+				["timespent"] = 0,
+			},
 			[40951] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -1881,6 +2504,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "啮岩集市",
 				["timespent"] = 0,
 			},
 			[44033] = {
@@ -1893,10 +2517,24 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "啊，坚果！",
+				["timespent"] = 0,
+			},
+			[41655] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.463477313518524,
+						["x"] = 0.371631920337677,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "产品订单：女王猫眼石吊坠",
 				["timespent"] = 0,
 			},
 			[42021] = {
-				["completed"] = 1,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.590213358402252,
@@ -1905,7 +2543,33 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 371,
+				["title"] = "玛拉纳的调查",
+				["timespent"] = 666,
+			},
+			[44048] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.823499321937561,
+						["x"] = 0.390654444694519,
+						["f"] = 0,
+					},
+				},
+				["title"] = "纳迦之祸",
+				["timespent"] = 0,
+			},
+			[44157] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.395137369632721,
+						["x"] = 0.521125435829163,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "枯法之争：泰安诺",
+				["timespent"] = 0,
 			},
 			[43091] = {
 				["completed"] = 0,
@@ -1918,6 +2582,18 @@ WorldQuestTipsData = {
 					},
 				},
 				["timespent"] = 0,
+			},
+			[44304] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.518547892570496,
+						["x"] = 0.443387508392334,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 45,
 			},
 			[42101] = {
 				["completed"] = 1,
@@ -1941,6 +2617,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "庄稼危机",
 				["timespent"] = 246,
 			},
 			[41622] = {
@@ -1953,18 +2630,71 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "紫喉遗产",
 				["timespent"] = 0,
 			},
 			[41127] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.39581236243248,
-						["x"] = 0.610626578330994,
+						["y"] = 0.811564981937409,
+						["x"] = 0.52802586555481,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "泥鼻横行",
+				["timespent"] = 0,
+			},
+			[41654] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.513881742954254,
+						["x"] = 0.602599382400513,
 						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
+				["title"] = "产品订单：女王猫眼石指环",
+				["timespent"] = 0,
+			},
+			[41553] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.594237089157105,
+						["x"] = 0.691281616687775,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 93,
+			},
+			[41938] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.481313049793243,
+						["x"] = 0.663439631462097,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "斯科瓦尔德的兄弟",
+				["timespent"] = 0,
+			},
+			[41055] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.485835552215576,
+						["x"] = 0.408238053321838,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "野性的复仇",
 				["timespent"] = 0,
 			},
 			[43762] = {
@@ -2015,6 +2745,70 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 118,
 			},
+			[41271] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.624186038970947,
+						["x"] = 0.304741024971008,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "进入涡流",
+				["timespent"] = 0,
+			},
+			[43098] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.279544830322266,
+						["x"] = 0.338906109333038,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "危险：巨大的玛伯布",
+				["timespent"] = 37,
+			},
+			[41303] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.464287638664246,
+						["x"] = 0.372352361679077,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "补给需求：星光玫瑰",
+				["timespent"] = 0,
+			},
+			[44894] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.0719772577285767,
+						["x"] = 0.361517548561096,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "大群血眼龙！",
+				["timespent"] = 0,
+			},
+			[43609] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.28091037273407,
+						["x"] = 0.432235240936279,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 63,
+			},
 			[41862] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -2025,6 +2819,19 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["timespent"] = 0,
+			},
+			[41089] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.723925709724426,
+						["x"] = 0.433270454406738,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "山岭之王",
 				["timespent"] = 0,
 			},
 			[43427] = {
@@ -2039,8 +2846,21 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 24,
 			},
+			[45307] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.967775106430054,
+						["x"] = 0.504358768463135,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "利爪警报！",
+				["timespent"] = 527,
+			},
 			[41926] = {
-				["completed"] = 0,
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.451070785522461,
@@ -2049,7 +2869,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "勇士回归",
+				["timespent"] = 78,
 			},
 			[42964] = {
 				["completed"] = 1,
@@ -2073,6 +2894,20 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "海底调查",
+				["timespent"] = 0,
+			},
+			[41958] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.44667661190033,
+						["x"] = 0.481608331203461,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "全能金刚",
 				["timespent"] = 0,
 			},
 			[41990] = {
@@ -2087,6 +2922,19 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[43438] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.399374485015869,
+						["x"] = 0.672574281692505,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：无名君王",
+				["timespent"] = 25,
+			},
 			[41511] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -2097,6 +2945,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "邪能球茎",
 				["timespent"] = 0,
 			},
 			[41527] = {
@@ -2111,17 +2960,30 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[42070] = {
-				["completed"] = 2,
+			[44290] = {
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.441225171089172,
-						["x"] = 0.330691874027252,
-						["m"] = 1018,
+						["y"] = 0.451883316040039,
+						["x"] = 0.381225645542145,
+						["m"] = 1024,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 510,
+				["timespent"] = 109,
+			},
+			[44114] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.796263217926025,
+						["x"] = 0.493027865886688,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "危险：魔导师薇尔莎",
+				["timespent"] = 0,
 			},
 			[42086] = {
 				["completed"] = 0,
@@ -2135,12 +2997,50 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[44194] = {
+			[44744] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.725492119789124,
+						["x"] = 0.495189189910889,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "生命线",
+				["timespent"] = 367,
+			},
+			[42725] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.726591348648071,
-						["x"] = 0.303325474262238,
+						["y"] = 0.777895152568817,
+						["x"] = 0.493568181991577,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[41633] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.414281666278839,
+						["x"] = 0.469111621379852,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[41639] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.414281666278839,
+						["x"] = 0.469111621379852,
+						["m"] = 1015,
 						["f"] = 0,
 					},
 				},
@@ -2159,7 +3059,7 @@ WorldQuestTipsData = {
 				["timespent"] = 93,
 			},
 			[42182] = {
-				["completed"] = 1,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.731523096561432,
@@ -2168,31 +3068,85 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 58,
+				["title"] = "战斗！",
+				["timespent"] = 114,
 			},
-			[42725] = {
+			[41687] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.777895152568817,
-						["x"] = 0.493568181991577,
-						["m"] = 1033,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[44290] = {
-				["completed"] = 1,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.451883316040039,
-						["x"] = 0.381225645542145,
+						["y"] = 0.22631299495697,
+						["x"] = 0.44713020324707,
 						["m"] = 1024,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 109,
+				["title"] = "蜗牛大战！",
+				["timespent"] = 0,
+			},
+			[44769] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.755475282669067,
+						["x"] = 0.489965915679932,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "武装群众",
+				["timespent"] = 88,
+			},
+			[41489] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.351038455963135,
+						["x"] = 0.617076992988586,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "硫磺毁灭者",
+				["timespent"] = 0,
+			},
+			[44801] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.532627582550049,
+						["x"] = 0.31921911239624,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "保卫沙尔艾兰",
+				["timespent"] = 0,
+			},
+			[43964] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.550069093704224,
+						["x"] = 0.387676477432251,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "族长的盛宴",
+				["timespent"] = 0,
+			},
+			[42785] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.708001255989075,
+						["x"] = 0.385435938835144,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
 			},
 			[43827] = {
 				["completed"] = 1,
@@ -2204,6 +3158,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "风暴之翼传送门",
 				["timespent"] = 111,
 			},
 			[43332] = {
@@ -2216,6 +3171,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "手提篮里的小劣魔",
 				["timespent"] = 106,
 			},
 			[40282] = {
@@ -2242,12 +3198,63 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[41336] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.535335659980774,
+						["x"] = 0.607252955436707,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "浓密的麝牛皮",
+				["timespent"] = 0,
+			},
+			[41660] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.513881742954254,
+						["x"] = 0.602599382400513,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "产品订单：隐形饮剂",
+				["timespent"] = 0,
+			},
+			[44784] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.391977250576019,
+						["x"] = 0.540588080883026,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "高级魔杖",
+				["timespent"] = 86,
+			},
 			[41895] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.551265776157379,
 						["x"] = 0.516982793807983,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[41649] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.462666928768158,
+						["x"] = 0.372352361679077,
 						["m"] = 1033,
 						["f"] = 0,
 					},
@@ -2264,7 +3271,71 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "崩溃的符文林地",
 				["timespent"] = 118,
+			},
+			[42123] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.294110953807831,
+						["x"] = 0.541650354862213,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "夺回洛希恩",
+				["timespent"] = 86,
+			},
+			[43460] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.583074331283569,
+						["x"] = 0.3437579870224,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：奇兰尼斯·暮语",
+				["timespent"] = 11,
+			},
+			[41634] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.732546806335449,
+						["x"] = 0.547009408473969,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[42075] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.581712961196899,
+						["x"] = 0.639379918575287,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "植物的反抗",
+				["timespent"] = 167,
+			},
+			[41601] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.49921727180481,
+						["x"] = 0.599999964237213,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
 			},
 			[42023] = {
 				["completed"] = 0,
@@ -2273,6 +3344,32 @@ WorldQuestTipsData = {
 						["y"] = 0.492682933807373,
 						["x"] = 0.429413974285126,
 						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "黑鸦大乱斗",
+				["timespent"] = 0,
+			},
+			[43458] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.69334089756012,
+						["x"] = 0.609618067741394,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：皮里克斯",
+				["timespent"] = 19,
+			},
+			[42027] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.485974371433258,
+						["x"] = 0.383066713809967,
+						["m"] = 1015,
 						["f"] = 0,
 					},
 				},
@@ -2300,10 +3397,23 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "绿龙之恐",
 				["timespent"] = 0,
 			},
+			[42150] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.869767487049103,
+						["x"] = 0.399470686912537,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 203,
+			},
 			[42119] = {
-				["completed"] = 0,
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.340540528297424,
@@ -2312,6 +3422,20 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "祛咒开胃菜",
+				["timespent"] = 172,
+			},
+			[41624] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0,
+						["x"] = 0,
+						["m"] = 1072,
+						["f"] = 0,
+					},
+				},
+				["title"] = "罗克要修剪",
 				["timespent"] = 0,
 			},
 			[41640] = {
@@ -2326,17 +3450,56 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[41145] = {
-				["completed"] = 1,
+			[41656] = {
+				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0,
 						["x"] = 0,
-						["m"] = 1072,
+						["m"] = 1014,
+						["f"] = 10,
+					},
+				},
+				["title"] = "产品订单：阿苏奈特黄晶指环",
+				["timespent"] = 0,
+			},
+			[41667] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.463477313518524,
+						["x"] = 0.372352361679077,
+						["m"] = 1033,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 126,
+				["title"] = "凡图斯符文产品订单： 萨维斯",
+				["timespent"] = 0,
+			},
+			[41701] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.12509286403656,
+						["x"] = 0.512186169624329,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "难上加难",
+				["timespent"] = 0,
+			},
+			[41648] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.513881742954254,
+						["x"] = 0.602599382400513,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
 			},
 			[43764] = {
 				["completed"] = 2,
@@ -2362,6 +3525,32 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[42969] = {
+				["completed"] = 2,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.749262571334839,
+						["x"] = 0.459887087345123,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "身边的间谍",
+				["timespent"] = 423,
+			},
+			[42442] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0,
+						["x"] = 0,
+						["m"] = 1014,
+						["f"] = 10,
+					},
+				},
+				["title"] = "决斗之夜：阿玛利亚",
+				["timespent"] = 0,
+			},
 			[42806] = {
 				["completed"] = 1,
 				["coords"] = {
@@ -2374,6 +3563,19 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 8,
 			},
+			[41289] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.366258919239044,
+						["x"] = 0.472602009773254,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "茂盛的安瑟瑞尔花",
+				["timespent"] = 0,
+			},
 			[41305] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -2381,6 +3583,31 @@ WorldQuestTipsData = {
 						["y"] = 0.620686173439026,
 						["x"] = 0.388562500476837,
 						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[40299] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0,
+						["x"] = 0,
+						["m"] = 1014,
+						["f"] = 10,
+					},
+				},
+				["title"] = "决斗之夜：博迪·日轨",
+				["timespent"] = 0,
+			},
+			[42274] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.456614494323731,
+						["x"] = 0.29064816236496,
+						["m"] = 1015,
 						["f"] = 0,
 					},
 				},
@@ -2398,6 +3625,18 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[43432] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.0865433812141419,
+						["x"] = 0.495061695575714,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
 			[41896] = {
 				["completed"] = 3,
 				["coords"] = {
@@ -2408,10 +3647,11 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "鱼人自由行动",
 				["timespent"] = 712,
 			},
 			[43445] = {
-				["completed"] = 1,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.228474259376526,
@@ -2420,7 +3660,20 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 96,
+				["title"] = "制空权",
+				["timespent"] = 202,
+			},
+			[40278] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.572556972503662,
+						["x"] = 0.785120129585266,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
 			},
 			[41944] = {
 				["completed"] = 0,
@@ -2434,13 +3687,25 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[43619] = {
+			[41416] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.486472129821777,
+						["x"] = 0.530571579933167,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 88,
+			},
+			[41570] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.255596816539764,
-						["x"] = 0.509640514850616,
-						["m"] = 1024,
+						["y"] = 0.559116005897522,
+						["x"] = 0.319252789020538,
+						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
@@ -2456,18 +3721,20 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "扭曲之尘",
 				["timespent"] = 154,
 			},
-			[41633] = {
+			[41497] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.414281666278839,
-						["x"] = 0.469111621379852,
-						["m"] = 1015,
+						["y"] = 0.273494064807892,
+						["x"] = 0.455410838127136,
+						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
+				["title"] = "未开发的魔石矿层",
 				["timespent"] = 0,
 			},
 			[42024] = {
@@ -2482,16 +3749,17 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 327,
 			},
-			[41489] = {
+			[41529] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.351038455963135,
-						["x"] = 0.617076992988586,
-						["m"] = 1017,
+						["y"] = 0.488933145999908,
+						["x"] = 0.627240002155304,
+						["m"] = 1015,
 						["f"] = 0,
 					},
 				},
+				["title"] = "茂盛的安瑟瑞尔花",
 				["timespent"] = 0,
 			},
 			[41545] = {
@@ -2506,17 +3774,17 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[43428] = {
-				["completed"] = 2,
+			[41637] = {
+				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.28091037273407,
-						["x"] = 0.432235240936279,
-						["m"] = 1015,
+						["y"] = 0.463477313518524,
+						["x"] = 0.372352361679077,
+						["m"] = 1033,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 106,
+				["timespent"] = 0,
 			},
 			[43621] = {
 				["completed"] = 0,
@@ -2530,16 +3798,17 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[41666] = {
+			[41609] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.513881742954254,
-						["x"] = 0.602599382400513,
-						["m"] = 1017,
+						["y"] = 0.449973464012146,
+						["x"] = 0.369063019752502,
+						["m"] = 1024,
 						["f"] = 0,
 					},
 				},
+				["title"] = "巨型至高岭鲑鱼",
 				["timespent"] = 0,
 			},
 			[42631] = {
@@ -2554,17 +3823,18 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[41634] = {
-				["completed"] = 0,
+			[42124] = {
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.732546806335449,
-						["x"] = 0.547009408473969,
+						["y"] = 0.762495756149292,
+						["x"] = 0.500370502471924,
 						["m"] = 1018,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "女巫和妖术",
+				["timespent"] = 120,
 			},
 			[41641] = {
 				["completed"] = 0,
@@ -2600,6 +3870,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "害虫巢穴",
 				["timespent"] = 0,
 			},
 			[42711] = {
@@ -2612,6 +3883,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "不朽法师",
 				["timespent"] = 107,
 			},
 			[41705] = {
@@ -2648,134 +3920,27 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "通缉：威严的大角鹿",
 				["timespent"] = 216,
 			},
-			[41649] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.462666928768158,
-						["x"] = 0.372352361679077,
-						["m"] = 1033,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41601] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.49921727180481,
-						["x"] = 0.599999964237213,
-						["m"] = 1018,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[43633] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.474441289901733,
-						["x"] = 0.625406384468079,
-						["m"] = 1018,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41290] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.366714060306549,
-						["x"] = 0.546203017234802,
-						["m"] = 1015,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41701] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.12509286403656,
-						["x"] = 0.512186169624329,
-						["m"] = 1024,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[42623] = {
+			[44067] = {
 				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.715391159057617,
-						["x"] = 0.605690836906433,
-						["m"] = 1015,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 217,
-			},
-			[41338] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.732546806335449,
-						["x"] = 0.547009408473969,
-						["m"] = 1018,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41354] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.738187730312347,
-						["x"] = 0.341192841529846,
+						["y"] = 0.608801007270813,
+						["x"] = 0.596772789955139,
 						["m"] = 1033,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["timespent"] = 232,
 			},
-			[41881] = {
+			[43710] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0,
-						["x"] = 0,
-						["m"] = 1014,
-						["f"] = 10,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[42063] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.410184919834137,
-						["x"] = 0.656073391437531,
-						["m"] = 1015,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41648] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.513881742954254,
-						["x"] = 0.602599382400513,
+						["y"] = 0.45624041557312,
+						["x"] = 0.693084239959717,
 						["m"] = 1017,
 						["f"] = 0,
 					},
@@ -2794,13 +3959,100 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 149,
 			},
-			[41570] = {
+			[41290] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.559116005897522,
-						["x"] = 0.319252789020538,
-						["m"] = 1017,
+						["y"] = 0.366714060306549,
+						["x"] = 0.546203017234802,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[43767] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.190026521682739,
+						["x"] = 0.581484913825989,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 13,
+			},
+			[41354] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.738187730312347,
+						["x"] = 0.341192841529846,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[41338] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.732546806335449,
+						["x"] = 0.547009408473969,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[41865] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.686578273773193,
+						["x"] = 0.520954608917236,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "奈萨里奥的巢穴：石母",
+				["timespent"] = 0,
+			},
+			[41881] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0,
+						["x"] = 0,
+						["m"] = 1014,
+						["f"] = 10,
+					},
+				},
+				["title"] = "决斗之夜：赫里奥苏斯",
+				["timespent"] = 0,
+			},
+			[42713] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.410640120506287,
+						["x"] = 0.63042688369751,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "艾萨拉之眼：一决胜负",
+				["timespent"] = 0,
+			},
+			[41677] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.460537314414978,
+						["x"] = 0.380134224891663,
+						["m"] = 1080,
 						["f"] = 0,
 					},
 				},
@@ -2818,6 +4070,31 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 22,
 			},
+			[41643] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.462666928768158,
+						["x"] = 0.372352361679077,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "产品订单：战缚绑腿",
+				["timespent"] = 0,
+			},
+			[41353] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.320584654808044,
+						["x"] = 0.426206052303314,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
 			[44021] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -2830,32 +4107,34 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[43710] = {
-				["completed"] = 0,
+			[42633] = {
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.45624041557312,
-						["x"] = 0.693084239959717,
-						["m"] = 1017,
+						["y"] = 0.430213391780853,
+						["x"] = 0.372443914413452,
+						["m"] = 1015,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "通缉：沃萨克斯",
+				["timespent"] = 75,
 			},
-			[41546] = {
-				["completed"] = 0,
+			[42089] = {
+				["completed"] = 3,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.874395966529846,
-						["x"] = 0.542109608650208,
-						["m"] = 1018,
+						["y"] = 0.450511634349823,
+						["x"] = 0.203406691551209,
+						["m"] = 1033,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "堕落者",
+				["timespent"] = 631,
 			},
 			[42025] = {
-				["completed"] = 2,
+				["completed"] = 3,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.270133793354034,
@@ -2864,7 +4143,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 327,
+				["title"] = "无鞍斗殴",
+				["timespent"] = 466,
 			},
 			[43063] = {
 				["completed"] = 0,
@@ -2876,6 +4156,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "危险：风暴之羽",
 				["timespent"] = 0,
 			},
 			[43079] = {
@@ -2902,17 +4183,17 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[42089] = {
-				["completed"] = 2,
+			[43622] = {
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.450511634349823,
-						["x"] = 0.203406691551209,
-						["m"] = 1033,
+						["y"] = 0.664834856987,
+						["x"] = 0.415252804756165,
+						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 405,
+				["timespent"] = 78,
 			},
 			[42105] = {
 				["completed"] = 2,
@@ -2924,6 +4205,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "混合一下",
 				["timespent"] = 338,
 			},
 			[41610] = {
@@ -2938,28 +4220,29 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[43807] = {
-				["completed"] = 2,
+			[43623] = {
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.51993203163147,
-						["x"] = 0.364967703819275,
-						["m"] = 1033,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 203,
-			},
-			[40278] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.572556972503662,
-						["x"] = 0.785120129585266,
+						["y"] = 0.745481073856354,
+						["x"] = 0.51590633392334,
 						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
+				["timespent"] = 127,
+			},
+			[41642] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.513881742954254,
+						["x"] = 0.602599382400513,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "产品订单：战甲薄靴",
 				["timespent"] = 0,
 			},
 			[41658] = {
@@ -2986,29 +4269,31 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 697,
 			},
-			[41273] = {
+			[41662] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.494588792324066,
-						["x"] = 0.286593556404114,
-						["m"] = 1018,
-						["f"] = 0,
+						["y"] = 0,
+						["x"] = 0,
+						["m"] = 1014,
+						["f"] = 10,
 					},
 				},
+				["title"] = "产品订单：古代活力药水",
 				["timespent"] = 0,
 			},
-			[41679] = {
+			[41706] = {
 				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.461586475372314,
-						["x"] = 0.372352361679077,
-						["m"] = 1033,
+						["y"] = 0.12509286403656,
+						["x"] = 0.512186169624329,
+						["m"] = 1024,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 24,
+				["title"] = "咸水",
+				["timespent"] = 118,
 			},
 			[42744] = {
 				["completed"] = 0,
@@ -3022,25 +4307,26 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[41227] = {
-				["completed"] = 4,
+			[44293] = {
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.579416453838348,
-						["x"] = 0.604820251464844,
+						["y"] = 0.316498696804047,
+						["x"] = 0.413187980651856,
 						["m"] = 1024,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 679,
+				["title"] = "通缉：斯朗伯",
+				["timespent"] = 134,
 			},
-			[41612] = {
+			[41288] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.699058473110199,
-						["x"] = 0.466071784496307,
-						["m"] = 1018,
+						["y"] = 0.414281666278839,
+						["x"] = 0.469111621379852,
+						["m"] = 1015,
 						["f"] = 0,
 					},
 				},
@@ -3094,76 +4380,79 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[42274] = {
+			[42013] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.456614494323731,
-						["x"] = 0.29064816236496,
-						["m"] = 1015,
+						["y"] = 0.428841352462769,
+						["x"] = 0.553479075431824,
+						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
 				["timespent"] = 0,
 			},
-			[41639] = {
+			[44012] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.414281666278839,
-						["x"] = 0.469111621379852,
-						["m"] = 1015,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41564] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.581337094306946,
-						["x"] = 0.298539400100708,
-						["m"] = 1015,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[40978] = {
-				["completed"] = 1,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.443607449531555,
-						["x"] = 0.372598648071289,
-						["m"] = 1024,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 64,
-			},
-			[42859] = {
-				["completed"] = 2,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.841102838516235,
-						["x"] = 0.48618358373642,
+						["y"] = 0.207675158977509,
+						["x"] = 0.370190978050232,
 						["m"] = 1033,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 458,
+				["timespent"] = 0,
 			},
-			[41516] = {
+			[42067] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.712671637535095,
-						["x"] = 0.300022661685944,
+						["y"] = 0.271684646606445,
+						["x"] = 0.383367717266083,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "声音大雨点小",
+				["timespent"] = 0,
+			},
+			[43247] = {
+				["completed"] = 2,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.750788450241089,
+						["x"] = 0.384589791297913,
 						["m"] = 1018,
 						["f"] = 0,
 					},
 				},
+				["title"] = "突袭守望高塔：黑暗信徒尖塔",
+				["timespent"] = 402,
+			},
+			[43774] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.457534670829773,
+						["x"] = 0.318318545818329,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[41914] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.424040019512177,
+						["x"] = 0.591549515724182,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "清理墓穴",
 				["timespent"] = 0,
 			},
 			[41930] = {
@@ -3176,6 +4465,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "英灵的召唤",
 				["timespent"] = 194,
 			},
 			[41435] = {
@@ -3202,17 +4492,18 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 234,
 			},
-			[41766] = {
-				["completed"] = 0,
+			[41227] = {
+				["completed"] = 5,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.536127328872681,
-						["x"] = 0.557866811752319,
+						["y"] = 0.579416453838348,
+						["x"] = 0.604820251464844,
 						["m"] = 1024,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "突袭守望高塔：科达娜峰",
+				["timespent"] = 811,
 			},
 			[41483] = {
 				["completed"] = 0,
@@ -3224,22 +4515,23 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "硫磺毁灭者",
 				["timespent"] = 0,
 			},
-			[41677] = {
-				["completed"] = 0,
+			[43807] = {
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.460537314414978,
-						["x"] = 0.380134224891663,
-						["m"] = 1080,
+						["y"] = 0.51993203163147,
+						["x"] = 0.364967703819275,
+						["m"] = 1033,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["timespent"] = 203,
 			},
 			[42026] = {
-				["completed"] = 0,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.57496440410614,
@@ -3248,9 +4540,10 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "废墟中的法罗纳尔",
+				["timespent"] = 406,
 			},
-			[41288] = {
+			[41327] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
@@ -3262,13 +4555,13 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[41353] = {
+			[41546] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.320584654808044,
-						["x"] = 0.426206052303314,
-						["m"] = 1033,
+						["y"] = 0.874395966529846,
+						["x"] = 0.542109608650208,
+						["m"] = 1018,
 						["f"] = 0,
 					},
 				},
@@ -3296,6 +4589,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "蹦蹦跳跳的实验体",
 				["timespent"] = 436,
 			},
 			[42106] = {
@@ -3310,52 +4604,17 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 201,
 			},
-			[40925] = {
+			[41611] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.724774539470673,
-						["x"] = 0.413046538829803,
-						["m"] = 1024,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41327] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.414281666278839,
-						["x"] = 0.469111621379852,
+						["y"] = 0.560625910758972,
+						["x"] = 0.432842254638672,
 						["m"] = 1015,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
-			},
-			[41643] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.462666928768158,
-						["x"] = 0.372352361679077,
-						["m"] = 1033,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41659] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.460537314414978,
-						["x"] = 0.380134224891663,
-						["m"] = 1080,
-						["f"] = 0,
-					},
-				},
+				["title"] = "巨型诅咒女王鱼",
 				["timespent"] = 0,
 			},
 			[41351] = {
@@ -3370,6 +4629,43 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
+			[42154] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.161650061607361,
+						["x"] = 0.532848596572876,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "帮助雏龙",
+				["timespent"] = 0,
+			},
+			[41659] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.460537314414978,
+						["x"] = 0.380134224891663,
+						["m"] = 1080,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[41679] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.461586475372314,
+						["x"] = 0.372352361679077,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 24,
+			},
 			[41691] = {
 				["completed"] = 1,
 				["coords"] = {
@@ -3380,6 +4676,7 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "羽毛之海",
 				["timespent"] = 151,
 			},
 			[41196] = {
@@ -3388,90 +4685,6 @@ WorldQuestTipsData = {
 					["default"] = {
 						["y"] = 0.903448283672333,
 						["x"] = 0.550795495510101,
-						["m"] = 1024,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[43767] = {
-				["completed"] = 1,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.190026521682739,
-						["x"] = 0.581484913825989,
-						["m"] = 1024,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 13,
-			},
-			[43943] = {
-				["completed"] = 5,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.480224668979645,
-						["x"] = 0.356502413749695,
-						["m"] = 1033,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 131,
-			},
-			[43438] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.399374485015869,
-						["x"] = 0.672574281692505,
-						["m"] = 1017,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41553] = {
-				["completed"] = 1,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.594237089157105,
-						["x"] = 0.691281616687775,
-						["m"] = 1018,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 93,
-			},
-			[43774] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.457534670829773,
-						["x"] = 0.318318545818329,
-						["m"] = 1033,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41292] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.732546806335449,
-						["x"] = 0.547009408473969,
-						["m"] = 1018,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[41308] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.661326289176941,
-						["x"] = 0.596617579460144,
 						["m"] = 1024,
 						["f"] = 0,
 					},
@@ -3490,6 +4703,95 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 1498,
 			},
+			[44294] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.553103446960449,
+						["x"] = 0.456040024757385,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：瑟坎",
+				["timespent"] = 0,
+			},
+			[40978] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.443607449531555,
+						["x"] = 0.372598648071289,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 64,
+			},
+			[43641] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.615824103355408,
+						["x"] = 0.434311091899872,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "魔法回廊：游荡疫病",
+				["timespent"] = 1952,
+			},
+			[41276] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.540505290031433,
+						["x"] = 0.770814955234528,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "火箭靴捕鱼",
+				["timespent"] = 0,
+			},
+			[41292] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.732546806335449,
+						["x"] = 0.547009408473969,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[41308] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.661326289176941,
+						["x"] = 0.596617579460144,
+						["m"] = 1024,
+						["f"] = 0,
+					},
+				},
+				["title"] = "边境增援",
+				["timespent"] = 56,
+			},
+			[42623] = {
+				["completed"] = 1,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.715391159057617,
+						["x"] = 0.605690836906433,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "海盗恶霸",
+				["timespent"] = 217,
+			},
 			[41340] = {
 				["completed"] = 0,
 				["coords"] = {
@@ -3502,41 +4804,42 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[41662] = {
+			[41273] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0,
-						["x"] = 0,
-						["m"] = 1014,
-						["f"] = 10,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[43247] = {
-				["completed"] = 1,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.750788450241089,
-						["x"] = 0.384589791297913,
+						["y"] = 0.494588792324066,
+						["x"] = 0.286593556404114,
 						["m"] = 1018,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 201,
+				["timespent"] = 0,
 			},
-			[43432] = {
-				["completed"] = 0,
+			[43452] = {
+				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.0865433812141419,
-						["x"] = 0.495061695575714,
-						["m"] = 1015,
+						["y"] = 0.603574752807617,
+						["x"] = 0.619489908218384,
+						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["timespent"] = 21,
+			},
+			[43943] = {
+				["completed"] = 6,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.480224668979645,
+						["x"] = 0.356502413749695,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "枯法大军训练",
+				["timespent"] = 157,
 			},
 			[43959] = {
 				["completed"] = 1,
@@ -3551,7 +4854,7 @@ WorldQuestTipsData = {
 				["timespent"] = 455,
 			},
 			[41420] = {
-				["completed"] = 3,
+				["completed"] = 4,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.552679061889648,
@@ -3560,43 +4863,45 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 347,
+				["title"] = "突袭守望高塔：守夜人营地",
+				["timespent"] = 452,
 			},
-			[42969] = {
+			[40925] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.749262571334839,
-						["x"] = 0.459887087345123,
-						["m"] = 1033,
+						["y"] = 0.724774539470673,
+						["x"] = 0.413046538829803,
+						["m"] = 1024,
 						["f"] = 0,
 					},
 				},
 				["timespent"] = 0,
 			},
-			[43623] = {
+			[41554] = {
 				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.745481073856354,
-						["x"] = 0.51590633392334,
-						["m"] = 1017,
+						["y"] = 0.466817915439606,
+						["x"] = 0.492930054664612,
+						["m"] = 1018,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 127,
+				["timespent"] = 26,
 			},
-			[43622] = {
-				["completed"] = 1,
+			[43428] = {
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.664834856987,
-						["x"] = 0.415252804756165,
-						["m"] = 1017,
+						["y"] = 0.28091037273407,
+						["x"] = 0.432235240936279,
+						["m"] = 1015,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 78,
+				["title"] = "通缉：末日领主卡兹洛克",
+				["timespent"] = 106,
 			},
 			[42506] = {
 				["completed"] = 0,
@@ -3610,77 +4915,82 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[42067] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.271684646606445,
-						["x"] = 0.383367717266083,
-						["m"] = 1017,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[42027] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.485974371433258,
-						["x"] = 0.383066713809967,
-						["m"] = 1015,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[44012] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.207675158977509,
-						["x"] = 0.370190978050232,
-						["m"] = 1033,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[44067] = {
+			[41145] = {
 				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.608801007270813,
-						["x"] = 0.596772789955139,
-						["m"] = 1033,
+						["y"] = 0,
+						["x"] = 0,
+						["m"] = 1072,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 232,
+				["timespent"] = 126,
 			},
-			[42075] = {
-				["completed"] = 1,
+			[41516] = {
+				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.581712961196899,
-						["x"] = 0.639379918575287,
+						["y"] = 0.712671637535095,
+						["x"] = 0.300022661685944,
 						["m"] = 1018,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 167,
+				["title"] = "邪能球茎",
+				["timespent"] = 0,
 			},
-			[43641] = {
+			[40966] = {
 				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.615824103355408,
-						["x"] = 0.434311091899872,
-						["m"] = 1033,
+						["y"] = 0.540371358394623,
+						["x"] = 0.497619330883026,
+						["m"] = 1024,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 1952,
+				["title"] = "身边的祭师",
+				["timespent"] = 129,
+			},
+			[41666] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.513881742954254,
+						["x"] = 0.602599382400513,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "凡图斯符文产品订单： 尼珊德拉",
+				["timespent"] = 0,
+			},
+			[41564] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.581337094306946,
+						["x"] = 0.298539400100708,
+						["m"] = 1015,
+						["f"] = 0,
+					},
+				},
+				["title"] = "魔皮",
+				["timespent"] = 0,
+			},
+			[43624] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.603574752807617,
+						["x"] = 0.619489908218384,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "通缉：“大锤”伊赛尔",
+				["timespent"] = 0,
 			},
 			[43640] = {
 				["completed"] = 0,
@@ -3694,29 +5004,30 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[42123] = {
+			[41612] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.294110953807831,
-						["x"] = 0.541650354862213,
-						["m"] = 1015,
+						["y"] = 0.699058473110199,
+						["x"] = 0.466071784496307,
+						["m"] = 1018,
 						["f"] = 0,
 					},
 				},
 				["timespent"] = 0,
 			},
-			[41416] = {
-				["completed"] = 1,
+			[44892] = {
+				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.486472129821777,
-						["x"] = 0.530571579933167,
+						["y"] = 0.218885958194733,
+						["x"] = 0.349970519542694,
 						["m"] = 1024,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 88,
+				["title"] = "大群雪羽龙！",
+				["timespent"] = 0,
 			},
 			[41644] = {
 				["completed"] = 0,
@@ -3742,31 +5053,33 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 387,
 			},
-			[41637] = {
+			[41569] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.463477313518524,
-						["x"] = 0.372352361679077,
-						["m"] = 1033,
+						["y"] = 0.745739579200745,
+						["x"] = 0.635518670082092,
+						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
+				["title"] = "魔皮",
 				["timespent"] = 0,
 			},
 			[41692] = {
 				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.102599442005157,
-						["x"] = 0.446281671524048,
+						["y"] = 0.0623570680618286,
+						["x"] = 0.454720139503479,
 						["f"] = 0,
 					},
 				},
+				["title"] = "沉船打捞者",
 				["timespent"] = 125,
 			},
 			[43752] = {
-				["completed"] = 0,
+				["completed"] = 2,
 				["coords"] = {
 					["default"] = {
 						["y"] = 0.154592573642731,
@@ -3775,7 +5088,8 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 0,
+				["title"] = "哦，船！",
+				["timespent"] = 58,
 			},
 			[42746] = {
 				["completed"] = 1,
@@ -3801,65 +5115,67 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[43452] = {
-				["completed"] = 1,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.603574752807617,
-						["x"] = 0.619489908218384,
-						["m"] = 1017,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 21,
-			},
-			[44304] = {
-				["completed"] = 1,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.518547892570496,
-						["x"] = 0.443387508392334,
-						["m"] = 1018,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 45,
-			},
-			[42150] = {
-				["completed"] = 1,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.869767487049103,
-						["x"] = 0.399470686912537,
-						["m"] = 1018,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 203,
-			},
-			[41865] = {
+			[44194] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.686578273773193,
-						["x"] = 0.520954608917236,
+						["y"] = 0.726591348648071,
+						["x"] = 0.303325474262238,
+						["f"] = 0,
+					},
+				},
+				["timespent"] = 0,
+			},
+			[43619] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.255596816539764,
+						["x"] = 0.509640514850616,
 						["m"] = 1024,
 						["f"] = 0,
 					},
 				},
 				["timespent"] = 0,
 			},
-			[42124] = {
-				["completed"] = 1,
+			[41277] = {
+				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.762495756149292,
-						["x"] = 0.500370502471924,
+						["y"] = 0.513881742954254,
+						["x"] = 0.602599382400513,
+						["m"] = 1017,
+						["f"] = 0,
+					},
+				},
+				["title"] = "产品订单：风暴鳐鱼",
+				["timespent"] = 0,
+			},
+			[42070] = {
+				["completed"] = 2,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.441225171089172,
+						["x"] = 0.330691874027252,
 						["m"] = 1018,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 120,
+				["title"] = "突袭守望高塔：逐星者岗哨",
+				["timespent"] = 510,
+			},
+			[41302] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.463477313518524,
+						["x"] = 0.372352361679077,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "产品订单：星光玫瑰",
+				["timespent"] = 0,
 			},
 			[41836] = {
 				["completed"] = 0,
@@ -3872,43 +5188,58 @@ WorldQuestTipsData = {
 				},
 				["timespent"] = 0,
 			},
-			[43609] = {
-				["completed"] = 1,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.28091037273407,
-						["x"] = 0.432235240936279,
-						["m"] = 1015,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 63,
-			},
-			[40966] = {
+			[43711] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.540371358394623,
-						["x"] = 0.497619330883026,
-						["m"] = 1024,
+						["y"] = 0.50466251373291,
+						["x"] = 0.393482029438019,
+						["m"] = 1018,
+						["f"] = 0,
+					},
+				},
+				["title"] = "黑鸦堡垒：……还牙！",
+				["timespent"] = 0,
+			},
+			[43633] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.474441289901733,
+						["x"] = 0.625406384468079,
+						["m"] = 1018,
 						["f"] = 0,
 					},
 				},
 				["timespent"] = 0,
 			},
-			[42013] = {
+			[41556] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.428841352462769,
-						["x"] = 0.553479075431824,
+						["y"] = 0.449261426925659,
+						["x"] = 0.338728547096252,
 						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
+				["title"] = "厚切培根",
 				["timespent"] = 0,
 			},
-			[41667] = {
+			[42859] = {
+				["completed"] = 3,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.799774706363678,
+						["x"] = 0.519504427909851,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "一线希望",
+				["timespent"] = 619,
+			},
+			[41318] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
@@ -3918,104 +5249,50 @@ WorldQuestTipsData = {
 						["f"] = 0,
 					},
 				},
+				["title"] = "补给需求：邪能页岩",
 				["timespent"] = 0,
 			},
-			[41554] = {
+			[44017] = {
 				["completed"] = 1,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.466817915439606,
-						["x"] = 0.492930054664612,
-						["m"] = 1018,
+						["y"] = 0.567743003368378,
+						["x"] = 0.422243535518646,
+						["m"] = 1033,
 						["f"] = 0,
 					},
 				},
-				["timespent"] = 26,
+				["title"] = "通缉：药剂师法德伦",
+				["timespent"] = 97,
 			},
-			[43460] = {
+			[41297] = {
 				["completed"] = 0,
 				["coords"] = {
 					["default"] = {
-						["y"] = 0.583074331283569,
-						["x"] = 0.3437579870224,
-						["m"] = 1018,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[43458] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.69334089756012,
-						["x"] = 0.609618067741394,
-						["m"] = 1018,
-						["f"] = 0,
-					},
-				},
-				["timespent"] = 0,
-			},
-			[42785] = {
-				["completed"] = 0,
-				["coords"] = {
-					["default"] = {
-						["y"] = 0.708001255989075,
-						["x"] = 0.385435938835144,
+						["y"] = 0.513881742954254,
+						["x"] = 0.602599382400513,
 						["m"] = 1017,
 						["f"] = 0,
 					},
 				},
+				["title"] = "产品订单：夏斯卡格草",
+				["timespent"] = 0,
+			},
+			[41347] = {
+				["completed"] = 0,
+				["coords"] = {
+					["default"] = {
+						["y"] = 0.781946897506714,
+						["x"] = 0.31075382232666,
+						["m"] = 1033,
+						["f"] = 0,
+					},
+				},
+				["title"] = "奇臭无比的地狱犬皮",
 				["timespent"] = 0,
 			},
 		},
 	},
-	["橙界骑-幽暗沼泽"] = {
-		["worldQuestPartial"] = {
-			[42209] = {
-				["expires"] = 1477479638,
-				["objectivesInit"] = {
-					"0/4 释放囚犯", -- [1]
-				},
-				["progressed"] = false,
-				["start"] = 1477399358,
-				["duration"] = 0,
-				["active"] = false,
-				["objectives"] = {
-					"0/4 释放囚犯", -- [1]
-				},
-			},
-			[43807] = {
-				["expires"] = 1477479652,
-				["objectivesInit"] = {
-					"0/10 把枯法者送到沙尔艾兰", -- [1]
-				},
-				["progressed"] = false,
-				["start"] = 1477399732,
-				["duration"] = 0,
-				["active"] = false,
-				["objectives"] = {
-					"0/10 把枯法者送到沙尔艾兰", -- [1]
-				},
-			},
-			[41308] = {
-				["expires"] = 1477436419,
-				["objectivesInit"] = {
-					"加强石蹄岗哨的防守", -- [1]
-					["percent"] = 0,
-				},
-				["progressed"] = false,
-				["start"] = 1477396759,
-				["duration"] = 0,
-				["active"] = false,
-				["objectives"] = {
-					"加强石蹄岗哨的防守", -- [1]
-					["percent"] = 0,
-				},
-			},
-		},
-	},
-	["version"] = 1.17,
 	["冷血魔刀-幽暗沼泽"] = {
 		["worldQuestPartial"] = {
 		},

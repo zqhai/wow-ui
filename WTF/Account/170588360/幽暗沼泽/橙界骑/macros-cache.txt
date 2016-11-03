@@ -55,7 +55,7 @@ VER 3 0100000000000041 "喝药" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast 复仇之怒
 /cast 炽天使
-/use 德拉诺力量药水
+/use 延时之力药水
 /use 13
 END
 VER 3 0100000000000043 "圣疗" "INV_MISC_QUESTIONMARK"

@@ -8,7 +8,7 @@ MasterPlanAG = {
 			["summary"] = {
 				["ti3"] = 128391,
 				["ti2"] = 122485,
-				["tt1"] = 1475586761,
+				["tt1"] = true,
 				["ti1"] = 118531,
 				["tt3"] = true,
 				["tt2"] = 1476982520,
@@ -37,8 +37,8 @@ MasterPlanAG = {
 				["ti2"] = 122485,
 			},
 			["curOil"] = 585,
-			["class"] = "PALADIN",
 			["lastCacheTime"] = 1474987114,
+			["class"] = "PALADIN",
 			["curRes"] = 10000,
 			["faction"] = "Horde",
 		},

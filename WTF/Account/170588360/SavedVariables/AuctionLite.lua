@@ -1,16 +1,9 @@
 
 AuctionLiteDB = {
-	["factionrealm"] = {
-		["Horde - 幽暗沼泽"] = {
-			["prices"] = {
-				[124437] = {
-					["items"] = 4701,
-					["time"] = 1474826913,
-					["scans"] = 1,
-					["price"] = 56500,
-					["listings"] = 75,
-				},
-			},
+	["profiles"] = {
+		["Default"] = {
+			["duration"] = 2,
+			["lastTab"] = 6,
 		},
 	},
 	["profileKeys"] = {
@@ -22,9 +15,17 @@ AuctionLiteDB = {
 		["每天壹碗面 - 幽暗沼泽"] = "Default",
 		["Testt - 幽暗沼泽"] = "Default",
 	},
-	["profiles"] = {
-		["Default"] = {
-			["duration"] = 2,
+	["factionrealm"] = {
+		["Horde - 幽暗沼泽"] = {
+			["prices"] = {
+				[124437] = {
+					["items"] = 4701,
+					["time"] = 1474826913,
+					["scans"] = 1,
+					["price"] = 56500,
+					["listings"] = 75,
+				},
+			},
 		},
 	},
 }
