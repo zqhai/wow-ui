@@ -51,7 +51,7 @@ VER 3 010000000000003E "保护" "INV_MISC_QUESTIONMARK"
 /run F=F or CreateFrame("frame")F:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")F:SetScript("OnEvent",function(_,_,a,b)if a=="player"and b=="保护祝福"then SendChatMessage(GetSpellLink(b))end end)
 /cast 保护祝福
 END
-VER 3 0100000000000041 "喝药" "INV_MISC_QUESTIONMARK"
+VER 3 0100000000000041 "喝药" "135882"
 #showtooltip
 /cast 复仇之怒
 /cast 炽天使

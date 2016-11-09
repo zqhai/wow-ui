@@ -19,6 +19,7 @@ SkadaDB = {
 			["windows"] = {
 				{
 					["barslocked"] = true,
+					["set"] = 1,
 					["y"] = 32.9999160766602,
 					["point"] = "BOTTOMRIGHT",
 					["mode"] = "伤害",
@@ -35,9 +36,10 @@ SkadaDB = {
 				["Overhealing"] = false,
 			},
 			["report"] = {
-				["number"] = 9,
+				["number"] = 2,
 				["channel"] = "guild",
-				["mode"] = "敌对受到伤害",
+				["mode"] = "伤害",
+				["set"] = 8,
 			},
 			["ffoptions"] = {
 				["ignoredefensive"] = true,

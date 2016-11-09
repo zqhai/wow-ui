@@ -289,6 +289,7 @@ TellMeWhenDB = {
 		},
 		["Maverin - Area 52"] = {
 			["Locked"] = true,
+			["NumGroups"] = 25,
 			["Groups"] = {
 				{
 					["Enabled"] = false,
@@ -395,9 +396,9 @@ TellMeWhenDB = {
 									},
 								},
 							},
+							["TimerBar_EnableColors"] = true,
 							["TimerBar_CompleteColor"] = "ffffff00",
 							["CustomTex"] = "NONE",
-							["TimerBar_EnableColors"] = true,
 						}, -- [1]
 					},
 					["Name"] = "Energy",
@@ -427,11 +428,8 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1NcKno7xX9dw",
+					["Columns"] = 5,
 					["Name"] = "Combo Points 5",
-					["Point"] = {
-						["y"] = 115.369319671625,
-						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
-					},
 					["SettingsPerView"] = {
 						["icon"] = {
 							["SpacingX"] = 8,
@@ -821,7 +819,10 @@ TellMeWhenDB = {
 							},
 						}, -- [5]
 					},
-					["Columns"] = 5,
+					["Point"] = {
+						["y"] = 115.369319671625,
+						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
+					},
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1NcMHNdmEzfa",
@@ -1610,12 +1611,12 @@ TellMeWhenDB = {
 				}, -- [8]
 				{
 					["GUID"] = "TMW:group:1NcLTqrwrTLW",
+					["Columns"] = 1,
 					["Point"] = {
 						["y"] = 123,
 						["x"] = 60,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 					},
-					["Name"] = "Artifact",
 					["EnabledSpecs"] = {
 						[260] = false,
 						[259] = false,
@@ -1658,7 +1659,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Artifact",
 				}, -- [9]
 				{
 					["GUID"] = "TMW:group:1NcKvBT7K0qY",
@@ -2292,12 +2293,12 @@ TellMeWhenDB = {
 				}, -- [10]
 				{
 					["GUID"] = "TMW:group:1NcLToURvdlj",
+					["Columns"] = 1,
 					["Point"] = {
 						["y"] = 123,
 						["x"] = -60,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 					},
-					["Name"] = "Shadow Dance CD",
 					["EnabledSpecs"] = {
 						[260] = false,
 						[259] = false,
@@ -2330,16 +2331,16 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Shadow Dance CD",
 				}, -- [11]
 				{
 					["GUID"] = "TMW:group:1NcLKkMg4MnR",
+					["Columns"] = 5,
 					["Point"] = {
 						["y"] = 52.4199221274027,
 						["x"] = -1.1435489220147,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 					},
-					["Name"] = "Sub CDs",
 					["EnabledSpecs"] = {
 						[260] = false,
 						[259] = false,
@@ -2438,7 +2439,7 @@ TellMeWhenDB = {
 							},
 						}, -- [5]
 					},
-					["Columns"] = 5,
+					["Name"] = "Sub CDs",
 				}, -- [12]
 				{
 					["GUID"] = "TMW:group:1NcLc3hoC_yl",
@@ -2538,11 +2539,11 @@ TellMeWhenDB = {
 				}, -- [14]
 				{
 					["GUID"] = "TMW:group:1NhLM0O42ffL",
+					["Columns"] = 1,
 					["Point"] = {
 						["y"] = -88.7633762983879,
 						["x"] = 60.3049631232979,
 					},
-					["Name"] = "Artifact CD",
 					["EnabledSpecs"] = {
 						[260] = false,
 						[261] = false,
@@ -2585,7 +2586,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Artifact CD",
 				}, -- [15]
 				{
 					["GUID"] = "TMW:group:1NcMFHaTGMJJ",
@@ -3508,11 +3509,11 @@ TellMeWhenDB = {
 				}, -- [17]
 				{
 					["GUID"] = "TMW:group:1NcN_uvYoeo6",
+					["Columns"] = 5,
 					["Point"] = {
 						["y"] = 52.1,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 					},
-					["Name"] = "Assassination CDs",
 					["EnabledSpecs"] = {
 						[260] = false,
 						[261] = false,
@@ -3595,16 +3596,16 @@ TellMeWhenDB = {
 							},
 						}, -- [5]
 					},
-					["Columns"] = 5,
+					["Name"] = "Assassination CDs",
 				}, -- [18]
 				{
 					["GUID"] = "TMW:group:1NcO3b3vMivG",
+					["Columns"] = 1,
 					["Point"] = {
 						["y"] = 122.98163185515,
 						["x"] = -60.3049562150622,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 					},
-					["Name"] = "Exsanguinate CD",
 					["EnabledSpecs"] = {
 						[260] = false,
 						[261] = false,
@@ -3637,15 +3638,15 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Exsanguinate CD",
 				}, -- [19]
 				{
 					["GUID"] = "TMW:group:1NhLK_P8Adp=",
+					["Columns"] = 1,
 					["Point"] = {
 						["y"] = -89.4408360151848,
 						["x"] = 60.3048410529854,
 					},
-					["Name"] = "Artifact CD",
 					["EnabledSpecs"] = {
 						[261] = false,
 						[259] = false,
@@ -3688,7 +3689,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Artifact CD",
 				}, -- [20]
 				{
 					["GUID"] = "TMW:group:1NcO6lftHFD2",
@@ -4308,12 +4309,12 @@ TellMeWhenDB = {
 				}, -- [21]
 				{
 					["GUID"] = "TMW:group:1NcOOaTWUUed",
+					["Columns"] = 5,
 					["Point"] = {
 						["y"] = 52.2000047912585,
 						["x"] = -5.526967094810570e-005,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 					},
-					["Name"] = "Outlaw CD",
 					["EnabledSpecs"] = {
 						[261] = false,
 						[259] = false,
@@ -4403,7 +4404,7 @@ TellMeWhenDB = {
 							},
 						}, -- [5]
 					},
-					["Columns"] = 5,
+					["Name"] = "Outlaw CD",
 				}, -- [22]
 				{
 					["GUID"] = "TMW:group:1NcOQtKMz4AA",
@@ -4502,12 +4503,12 @@ TellMeWhenDB = {
 				}, -- [23]
 				{
 					["GUID"] = "TMW:group:1NcOuM6f2PRT",
+					["Columns"] = 1,
 					["Point"] = {
 						["y"] = 122.982159359055,
 						["x"] = -59.6269318853723,
 						["relativeTo"] = "TMW:group:1NcM4i0JWm8h",
 					},
-					["Name"] = "Blade Flurry Buff",
 					["EnabledSpecs"] = {
 						[261] = false,
 						[259] = false,
@@ -4538,7 +4539,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Name"] = "Blade Flurry Buff",
 				}, -- [24]
 				{
 					["GUID"] = "TMW:group:1NcSC_t0FOgm",
@@ -4618,9 +4619,9 @@ TellMeWhenDB = {
 				}, -- [25]
 			},
 			["Version"] = 81305,
-			["NumGroups"] = 25,
 		},
 		["诗奕回眸 - 守护之剑"] = {
+			["NumGroups"] = 8,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1NxNVJKB3KDD",
@@ -5584,13 +5585,8 @@ TellMeWhenDB = {
 				}, -- [8]
 			},
 			["Version"] = 81305,
-			["NumGroups"] = 8,
 		},
 		["Haidi - 幽暗沼泽 3"] = {
-			["Version"] = 82003,
-			["ForceNoBlizzCC"] = true,
-			["NumGroups"] = 5,
-			["TextureName"] = "Armory",
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1No0t=kM8uOu",
@@ -6951,6 +6947,10 @@ TellMeWhenDB = {
 					["GUID"] = "TMW:group:1NxHdG8P_h3e",
 				}, -- [5]
 			},
+			["Version"] = 82003,
+			["NumGroups"] = 5,
+			["TextureName"] = "Armory",
+			["ForceNoBlizzCC"] = true,
 			["Locked"] = true,
 		},
 		["Haidi - 幽暗沼泽"] = {
@@ -7030,14 +7030,12 @@ TellMeWhenDB = {
 								"TMW:icon:1No21iXdCENG", -- [2]
 							},
 						},
-						[83] = {
+						[98] = {
 							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
-								"TMW:icon:1No22AC4pvN=", -- [1]
-								"TMW:icon:1No22BLENs0C", -- [2]
-								"TMW:icon:1NxHdUmtnIYw", -- [3]
-								"TMW:icon:1NxHdTq8CI7O", -- [4]
+								"TMW:icon:1NxHdUnplLRU", -- [1]
+								"TMW:icon:1NxHH2MVHkuf", -- [2]
 							},
 						},
 						[86] = {
@@ -7057,6 +7055,16 @@ TellMeWhenDB = {
 								"TMW:icon:1No22BMb6=kQ", -- [3]
 							},
 						},
+						[83] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22AC4pvN=", -- [1]
+								"TMW:icon:1No22BLENs0C", -- [2]
+								"TMW:icon:1NxHdUmtnIYw", -- [3]
+								"TMW:icon:1NxHdTq8CI7O", -- [4]
+							},
+						},
 						[36] = {
 							["Enabled"] = true,
 							["ShowTimer"] = true,
@@ -7074,14 +7082,6 @@ TellMeWhenDB = {
 							},
 							["ShowTimerText"] = true,
 							["Type"] = "buff",
-						},
-						[98] = {
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1NxHdUnplLRU", -- [1]
-								"TMW:icon:1NxHH2MVHkuf", -- [2]
-							},
 						},
 						[87] = {
 							["Enabled"] = true,
@@ -8125,14 +8125,12 @@ TellMeWhenDB = {
 								"TMW:icon:1NxHdG7ilcLx", -- [3]
 							},
 						},
-						[83] = {
+						[98] = {
 							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
-								"TMW:icon:1No22AC4pvN=", -- [1]
-								"TMW:icon:1No22BLENs0C", -- [2]
-								"TMW:icon:1NxHdUmtnIYw", -- [3]
-								"TMW:icon:1NxHdTq8CI7O", -- [4]
+								"TMW:icon:1NxHdUnplLRU", -- [1]
+								"TMW:icon:1NxHH2MVHkuf", -- [2]
 							},
 						},
 						[87] = {
@@ -8161,14 +8159,6 @@ TellMeWhenDB = {
 								"TMW:icon:1NuyCoMyN5b4", -- [2]
 							},
 						},
-						[98] = {
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1NxHdUnplLRU", -- [1]
-								"TMW:icon:1NxHH2MVHkuf", -- [2]
-							},
-						},
 						[36] = {
 							["Enabled"] = true,
 							["ShowTimer"] = true,
@@ -8185,6 +8175,16 @@ TellMeWhenDB = {
 									["Magnitude"] = 2,
 								}, -- [1]
 								["n"] = 1,
+							},
+						},
+						[83] = {
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1No22AC4pvN=", -- [1]
+								"TMW:icon:1No22BLENs0C", -- [2]
+								"TMW:icon:1NxHdUmtnIYw", -- [3]
+								"TMW:icon:1NxHdTq8CI7O", -- [4]
 							},
 						},
 					},

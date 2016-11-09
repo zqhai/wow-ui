@@ -17,9 +17,9 @@ ElvDB = {
 			["每天壹碗面"] = 186051800,
 			["开山怪"] = 27912,
 			["橙界骑"] = 618116700,
+			["Testt"] = 100000,
 			["冷血魔刀"] = 37307641,
 			["Haidi"] = 445585701,
-			["Testt"] = 100000,
 		},
 	},
 	["namespaces"] = {
@@ -109,7 +109,7 @@ ElvDB = {
 					},
 				},
 				["ALL"] = {
-					[145629] = {
+					[31821] = {
 					},
 					[98007] = {
 					},
@@ -121,9 +121,9 @@ ElvDB = {
 					},
 					[97463] = {
 					},
-					[15286] = {
+					[145629] = {
 					},
-					[31821] = {
+					[15286] = {
 					},
 				},
 				["ROGUE"] = {
@@ -201,9 +201,9 @@ ElvDB = {
 					},
 				},
 				["DRUID"] = {
-					[188550] = {
+					[48438] = {
 					},
-					[774] = {
+					[188550] = {
 					},
 					[8936] = {
 					},
@@ -211,7 +211,7 @@ ElvDB = {
 					},
 					[155777] = {
 					},
-					[48438] = {
+					[774] = {
 					},
 				},
 				["MONK"] = {
@@ -233,15 +233,15 @@ ElvDB = {
 					},
 					[17] = {
 					},
-					[6788] = {
+					[123258] = {
 					},
 					[33206] = {
 					},
-					[139] = {
-					},
-					[123258] = {
-					},
 					[10060] = {
+					},
+					[6788] = {
+					},
+					[139] = {
 					},
 					[41635] = {
 					},
@@ -615,9 +615,9 @@ ElvDB = {
 				["ElvAB_6"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-488,330",
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-50,50",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,50,995",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,463,50",
 				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,200",
 				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-230,140",
-				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,463,50",
 				["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-50,50",
 				["AlertFrameMover"] = "TOP,ElvUIParent,TOP,0,-50",
 				["ReputationBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-50,-228",
@@ -2503,16 +2503,19 @@ ElvDB = {
 						"/cast [nostealth]宿敌", -- [3]
 						"/cast [nostealth]毁伤", -- [4]
 					},
-					["3圣印输出"] = {
-						"/cast 驱邪术", -- [1]
-						"/cast [mod:alt]正义之锤;十字军打击", -- [2]
-						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [3]
-						"/cast 愤怒之锤", -- [4]
-						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [5]
-						"/castsequence [stance:1] reset=999 审判,正义圣印\n/castsequence [stance:2] reset=999 审判,公正圣印\n/castsequence [stance:3] reset=999 审判,真理圣印\n/施放 [stance:4]审判\n", -- [6]
+					["刺杀基础输出"] = {
+						"/cast [nostealth]斩击", -- [1]
+						"/cast [stealth]伏击", -- [2]
+						"/cast [nostealth]斩击", -- [3]
+						"/cast [nostealth]毁伤", -- [4]
 					},
-					["冰法"] = {
-						" \n/castsequence reset=5/combat 献祭,烧尽,烧尽,烧尽,烧尽,烧尽,烧尽\n   ", -- [1]
+					["射击"] = {
+						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [1]
+						"/cast [nochanneling:弹幕射击] 瞄准射击", -- [2]
+						"/cast [nochanneling:弹幕射击] 夺命黑鸦", -- [3]
+						"/cast [nochanneling:弹幕射击] 稳固射击", -- [4]
+						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [5]
+						"/cast [nochanneling:弹幕射击] 夺命射击", -- [6]
 					},
 					["生存"] = {
 						"/cast 爆炸射击", -- [1]
@@ -2523,19 +2526,16 @@ ElvDB = {
 						"/cast 奥术射击", -- [6]
 						"/cast 眼镜蛇射击", -- [7]
 					},
-					["射击"] = {
-						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [1]
-						"/cast [nochanneling:弹幕射击] 瞄准射击", -- [2]
-						"/cast [nochanneling:弹幕射击] 夺命黑鸦", -- [3]
-						"/cast [nochanneling:弹幕射击] 稳固射击", -- [4]
-						"/cast [nochanneling:弹幕射击] 奇美拉射击", -- [5]
-						"/cast [nochanneling:弹幕射击] 夺命射击", -- [6]
+					["冰法"] = {
+						" \n/castsequence reset=5/combat 献祭,烧尽,烧尽,烧尽,烧尽,烧尽,烧尽\n   ", -- [1]
 					},
-					["刺杀基础输出"] = {
-						"/cast [nostealth]斩击", -- [1]
-						"/cast [stealth]伏击", -- [2]
-						"/cast [nostealth]斩击", -- [3]
-						"/cast [nostealth]毁伤", -- [4]
+					["3圣印输出"] = {
+						"/cast 驱邪术", -- [1]
+						"/cast [mod:alt]正义之锤;十字军打击", -- [2]
+						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [3]
+						"/cast 愤怒之锤", -- [4]
+						"/cast [mod:alt]神圣风暴;圣殿骑士的裁决", -- [5]
+						"/castsequence [stance:1] reset=999 审判,正义圣印\n/castsequence [stance:2] reset=999 审判,公正圣印\n/castsequence [stance:3] reset=999 审判,真理圣印\n/施放 [stance:4]审判\n", -- [6]
 					},
 					["GnomeExample1"] = {
 						"/run print(\"Executing macro 1!\")\n/cast SpellName1\n	", -- [1]
@@ -3205,11 +3205,11 @@ ElvDB = {
 				},
 				["bar6"] = {
 					["enabled"] = true,
-					["mouseover"] = true,
+					["backdropSpacing"] = 4,
 					["showGrid"] = false,
 					["buttonsPerRow"] = 3,
+					["mouseover"] = true,
 					["backdrop"] = false,
-					["backdropSpacing"] = 4,
 				},
 				["bar2"] = {
 					["enabled"] = true,
@@ -3240,11 +3240,11 @@ ElvDB = {
 				["backdropSpacingConverted"] = true,
 				["bar7"] = {
 					["enabled"] = true,
-					["mouseover"] = true,
+					["backdropSpacing"] = 4,
 					["showGrid"] = false,
 					["buttonsPerRow"] = 3,
+					["mouseover"] = true,
 					["backdrop"] = false,
-					["backdropSpacing"] = 4,
 				},
 				["bar9"] = {
 					["showGrid"] = false,
@@ -3587,12 +3587,12 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["boss"] = {
+					["player"] = {
 						["power"] = {
 							["height"] = 7,
 						},
 					},
-					["party"] = {
+					["boss"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -3622,7 +3622,7 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["player"] = {
+					["party"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -3639,12 +3639,12 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["player"] = {
+					["boss"] = {
 						["power"] = {
 							["height"] = 7,
 						},
 					},
-					["party"] = {
+					["player"] = {
 						["power"] = {
 							["height"] = 7,
 						},
@@ -3674,7 +3674,7 @@ ElvDB = {
 							["height"] = 7,
 						},
 					},
-					["boss"] = {
+					["party"] = {
 						["power"] = {
 							["height"] = 7,
 						},

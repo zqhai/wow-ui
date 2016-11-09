@@ -11,7 +11,7 @@ MasterPlanAG = {
 				["tt1"] = true,
 				["ti1"] = 118531,
 				["tt3"] = true,
-				["tt2"] = 1476982520,
+				["tt2"] = true,
 			},
 			["faction"] = "Horde",
 		},

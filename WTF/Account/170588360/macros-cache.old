@@ -1,9 +1,3 @@
-VER 3 0000000000000059 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/stopcasting
-/use 14
-/stopcasting
-END
 VER 3 0000000000000061 " " "INV_MISC_QUESTIONMARK"
 /cast 正义盾击
 /cast 圣光壁垒
@@ -13,6 +7,12 @@ VER 3 000000000000004E " " "INV_Misc_QuestionMark"
 #showtooltip
 /stopcasting
 /use 13
+/stopcasting
+END
+VER 3 0000000000000059 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/use 14
 /stopcasting
 END
 VER 3 000000000000005E " 开始" "INV_MISC_QUESTIONMARK"
