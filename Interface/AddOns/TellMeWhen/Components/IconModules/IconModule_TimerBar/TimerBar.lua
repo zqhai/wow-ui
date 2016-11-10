@@ -28,9 +28,6 @@ local OnGCD = TMW.OnGCD
 
 local BarsToUpdate = {}
 
-local StatusBarTexture
-
-
 
 local TimerBar = TMW:NewClass("IconModule_TimerBar", "IconModule", "UpdateTableManager")
 TimerBar:UpdateTable_Set(BarsToUpdate)
@@ -79,6 +76,10 @@ function TimerBar:OnNewInstance(icon)
 	
 	self.start = 0
 	self.duration = 0
+	self.normalStart = 0
+	self.normalDuration = 0
+	self.chargeStart = 0
+	self.chargeDur = 0
 	self.Offset = 0
 	self.__oldPercent = 0
 	
@@ -90,9 +91,13 @@ function TimerBar:OnEnable()
 	local attributes = icon.attributes
 	
 	self.bar:Show()
-	self.texture:SetTexture(StatusBarTexture)
+	local texture = icon.group.TextureName
+	if texture == "" then
+		texture = TMW.db.profile.TextureName
+	end
+	self.texture:SetTexture(LSM:Fetch("statusbar", texture))
 	
-	self:DURATION(icon, attributes.start, attributes.duration)
+	self:SetCooldown(attributes.start, attributes.start, attributes.chargeStart, attributes.chargeDur)
 end
 function TimerBar:OnDisable()
 	self.bar:Hide()
@@ -141,18 +146,27 @@ function TimerBar:UpdateValue(force)
 	local percent = value / self.Max
 
 	if force or value ~= self.__value then
-		self.bar:SetValue(value)
+		local bar = self.bar
+		bar:SetValue(value)
 
 		if abs(self.__oldPercent - percent) > 0.02 then
 			-- If the percentage of the bar changed by more than 2%, force an instant redraw of the texture.
 			-- For some reason, blizzard defers the updating of status bar textures until sometimes 1 or 2 frames after it is set.
 			self:UpdateStatusBarImmediate(value)
+		elseif bar:GetReverseFill() then
+			-- Bliizard goofed (or forgot) when they implemented reverse filling,
+			-- the tex coords are messed up. We'll just have to fix them ourselves.
+			if bar:GetOrientation() == "VERTICAL" then
+				self.texture:SetTexCoord(0, 0, percent, 0, 0, 1, percent, 1)
+			else
+				self.texture:SetTexCoord(1 - percent, 1, 0, 1)
+			end
 		end
 
 		-- This line is here to fix an issue with the bar texture
 		-- not being in the correct location/correct size if
 		-- the bar is modified while it, or a parent, is hidden.
-		self.texture:GetSize()
+		--self.texture:GetSize()
 
 		if value ~= 0 then
 			local completeColor = self.completeColor
@@ -179,7 +193,7 @@ function TimerBar:UpdateValue(force)
 
 			local inv = 1-doublePercent
 
-			self.bar:SetStatusBarColor(
+			bar:SetStatusBarColor(
 				(startColor.r * doublePercent) + (completeColor.r * inv),
 				(startColor.g * doublePercent) + (completeColor.g * inv),
 				(startColor.b * doublePercent) + (completeColor.b * inv),
@@ -195,29 +209,57 @@ end
 
 function TimerBar:UpdateStatusBarImmediate(value)
 	local bar = self.bar
-	--print("immediate status bar", bar:GetName(), value)
-	local tex = bar:GetStatusBarTexture()
+	local tex = self.texture
 	local percent = value / self.Max
 	if percent < 0 then percent = 0 elseif percent > 1 then percent = 1 end
+
 
 	if bar:GetOrientation() == "VERTICAL" then
 		local height = bar:GetHeight()
 		local sizePercent = height*percent
-		tex:SetPoint("TOPLEFT", 0, sizePercent - height)
-		tex:SetPoint("TOPRIGHT", 0, sizePercent - height)
-		tex:SetTexCoord(percent, 0, 0, 0, percent, 1, 0, 1)
+
+
+		-- tex:SetTexCoord(ULx, ULy, LLx, LLy, URx, URy, LRx, LRy)
+		if bar:GetReverseFill() then
+			tex:SetPoint("BOTTOMLEFT", 0, height - sizePercent)
+			tex:SetPoint("BOTTOMRIGHT", 0, height - sizePercent)
+			tex:SetTexCoord(0, 0, percent, 0, 0, 1, percent, 1)
+		else
+			tex:SetPoint("TOPLEFT", 0, sizePercent - height)
+			tex:SetPoint("TOPRIGHT", 0, sizePercent - height)
+			tex:SetTexCoord(percent, 0, 0, 0, percent, 1, 0, 1)
+		end
+
 	else
 		local width = bar:GetWidth()
 		local sizePercent = width*percent
-		tex:SetPoint("TOPRIGHT", sizePercent - width, 0)
-		tex:SetPoint("BOTTOMRIGHT", sizePercent - width, 0)
-		tex:SetTexCoord(0, percent, 0, 1)
+
+		if bar:GetReverseFill() then
+			tex:SetPoint("TOPLEFT", width - sizePercent, 0)
+			tex:SetPoint("BOTTOMLEFT", width - sizePercent, 0)
+			tex:SetTexCoord(1 - percent, 1, 0, 1)
+		else
+			tex:SetPoint("TOPRIGHT", sizePercent - width, 0)
+			tex:SetPoint("BOTTOMRIGHT", sizePercent - width, 0)
+			tex:SetTexCoord(0, percent, 0, 1)
+		end
+
 	end
 end
 
-function TimerBar:SetCooldown(start, duration)
-	self.duration = duration
-	self.start = start
+function TimerBar:SetCooldown(start, duration, chargeStart, chargeDur)
+	self.normalStart, self.normalDuration = start, duration
+	self.chargeStart, self.chargeDur = chargeStart, chargeDur
+
+	if chargeDur and chargeDur > 0 then
+		duration = chargeDur
+
+		self.duration = chargeDur
+		self.start = chargeStart
+	else
+		self.duration = duration
+		self.start = start
+	end
 	
 	if duration > 0 then
 		if not self.BarGCD and self.icon:OnGCD(duration) then
@@ -239,20 +281,20 @@ function TimerBar:SetColors(startColor, halfColor, completeColor)
 end
 
 function TimerBar:DURATION(icon, start, duration)
-	self:SetCooldown(start, duration)
+	self:SetCooldown(start, duration, self.chargeStart, self.chargeDur)
 end
 TimerBar:SetDataListener("DURATION")
 
+function TimerBar:SPELLCHARGES(icon, charges, maxCharges, chargeStart, chargeDur)
+	self:SetCooldown(self.normalStart, self.normalDuration, chargeStart, chargeDur)
+end
+TimerBar:SetDataListener("SPELLCHARGES")
 
 
 TMW:RegisterCallback("TMW_LOCK_TOGGLED", function(event, Locked)
 	if not Locked then
 		TimerBar:UpdateTable_UnregisterAll()
 	end
-end)
-
-TMW:RegisterCallback("TMW_GLOBAL_UPDATE", function(event)
-	StatusBarTexture = LSM:Fetch("statusbar", TMW.db.profile.TextureName)
 end)
 
 TMW:RegisterCallback("TMW_ONUPDATE_POST", function(event, time, Locked)

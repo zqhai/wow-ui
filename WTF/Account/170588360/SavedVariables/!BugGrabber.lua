@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 196,
 	["lastSanitation"] = 3,
-	["session"] = 195,
 	["errors"] = {
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'ElvUI' 尝试调用保护功能 'ActionButton11:Hide()'。",
@@ -893,20 +893,13 @@ BugGrabberDB = {
 			["counter"] = 546,
 		}, -- [114]
 		{
-			["message"] = "Interface\\FrameXML\\LFGList.lua:2352: attempt to index local 'displayData' (a nil value)",
-			["time"] = "2016/11/02 23:13:30",
-			["stack"] = "Interface\\FrameXML\\LFGList.lua:2352: in function `LFGListGroupDataDisplayRoleCount_Update'\n...terface\\AddOns\\MeetingStone\\Widget\\MemberDisplay.lua:20: in function `LFGListGroupDataDisplay_Update'\n...terface\\AddOns\\MeetingStone\\Widget\\MemberDisplay.lua:45: in function `SetActivity'\nInterface\\AddOns\\MeetingStone\\Module\\BrowsePanel.lua:117: in function `formatHandler'\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\DataGridView.lua:100: in function <...ibs\\NetEaseLibs\\NetEaseGUI-2.0\\View\\DataGridView.lua:77>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[3]\"]:9: in function <[string \"safecall Dispatcher[3]\"]:5>\n(tail call): ?\n...e\\AddOns\\libs\\NetEaseLibs\\LibClass-2.0-7\\Class-2.0.lua:156: in function `Fire'\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\Widget\\ItemButton.lua:28: in function `FireHandler'\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\Widget\\ItemButton.lua:94: in function `FireFormat'\n...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\ListView.lua:120: in function `UpdateItems'\n...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\ListView.lua:32: in function <...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0\\View\\ListView.lua:29>\n(tail call): ?\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\DataGridView.lua:198: in function `Update'\n...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0-1\\Embed\\Refresh-刷新.lua:10: in function <...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0\\Embed\\Refresh.lua:8>",
-			["session"] = 187,
-			["counter"] = 2,
-		}, -- [115]
-		{
 			["message"] = "Interface\\AddOns\\Auctionator\\Auctionator-4.0.13.lua:5061: bad argument #1 to 'strlen' (string expected, got nil)",
 			["time"] = "2016/11/02 20:41:21",
 			["locals"] = "(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
 			["stack"] = "[C]: in function `strlen'\nInterface\\AddOns\\Auctionator\\Auctionator-4.0.13.lua:5061: in function `Atr_Item_Autocomplete'\n[string \"*:OnCharComposition\"]:1: in function <[string \"*:OnCharComposition\"]:1>",
 			["session"] = 189,
 			["counter"] = 4,
-		}, -- [116]
+		}, -- [115]
 		{
 			["message"] = "[string \"<unnamed>:OnFinished\"]:11: attempt to concatenate field 'pos' (a nil value)",
 			["time"] = "2016/08/03 22:43:54",
@@ -914,7 +907,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnFinished\"]:11: in function <[string \"*:OnFinished\"]:1>",
 			["session"] = 190,
 			["counter"] = 17,
-		}, -- [117]
+		}, -- [116]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'BigFootMark' 尝试调用保护功能 '<unnamed>:Hide()'。",
 			["time"] = "2016/09/01 19:28:18",
@@ -922,7 +915,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:353>\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2320: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2347: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2378: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2052: in function <Interface\\FrameXML\\UIParent.lua:2044>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2846: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2812: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:219: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
 			["session"] = 193,
 			["counter"] = 50,
-		}, -- [118]
+		}, -- [117]
 		{
 			["message"] = "...nterface\\AddOns\\EuiScript\\module\\QuestLevelPatch.lua:104: attempt to concatenate a nil value",
 			["time"] = "2016/10/27 19:30:36",
@@ -930,7 +923,7 @@ BugGrabberDB = {
 			["stack"] = "...nterface\\AddOns\\EuiScript\\module\\QuestLevelPatch.lua:104: in function <...nterface\\AddOns\\EuiScript\\module\\QuestLevelPatch.lua:90>\n[C]: ?\n[C]: in function `QuestLogQuests_Update'\nInterface\\FrameXML\\QuestMapFrame.lua:201: in function `QuestMapFrame_UpdateAll'\nInterface\\FrameXML\\QuestMapFrame.lua:116: in function <Interface\\FrameXML\\QuestMapFrame.lua:26>\n[C]: in function `SetMapZoom'\nInterface\\FrameXML\\WorldMapFrame.lua:3589: in function `myclick'\nInterface\\FrameXML\\NavigationBar.lua:173: in function <Interface\\FrameXML\\NavigationBar.lua:162>",
 			["session"] = 193,
 			["counter"] = 10,
-		}, -- [119]
+		}, -- [118]
 		{
 			["message"] = "[string \"<unnamed>:OnUpdate\"]:10: attempt to index field 'ScrollFrame' (a nil value)",
 			["time"] = "2016/10/27 18:39:05",
@@ -938,7 +931,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnUpdate\"]:10: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 193,
 			["counter"] = 2392,
-		}, -- [120]
+		}, -- [119]
 		{
 			["message"] = "[string \"TMWDropDownsList2:OnShow\"]:4: attempt to index field 'ScrollFrame' (a nil value)",
 			["time"] = "2016/10/27 18:36:27",
@@ -946,7 +939,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnShow\"]:4: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\n...face\\AddOns\\TellMeWhen\\Options\\TMWUIDropDownMenu.lua:623: in function `Toggle'\n[string \"*:OnEnter\"]:5: in function <[string \"*:OnEnter\"]:1>",
 			["session"] = 193,
 			["counter"] = 8,
-		}, -- [121]
+		}, -- [120]
 		{
 			["message"] = "Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:174: bad argument #2 to 'SetFormattedText' (string expected, got nil)",
 			["time"] = "2016/10/17 20:20:30",
@@ -954,7 +947,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetFormattedText'\nInterface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:174: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:163>\nInterface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:267: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:191>\n[C]: in function `GarrisonFollowerTooltipTemplate_SetGarrisonFollower'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:47: in function `GarrisonFollowerTooltip_Show'\nInterface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:568: in function <Interface\\AddOns\\EuiGarrison\\FollowerTooltip.lua:545>",
 			["session"] = 193,
 			["counter"] = 96,
-		}, -- [122]
+		}, -- [121]
 		{
 			["message"] = "Interface\\AddOns\\ElvUI\\Modules\\tooltip\\tooltip.lua:676: attempt to index local 'link' (a nil value)",
 			["time"] = "2016/11/10 22:00:15",
@@ -962,7 +955,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\ElvUI\\Modules\\tooltip\\tooltip.lua:676: in function `?'\nInterface\\AddOns\\libs\\AceHook-3.0\\AceHook-3.0-8.lua:90: in function <Interface\\AddOns\\libs\\AceHook-3.0\\AceHook-3.0.lua:87>\n[C]: in function `SetTrainerService'\n[string \"*:OnEnter\"]:3: in function <[string \"*:OnEnter\"]:1>",
 			["session"] = 194,
 			["counter"] = 4,
-		}, -- [123]
+		}, -- [122]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] 插件 'EuiScript' 尝试调用保护功能 '<unnamed>:Hide()'。",
 			["time"] = "2016/11/07 23:21:23",
@@ -970,7 +963,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:418: in function <Interface\\FrameXML\\WorldMapFrame.lua:381>\n[C]: ?\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\UIParent.lua:2358: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2385: in function `MoveUIPanel'\nInterface\\FrameXML\\UIParent.lua:2416: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2090: in function <Interface\\FrameXML\\UIParent.lua:2082>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2884: in function `HideUIPanel'\nInterface\\FrameXML\\UIParent.lua:2850: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:242: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
 			["session"] = 194,
 			["counter"] = 3,
-		}, -- [124]
+		}, -- [123]
 		{
 			["message"] = "[string \"print(\"鼠标左键设为钓鱼：\"..SetBin...\"]:1: attempt to concatenate a boolean value",
 			["time"] = "2016/09/14 02:16:14",
@@ -978,7 +971,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(\"鼠标左键设为钓鱼：\"..SetBin...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
 			["session"] = 194,
 			["counter"] = 144,
-		}, -- [125]
+		}, -- [124]
 		{
 			["message"] = "[string \"print(\"设置左键为默认：\"..SetBindin...\"]:1: attempt to concatenate a boolean value",
 			["time"] = "2016/09/14 02:18:38",
@@ -986,7 +979,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(\"设置左键为默认：\"..SetBindin...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
 			["session"] = 194,
 			["counter"] = 280,
-		}, -- [126]
+		}, -- [125]
 		{
 			["message"] = "[string \"print(\"设置右键为默认：\"..SetBindin...\"]:1: attempt to concatenate a boolean value",
 			["time"] = "2016/09/14 02:18:38",
@@ -994,7 +987,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(\"设置右键为默认：\"..SetBindin...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2051: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4332: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4000: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2631: in function <Interface\\FrameXML\\ChatFrame.lua:2624>\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:621: in function <Interface\\FrameXML\\SecureTemplates.lua:569>\n[C]: ?\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?",
 			["session"] = 194,
 			["counter"] = 280,
-		}, -- [127]
+		}, -- [126]
 		{
 			["message"] = "Interface\\FrameXML\\LFGList.lua:1952: attempt to perform arithmetic on local 'appDuration' (a nil value)",
 			["time"] = "2016/11/10 23:05:31",
@@ -1002,7 +995,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\FrameXML\\LFGList.lua:1952: in function <Interface\\FrameXML\\LFGList.lua:1867>\n[C]: in function `LFGListSearchEntry_Update'\nInterface\\FrameXML\\LFGList.lua:2026: in function <Interface\\FrameXML\\LFGList.lua:2018>",
 			["session"] = 194,
 			["counter"] = 10,
-		}, -- [128]
+		}, -- [127]
 		{
 			["message"] = "...terface\\FrameXML\\FloatingGarrisonFollowerTooltip.lua:64: attempt to index local 'tooltipFrame' (a number value)",
 			["time"] = "2016/10/27 21:35:14",
@@ -1010,7 +1003,7 @@ BugGrabberDB = {
 			["stack"] = "...terface\\FrameXML\\FloatingGarrisonFollowerTooltip.lua:64: in function <...terface\\FrameXML\\FloatingGarrisonFollowerTooltip.lua:63>\n[C]: ?\n[C]: ?\n[C]: in function `GarrisonFollowerTooltipTemplate_SetGarrisonFollower'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:47: in function `GarrisonFollowerTooltip_Show'\nInterface\\AddOns\\EuiGarrison\\Misc\\Override.lua:59: in function `GarrisonFollowerTooltip_Show'\n...s\\Blizzard_GarrisonUI\\Blizzard_GarrisonMissionUI.lua:1405: in function <...s\\Blizzard_GarrisonUI\\Blizzard_GarrisonMissionUI.lua:1397>",
 			["session"] = 194,
 			["counter"] = 19,
-		}, -- [129]
+		}, -- [128]
 		{
 			["message"] = "C stack overflow",
 			["time"] = "2016/09/02 22:26:48",
@@ -1018,7 +1011,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n...\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?",
 			["session"] = 194,
 			["counter"] = 722,
-		}, -- [130]
+		}, -- [129]
 		{
 			["message"] = "Expected a ScrollFrame widget, got a Frame",
 			["time"] = "2016/10/27 18:25:27",
@@ -1026,7 +1019,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\n...erface\\AddOns\\TellMeWhen\\Lib\\LibOO-1.0\\LibOO-1.0-21.lua:503: in function <...erface\\AddOns\\TellMeWhen\\Lib\\LibOO-1.0\\LibOO-1.0.lua:488>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:121: in function `ConvertContainerToScrollFrame'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>\n[C]: ?\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:3100: in function `LoadOptions'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:2774: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2771>\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:665: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:664>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:799: in function `Fire'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:2642: in function `UpdateNormally'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:2785: in function `Update'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:1160: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...Ons\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\nInterface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0-3.lua:120: in function <Interface\\AddOns\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 195,
 			["counter"] = 229,
-		}, -- [131]
+		}, -- [130]
 		{
 			["message"] = "[string \"TMWDropDownsList2:OnShow\"]:17: attempt to index field 'ScrollFrame' (a nil value)",
 			["time"] = "2016/10/27 18:36:27",
@@ -1034,7 +1027,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnShow\"]:17: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\n...face\\AddOns\\TellMeWhen\\Options\\TMWUIDropDownMenu.lua:623: in function `Toggle'\n[string \"*:OnEnter\"]:5: in function <[string \"*:OnEnter\"]:1>",
 			["session"] = 195,
 			["counter"] = 82,
-		}, -- [132]
+		}, -- [131]
 		{
 			["message"] = "[string \"TMWDropDownsList3:OnShow\"]:17: attempt to index field 'ScrollFrame' (a nil value)",
 			["time"] = "2016/11/10 23:31:48",
@@ -1042,7 +1035,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnShow\"]:17: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\n...face\\AddOns\\TellMeWhen\\Options\\TMWUIDropDownMenu.lua:623: in function `Toggle'\n[string \"*:OnEnter\"]:5: in function <[string \"*:OnEnter\"]:1>",
 			["session"] = 195,
 			["counter"] = 8,
-		}, -- [133]
+		}, -- [132]
 		{
 			["message"] = "[string \"TellMeWhen_ConfigWarning:OnShow\"]:2: attempt to call method 'GetTitleRegion' (a nil value)",
 			["time"] = "2016/11/10 23:31:41",
@@ -1050,7 +1043,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnShow\"]:2: in function <[string \"*:OnShow\"]:1>\n[C]: ?\n[C]: in function `Show'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:604: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:600>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:799: in function `Fire'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:2642: in function `UpdateNormally'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:2785: in function `Update'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:2911: in function `LockToggle'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:2996: in function `?'\n...erface\\AddOns\\libs\\AceConsole-3.0\\AceConsole-3.0-7.lua:94: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4385: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4053: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4089: in function <Interface\\FrameXML\\ChatFrame.lua:4085>\n[C]: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 195,
 			["counter"] = 3,
-		}, -- [134]
+		}, -- [133]
 		{
 			["message"] = "[string \"<unnamed>:OnClick\"]:3: attempt to index field 'wIE' (a nil value)",
 			["time"] = "2016/11/10 23:53:06",
@@ -1058,7 +1051,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnClick\"]:3: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 195,
 			["counter"] = 1,
-		}, -- [135]
+		}, -- [134]
 		{
 			["message"] = "Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:116: attempt to index field 'ScrollFrame' (a nil value)",
 			["time"] = "2016/10/27 18:25:44",
@@ -1066,7 +1059,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:116: in function `LoadIcon'\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:38: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:24>\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:98: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:87>\n...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:42: in function <...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:39>\n[C]: ?\n[C]: ?",
 			["session"] = 195,
 			["counter"] = 95,
-		}, -- [136]
+		}, -- [135]
 		{
 			["message"] = "[string \"TMWDropDownsList1:OnShow\"]:17: attempt to index field 'ScrollFrame' (a nil value)",
 			["time"] = "2016/10/27 18:30:11",
@@ -1074,7 +1067,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnShow\"]:17: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\n...face\\AddOns\\TellMeWhen\\Options\\TMWUIDropDownMenu.lua:623: in function `Toggle'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n[C]: ?\n[C]: in function `Click'\n[string \"*:OnMouseUp\"]:1: in function <[string \"*:OnMouseUp\"]:1>",
 			["session"] = 195,
 			["counter"] = 69,
-		}, -- [137]
+		}, -- [136]
 		{
 			["message"] = "[string \"TellMeWhen_IconEditor:OnShow\"]:2: attempt to call method 'GetTitleRegion' (a nil value)",
 			["time"] = "2016/10/27 18:25:45",
@@ -1082,21 +1075,21 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnShow\"]:2: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:760: in function `Load'\nInterface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:130: in function `LoadIcon'\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:38: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:24>\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:98: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:87>\n...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:42: in function <...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:39>\n[C]: ?\n[C]: ?",
 			["session"] = 195,
 			["counter"] = 77,
-		}, -- [138]
+		}, -- [137]
 		{
 			["message"] = "...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2662: Bad argument value to \"SetValue(value)\". number expected, got nil (nil)",
 			["time"] = "2016/10/27 18:26:19",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.1.2-7-gecf89c8.lua:565: in function `ValidateType'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2281: in function `SetValue'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2662: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:2654>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1103: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:978: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:970>\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1009: in function `CScriptTunnel'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1433: in function `RequestReloadChildren'\n...\n[string \"*:OnLoad\"]:28: in function <[string \"*:OnLoad\"]:11>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1106: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1428: in function `RequestReload'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3409: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3388>\n[C]: in function `Click'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3325: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3287>",
 			["session"] = 195,
 			["counter"] = 17,
-		}, -- [139]
+		}, -- [138]
 		{
 			["message"] = "...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:574: attempt to index local 'str' (a nil value)",
 			["time"] = "2016/10/27 18:26:19",
 			["stack"] = "...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:574: in function `StringToRGBA'\n...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:584: in function <...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:579>\n...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:246: in function `StringToCachedRGBATable'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2899: in function `GetRGBA'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2849: in function `UpdateSwatchTexture'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:2877: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:2873>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1103: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:978: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:970>\n...\n[string \"*:OnLoad\"]:28: in function <[string \"*:OnLoad\"]:11>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1106: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1428: in function `RequestReload'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3409: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3388>\n[C]: in function `Click'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3325: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3287>",
 			["session"] = 195,
 			["counter"] = 23,
-		}, -- [140]
+		}, -- [139]
 		{
 			["message"] = "Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:376: attempt to index field 'ScrollFrame' (a nil value)",
 			["time"] = "2016/10/27 18:25:45",
@@ -1104,13 +1097,28 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:376: in function `LoadGroup'\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:39: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:24>\n...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:98: in function <...s\\IconModules\\IconModule_IconEditorLoader\\module.lua:87>\n...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:42: in function <...lMeWhen\\Components\\Core\\BaseClasses\\ObjectModule.lua:39>\n[C]: ?\n[C]: ?",
 			["session"] = 195,
 			["counter"] = 30,
-		}, -- [141]
+		}, -- [140]
 		{
 			["message"] = "Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:133: attempt to index field 'ScrollFrame' (a nil value)",
 			["time"] = "2016/10/31 21:15:34",
 			["stack"] = "Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:133: in function <Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:126>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1103: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:978: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:970>\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1009: in function `CScriptTunnel'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1433: in function `RequestReloadChildren'\nInterface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:83: in function `SetDraggingGroup'\nInterface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:71: in function <Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:70>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1106: in function `CScriptCall'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:978: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:970>\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1009: in function `CScriptTunnel'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1433: in function `RequestReloadChildren'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:1429: in function `RequestReload'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3409: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3388>\n[C]: in function `Click'\n...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options-8.1.2-7-gecf89c8.lua:3325: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3287>",
 			["session"] = 195,
 			["counter"] = 99,
+		}, -- [141]
+		{
+			["message"] = "Couldn't find CVar named 'cameraDistanceMaxFactor'",
+			["time"] = "2016/11/11 00:18:04",
+			["locals"] = "(*temporary) = \"cameraDistanceMaxFactor\"\n(*temporary) = 2.6\n",
+			["stack"] = "[C]: ?\n[C]: in function `SetCVar'\nInterface\\AddOns\\jingtou\\jingtou.lua:6: in function <Interface\\AddOns\\jingtou\\jingtou.lua:4>",
+			["session"] = 196,
+			["counter"] = 1,
 		}, -- [142]
+		{
+			["message"] = "Interface\\FrameXML\\LFGList.lua:2352: attempt to index local 'displayData' (a nil value)",
+			["time"] = "2016/11/02 23:13:30",
+			["stack"] = "Interface\\FrameXML\\LFGList.lua:2352: in function `LFGListGroupDataDisplayRoleCount_Update'\n...terface\\AddOns\\MeetingStone\\Widget\\MemberDisplay.lua:20: in function `LFGListGroupDataDisplay_Update'\n...terface\\AddOns\\MeetingStone\\Widget\\MemberDisplay.lua:45: in function `SetActivity'\nInterface\\AddOns\\MeetingStone\\Module\\BrowsePanel.lua:117: in function `formatHandler'\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\DataGridView.lua:100: in function <...ibs\\NetEaseLibs\\NetEaseGUI-2.0\\View\\DataGridView.lua:77>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[3]\"]:9: in function <[string \"safecall Dispatcher[3]\"]:5>\n(tail call): ?\n...e\\AddOns\\libs\\NetEaseLibs\\LibClass-2.0-7\\Class-2.0.lua:156: in function `Fire'\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\Widget\\ItemButton.lua:28: in function `FireHandler'\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\Widget\\ItemButton.lua:94: in function `FireFormat'\n...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\ListView.lua:120: in function `UpdateItems'\n...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\ListView.lua:32: in function <...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0\\View\\ListView.lua:29>\n(tail call): ?\n...ibs\\NetEaseLibs\\NetEaseGUI-2.0-1\\View\\DataGridView.lua:198: in function `Update'\n...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0-1\\Embed\\Refresh-刷新.lua:10: in function <...ns\\libs\\NetEaseLibs\\NetEaseGUI-2.0\\Embed\\Refresh.lua:8>",
+			["session"] = 196,
+			["counter"] = 3,
+		}, -- [143]
 	},
 }

@@ -1,20 +1,5 @@
 
 AuctionLiteDB = {
-	["profiles"] = {
-		["Default"] = {
-			["duration"] = 2,
-			["lastTab"] = 6,
-		},
-	},
-	["profileKeys"] = {
-		["Haidi - 幽暗沼泽"] = "Default",
-		["冷血魔刀 - 幽暗沼泽"] = "Default",
-		["开山怪 - 幽暗沼泽"] = "Default",
-		["橙界骑 - 幽暗沼泽"] = "Default",
-		["Haidii - 燃烧之刃"] = "Default",
-		["每天壹碗面 - 幽暗沼泽"] = "Default",
-		["Testt - 幽暗沼泽"] = "Default",
-	},
 	["factionrealm"] = {
 		["Horde - 幽暗沼泽"] = {
 			["prices"] = {
@@ -26,6 +11,21 @@ AuctionLiteDB = {
 					["listings"] = 75,
 				},
 			},
+		},
+	},
+	["profileKeys"] = {
+		["Haidi - 幽暗沼泽"] = "Default",
+		["冷血魔刀 - 幽暗沼泽"] = "Default",
+		["开山怪 - 幽暗沼泽"] = "Default",
+		["橙界骑 - 幽暗沼泽"] = "Default",
+		["Haidii - 燃烧之刃"] = "Default",
+		["每天壹碗面 - 幽暗沼泽"] = "Default",
+		["Testt - 幽暗沼泽"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["duration"] = 2,
+			["lastTab"] = 6,
 		},
 	},
 }

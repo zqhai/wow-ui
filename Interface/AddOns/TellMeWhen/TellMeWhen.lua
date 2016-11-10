@@ -15,10 +15,10 @@
 -- ADDON GLOBALS AND LOCALS
 -- ---------------------------------
 
-TELLMEWHEN_VERSION = "8.1.3"
+TELLMEWHEN_VERSION = "8.2.3"
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "8.1.2-7-gecf89c8" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "8.2.3" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -26,11 +26,11 @@ elseif strmatch(projectVersion, "%-%d+%-") then
 end
 
 TELLMEWHEN_VERSION_FULL = TELLMEWHEN_VERSION .. " " .. TELLMEWHEN_VERSION_MINOR
-TELLMEWHEN_VERSIONNUMBER = 81305 -- NEVER DECREASE THIS NUMBER (duh?).  IT IS ALSO ONLY INTERNAL (for versioning of)
+TELLMEWHEN_VERSIONNUMBER = 82302 -- NEVER DECREASE THIS NUMBER (duh?).  IT IS ALSO ONLY INTERNAL (for versioning of)
 
-TELLMEWHEN_FORCECHANGELOG = 80039 -- if the user hasn't seen the changelog until at least this version, show it to them.
+TELLMEWHEN_FORCECHANGELOG = 82105 -- if the user hasn't seen the changelog until at least this version, show it to them.
 
-if TELLMEWHEN_VERSIONNUMBER > 82000 or TELLMEWHEN_VERSIONNUMBER < 81000 then
+if TELLMEWHEN_VERSIONNUMBER > 83000 or TELLMEWHEN_VERSIONNUMBER < 82000 then
 	-- safety check because i accidentally made the version number 414069 once
 	return error("TELLMEWHEN: THE VERSION NUMBER IS SCREWED UP OR MAYBE THE SAFETY LIMITS ARE WRONG")
 end
@@ -234,6 +234,7 @@ TMW.Defaults = {
 				},
 				OnlyInCombat	= false,
 				View			= "icon",
+				TextureName		= "",
 				Name			= "",
 				Rows			= 1,
 				Columns			= 4,
@@ -3260,7 +3261,7 @@ function TMW:DoValidityCheck()
 			checker = TMW.GUIDToOwner[checkerIn]
 			if not checker then
 				TMW:Error("Invalid checker was passed to QueueValidityCheck: %q", checkerIn)
-				checkerName = "UNKNOWN" .. (TMW.debug and " " .. checkerIn)
+				checkerName = "UNKNOWN" .. (TMW.debug and " " .. checkerIn or "")
 			end
 		end
 		
