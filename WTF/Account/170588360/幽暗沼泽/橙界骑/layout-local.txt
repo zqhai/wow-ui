@@ -1,4 +1,11 @@
 Version: 1
+Frame: TellMeWhen_GlobalGroup2
+FrameLevel: 10
+Anchor: CENTER
+X: 46
+Y: 31
+W: 30
+H: 30
 Frame: ColorPickerFrame
 FrameLevel: 1
 Anchor: CENTER
