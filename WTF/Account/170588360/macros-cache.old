@@ -1,9 +1,3 @@
-VER 3 000000000000004E " " "INV_Misc_QuestionMark"
-#showtooltip
-/stopcasting
-/use 13
-/stopcasting
-END
 VER 3 0000000000000059 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /stopcasting
@@ -15,6 +9,12 @@ VER 3 0000000000000061 " " "INV_MISC_QUESTIONMARK"
 /cast 圣光壁垒
 /cast 正义盾击
 END
+VER 3 000000000000004E " " "INV_Misc_QuestionMark"
+#showtooltip
+/stopcasting
+/use 13
+/stopcasting
+END
 VER 3 000000000000005E " 开始" "INV_MISC_QUESTIONMARK"
 #showtooltips 钓鱼
 /run print("鼠标左键设为钓鱼："..SetBindingSpell("BUTTON1","钓鱼"))
@@ -24,13 +24,16 @@ END
 VER 3 0000000000000060 " 结束" "851298"
 /run print("设置左键为默认："..SetBinding("BUTTON1","CAMERAORSELECTORMOVE"))
 /run print("设置右键为默认："..SetBinding("BUTTON2","TURNORACTION"))
-/equip 毒牙开面盔
+/equip 传送卫士头盔
 /equip 灰烬使者
 END
 VER 3 0000000000000063 " 设置" "135769"
 /console ffxGlow 0
 /console cameraDistanceMaxFactor 2.6
 /console weatherDensity 0
+/run SetCVar("nameplateMaxDistance",40)
+/run SetCVar("TargetPriorityAllowAnyOnScreen", 0)
+/run SetCVar("Targetnearestuseold", 1)
 END
 VER 3 000000000000005B "MillHelper" "Ability_Miling"
 /click MillHelperButton

@@ -27,7 +27,7 @@ GearStatsSummary: enabled
 EuiGarrison: enabled
 ElvUI_Config: enabled
 Postal: enabled
-BigFootBank: disabled
+BigFootBank: enabled
 MeetingStone: enabled
 DBM-Core: enabled
 DBM-StatusBarTimers: enabled
@@ -71,3 +71,5 @@ GottaGoFast: enabled
 ElvUI_TankHealth: enabled
 AngryKeystones: enabled
 jingtou: enabled
+ArtifactPowerUser: enabled
+xtsz: enabled

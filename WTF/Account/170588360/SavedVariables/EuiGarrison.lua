@@ -4,15 +4,23 @@ SV_GarrisonMissionManager = {
 MasterPlanAG = {
 	["幽暗沼泽"] = {
 		["橙界骑"] = {
-			["class"] = "PALADIN",
+			["lastCacheTime"] = 1480005299,
 			["summary"] = {
+				["inProgress"] = {
+					[623] = 1480019770,
+					[625] = 1480012572,
+					[733] = 1480005808,
+				},
 				["ti3"] = 128391,
 				["ti2"] = 122485,
 				["tt1"] = true,
 				["ti1"] = 118531,
 				["tt3"] = true,
-				["tt2"] = true,
+				["tt2"] = 1479402108,
 			},
+			["curOil"] = 435,
+			["class"] = "PALADIN",
+			["curRes"] = 10000,
 			["faction"] = "Horde",
 		},
 		["冷血魔刀"] = {
@@ -37,10 +45,12 @@ MasterPlanAG = {
 				["ti2"] = 122485,
 			},
 			["curOil"] = 585,
-			["lastCacheTime"] = 1474987114,
 			["class"] = "PALADIN",
+			["lastCacheTime"] = 1474987114,
 			["curRes"] = 10000,
 			["faction"] = "Horde",
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

@@ -1,0 +1,7 @@
+﻿## Interface: 70100
+## Title: |cff3399FFBink|r
+## Title-zhCN: |cff00FF55[工具]系统功能|r
+## Notes-zhCN: 一些系统默认的功能插件
+
+##一些系统设置
+xtsz.lua

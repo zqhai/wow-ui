@@ -1,0 +1,14 @@
+tag 2.0
+f2f287c065ef648c483ed36d799359fca281f1c7
+FlyNeko <iv-darya@yandex.ru>
+2016-11-10 18:06:26 +0300
+
+Tagging as 2.0
+
+
+--------------------
+
+FlyNeko:
+	- GUI for enable/disable specs (/apu specs)
+	- /apu disable - always hide button for current spec. /apu enable - revert this
+	- Hide border texture

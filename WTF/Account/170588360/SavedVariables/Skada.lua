@@ -35,15 +35,15 @@ SkadaDB = {
 				["Overhealing"] = false,
 			},
 			["report"] = {
-				["number"] = 2,
+				["number"] = 5,
 				["channel"] = "guild",
-				["mode"] = "伤害",
-				["set"] = 8,
+				["mode"] = "死亡",
 			},
 			["ffoptions"] = {
-				["ignoreability"] = false,
 				["ignoredefensive"] = true,
+				["ignoreability"] = false,
 			},
+			["onlykeepbosses"] = true,
 		},
 	},
 }

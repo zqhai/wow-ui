@@ -1,0 +1,11 @@
+
+ArtifactPowerUserDB = {
+	["lock"] = true,
+	["position"] = {
+		["y"] = 219.999801635742,
+		["x"] = -27.9995517730713,
+		["point"] = "BOTTOMRIGHT",
+		["relativePoint"] = "BOTTOMRIGHT",
+	},
+	["size"] = 64,
+}

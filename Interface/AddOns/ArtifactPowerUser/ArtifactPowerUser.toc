@@ -1,0 +1,18 @@
+## Interface: 70100
+## Title: ArtifactPowerUser
+## Version: 2.0
+## Notes: Creates button to use Artifact Power items faster
+## Author: FlyNeko
+## SavedVariables: ArtifactPowerUserDB
+## SavedVariablesPerCharacter: ArtifactPowerUserCharacterDB
+## X-Curse-Packaged-Version: 2.0
+## X-Curse-Project-Name: ArtifactPowerUser
+## X-Curse-Project-ID: artifactpoweruser
+## X-Curse-Repository-ID: wow/artifactpoweruser/mainline
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+ArtifactPowerUser.lua
+ArtifactPowerUser.xml

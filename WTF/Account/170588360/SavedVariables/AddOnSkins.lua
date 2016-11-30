@@ -11,6 +11,7 @@ AddOnSkinsDB = {
 			["Postal"] = true,
 			["Skada"] = true,
 			["MiscellaneousFixes"] = true,
+			["ArtifactPowerUser"] = true,
 			["Auctionator"] = true,
 		},
 	},
